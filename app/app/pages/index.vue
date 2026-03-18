@@ -5,8 +5,9 @@
     <OrganismsHowItWorks />
     <OrganismsStatsBar />
     <OrganismsFeatureHighlight />
-    <OrganismsTestimonialsSection />
+    <OrganismsVehicleTabs />
     <OrganismsProtectBanner />
+    <OrganismsTestimonialsSection />
     <OrganismsBlogSection />
     <OrganismsCTASection />
     <OrganismsMediaLogos />

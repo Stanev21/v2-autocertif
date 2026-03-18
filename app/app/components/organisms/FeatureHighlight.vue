@@ -1,75 +1,58 @@
 <template>
-  <section class="py-28 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-20 lg:py-28 bg-[#f5f5f0]">
+    <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
       <!-- Section header -->
-      <div class="flex items-end justify-between mb-16">
-        <div>
-          <h2 class="text-[2rem] lg:text-[2.5rem] font-normal text-gray-900 leading-[1.1] mb-4 font-heading">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-14 lg:mb-20 gap-6">
+        <div class="max-w-xl">
+          <span class="text-[13px] font-medium font-inter text-[#CD3246] uppercase tracking-wider mb-4 block">{{ $t('checks.title') }}</span>
+          <h2 class="text-[2rem] lg:text-[2.75rem] font-normal text-gray-900 leading-[1.1] font-heading">
             {{ $t('reports.title') }}
           </h2>
-          <p class="text-gray-500 text-[15px] leading-[1.7] font-inter max-w-xl">{{ $t('checks.subtitle') }}</p>
         </div>
-        <!-- Nav arrows -->
-        <div class="hidden md:flex items-center gap-2">
-          <button @click="prev" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-gray-900 transition-all cursor-pointer">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
-          </button>
-          <button @click="next" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:border-gray-900 transition-all cursor-pointer">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
-          </button>
-        </div>
+        <p class="text-gray-500 text-[15px] leading-[1.6] font-inter max-w-md">{{ $t('checks.subtitle') }}</p>
       </div>
 
-      <!-- Single rotating element -->
-      <div class="flex flex-col-reverse md:flex-row md:gap-6">
-        <!-- Left: text column -->
-        <div class="flex w-full flex-col gap-6 md:max-w-[18rem] md:gap-10 md:pt-3 lg:max-w-[21rem]">
-          <div class="mb-auto">
-            <h3 class="text-[1.25rem] lg:text-[1.4rem] font-medium text-gray-900 font-inter leading-snug mb-3 transition-all duration-500">
-              {{ features[active].title }}
-            </h3>
-            <p class="text-gray-500 text-[14px] leading-[1.6] font-inter mb-4 transition-all duration-500">{{ features[active].desc }}</p>
-            <a href="#" class="group inline-flex items-start gap-x-1.5">
-              <span class="text-[15px] font-medium font-inter text-gray-900 relative pb-1">
-                ↳ {{ $t('checks.cta') }}
-                <span class="absolute bottom-0 left-0 h-[2px] w-full overflow-hidden">
-                  <span class="absolute inset-0 bg-current opacity-20"></span>
-                  <span class="absolute left-0 right-0 top-0 h-[2px] -translate-x-full transform transition-transform duration-300 ease-in-out group-hover:translate-x-0 bg-current"></span>
-                </span>
-              </span>
-            </a>
-          </div>
-          <!-- Metric -->
-          <div>
-            <div class="border-b border-black/5 pb-4 lg:pb-6">
-              <figure class="max-w-[16.75rem] space-y-2">
-                <span class="text-[2.5rem] lg:text-[3rem] font-normal font-heading text-gray-900 leading-none transition-all duration-500">{{ features[active].metric }}</span>
-                <figcaption class="text-[14px] font-inter text-gray-500 transition-all duration-500">{{ features[active].metricLabel }}</figcaption>
-              </figure>
-            </div>
-            <div class="pt-4 lg:pt-6">
-              <h4 class="text-[13px] font-inter mb-2 text-gray-400">What's covered</h4>
-              <ul class="flex flex-wrap">
-                <li v-for="(tag, j) in features[active].tags" :key="j" class="mb-2 mr-2">
-                  <span class="text-[13px] font-inter inline-block rounded-pill bg-black/5 px-3 py-1.5">{{ tag }}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- 2x3 grid of feature cards -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div
+          v-for="(feature, i) in features"
+          :key="i"
+          class="group relative bg-white rounded-2xl p-7 lg:p-8 transition-all duration-300 hover:shadow-lg cursor-pointer overflow-hidden"
+          @mouseenter="active = i"
+        >
+          <!-- Large faded number -->
+          <span class="absolute top-4 right-5 text-[5rem] font-heading font-normal leading-none text-black/[0.04] select-none">{{ i + 1 }}</span>
 
-        <!-- Right: big image with transition -->
-        <div class="relative aspect-[52/33] w-full rounded-xl max-md:mb-6 overflow-hidden">
-          <transition name="fade" mode="out-in">
-            <img :key="active" :src="features[active].image" :alt="features[active].title" class="absolute inset-0 h-full w-full rounded-xl object-cover" />
-          </transition>
-          <div class="absolute inset-0 z-10 rounded-xl bg-gradient-to-t from-black/40 pointer-events-none"></div>
-          <!-- Progress dots -->
-          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
-            <button v-for="(f, i) in features" :key="i" @click="active = i"
-              class="h-1.5 rounded-pill transition-all duration-300 cursor-pointer"
-              :class="active === i ? 'w-8 bg-white' : 'w-1.5 bg-white/40 hover:bg-white/60'"></button>
+          <!-- Icon -->
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-6 transition-colors duration-300"
+            :class="active === i ? 'bg-[#CD3246]/10' : 'bg-black/[0.04]'">
+            <div class="w-5 h-5 transition-colors duration-300"
+              :class="active === i ? 'text-[#CD3246]' : 'text-gray-400'"
+              v-html="feature.icon"></div>
           </div>
+
+          <!-- Title -->
+          <h3 class="text-[17px] font-medium font-inter text-gray-900 mb-3 leading-snug relative z-10">
+            {{ feature.title }}
+          </h3>
+
+          <!-- Description -->
+          <p class="text-gray-500 text-[14px] leading-[1.65] font-inter mb-5 relative z-10">
+            {{ feature.desc }}
+          </p>
+
+          <!-- Metric bar -->
+          <div class="flex items-center gap-3 pt-4 border-t border-black/[0.06] relative z-10">
+            <span class="text-[1.5rem] font-heading font-normal leading-none transition-colors duration-300"
+              :class="active === i ? 'text-[#CD3246]' : 'text-gray-900'">
+              {{ feature.metric }}
+            </span>
+            <span class="text-[12px] font-inter text-gray-400 leading-tight">{{ feature.metricLabel }}</span>
+          </div>
+
+          <!-- Active indicator line at bottom -->
+          <div class="absolute bottom-0 left-0 right-0 h-[3px] transition-all duration-500"
+            :class="active === i ? 'bg-[#CD3246]' : 'bg-transparent'"></div>
         </div>
       </div>
     </div>
@@ -86,66 +69,57 @@ const items = computed(() => {
 
 const active = ref(0)
 
+const icons = [
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"/><path stroke-linecap="round" d="m15.5 8.5-3 4.5"/><circle cx="12" cy="13" r="1" fill="currentColor"/></svg>`,
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.5s-4 1-8 1v7c0 5.5 3.5 9 8 11.5 4.5-2.5 8-6 8-11.5v-7c-4 0-8-1-8-1Z"/><path stroke-linecap="round" d="M9 12h6"/></svg>`,
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="11" width="14" height="10" rx="2" stroke-linecap="round"/><path stroke-linecap="round" d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>`,
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path stroke-linecap="round" d="m9 14 2 2 4-4"/></svg>`,
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4-4-8-7.5-8-12A8.5 8.5 0 0 1 17 4.5C19.5 7 20 10 17 14"/><path stroke-linecap="round" d="M12 21c0-6 3-9 5-10"/></svg>`,
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 17H6a4 4 0 0 1-.88-7.9A5.5 5.5 0 0 1 16 6.3 4.5 4.5 0 0 1 19 17Z"/><path stroke-linecap="round" d="M13 20l-2 2m3-1l-2 2"/></svg>`,
+]
+
 const features = computed(() => [
   {
     title: items.value[0]?.title || 'Mileage',
     desc: items.value[0]?.desc || '',
     metric: '8,000+',
-    metricLabel: 'Data sources cross-referenced',
-    tags: ['Odometer history', 'Trend chart', 'Driving patterns', 'Rollback detection'],
-    image: '/images/vehicles/toyota-corolla.jpg',
+    metricLabel: 'Data sources',
+    icon: icons[0],
   },
   {
     title: items.value[1]?.title || 'Damages',
     desc: items.value[1]?.desc || '',
     metric: '300M+',
-    metricLabel: 'Damage records analyzed',
-    tags: ['Accident history', 'Repair records', 'Write-off status', 'Damage diagram'],
-    image: '/images/vehicles/renault-megane.jpg',
+    metricLabel: 'Records analyzed',
+    icon: icons[1],
   },
   {
     title: items.value[2]?.title || 'Theft',
     desc: items.value[2]?.desc || '',
     metric: '25+',
     metricLabel: 'Countries covered',
-    tags: ['Stolen registries', 'Official databases', 'Cross-border checks', 'Real-time status'],
-    image: '/images/vehicles/ford-focus.jpg',
+    icon: icons[2],
   },
   {
     title: items.value[3]?.title || 'Vehicle Inspection',
     desc: items.value[3]?.desc || '',
     metric: '100%',
-    metricLabel: 'Official records coverage',
-    tags: ['Test results', 'Defect history', 'Technical control', 'MOT records'],
-    image: '/images/blog/vehicle-history.jpg',
+    metricLabel: 'Official records',
+    icon: icons[3],
   },
   {
     title: items.value[4]?.title || 'Fuel & CO2 Emissions',
     desc: items.value[4]?.desc || '',
     metric: 'A–G',
-    metricLabel: 'Emission class rating included',
-    tags: ['Urban consumption', 'Extra-urban', 'Combined data', 'CO₂ class'],
-    image: '/images/blog/ev-battery.jpg',
+    metricLabel: 'Emission rating',
+    icon: icons[4],
   },
   {
     title: items.value[5]?.title || 'Natural Disasters',
     desc: items.value[5]?.desc || '',
     metric: '15+',
-    metricLabel: 'Years of disaster data',
-    tags: ['Flood records', 'Hail damage', 'Storm exposure', 'Regional analysis'],
-    image: '/images/blog/odometer-fraud.jpg',
+    metricLabel: 'Years of data',
+    icon: icons[5],
   },
 ])
-
-const next = () => { active.value = (active.value + 1) % features.value.length }
-const prev = () => { active.value = (active.value - 1 + features.value.length) % features.value.length }
-
-let interval: ReturnType<typeof setInterval>
-onMounted(() => { interval = setInterval(next, 5000) })
-onUnmounted(() => { clearInterval(interval) })
 </script>
-
-<style scoped>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.5s ease; }
-.fade-enter-from, .fade-leave-to { opacity: 0; }
-</style>
