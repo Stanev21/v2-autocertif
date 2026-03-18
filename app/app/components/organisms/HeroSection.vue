@@ -29,43 +29,79 @@
             </button>
           </div>
 
-          <!-- Search bar -->
-          <div class="max-w-[460px]">
-            <div class="flex items-center bg-white/[0.08] border border-white/15 rounded-2xl p-1.5">
-              <input type="text" :placeholder="$t('hero.placeholder')"
-                class="flex-1 bg-transparent px-4 py-3 text-white placeholder-white/30 text-[14px] font-inter outline-none" />
-              <button class="flex-shrink-0 bg-coral hover:bg-red-500 text-white font-semibold font-heading px-5 py-2.5 rounded-xl text-[13px] transition-all duration-300 cursor-pointer">
-                {{ $t('hero.cta') }}
-              </button>
-            </div>
-            <p class="text-white/40 text-[13px] font-inter mt-3">{{ $t('hero.avgTime') }}</p>
-          </div>
         </div>
 
-        <!-- RIGHT: circular visual like ContentSquare Sense area -->
+        <!-- RIGHT: Glassmorphism search card with floating elements -->
         <div ref="heroRight" class="hidden lg:flex items-center justify-center relative">
-          <div class="relative w-[380px] h-[380px]">
-            <div class="absolute inset-0 rounded-full border border-white/[0.08]"></div>
-            <div class="absolute inset-10 rounded-full border border-white/[0.06]"></div>
-            <div class="absolute inset-20 rounded-full bg-white/[0.04] backdrop-blur-sm flex flex-col items-center justify-center">
-              <p class="text-white text-4xl font-normal font-heading">9.1<span class="text-base font-normal text-white/60">/10</span></p>
-              <p class="text-lime text-[13px] font-semibold font-heading mt-1">{{ $t('hero.noIssues') }}</p>
-            </div>
-            <!-- Floating icon badges like ContentSquare -->
-            <div v-for="(pos, i) in badgePositions" :key="i"
-              class="absolute w-10 h-10 rounded-full bg-coral/15 border border-coral/25 flex items-center justify-center"
-              :style="`top: ${pos.top}; left: ${pos.left}; right: ${pos.right}; bottom: ${pos.bottom};`">
-              <svg class="w-[18px] h-[18px] text-coral" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" :d="pos.icon" /></svg>
-            </div>
-            <!-- Review badge -->
-            <div class="absolute top-10 right-2 bg-white/[0.08] backdrop-blur-sm rounded-xl px-3.5 py-2 border border-white/10">
-              <div class="flex items-center gap-1.5">
-                <span class="text-white text-[13px] font-bold font-heading">4.6</span>
-                <div class="flex gap-px">
-                  <svg v-for="s in 5" :key="s" class="w-3 h-3 text-coral" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+          <!-- Floating decorative elements -->
+          <div class="absolute -top-6 -right-4 w-20 h-20 rounded-2xl bg-coral/15 border border-coral/25 flex items-center justify-center backdrop-blur-sm animate-float-slow">
+            <svg class="w-8 h-8 text-coral/70" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+          </div>
+          <div class="absolute -bottom-4 -left-6 w-16 h-16 rounded-2xl bg-white/[0.06] border border-white/10 flex items-center justify-center backdrop-blur-sm animate-float-delayed">
+            <svg class="w-7 h-7 text-white/40" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+          </div>
+          <div class="absolute top-1/2 -left-10 w-12 h-12 rounded-xl bg-coral/10 border border-coral/20 flex items-center justify-center animate-float-slow">
+            <svg class="w-5 h-5 text-coral/60" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" /></svg>
+          </div>
+
+          <!-- Main card -->
+          <div class="relative w-full max-w-[420px]">
+            <!-- Outer glow -->
+            <div class="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-coral/30 via-white/10 to-coral/20 blur-[1px]"></div>
+
+            <div class="relative bg-white/90 backdrop-blur-xl rounded-3xl p-8 border border-white/40 shadow-2xl">
+              <!-- Tabs -->
+              <div class="flex items-center bg-gray-100 rounded-2xl p-1 mb-7">
+                <button
+                  v-for="(tab, i) in searchTabs"
+                  :key="i"
+                  class="flex-1 px-4 py-3 rounded-xl text-[13px] font-medium font-inter transition-all duration-300 cursor-pointer text-center"
+                  :class="activeSearchTab === i
+                    ? 'bg-white text-gray-900 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-800'"
+                  @click="activeSearchTab = i">
+                  {{ tab }}
+                </button>
+              </div>
+
+              <!-- Search input -->
+              <div class="relative mb-5">
+                <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  :placeholder="activeSearchTab === 0 ? 'e.g. AB-123-CD' : 'e.g. WBA3A5C55DF123456'"
+                  class="w-full bg-gray-50 border border-gray-200 rounded-2xl pl-12 pr-4 py-4 text-[15px] font-inter text-gray-900 placeholder-gray-400 outline-none focus:border-gray-400 transition-all" />
+              </div>
+
+              <!-- Submit button -->
+              <button class="w-full bg-coral hover:bg-coral-dark text-white font-semibold font-inter py-4 rounded-2xl text-[15px] transition-all duration-300 cursor-pointer shadow-lg shadow-coral/20 hover:shadow-coral/30">
+                {{ $t('hero.cta') }}
+              </button>
+
+              <!-- Avg time -->
+              <p class="text-gray-400 text-[12px] font-inter text-center mt-4">{{ $t('hero.avgTime') }}</p>
+
+              <!-- Trust indicators -->
+              <div class="flex items-center justify-center gap-4 mt-5 pt-5 border-t border-gray-200/60">
+                <div class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
+                  <span class="text-gray-500 text-[11px] font-inter">8,000+ sources</span>
+                </div>
+                <div class="w-px h-3 bg-gray-200"></div>
+                <div class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
+                  <span class="text-gray-500 text-[11px] font-inter">25+ countries</span>
+                </div>
+                <div class="w-px h-3 bg-gray-200"></div>
+                <div class="flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
+                  <span class="text-gray-500 text-[11px] font-inter">~55s</span>
                 </div>
               </div>
-              <p class="text-white/50 text-[9px] font-inter">(1,218 Reviews)</p>
             </div>
           </div>
         </div>
@@ -88,12 +124,9 @@
 <script setup lang="ts">
 const heroLeft = ref<HTMLElement>()
 const heroRight = ref<HTMLElement>()
-const badgePositions = [
-  { top: '0', left: '45%', right: 'auto', bottom: 'auto', icon: 'M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5' },
-  { top: '25%', left: 'auto', right: '-8px', bottom: 'auto', icon: 'M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z' },
-  { top: 'auto', left: '-8px', right: 'auto', bottom: '25%', icon: 'M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75' },
-  { top: 'auto', left: '35%', right: 'auto', bottom: '-4px', icon: 'M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047' },
-]
+const activeSearchTab = ref(0)
+const searchTabs = ['License Plate', 'VIN Number']
+
 onMounted(() => {
   if (!(window as any).gsap) return
   const gsap = (window as any).gsap
@@ -101,3 +134,16 @@ onMounted(() => {
   gsap.from(heroRight.value, { opacity: 0, y: 30, duration: 1, delay: 0.3, ease: 'power3.out' })
 })
 </script>
+
+<style scoped>
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
+.animate-float-delayed { animation: float-delayed 5s ease-in-out 1s infinite; }
+</style>
