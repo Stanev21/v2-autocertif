@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "business": "Entreprises",
+    "unsubscribe": "Se désabonner",
+    "myAccount": "Mon compte",
+    "checkVehicle": "Vérifier un véhicule"
+  },
+  "hero": {
+    "badge": "Plateforme de données automobiles",
+    "title": "Vérifiez l'historique d'un véhicule",
+    "subtitle": "Accédez à l'historique complet de n'importe quel véhicule : kilométrage, dommages, vol, contrôle technique et émissions.",
+    "trust": "Plus de 100 000 utilisateurs nous font confiance",
+    "noIssues": "Aucune anomalie détectée",
+    "issuesFound": "Anomalies détectées",
+    "placeholder": "Plaque d'immatriculation / Numéro VIN",
+    "cta": "Obtenir le rapport",
+    "avgTime": "Rapport généré en ~55s en moyenne"
+  },
+  "stats": {
+    "users": "100K",
+    "usersLabel": "Utilisateurs dans le monde",
+    "sources": "8 000+",
+    "sourcesLabel": "Sources de données",
+    "countries": "25+",
+    "countriesLabel": "Pays couverts",
+    "time": "55s",
+    "timeLabel": "Délai moyen de génération",
+    "verified": "Données vérifiées et sécurisées",
+    "leader": "N°1 de la vérification véhicule",
+    "coverage": "Couverture dans plus de 25 pays"
+  },
+  "howItWorks": {
+    "title": "Obtenez votre rapport en 4 étapes",
+    "steps": [
+      {
+        "title": "Entrez le VIN ou la plaque",
+        "desc": "Saisissez le numéro VIN ou la plaque d'immatriculation du véhicule pour lancer la vérification."
+      },
+      {
+        "title": "Vérification des données",
+        "desc": "Données agrégées depuis 8 000+ sources dans 25+ pays, incluant les registres d'assurance, d'immatriculation et les bases officielles."
+      },
+      {
+        "title": "Génération du rapport",
+        "desc": "Le rapport d'historique véhicule complet est généré en ~55 secondes en moyenne."
+      },
+      {
+        "title": "Prise de décision éclairée",
+        "desc": "Consultez les résultats pour évaluer l'état du véhicule, sa valeur marché et son profil de risque."
+      }
+    ]
+  },
+  "reports": {
+    "title": "Chaque détail du passé d'un véhicule, dans un seul rapport.",
+    "subtitle": "Vérification du kilométrage, historique de dommages transfrontalier et analyse technique complète consolidés en un seul rapport."
+  },
+  "vehicles": [
+    {
+      "name": "2021 Toyota Corolla Hybride",
+      "vin": "SB1KB3EE10F042871",
+      "score": "9.1",
+      "status": "Historique propre",
+      "mileage": "38 420 km",
+      "accidents": "0 trouvé",
+      "theft": "Non signalé",
+      "owners": "1 précédent",
+      "value": "18 400 €"
+    },
+    {
+      "name": "2018 Renault Mégane dCi",
+      "vin": "VF1RFB00859832614",
+      "score": "3.4",
+      "status": "Anomalies détectées",
+      "mileage": "147 300 km",
+      "accidents": "2 trouvés",
+      "theft": "1 signalement",
+      "owners": "5 précédents",
+      "value": "8 200 €"
+    },
+    {
+      "name": "2022 Ford Focus EcoBoost",
+      "vin": "WF0XXXGCDXNM42187",
+      "score": "8.9",
+      "status": "Historique propre",
+      "mileage": "24 800 km",
+      "accidents": "0 trouvé",
+      "theft": "Non signalé",
+      "owners": "1 précédent",
+      "value": "21 600 €"
+    }
+  ],
+  "checks": {
+    "title": "Couverture du rapport",
+    "subtitle": "Chaque rapport couvre six domaines clés de l'analyse d'historique véhicule.",
+    "cta": "En savoir plus",
+    "items": [
+      {
+        "title": "Kilométrage",
+        "desc": "Vérification du compteur à partir de 8 000+ sources dans 25+ pays. Inclut le graphique de progression et l'analyse des habitudes de conduite."
+      },
+      {
+        "title": "Dommages",
+        "desc": "Analyse de plus de 300 millions d'enregistrements couvrant l'historique de dommages, les réparations et les sinistres. Inclut le diagramme visuel des dommages."
+      },
+      {
+        "title": "Vol",
+        "desc": "Vérification croisée avec les registres internationaux de véhicules volés et les bases de données officielles."
+      },
+      {
+        "title": "Contrôle technique",
+        "desc": "Historique des contrôles techniques du véhicule, résultats des inspections et éventuels défauts signalés."
+      },
+      {
+        "title": "Consommation & CO2",
+        "desc": "Consommation de carburant (urbaine, extra-urbaine, mixte) et classe d'émissions CO2 du véhicule."
+      },
+      {
+        "title": "Catastrophes naturelles",
+        "desc": "Vérification de l'exposition du véhicule aux catastrophes naturelles (inondations, grêle, tempêtes) dans sa zone d'immatriculation."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Alimenté par 8 000+ sources de données vérifiées",
+    "body": "Nos rapports s'appuient sur des données issues de registres gouvernementaux d'immatriculation et de titre de propriété, de bases de données d'assurance couvrant les sinistres et les pertes totales, ainsi que de plateformes de ventes aux enchères automobiles. Nous intégrons également les registres internationaux de véhicules volés, les informations de rappel et de garantie des constructeurs, et les carnets d'entretien des centres de service agréés. Le tout recoupé dans plus de 25 pays."
+  },
+  "protect": {
+    "title": "Ne vous faites plus avoir",
+    "cta": "Vérifier un véhicule",
+    "stats": [
+      "Un véhicule d'occasion sur 3 a un vice caché",
+      "Perte moyenne : 3 400 € par acheteur non informé",
+      "Un rapport coûte moins qu'une mauvaise surprise"
+    ]
+  },
+  "testimonials": {
+    "title": "Ce qu'en pensent nos utilisateurs",
+    "subtitle": "Ils ont vérifié avant d'acheter",
+    "desc": "Retours d'expérience d'acheteurs à travers l'Europe.",
+    "items": [
+      {
+        "name": "James Mitchell",
+        "city": "London",
+        "text": "Le rapport m'a évité d'acheter une voiture avec un compteur manipulé. L'historique du kilométrage montrait clairement des incohérences que le vendeur ne pouvait pas expliquer."
+      },
+      {
+        "name": "Sophie Laurent",
+        "city": "Paris",
+        "text": "Golf 7 de 2017, 98 000 km. Le rapport confirmait un entretien régulier et aucune anomalie détectée. Le vendeur disait vrai, et c'est rassurant de pouvoir le vérifier."
+      },
+      {
+        "name": "Marco Rossi",
+        "city": "Milan",
+        "text": "Import US détecté sur une Mustang 2018, avec les informations sur la peinture d'origine et un moteur V8 bien documenté. Vraiment utile pour avoir une vision claire."
+      },
+      {
+        "name": "Elena Kowalski",
+        "city": "Warsaw",
+        "text": "J'avais un doute sur le kilométrage. Le rapport a révélé une incohérence entre 2019 et 2021. Ça m'a évité d'acheter un véhicule au compteur manipulé."
+      },
+      {
+        "name": "David Thompson",
+        "city": "Dublin",
+        "text": "Rapport détaillé et bien structuré. Il a mis en évidence les données constructeur, un usage taxi antérieur et plusieurs changements de plaques."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Notre Blog",
+    "subtitle": "Nos analyses et guides",
+    "desc": "Conseils d'experts sur l'achat de voitures d'occasion, les tendances du marché et les analyses d'historique véhicule.",
+    "cta": "Voir tous les articles",
+    "articles": [
+      {
+        "tag": "Produit",
+        "read": "6 min de lecture",
+        "title": "Fonctionnalités du rapport d'historique véhicule",
+        "desc": "Découvrez toutes les fonctionnalités du rapport Autocertif — des analyses propulsées par l'IA au Score Autocertif."
+      },
+      {
+        "tag": "Recherche",
+        "read": "8 min de lecture",
+        "title": "Comprendre la fraude au compteur : statistiques et prévention",
+        "desc": "Les données Autocertif révèlent une relation inverse entre le prix du véhicule et la probabilité de falsification."
+      },
+      {
+        "tag": "Guides",
+        "read": "10 min de lecture",
+        "title": "Santé de la batterie d'un VE : ce que les acheteurs doivent savoir",
+        "desc": "Avec plus de 2,3 millions de véhicules électriques atteignant les 3 à 5 ans d'âge, comprendre la dégradation des batteries est essentiel."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vérifiez avant d'acheter",
+    "subtitle": "Accédez à l'historique véhicule complet en un seul rapport. Couverture : kilométrage, dommages, vol, titre et valeur marché.",
+    "button": "Lancer une vérification",
+    "note": "Rapports générés en ~55 secondes en moyenne."
+  },
+  "newsletter": {
+    "text": "Analyses du marché automobile, ressources de prévention de la fraude et publications sectorielles.",
+    "button": "S'abonner",
+    "disclaimer": "Vous pouvez vous désinscrire à tout moment."
+  },
+  "media": {
+    "title": "Ils parlent de nous"
+  },
+  "footer": {
+    "tagline": "Plateforme d'intelligence automobile. Plus de 100 000 utilisateurs nous font confiance.",
+    "contact": "Nous contacter - 24/7",
+    "product": "Produit",
+    "resources": "Ressources",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "stayInformed": "Restez informé",
+    "newsletterText": "Newsletter et analyses du marché automobile.",
+    "subscribe": "S'abonner",
+    "privacyConsent": "En vous abonnant, vous acceptez notre Politique de confidentialité.",
+    "copyright": "© 2026 Autocertif. Tous droits réservés.",
+    "links": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "business": "Entreprises",
+      "api": "API",
+      "blog": "Blog",
+      "helpCenter": "Centre d'aide",
+      "affiliate": "Affiliation",
+      "about": "À propos",
+      "contact": "Contact",
+      "cancelSub": "Se désabonner",
+      "privacy": "Confidentialité",
+      "terms": "CGU",
+      "termsSale": "CGV",
+      "legalNotice": "Mentions légales",
+      "refund": "Remboursement"
+    }
+  }
+}

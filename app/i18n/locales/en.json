@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "business": "For Business",
+    "unsubscribe": "Cancel Subscription",
+    "myAccount": "My Account",
+    "checkVehicle": "Check Your Vehicle"
+  },
+  "hero": {
+    "badge": "Automotive Data Platform",
+    "title": "Check any vehicle's history",
+    "subtitle": "Access the full history of any vehicle: mileage, damage, theft, inspections and emissions data.",
+    "trust": "Trusted by over 100,000 users",
+    "noIssues": "No issues detected",
+    "issuesFound": "Issues detected",
+    "placeholder": "License Plate / VIN Number",
+    "cta": "Get Report",
+    "avgTime": "Report generated in ~55s on average"
+  },
+  "stats": {
+    "users": "100K",
+    "usersLabel": "Users Worldwide",
+    "sources": "8,000+",
+    "sourcesLabel": "Data Sources",
+    "countries": "25+",
+    "countriesLabel": "Countries Covered",
+    "time": "55s",
+    "timeLabel": "Avg. Generation Time",
+    "verified": "Verified and secured data",
+    "leader": "#1 in vehicle verification",
+    "coverage": "Coverage across 25+ countries"
+  },
+  "howItWorks": {
+    "title": "Get your report in 4 steps",
+    "steps": [
+      {
+        "title": "Enter VIN or Plate",
+        "desc": "Type in the vehicle's VIN number or license plate to start the check."
+      },
+      {
+        "title": "Data verification",
+        "desc": "Data aggregated from 8,000+ sources across 25+ countries, including insurance, registration, and official records."
+      },
+      {
+        "title": "Report generation",
+        "desc": "The complete vehicle history report is generated in ~55 seconds on average."
+      },
+      {
+        "title": "Informed decision-making",
+        "desc": "Review findings to assess the vehicle's condition, history, and overall risk profile."
+      }
+    ]
+  },
+  "reports": {
+    "title": "Every detail of a vehicle's past, in one report.",
+    "subtitle": "Mileage verification, cross-border damage records, and full technical analysis consolidated in a single report."
+  },
+  "vehicles": [
+    {
+      "name": "2021 Toyota Corolla Hybrid",
+      "vin": "SB1KB3EE10F042871",
+      "score": "9.1",
+      "status": "Clean History",
+      "mileage": "38,420 km",
+      "accidents": "0 found",
+      "theft": "Not reported",
+      "owners": "1 previous",
+      "value": "€18,400"
+    },
+    {
+      "name": "2018 Renault Megane dCi",
+      "vin": "VF1RFB00859832614",
+      "score": "3.4",
+      "status": "Issues Found",
+      "mileage": "147,300 km",
+      "accidents": "2 found",
+      "theft": "1 record",
+      "owners": "5 previous",
+      "value": "€8,200"
+    },
+    {
+      "name": "2022 Ford Focus EcoBoost",
+      "vin": "WF0XXXGCDXNM42187",
+      "score": "8.9",
+      "status": "Clean History",
+      "mileage": "24,800 km",
+      "accidents": "0 found",
+      "theft": "Not reported",
+      "owners": "1 previous",
+      "value": "€21,600"
+    }
+  ],
+  "checks": {
+    "title": "Report coverage",
+    "subtitle": "Each report covers six key areas of vehicle history analysis.",
+    "cta": "Learn more",
+    "items": [
+      {
+        "title": "Mileage",
+        "desc": "Odometer verification using data from 8,000+ sources across 25+ countries. Includes mileage trend chart and driving pattern analysis."
+      },
+      {
+        "title": "Damages",
+        "desc": "Analysis of over 300 million records for damage history, repair records, and write-off status. Includes visual damage diagram."
+      },
+      {
+        "title": "Theft",
+        "desc": "Cross-referencing with international stolen vehicle registries and official databases."
+      },
+      {
+        "title": "Vehicle Inspection",
+        "desc": "Vehicle inspection history, test results, and any reported defects from official technical control records."
+      },
+      {
+        "title": "Fuel & CO2 Emissions",
+        "desc": "Fuel consumption data (urban, extra-urban, combined) and CO2 emission class rating for the vehicle."
+      },
+      {
+        "title": "Natural Disasters",
+        "desc": "Verification of the vehicle's exposure to natural disasters (floods, hail, storms) in its registration area."
+      }
+    ]
+  },
+  "trust": {
+    "title": "Powered by 8,000+ verified data sources",
+    "body": "Our reports draw from government registration and title records, insurance databases covering claims and total losses, and automotive auction platforms. We also integrate international stolen vehicle registries, manufacturer recall and warranty data, and maintenance records from authorized service centers. All cross-referenced across 25+ countries."
+  },
+  "protect": {
+    "title": "Don't get caught off guard",
+    "cta": "Check a vehicle",
+    "stats": [
+      "One in 3 used vehicles has a hidden defect",
+      "Average loss: $3,400 per uninformed buyer",
+      "A report costs less than a bad surprise"
+    ]
+  },
+  "testimonials": {
+    "title": "What our users say",
+    "subtitle": "They checked before buying",
+    "desc": "Real feedback from buyers across Europe.",
+    "items": [
+      {
+        "name": "James Mitchell",
+        "city": "London",
+        "text": "The report saved me from buying a car with a rolled-back odometer. The mileage history clearly showed discrepancies the seller couldn't explain. Worth every penny."
+      },
+      {
+        "name": "Sophie Laurent",
+        "city": "Paris",
+        "text": "2017 Golf 7, 98,000 km. The report confirmed regular maintenance and no anomalies detected. The seller was telling the truth, and it's reassuring to verify that with accurate data."
+      },
+      {
+        "name": "Marco Rossi",
+        "city": "Milan",
+        "text": "US import detected on a 2018 Mustang, with details on the original paint and a well-documented V8 engine. Really useful for getting a clear picture before committing."
+      },
+      {
+        "name": "Elena Kowalski",
+        "city": "Warsaw",
+        "text": "I had doubts about the mileage. The report flagged an inconsistency between 2019 and 2021. It saved me from buying a vehicle with a tampered odometer."
+      },
+      {
+        "name": "David Thompson",
+        "city": "Dublin",
+        "text": "Detailed and well-structured report. It highlighted manufacturer data, prior taxi use, and multiple plate changes. Saved me a lot of stress before the purchase."
+      }
+    ]
+  },
+  "blog": {
+    "title": "From Our Blog",
+    "subtitle": "Latest Insights & Guides",
+    "desc": "Expert advice on used car buying, industry trends, and vehicle history insights.",
+    "cta": "View All Articles",
+    "articles": [
+      {
+        "tag": "Product",
+        "read": "6 min read",
+        "title": "Vehicle History Report Features",
+        "desc": "A look at all the features Autocertif offers — from AI-powered insights to the Autocertif Score and driving habits analysis."
+      },
+      {
+        "tag": "Research",
+        "read": "8 min read",
+        "title": "Understanding Odometer Fraud: Statistics & Prevention",
+        "desc": "Our data reveals an inverse relationship between vehicle cost and tampering likelihood. Budget vehicles under €5,000 have a 7.5% fraud rate."
+      },
+      {
+        "tag": "Guides",
+        "read": "10 min read",
+        "title": "EV Battery Health: What Used Car Buyers Need to Know",
+        "desc": "With millions of EVs reaching the 3-5 year mark, understanding battery degradation is crucial."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Check before you buy",
+    "subtitle": "Access complete vehicle history data from a single report. Coverage includes mileage, damage, theft, vehicle inspection, and CO2 emissions.",
+    "button": "Run a Vehicle Check",
+    "note": "Reports generated in ~55 seconds on average."
+  },
+  "newsletter": {
+    "text": "Vehicle acquisition insights, fraud prevention resources, and industry analysis.",
+    "button": "Subscribe",
+    "disclaimer": "You can unsubscribe at any time."
+  },
+  "media": {
+    "title": "They talk about us"
+  },
+  "footer": {
+    "tagline": "Automotive data intelligence platform. Trusted by over 100,000 users.",
+    "contact": "Contact - 24/7",
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "legal": "Legal",
+    "stayInformed": "Stay informed",
+    "newsletterText": "Newsletter and vehicle acquisition insights.",
+    "subscribe": "Subscribe",
+    "privacyConsent": "By subscribing, you agree to our Privacy Policy.",
+    "copyright": "© 2026 Autocertif. All rights reserved.",
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "business": "For Business",
+      "api": "API Documentation",
+      "blog": "Blog",
+      "helpCenter": "Help Center",
+      "affiliate": "Affiliate Program",
+      "about": "About Us",
+      "contact": "Contact",
+      "cancelSub": "Cancel Subscription",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "termsSale": "Terms of Sale",
+      "legalNotice": "Legal Notice",
+      "refund": "Refund Policy"
+    }
+  }
+}
