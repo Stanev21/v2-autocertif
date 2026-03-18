@@ -103,7 +103,7 @@
         </div>
 
         <!-- RIGHT: Small image card with colored border (like Avon white card) -->
-        <div class="w-full shrink-0 rounded-3xl border p-2 md:w-1/3 md:max-w-[22.75rem] lg:p-3 border-[#CD3246] self-start md:h-[420px] lg:h-[460px]">
+        <div class="w-full shrink-0 rounded-3xl border p-2 md:w-1/3 md:max-w-[22.75rem] lg:p-3 border-[#CD3246]">
           <div class="flex h-full flex-col rounded-2xl overflow-hidden bg-white">
             <!-- Image -->
             <div class="relative flex-1">
