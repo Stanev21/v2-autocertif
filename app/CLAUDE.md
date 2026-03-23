@@ -254,3 +254,12 @@ export default defineNuxtConfig({
 5. **Frontend only** — zéro backend, zéro BDD, zéro logique serveur
 6. **Tailwind CDN uniquement** — pas de module npm Tailwind
 7. **Pas de fichiers README, CHANGELOG ou docs** sauf si explicitement demandé
+
+## RAG Content Separation — CRITICAL
+
+- **`text_content_rag/`** → **TEXT CONTENT ONLY.** Use these files exclusively for copy/text (headings, descriptions, labels, feature lists, CTAs). **NEVER derive any design decisions, layouts, section structures, visual patterns, or UI components from these files.** They are a content source, not a design source.
+- **`website_sample_rag/`** → **DESIGN & LAYOUT ONLY.** All design inspiration — section layouts, visual hierarchy, component patterns, interaction models, grid structures, spacing, color usage, animation approaches — must come exclusively from these Contentsquare reference files. Study the layout descriptions, section structures, and component patterns documented here to inform every design decision.
+
+**In short:** text_content_rag = what the page says + images to reuse. website_sample_rag = how the page looks.
+
+**Exception — Images:** Images referenced in `text_content_rag/` files CAN and SHOULD be reused in the new design. Only the visual/layout/design patterns are restricted to `website_sample_rag/` inspiration.

@@ -199,6 +199,166 @@
     "button": "Run a Vehicle Check",
     "note": "Reports generated in ~55 seconds on average."
   },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Transparent Pricing",
+    "subtitle": "Select the plan that corresponds to your needs. All plans include full vehicle history analysis.",
+    "trial": {
+      "name": "Trial",
+      "tagline": "Test the service with no commitment",
+      "price": "€0.99",
+      "period": "for 2 days",
+      "cta": "Start trial",
+      "features": [
+        "Full access for 2 days",
+        "Up to 15 reports per month",
+        "Complete vehicle history",
+        "Mileage verification",
+        "Damage, theft, inspection",
+        "Emissions & natural disasters",
+        "PDF export included"
+      ]
+    },
+    "subscription": {
+      "name": "Subscription",
+      "tagline": "After the trial period",
+      "badge": "Recommended",
+      "price": "€39.99",
+      "period": "/month",
+      "cta": "Subscribe",
+      "features": [
+        "15 reports per month",
+        "Complete vehicle history",
+        "All verifications included",
+        "Unlimited PDF export",
+        "Priority support",
+        "Cancel anytime"
+      ]
+    },
+    "comparison": {
+      "title": "Compare plans & features",
+      "features": ["Full Vehicle History", "Mileage Verification", "Damage & Accident Records", "Theft Check", "Vehicle Inspection", "Fuel & CO2 Emissions", "Natural Disaster Check", "PDF Export", "Priority Support"]
+    },
+    "included": {
+      "title": "Included in every plan",
+      "items": [
+        { "title": "8,000+ Sources", "desc": "Data aggregated from over 8,000 verified sources across 25+ countries." },
+        { "title": "~55s Generation", "desc": "Reports are generated in approximately 55 seconds on average." },
+        { "title": "PDF Export", "desc": "Download your complete vehicle history report as a PDF document." },
+        { "title": "25+ Countries", "desc": "Coverage across Europe and beyond, with cross-border verification." }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        { "q": "What is included in a vehicle history report?", "a": "Every Autocertif report includes mileage verification, accident and damage history, theft records, vehicle inspection history, fuel consumption and CO2 emissions data, and natural disaster checks. We pull data from over 8,000 sources across 25+ countries." },
+        { "q": "How quickly will I receive my report?", "a": "Reports are generated in ~55 seconds on average. Once purchased, you'll have instant access to your complete vehicle history report, which you can view online or download as a PDF." },
+        { "q": "What if no data is found for my vehicle?", "a": "If a license plate search returns no results, we recommend using the VIN number which guarantees a complete report. The VIN provides access to all available data for the vehicle." },
+        { "q": "Is there a money-back guarantee?", "a": "If you experience an issue with your report, please contact our support team. Refund eligibility is assessed on a case-by-case basis. Please review our Refund Policy for full details." }
+      ]
+    }
+  },
+  "business": {
+    "badge": "For Business",
+    "title": "Vehicle data for your business",
+    "subtitle": "API access, white-label solutions, and dedicated support for your team.",
+    "cta": "Request a Demo",
+    "ctaSecondary": "View API Docs",
+    "metrics": {
+      "sources": "8,000+",
+      "sourcesLabel": "Data Sources",
+      "response": "55s",
+      "responseLabel": "Avg. Response Time",
+      "uptime": "99.9%",
+      "uptimeLabel": "API Uptime",
+      "countries": "25+",
+      "countriesLabel": "Countries Covered"
+    },
+    "partners": "They talk about us",
+    "solutions": {
+      "title": "Industry solutions",
+      "subtitle": "Tailored vehicle data solutions for dealerships, insurers, and marketplaces.",
+      "items": [
+        {
+          "title": "Dealerships",
+          "desc": "Verify every vehicle in stock with a certified history report before listing.",
+          "features": ["Systematic pre-acquisition audit", "Buyer-accessible report", "Full inspection and damage history", "Reduced post-sale dispute rate"]
+        },
+        {
+          "title": "Insurance",
+          "desc": "Qualify vehicles by cross-referencing claims history, mileage and legal status.",
+          "features": ["Vehicle risk scoring", "Inconsistent declaration detection", "Consolidated claims history", "Premium calculation support"]
+        },
+        {
+          "title": "Leasing Companies",
+          "desc": "Assess residual value and actual condition of vehicles at end of contract.",
+          "features": ["End-of-lease condition check", "Residual value estimation", "Mileage tracking over contract duration", "Verified service history"]
+        },
+        {
+          "title": "API Integration",
+          "desc": "Integrate vehicle history data directly into your systems via our documented REST API.",
+          "features": ["REST API with full documentation", "Real-time response", "Customisable endpoints", "Webhooks and callbacks"]
+        },
+        {
+          "title": "Partner Program",
+          "desc": "Offer vehicle history checks under your brand and generate recurring revenue.",
+          "features": ["Commission on every report", "White-label interface", "Partner dashboard", "Dedicated support"]
+        },
+        {
+          "title": "Marketplaces",
+          "desc": "Strengthen listing credibility by embedding a verified history report on every vehicle.",
+          "features": ["Verified vehicle badge", "Report accessible from listing", "Reduced buyer-seller disputes", "Improved conversion rate"]
+        }
+      ]
+    },
+    "infrastructure": {
+      "title": "Infrastructure built for professionals",
+      "items": [
+        {
+          "title": "Documented REST API",
+          "desc": "Query our vehicle data by VIN or license plate. Structured JSON responses, sandbox environment included.",
+          "features": ["Structured JSON responses", "Sandbox environment available", "API key authentication", "Full technical documentation"]
+        },
+        {
+          "title": "Monitoring and Reporting",
+          "desc": "View your consumption, request volume and performance indicators from a centralised interface.",
+          "features": ["Real-time request volume", "Consumption history", "Per-user access management", "Usage data export"]
+        },
+        {
+          "title": "White Label",
+          "desc": "Distribute vehicle history reports under your own identity. Customise logo, colours and output format.",
+          "features": ["Customisable visual identity", "Reports in your brand format", "Dedicated subdomain", "Iframe or API integration"]
+        },
+        {
+          "title": "Technical Support",
+          "desc": "A dedicated contact for deployment, production monitoring and evolving your integration.",
+          "features": ["Dedicated technical contact", "Guaranteed response time (4h SLA)", "Deployment assistance", "Regular follow-up reviews"]
+        }
+      ]
+    },
+    "steps": {
+      "title": "Operational in 3 steps",
+      "items": [
+        {
+          "title": "Get your credentials",
+          "desc": "Create your account, retrieve your API key and configure your test environment."
+        },
+        {
+          "title": "Query the data",
+          "desc": "Send a VIN or license plate via the API and receive a structured JSON report."
+        },
+        {
+          "title": "Integrate the results",
+          "desc": "Display the data in your interface or generate PDF reports for your clients."
+        }
+      ]
+    },
+    "ctaSection": {
+      "title": "Partner with Autocertif",
+      "desc": "Enterprise vehicle data solutions with dedicated support. Schedule a consultation.",
+      "note": "Free consultation. No commitment required."
+    }
+  },
   "newsletter": {
     "text": "Vehicle acquisition insights, fraud prevention resources, and industry analysis.",
     "button": "Subscribe",

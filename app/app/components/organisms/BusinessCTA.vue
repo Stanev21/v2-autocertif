@@ -1,0 +1,24 @@
+<template>
+  <!-- CS Pre-Footer CTA: burgundy bg, centered, dual CTAs -->
+  <section class="py-28 lg:py-36 bg-burgundy">
+    <div class="max-w-[800px] mx-auto px-8 lg:px-12 text-center">
+      <h2 class="text-[2.5rem] lg:text-[3.25rem] font-normal text-white leading-[1.08] mb-5 font-heading">
+        {{ $t('business.ctaSection.title') }}
+      </h2>
+      <p class="text-white/50 text-[1.0625rem] leading-[1.6] font-inter mb-12 max-w-lg mx-auto">
+        {{ $t('business.ctaSection.desc') }}
+      </p>
+      <div class="flex items-center justify-center gap-4 flex-wrap mb-6">
+        <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] bg-coral text-white text-[14px] font-medium font-inter hover:bg-coral-dark transition-colors duration-300 cursor-pointer">
+          <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('business.cta') }}</span>
+          <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('business.cta') }}</span>
+        </button>
+        <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] border border-white/30 text-white text-[14px] font-medium font-inter hover:bg-white/10 transition-all duration-300 cursor-pointer">
+          <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('business.ctaSecondary') }}</span>
+          <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('business.ctaSecondary') }}</span>
+        </button>
+      </div>
+      <p class="text-white/25 text-[13px] font-inter">{{ $t('business.ctaSection.note') }}</p>
+    </div>
+  </section>
+</template>

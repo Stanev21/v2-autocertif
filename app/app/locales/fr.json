@@ -199,6 +199,107 @@
     "button": "Lancer une vérification",
     "note": "Rapports générés en ~55 secondes en moyenne."
   },
+  "business": {
+    "badge": "Pour les entreprises",
+    "title": "Données véhicule pour votre entreprise",
+    "subtitle": "API, solutions en marque blanche et support dédié pour votre équipe.",
+    "cta": "Demander une démo",
+    "ctaSecondary": "Voir la doc API",
+    "metrics": {
+      "sources": "8 000+",
+      "sourcesLabel": "Sources de données",
+      "response": "55s",
+      "responseLabel": "Temps de réponse moy.",
+      "uptime": "99,9%",
+      "uptimeLabel": "Disponibilité API",
+      "countries": "25+",
+      "countriesLabel": "Pays couverts"
+    },
+    "partners": "Ils parlent de nous",
+    "solutions": {
+      "title": "Solutions sectorielles",
+      "subtitle": "Solutions de données véhicule adaptées aux concessionnaires, assureurs et places de marché.",
+      "items": [
+        {
+          "title": "Concessionnaires",
+          "desc": "Fiabilisez chaque véhicule en stock grâce à un historique vérifié avant la mise en vente.",
+          "features": ["Audit pré-acquisition systématique", "Rapport consultable par l'acheteur", "Valorisation basée sur l'historique réel", "Réduction du taux de litige après-vente"]
+        },
+        {
+          "title": "Assurances",
+          "desc": "Qualifiez les véhicules à assurer en croisant historique de sinistres, kilométrage et statut juridique.",
+          "features": ["Scoring de risque véhicule", "Détection de déclarations incohérentes", "Historique de sinistres consolidé", "Aide au calcul de prime"]
+        },
+        {
+          "title": "Sociétés de leasing",
+          "desc": "Évaluez la valeur résiduelle et l'état réel des véhicules en retour de contrat.",
+          "features": ["Contrôle de l'état à la restitution", "Estimation de la valeur résiduelle", "Suivi kilométrique sur la durée du contrat", "Historique d'entretien vérifié"]
+        },
+        {
+          "title": "Intégration API",
+          "desc": "Intégrez les données d'historique véhicule directement dans vos systèmes via notre API REST documentée.",
+          "features": ["API REST avec documentation complète", "Réponse en temps réel", "Endpoints personnalisables", "Webhooks et callbacks"]
+        },
+        {
+          "title": "Programme partenaire",
+          "desc": "Proposez la vérification d'historique véhicule sous votre marque et générez des revenus récurrents.",
+          "features": ["Commission sur chaque rapport généré", "Interface en marque blanche", "Tableau de bord partenaire", "Accompagnement dédié"]
+        },
+        {
+          "title": "Places de marché",
+          "desc": "Renforcez la crédibilité de vos annonces en intégrant un rapport d'historique vérifié à chaque véhicule.",
+          "features": ["Badge de véhicule vérifié", "Rapport accessible depuis l'annonce", "Réduction des litiges acheteur-vendeur", "Amélioration du taux de conversion"]
+        }
+      ]
+    },
+    "infrastructure": {
+      "title": "Infrastructure conçue pour les professionnels",
+      "items": [
+        {
+          "title": "API REST documentée",
+          "desc": "Interrogez nos données véhicule par VIN ou plaque d'immatriculation. Réponses structurées en JSON, environnement de test inclus.",
+          "features": ["Réponses JSON structurées", "Environnement sandbox disponible", "Authentification par clé API", "Documentation technique complète"]
+        },
+        {
+          "title": "Suivi et reporting",
+          "desc": "Visualisez votre consommation, le volume de requêtes et les indicateurs de performance depuis une interface centralisée.",
+          "features": ["Volume de requêtes en temps réel", "Historique de consommation", "Gestion des accès par utilisateur", "Export des données d'utilisation"]
+        },
+        {
+          "title": "Marque blanche",
+          "desc": "Diffusez les rapports d'historique véhicule sous votre identité. Personnalisation du logo, des couleurs et du format de sortie.",
+          "features": ["Identité visuelle personnalisable", "Rapports au format de votre marque", "Sous-domaine dédié", "Intégration iframe ou API"]
+        },
+        {
+          "title": "Accompagnement technique",
+          "desc": "Un interlocuteur dédié pour le déploiement, le suivi de production et l'évolution de votre intégration.",
+          "features": ["Interlocuteur technique dédié", "Temps de réponse garanti (SLA 4h)", "Assistance au déploiement", "Points de suivi réguliers"]
+        }
+      ]
+    },
+    "steps": {
+      "title": "Opérationnel en 3 étapes",
+      "items": [
+        {
+          "title": "Obtenir vos accès",
+          "desc": "Créez votre compte, récupérez votre clé API et configurez votre environnement de test."
+        },
+        {
+          "title": "Requêter les données",
+          "desc": "Envoyez un VIN ou une plaque d'immatriculation via l'API et recevez un rapport structuré en JSON."
+        },
+        {
+          "title": "Intégrer les résultats",
+          "desc": "Affichez les données dans votre interface ou générez des rapports PDF à destination de vos clients."
+        }
+      ]
+    },
+    "ctaSection": {
+      "title": "Collaborer avec Autocertif",
+      "desc": "Solutions de données véhicule entreprise avec support dédié. Planifiez une consultation.",
+      "note": "Consultation gratuite. Sans engagement."
+    }
+  },
   "newsletter": {
     "text": "Analyses du marché automobile, ressources de prévention de la fraude et publications sectorielles.",
     "button": "S'abonner",

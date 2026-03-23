@@ -199,6 +199,107 @@
     "button": "Run a Vehicle Check",
     "note": "Reports generated in ~55 seconds on average."
   },
+  "business": {
+    "badge": "For Business",
+    "title": "Vehicle data for your business",
+    "subtitle": "API access, white-label solutions, and dedicated support for your team.",
+    "cta": "Request a Demo",
+    "ctaSecondary": "View API Docs",
+    "metrics": {
+      "sources": "8,000+",
+      "sourcesLabel": "Data Sources",
+      "response": "55s",
+      "responseLabel": "Avg. Response Time",
+      "uptime": "99.9%",
+      "uptimeLabel": "API Uptime",
+      "countries": "25+",
+      "countriesLabel": "Countries Covered"
+    },
+    "partners": "They talk about us",
+    "solutions": {
+      "title": "Industry solutions",
+      "subtitle": "Tailored vehicle data solutions for dealerships, insurers, and marketplaces.",
+      "items": [
+        {
+          "title": "Dealerships",
+          "desc": "Verify every vehicle in stock with a certified history report before listing.",
+          "features": ["Systematic pre-acquisition audit", "Buyer-accessible report", "Full inspection and damage history", "Reduced post-sale dispute rate"]
+        },
+        {
+          "title": "Insurance",
+          "desc": "Qualify vehicles by cross-referencing claims history, mileage and legal status.",
+          "features": ["Vehicle risk scoring", "Inconsistent declaration detection", "Consolidated claims history", "Premium calculation support"]
+        },
+        {
+          "title": "Leasing Companies",
+          "desc": "Assess residual value and actual condition of vehicles at end of contract.",
+          "features": ["End-of-lease condition check", "Residual value estimation", "Mileage tracking over contract duration", "Verified service history"]
+        },
+        {
+          "title": "API Integration",
+          "desc": "Integrate vehicle history data directly into your systems via our documented REST API.",
+          "features": ["REST API with full documentation", "Real-time response", "Customisable endpoints", "Webhooks and callbacks"]
+        },
+        {
+          "title": "Partner Program",
+          "desc": "Offer vehicle history checks under your brand and generate recurring revenue.",
+          "features": ["Commission on every report", "White-label interface", "Partner dashboard", "Dedicated support"]
+        },
+        {
+          "title": "Marketplaces",
+          "desc": "Strengthen listing credibility by embedding a verified history report on every vehicle.",
+          "features": ["Verified vehicle badge", "Report accessible from listing", "Reduced buyer-seller disputes", "Improved conversion rate"]
+        }
+      ]
+    },
+    "infrastructure": {
+      "title": "Infrastructure built for professionals",
+      "items": [
+        {
+          "title": "Documented REST API",
+          "desc": "Query our vehicle data by VIN or license plate. Structured JSON responses, sandbox environment included.",
+          "features": ["Structured JSON responses", "Sandbox environment available", "API key authentication", "Full technical documentation"]
+        },
+        {
+          "title": "Monitoring and Reporting",
+          "desc": "View your consumption, request volume and performance indicators from a centralised interface.",
+          "features": ["Real-time request volume", "Consumption history", "Per-user access management", "Usage data export"]
+        },
+        {
+          "title": "White Label",
+          "desc": "Distribute vehicle history reports under your own identity. Customise logo, colours and output format.",
+          "features": ["Customisable visual identity", "Reports in your brand format", "Dedicated subdomain", "Iframe or API integration"]
+        },
+        {
+          "title": "Technical Support",
+          "desc": "A dedicated contact for deployment, production monitoring and evolving your integration.",
+          "features": ["Dedicated technical contact", "Guaranteed response time (4h SLA)", "Deployment assistance", "Regular follow-up reviews"]
+        }
+      ]
+    },
+    "steps": {
+      "title": "Operational in 3 steps",
+      "items": [
+        {
+          "title": "Get your credentials",
+          "desc": "Create your account, retrieve your API key and configure your test environment."
+        },
+        {
+          "title": "Query the data",
+          "desc": "Send a VIN or license plate via the API and receive a structured JSON report."
+        },
+        {
+          "title": "Integrate the results",
+          "desc": "Display the data in your interface or generate PDF reports for your clients."
+        }
+      ]
+    },
+    "ctaSection": {
+      "title": "Partner with Autocertif",
+      "desc": "Enterprise vehicle data solutions with dedicated support. Schedule a consultation.",
+      "note": "Free consultation. No commitment required."
+    }
+  },
   "newsletter": {
     "text": "Vehicle acquisition insights, fraud prevention resources, and industry analysis.",
     "button": "Subscribe",

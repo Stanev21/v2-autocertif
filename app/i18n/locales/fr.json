@@ -199,6 +199,166 @@
     "button": "Lancer une vérification",
     "note": "Rapports générés en ~55 secondes en moyenne."
   },
+  "pricing": {
+    "badge": "Tarifs",
+    "title": "Tarification transparente",
+    "subtitle": "Sélectionnez le plan adapté à vos besoins. Tous les plans incluent l'analyse d'historique véhicule complète.",
+    "trial": {
+      "name": "Essai",
+      "tagline": "Testez le service sans engagement",
+      "price": "0,99 €",
+      "period": "pour 2 jours",
+      "cta": "Commencer l'essai",
+      "features": [
+        "Accès complet pendant 2 jours",
+        "Jusqu'à 15 rapports par mois",
+        "Historique véhicule complet",
+        "Vérification du kilométrage",
+        "Dommages, vol, contrôle",
+        "Émissions & catastrophes naturelles",
+        "Export PDF inclus"
+      ]
+    },
+    "subscription": {
+      "name": "Abonnement",
+      "tagline": "Après la période d'essai",
+      "badge": "Recommandé",
+      "price": "39,99 €",
+      "period": "/mois",
+      "cta": "S'abonner",
+      "features": [
+        "15 rapports par mois",
+        "Historique véhicule complet",
+        "Toutes les vérifications incluses",
+        "Export PDF illimité",
+        "Support prioritaire",
+        "Résiliation à tout moment"
+      ]
+    },
+    "comparison": {
+      "title": "Comparer les plans et fonctionnalités",
+      "features": ["Historique complet du véhicule", "Vérification du kilométrage", "Dossiers de dommages et accidents", "Vérification de vol", "Contrôle technique", "Consommation & CO2", "Catastrophes naturelles", "Export PDF", "Support prioritaire"]
+    },
+    "included": {
+      "title": "Inclus dans chaque plan",
+      "items": [
+        { "title": "8 000+ sources", "desc": "Données agrégées depuis plus de 8 000 sources vérifiées dans 25+ pays." },
+        { "title": "~55s de génération", "desc": "Les rapports sont générés en environ 55 secondes en moyenne." },
+        { "title": "Export PDF", "desc": "Téléchargez votre rapport d'historique véhicule complet au format PDF." },
+        { "title": "25+ pays", "desc": "Couverture à travers l'Europe et au-delà, avec vérification transfrontalière." }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        { "q": "Que contient un rapport d'historique véhicule ?", "a": "Chaque rapport Autocertif inclut la vérification du kilométrage, l'historique des accidents et dommages, les registres de vol, l'historique des contrôles techniques, les données de consommation et d'émissions CO2, et les vérifications de catastrophes naturelles. Nous tirons les données de plus de 8 000 sources dans plus de 25 pays." },
+        { "q": "Combien de temps faut-il pour recevoir mon rapport ?", "a": "Les rapports sont générés en ~55 secondes en moyenne. Une fois acheté, vous avez un accès instantané à votre rapport complet, que vous pouvez consulter en ligne ou télécharger en PDF." },
+        { "q": "Que se passe-t-il si aucune donnée n'est trouvée ?", "a": "Si la recherche par plaque d'immatriculation ne retourne pas de résultats, nous vous recommandons d'utiliser le numéro VIN qui garantit un rapport complet." },
+        { "q": "Y a-t-il une garantie de remboursement ?", "a": "Si vous rencontrez un problème avec votre rapport, veuillez contacter notre équipe d'assistance. L'éligibilité au remboursement est évaluée au cas par cas. Consultez notre Politique de remboursement pour tous les détails." }
+      ]
+    }
+  },
+  "business": {
+    "badge": "Pour les entreprises",
+    "title": "Données véhicule pour votre entreprise",
+    "subtitle": "API, solutions en marque blanche et support dédié pour votre équipe.",
+    "cta": "Demander une démo",
+    "ctaSecondary": "Voir la doc API",
+    "metrics": {
+      "sources": "8 000+",
+      "sourcesLabel": "Sources de données",
+      "response": "55s",
+      "responseLabel": "Temps de réponse moy.",
+      "uptime": "99,9%",
+      "uptimeLabel": "Disponibilité API",
+      "countries": "25+",
+      "countriesLabel": "Pays couverts"
+    },
+    "partners": "Ils parlent de nous",
+    "solutions": {
+      "title": "Solutions sectorielles",
+      "subtitle": "Solutions de données véhicule adaptées aux concessionnaires, assureurs et places de marché.",
+      "items": [
+        {
+          "title": "Concessionnaires",
+          "desc": "Fiabilisez chaque véhicule en stock grâce à un historique vérifié avant la mise en vente.",
+          "features": ["Audit pré-acquisition systématique", "Rapport consultable par l'acheteur", "Valorisation basée sur l'historique réel", "Réduction du taux de litige après-vente"]
+        },
+        {
+          "title": "Assurances",
+          "desc": "Qualifiez les véhicules à assurer en croisant historique de sinistres, kilométrage et statut juridique.",
+          "features": ["Scoring de risque véhicule", "Détection de déclarations incohérentes", "Historique de sinistres consolidé", "Aide au calcul de prime"]
+        },
+        {
+          "title": "Sociétés de leasing",
+          "desc": "Évaluez la valeur résiduelle et l'état réel des véhicules en retour de contrat.",
+          "features": ["Contrôle de l'état à la restitution", "Estimation de la valeur résiduelle", "Suivi kilométrique sur la durée du contrat", "Historique d'entretien vérifié"]
+        },
+        {
+          "title": "Intégration API",
+          "desc": "Intégrez les données d'historique véhicule directement dans vos systèmes via notre API REST documentée.",
+          "features": ["API REST avec documentation complète", "Réponse en temps réel", "Endpoints personnalisables", "Webhooks et callbacks"]
+        },
+        {
+          "title": "Programme partenaire",
+          "desc": "Proposez la vérification d'historique véhicule sous votre marque et générez des revenus récurrents.",
+          "features": ["Commission sur chaque rapport généré", "Interface en marque blanche", "Tableau de bord partenaire", "Accompagnement dédié"]
+        },
+        {
+          "title": "Places de marché",
+          "desc": "Renforcez la crédibilité de vos annonces en intégrant un rapport d'historique vérifié à chaque véhicule.",
+          "features": ["Badge de véhicule vérifié", "Rapport accessible depuis l'annonce", "Réduction des litiges acheteur-vendeur", "Amélioration du taux de conversion"]
+        }
+      ]
+    },
+    "infrastructure": {
+      "title": "Infrastructure conçue pour les professionnels",
+      "items": [
+        {
+          "title": "API REST documentée",
+          "desc": "Interrogez nos données véhicule par VIN ou plaque d'immatriculation. Réponses structurées en JSON, environnement de test inclus.",
+          "features": ["Réponses JSON structurées", "Environnement sandbox disponible", "Authentification par clé API", "Documentation technique complète"]
+        },
+        {
+          "title": "Suivi et reporting",
+          "desc": "Visualisez votre consommation, le volume de requêtes et les indicateurs de performance depuis une interface centralisée.",
+          "features": ["Volume de requêtes en temps réel", "Historique de consommation", "Gestion des accès par utilisateur", "Export des données d'utilisation"]
+        },
+        {
+          "title": "Marque blanche",
+          "desc": "Diffusez les rapports d'historique véhicule sous votre identité. Personnalisation du logo, des couleurs et du format de sortie.",
+          "features": ["Identité visuelle personnalisable", "Rapports au format de votre marque", "Sous-domaine dédié", "Intégration iframe ou API"]
+        },
+        {
+          "title": "Accompagnement technique",
+          "desc": "Un interlocuteur dédié pour le déploiement, le suivi de production et l'évolution de votre intégration.",
+          "features": ["Interlocuteur technique dédié", "Temps de réponse garanti (SLA 4h)", "Assistance au déploiement", "Points de suivi réguliers"]
+        }
+      ]
+    },
+    "steps": {
+      "title": "Opérationnel en 3 étapes",
+      "items": [
+        {
+          "title": "Obtenir vos accès",
+          "desc": "Créez votre compte, récupérez votre clé API et configurez votre environnement de test."
+        },
+        {
+          "title": "Requêter les données",
+          "desc": "Envoyez un VIN ou une plaque d'immatriculation via l'API et recevez un rapport structuré en JSON."
+        },
+        {
+          "title": "Intégrer les résultats",
+          "desc": "Affichez les données dans votre interface ou générez des rapports PDF à destination de vos clients."
+        }
+      ]
+    },
+    "ctaSection": {
+      "title": "Collaborer avec Autocertif",
+      "desc": "Solutions de données véhicule entreprise avec support dédié. Planifiez une consultation.",
+      "note": "Consultation gratuite. Sans engagement."
+    }
+  },
   "newsletter": {
     "text": "Analyses du marché automobile, ressources de prévention de la fraude et publications sectorielles.",
     "button": "S'abonner",
