@@ -199,90 +199,6 @@
     "button": "Lancer une vérification",
     "note": "Rapports générés en ~55 secondes en moyenne."
   },
-  "unsubscribe": {
-    "title": "Se désabonner",
-    "subtitle": "Entrez l'email lié à votre compte pour résilier votre abonnement.",
-    "email": "Email du compte",
-    "emailPlaceholder": "vous{'@'}example.com",
-    "reason": "Raison de la résiliation (optionnel)",
-    "reasonPlaceholder": "Sélectionnez une raison...",
-    "reasons": ["Trop cher", "Je ne l'utilise pas assez", "Fonctionnalités manquantes", "Meilleure alternative trouvée", "Besoin temporaire uniquement", "Autre"],
-    "cta": "Résilier mon abonnement",
-    "note": "Vous conservez l'accès jusqu'à la fin de votre période de facturation. Vos rapports existants restent accessibles.",
-    "faq": {
-      "title": "Questions courantes sur la résiliation",
-      "items": [
-        { "q": "Vais-je être facturé à nouveau ?", "a": "Non. Une fois résilié, plus aucun prélèvement ne sera effectué. Votre abonnement reste actif jusqu'à la fin de la période en cours." },
-        { "q": "Puis-je encore accéder à mes rapports ?", "a": "Oui. Tous les rapports déjà générés restent accessibles dans votre compte." },
-        { "q": "Puis-je me réabonner plus tard ?", "a": "Oui, vous pouvez réactiver votre abonnement à tout moment depuis la page de tarification." },
-        { "q": "Suis-je éligible à un remboursement ?", "a": "Les demandes de remboursement doivent être soumises dans les 14 jours suivant l'achat. Consultez notre Politique de remboursement ou contactez le support." }
-      ]
-    },
-    "help": {
-      "title": "Besoin d'aide ?",
-      "desc": "Notre équipe peut vous aider à résoudre un problème ou trouver un plan adapté.",
-      "cta": "Contacter le support"
-    }
-  },
-  "pricing": {
-    "badge": "Tarifs",
-    "title": "Tarification transparente",
-    "subtitle": "Sélectionnez le plan adapté à vos besoins. Tous les plans incluent l'analyse d'historique véhicule complète.",
-    "trial": {
-      "name": "Essai",
-      "tagline": "Testez le service sans engagement",
-      "price": "0,99 €",
-      "period": "pour 2 jours",
-      "cta": "Commencer l'essai",
-      "features": [
-        "Accès complet pendant 2 jours",
-        "Jusqu'à 15 rapports par mois",
-        "Historique véhicule complet",
-        "Vérification du kilométrage",
-        "Dommages, vol, contrôle",
-        "Émissions & catastrophes naturelles",
-        "Export PDF inclus"
-      ]
-    },
-    "subscription": {
-      "name": "Abonnement",
-      "tagline": "Après la période d'essai",
-      "badge": "Recommandé",
-      "price": "39,99 €",
-      "period": "/mois",
-      "cta": "S'abonner",
-      "features": [
-        "15 rapports par mois",
-        "Historique véhicule complet",
-        "Toutes les vérifications incluses",
-        "Export PDF illimité",
-        "Support prioritaire",
-        "Résiliation à tout moment"
-      ]
-    },
-    "comparison": {
-      "title": "Comparer les plans et fonctionnalités",
-      "features": ["Historique complet du véhicule", "Vérification du kilométrage", "Dossiers de dommages et accidents", "Vérification de vol", "Contrôle technique", "Consommation & CO2", "Catastrophes naturelles", "Export PDF", "Support prioritaire"]
-    },
-    "included": {
-      "title": "Inclus dans chaque plan",
-      "items": [
-        { "title": "8 000+ sources", "desc": "Données agrégées depuis plus de 8 000 sources vérifiées dans 25+ pays." },
-        { "title": "~55s de génération", "desc": "Les rapports sont générés en environ 55 secondes en moyenne." },
-        { "title": "Export PDF", "desc": "Téléchargez votre rapport d'historique véhicule complet au format PDF." },
-        { "title": "25+ pays", "desc": "Couverture à travers l'Europe et au-delà, avec vérification transfrontalière." }
-      ]
-    },
-    "faq": {
-      "title": "Questions fréquentes",
-      "items": [
-        { "q": "Que contient un rapport d'historique véhicule ?", "a": "Chaque rapport Autocertif inclut la vérification du kilométrage, l'historique des accidents et dommages, les registres de vol, l'historique des contrôles techniques, les données de consommation et d'émissions CO2, et les vérifications de catastrophes naturelles. Nous tirons les données de plus de 8 000 sources dans plus de 25 pays." },
-        { "q": "Combien de temps faut-il pour recevoir mon rapport ?", "a": "Les rapports sont générés en ~55 secondes en moyenne. Une fois acheté, vous avez un accès instantané à votre rapport complet, que vous pouvez consulter en ligne ou télécharger en PDF." },
-        { "q": "Que se passe-t-il si aucune donnée n'est trouvée ?", "a": "Si la recherche par plaque d'immatriculation ne retourne pas de résultats, nous vous recommandons d'utiliser le numéro VIN qui garantit un rapport complet." },
-        { "q": "Y a-t-il une garantie de remboursement ?", "a": "Si vous rencontrez un problème avec votre rapport, veuillez contacter notre équipe d'assistance. L'éligibilité au remboursement est évaluée au cas par cas. Consultez notre Politique de remboursement pour tous les détails." }
-      ]
-    }
-  },
   "business": {
     "badge": "Pour les entreprises",
     "title": "Données véhicule pour votre entreprise",
@@ -391,6 +307,142 @@
   },
   "media": {
     "title": "Ils parlent de nous"
+  },
+  "features": {
+    "badge": "Analyse d'historique véhicule",
+    "title": "Tout ce que nous vérifions",
+    "subtitle": "8 000+ sources de données et 2 500+ points de contrôle pour une analyse approfondie de l'historique véhicule.",
+    "cta": "Lancer une vérification",
+    "ctaSecondary": "Nous contacter",
+    "navBenefits": "Avantages",
+    "navCapabilities": "Vérifications",
+    "navUseCases": "Cas d'usage",
+    "navFaq": "FAQ",
+    "benefitsTitle": "Pourquoi 100 000+ acheteurs font confiance à Autocertif",
+    "benefits": [
+      {
+        "title": "Détectez les risques cachés instantanément",
+        "desc": "Notre IA analyse des millions d'enregistrements pour signaler les retours compteur, les accidents non déclarés et les financements en cours — des problèmes qui coûtent en moyenne 3 400 € aux acheteurs."
+      },
+      {
+        "title": "Données de 8 000+ sources vérifiées",
+        "desc": "Registres gouvernementaux, bases de données d'assurance, plateformes d'enchères, rappels constructeurs et centres de service agréés — tout est recoupé en temps réel."
+      },
+      {
+        "title": "Rapports en moins de 60 secondes",
+        "desc": "Entrez un VIN ou une plaque d'immatriculation et recevez un rapport complet et structuré avec diagrammes visuels, graphiques de tendances et Score Autocertif propriétaire."
+      }
+    ],
+    "testimonialQuote": "Le rapport m'a évité d'acheter une voiture avec un compteur trafiqué. L'historique kilométrique montrait clairement des incohérences que le vendeur ne pouvait pas expliquer.",
+    "testimonialName": "James Mitchell",
+    "testimonialRole": "Acheteur vérifié, Londres",
+    "capabilitiesTitle": "Chaque détail du passé d'un véhicule, décodé",
+    "capabilitiesSubtitle": "Six modules d'analyse approfondie alimentés par l'intelligence des données",
+    "capabilities": [
+      {
+        "title": "Kilométrage et compteur",
+        "headline": "Détectez la fraude au compteur avant qu'elle ne vous coûte des milliers d'euros",
+        "desc": "Recoupement des relevés kilométriques de 8 000+ sources dans 25+ pays. Nos algorithmes détectent les incohérences dans la progression du kilométrage, signalent les schémas suspects et génèrent des graphiques visuels montrant l'historique complet.",
+        "metric": "8 000+",
+        "metricLabel": "Sources de données"
+      },
+      {
+        "title": "Accidents et dommages",
+        "headline": "Consultez chaque rayure, collision et perte totale enregistrée",
+        "desc": "Analyse de plus de 300 millions d'enregistrements pour l'historique des dommages, les dossiers de réparation et le statut d'épave. Inclut des diagrammes visuels des zones d'impact, des classifications de gravité et des estimations de coûts de réparation.",
+        "metric": "300M+",
+        "metricLabel": "Enregistrements analysés"
+      },
+      {
+        "title": "Registres de vol",
+        "headline": "Vérifiez que le véhicule n'est pas volé ou sous enquête",
+        "desc": "Vérification croisée en temps réel avec les registres internationaux de véhicules volés, les bases Interpol et les fichiers de police nationaux. Couvre les signalements de vol actifs, le statut de récupération et les enquêtes en cours dans 25+ juridictions.",
+        "metric": "25+",
+        "metricLabel": "Pays couverts"
+      },
+      {
+        "title": "Contrôle technique",
+        "headline": "Accédez à l'historique complet des contrôles techniques",
+        "desc": "Historique complet des contrôles techniques incluant les résultats, les défauts signalés, les avis consultatifs et le statut de conformité issus des registres officiels. Suivez l'évolution de l'état du véhicule dans le temps.",
+        "metric": "100%",
+        "metricLabel": "Registres officiels"
+      },
+      {
+        "title": "Consommation & CO2",
+        "headline": "Connaissez le vrai profil environnemental de tout véhicule",
+        "desc": "Données détaillées de consommation en cycles urbain, extra-urbain et mixte. Classe d'émission CO2, conformité aux normes Euro et éligibilité aux zones environnementales des grandes villes européennes.",
+        "metric": "A–G",
+        "metricLabel": "Classe d'émission"
+      },
+      {
+        "title": "Catastrophes naturelles",
+        "headline": "Vérifiez si le véhicule a subi des inondations, de la grêle ou des tempêtes",
+        "desc": "Vérification de l'exposition du véhicule aux catastrophes naturelles en croisant son historique d'immatriculation avec les cartes de zones inondables, les bases de données météorologiques et les sinistres catastrophes des assurances.",
+        "metric": "15+",
+        "metricLabel": "Années de données"
+      }
+    ],
+    "useCasesTitle": "Conçu pour chaque étape du parcours d'achat",
+    "useCases": [
+      {
+        "title": "Vérification pré-achat",
+        "desc": "Lancez une vérification complète avant de vous engager sur un véhicule d'occasion. Détectez les problèmes cachés que le vendeur ne divulgue pas et négociez en toute confiance.",
+        "stat": "1 sur 3",
+        "statLabel": "véhicules d'occasion a un défaut caché"
+      },
+      {
+        "title": "Négociation du prix",
+        "desc": "Utilisez des données vérifiées sur l'état réel du véhicule pour négocier un prix juste. Les dommages non déclarés et les incohérences kilométriques impactent directement la valeur marchande.",
+        "stat": "3 400 €",
+        "statLabel": "économie moyenne par acheteur informé"
+      },
+      {
+        "title": "Importation transfrontalière",
+        "desc": "Vous achetez un véhicule à l'étranger ? Vérifiez son historique dans les bases internationales avant qu'il ne franchisse la frontière. Détectez le blanchiment de titre et la fraude inter-juridictions.",
+        "stat": "25+",
+        "statLabel": "pays dans notre base de données"
+      },
+      {
+        "title": "Audit d'inventaire concessionnaire",
+        "desc": "Vérifiez chaque véhicule en stock avec un rapport d'historique certifié avant la mise en vente. Renforcez la confiance des acheteurs avec des historiques transparents et vérifiés.",
+        "stat": "99,9%",
+        "statLabel": "disponibilité de la plateforme"
+      }
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faqSubtitle": "Tout ce que vous devez savoir sur nos rapports d'historique véhicule.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qu'un rapport d'historique véhicule ?",
+        "a": "Un rapport d'historique véhicule est un document complet qui compile les données de milliers de sources pour révéler le passé complet d'un véhicule — incluant les relevés kilométriques, l'historique des dommages, le statut de vol, les résultats d'inspection, les données d'émissions et l'exposition aux catastrophes naturelles."
+      },
+      {
+        "q": "En combien de temps le rapport est-il généré ?",
+        "a": "Les rapports sont généralement générés en moins de 60 secondes. Notre plateforme interroge 8 000+ sources de données en temps réel et compile les résultats dans un rapport structuré et facile à lire."
+      },
+      {
+        "q": "Quels pays sont couverts ?",
+        "a": "Nous couvrons actuellement 25+ pays en Europe, avec des données provenant de registres gouvernementaux, bases de données d'assurance, plateformes d'enchères et centres de service agréés dans chaque juridiction."
+      },
+      {
+        "q": "Puis-je vérifier un véhicule avec juste la plaque d'immatriculation ?",
+        "a": "Oui. Vous pouvez rechercher avec le VIN (numéro d'identification du véhicule) ou le numéro de plaque d'immatriculation. Les deux méthodes fournissent le même rapport complet."
+      },
+      {
+        "q": "Qu'est-ce que le Score Autocertif ?",
+        "a": "Le Score Autocertif est une note propriétaire de 1 à 10 qui résume l'état général et le profil de risque d'un véhicule basé sur tous les points de données du rapport. Un score plus élevé indique moins de problèmes détectés."
+      },
+      {
+        "q": "Quelle est la fiabilité de la vérification kilométrique ?",
+        "a": "Notre vérification kilométrique recoupe les relevés de compteur provenant de multiples sources indépendantes incluant les carnets d'entretien, les résultats d'inspection et les données d'assurance. Nous signalons toute incohérence ou schéma suspect dans la progression du kilométrage."
+      },
+      {
+        "q": "Mes données sont-elles sécurisées ?",
+        "a": "Absolument. Toutes les transmissions de données sont chiffrées en TLS 1.3 et nous respectons le RGPD. Nous ne conservons pas de données de recherche personnelles au-delà de ce qui est nécessaire pour fournir votre rapport."
+      }
+    ],
+    "ctaTitle": "N'achetez pas à l'aveugle. Vérifiez l'historique d'abord.",
+    "ctaSubtitle": "Un rapport. 8 000+ sources. Clarté totale en moins de 60 secondes."
   },
   "footer": {
     "tagline": "Plateforme d'intelligence automobile. Plus de 100 000 utilisateurs nous font confiance.",

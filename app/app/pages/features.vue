@@ -2,7 +2,6 @@
   <div>
     <OrganismsTheHeader />
     <OrganismsFeaturesHero />
-    <OrganismsFeaturesNav />
     <OrganismsFeaturesBento />
     <OrganismsFeaturesShowcase />
     <OrganismsFeaturesUseCases />
