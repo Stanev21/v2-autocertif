@@ -563,7 +563,7 @@
     "title": "Se désabonner",
     "subtitle": "Entrez l'email lié à votre compte pour résilier votre abonnement.",
     "email": "Email du compte",
-    "emailPlaceholder": "votre@email.com",
+    "emailPlaceholder": "votre{'@'}email.com",
     "reason": "Raison de la résiliation (optionnel)",
     "reasonPlaceholder": "Sélectionnez une raison",
     "reasons": [

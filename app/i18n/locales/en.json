@@ -563,7 +563,7 @@
     "title": "Cancel Subscription",
     "subtitle": "Enter the email linked to your account to cancel your subscription.",
     "email": "Account Email",
-    "emailPlaceholder": "your@email.com",
+    "emailPlaceholder": "your{'@'}email.com",
     "reason": "Reason for cancelling (optional)",
     "reasonPlaceholder": "Select a reason",
     "reasons": [
