@@ -559,6 +559,51 @@
       ]
     }
   },
+  "unsubscribe": {
+    "title": "Se désabonner",
+    "subtitle": "Entrez l'email lié à votre compte pour résilier votre abonnement.",
+    "email": "Email du compte",
+    "emailPlaceholder": "votre@email.com",
+    "reason": "Raison de la résiliation (optionnel)",
+    "reasonPlaceholder": "Sélectionnez une raison",
+    "reasons": [
+      "Trop cher",
+      "Je ne l'utilise pas assez",
+      "Fonctionnalités manquantes",
+      "Meilleure alternative trouvée",
+      "Besoin temporaire uniquement",
+      "Autre"
+    ],
+    "cta": "Résilier mon abonnement",
+    "note": "Vous conservez l'accès jusqu'à la fin de votre période de facturation. Vos rapports existants restent accessibles.",
+    "faq": {
+      "title": "Questions fréquentes",
+      "subtitle": "Questions courantes sur la résiliation.",
+      "items": [
+        {
+          "q": "Vais-je être facturé à nouveau ?",
+          "a": "Non. Une fois résilié, plus aucun prélèvement ne sera effectué. Votre abonnement reste actif jusqu'à la fin de la période en cours."
+        },
+        {
+          "q": "Puis-je encore accéder à mes rapports ?",
+          "a": "Oui. Tous les rapports déjà générés restent accessibles dans votre compte."
+        },
+        {
+          "q": "Puis-je me réabonner plus tard ?",
+          "a": "Oui, vous pouvez réactiver votre abonnement à tout moment depuis la page de tarification."
+        },
+        {
+          "q": "Suis-je éligible à un remboursement ?",
+          "a": "Les demandes de remboursement doivent être soumises dans les 14 jours suivant l'achat. Consultez notre Politique de remboursement ou contactez le support."
+        }
+      ]
+    },
+    "help": {
+      "title": "Besoin d'aide ?",
+      "desc": "Notre équipe peut vous aider à résoudre un problème ou trouver un plan adapté.",
+      "cta": "Contacter le support"
+    }
+  },
   "footer": {
     "tagline": "Plateforme d'intelligence automobile. Plus de 100 000 utilisateurs nous font confiance.",
     "contact": "Nous contacter - 24/7",
