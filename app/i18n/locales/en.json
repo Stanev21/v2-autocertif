@@ -392,6 +392,143 @@
   "media": {
     "title": "They talk about us"
   },
+  "features": {
+    "badge": "Vehicle history analysis",
+    "title": "Everything We Check",
+    "subtitle": "8,000+ data sources and 2,500+ checkpoints for thorough vehicle history analysis.",
+    "cta": "Run a Vehicle Check",
+    "ctaSecondary": "Contact us",
+    "navBenefits": "Benefits",
+    "navCapabilities": "Capabilities",
+    "navUseCases": "Use Cases",
+    "navFaq": "FAQ",
+    "benefitsTitle": "Three critical checks",
+    "benefitsSubtitle": "Each report begins with three essential verification areas.",
+    "benefits": [
+      {
+        "title": "Mileage & Odometer",
+        "desc": "Easily verify a vehicle's actual mileage, backed by data from 8,000+ trusted sources across 25+ countries."
+      },
+      {
+        "title": "Damage",
+        "desc": "We check over 300 million records to show you where and when damage occurred. And what repairs may have cost."
+      },
+      {
+        "title": "Theft",
+        "desc": "Cross-referencing with international stolen vehicle registries and official databases."
+      }
+    ],
+    "testimonialQuote": "The report saved me from buying a car with a rolled-back odometer. The mileage history clearly showed discrepancies the seller couldn't explain.",
+    "testimonialName": "James Mitchell",
+    "testimonialRole": "Verified Buyer, London",
+    "capabilitiesTitle": "Every Detail, Verified",
+    "capabilitiesSubtitle": "We cross-reference 8,000+ sources across 25+ countries to build the full picture.",
+    "capabilities": [
+      {
+        "title": "Mileage & Odometer",
+        "headline": "We cross-reference 8,000+ sources across 25+ countries to detect odometer fraud before it costs you",
+        "desc": "Odometer rollback detection across multiple data points. Mileage prediction based on historical patterns. Driving habits analysis showing highway vs. city use. Cross-border mileage verification for imported vehicles.",
+        "metric": "8,000+",
+        "metricLabel": "Data sources"
+      },
+      {
+        "title": "Accidents & Damage",
+        "headline": "Comprehensive damage history with repair records, location, and severity",
+        "desc": "Over 300 million accident records worldwide. Visual damage diagram showing impact zones. Repair cost estimates and damage severity ratings. Insurance claim history and total loss records.",
+        "metric": "300M+",
+        "metricLabel": "Records analyzed"
+      },
+      {
+        "title": "Theft Records",
+        "headline": "International stolen vehicle registries cross-referenced to confirm the vehicle's status",
+        "desc": "International registry cross-reference. Real-time stolen vehicle registry checks. Recovery status and history tracking. Cross-border theft verification.",
+        "metric": "25+",
+        "metricLabel": "Countries covered"
+      },
+      {
+        "title": "Vehicle Inspection",
+        "headline": "Complete vehicle inspection history from official technical control records",
+        "desc": "Official inspection results and history. Reported defects and repair requirements. Pass/fail status for each inspection. Next inspection due date tracking.",
+        "metric": "100%",
+        "metricLabel": "Official records"
+      },
+      {
+        "title": "Fuel Consumption & CO2",
+        "headline": "Detailed fuel consumption data and CO2 emission class for the vehicle",
+        "desc": "Urban, extra-urban, and combined fuel consumption. CO2 emission class rating (A to G scale). CO2 emissions in g/km. Energy label and environmental impact.",
+        "metric": "A–G",
+        "metricLabel": "Emission rating"
+      },
+      {
+        "title": "Natural Disasters",
+        "headline": "Check if the vehicle was exposed to natural disasters in its registration area",
+        "desc": "Flood exposure verification. Hail and storm damage checks. Regional natural disaster cross-reference. Historical disaster event mapping.",
+        "metric": "15+",
+        "metricLabel": "Years of data"
+      }
+    ],
+    "useCasesTitle": "Built for every stage of the buying journey",
+    "useCases": [
+      {
+        "title": "Pre-Purchase Check",
+        "desc": "Run a comprehensive check before committing to any used vehicle. Surface hidden issues the seller may not disclose and negotiate with confidence.",
+        "stat": "1 in 3",
+        "statLabel": "used vehicles has a hidden defect"
+      },
+      {
+        "title": "Price Negotiation",
+        "desc": "Use verified data about a vehicle's true condition to negotiate a fair price. Undisclosed damage history and mileage discrepancies directly impact market value.",
+        "stat": "$3,400",
+        "statLabel": "average savings per informed buyer"
+      },
+      {
+        "title": "Cross-Border Import",
+        "desc": "Buying a vehicle from another country? Verify its history across international databases before it crosses the border. Detect title washing and jurisdiction-hopping fraud.",
+        "stat": "25+",
+        "statLabel": "countries in our database"
+      },
+      {
+        "title": "Dealership Inventory Audit",
+        "desc": "Verify every vehicle in stock with a certified history report before listing. Build buyer trust with transparent, data-backed vehicle histories.",
+        "stat": "99.9%",
+        "statLabel": "platform uptime"
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "Everything you need to know about our vehicle history reports.",
+    "faq": [
+      {
+        "q": "What is a vehicle history report?",
+        "a": "A vehicle history report is a comprehensive document that compiles data from thousands of sources to reveal a vehicle's complete past — including mileage records, damage history, theft status, inspection results, emissions data, and natural disaster exposure."
+      },
+      {
+        "q": "How quickly is the report generated?",
+        "a": "Reports are typically generated in under 60 seconds. Our platform queries 8,000+ data sources in real time and compiles the results into a structured, easy-to-read report."
+      },
+      {
+        "q": "Which countries are covered?",
+        "a": "We currently cover 25+ countries across Europe, with data from government registries, insurance databases, auction platforms, and authorized service centers in each jurisdiction."
+      },
+      {
+        "q": "Can I check a vehicle using just the license plate?",
+        "a": "Yes. You can search using either the VIN (Vehicle Identification Number) or the license plate number. Both methods provide the same comprehensive report."
+      },
+      {
+        "q": "What is the Autocertif Score?",
+        "a": "The Autocertif Score is a proprietary rating from 1 to 10 that summarizes the overall condition and risk profile of a vehicle based on all data points in the report. A higher score indicates fewer issues detected."
+      },
+      {
+        "q": "How accurate is the mileage verification?",
+        "a": "Our mileage verification cross-references odometer readings from multiple independent sources including service records, inspection results, and insurance data. We flag any inconsistencies or suspicious patterns in the mileage progression."
+      },
+      {
+        "q": "Is my data secure?",
+        "a": "Absolutely. All data transmissions are encrypted with TLS 1.3, and we comply with GDPR regulations. We do not store personal search data beyond what is necessary to deliver your report."
+      }
+    ],
+    "ctaTitle": "Run a vehicle check",
+    "ctaSubtitle": "Complete vehicle history analysis from 8,000+ verified sources. Reports generated in ~55 seconds on average."
+  },
   "footer": {
     "tagline": "Automotive data intelligence platform. Trusted by over 100,000 users.",
     "contact": "Contact - 24/7",

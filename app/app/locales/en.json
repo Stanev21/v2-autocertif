@@ -308,6 +308,142 @@
   "media": {
     "title": "They talk about us"
   },
+  "features": {
+    "badge": "Platform Capabilities",
+    "title": "See everything hidden behind a VIN",
+    "subtitle": "Our platform cross-references 8,000+ data sources across 25+ countries to surface the complete truth about any vehicle — in under a minute.",
+    "cta": "Get Your Report",
+    "ctaSecondary": "View Sample Report",
+    "navBenefits": "Benefits",
+    "navCapabilities": "Capabilities",
+    "navUseCases": "Use Cases",
+    "navFaq": "FAQ",
+    "benefitsTitle": "Why 100,000+ buyers trust Autocertif",
+    "benefits": [
+      {
+        "title": "Uncover hidden risks instantly",
+        "desc": "Our AI scans millions of records to flag odometer rollbacks, undisclosed accidents, and outstanding finance — issues that cost buyers an average of $3,400."
+      },
+      {
+        "title": "Data from 8,000+ verified sources",
+        "desc": "Government registries, insurance databases, auction platforms, manufacturer recalls, and authorized service center records — all cross-referenced in real time."
+      },
+      {
+        "title": "Reports in under 60 seconds",
+        "desc": "Enter a VIN or license plate and receive a comprehensive, structured report with visual diagrams, trend charts, and a proprietary Autocertif Score."
+      }
+    ],
+    "testimonialQuote": "The report saved me from buying a car with a rolled-back odometer. The mileage history clearly showed discrepancies the seller couldn't explain.",
+    "testimonialName": "James Mitchell",
+    "testimonialRole": "Verified Buyer, London",
+    "capabilitiesTitle": "Every detail of a vehicle's past, decoded",
+    "capabilitiesSubtitle": "Six deep-analysis modules powered by data intelligence",
+    "capabilities": [
+      {
+        "title": "Mileage Verification",
+        "headline": "Detect odometer fraud before it costs you thousands",
+        "desc": "Cross-reference odometer readings from 8,000+ sources across 25+ countries. Our algorithms detect inconsistencies in mileage progression, flag suspicious patterns, and generate visual trend charts showing the vehicle's complete mileage history.",
+        "metric": "8,000+",
+        "metricLabel": "Data sources"
+      },
+      {
+        "title": "Damage History",
+        "headline": "See every scratch, collision, and write-off on record",
+        "desc": "Analysis of over 300 million records for damage history, repair records, and write-off status. Includes visual damage diagrams showing impact zones, severity classifications, and repair cost estimates from insurance claims.",
+        "metric": "300M+",
+        "metricLabel": "Records analyzed"
+      },
+      {
+        "title": "Theft Registry",
+        "headline": "Verify the vehicle isn't stolen or under investigation",
+        "desc": "Real-time cross-referencing with international stolen vehicle registries, Interpol databases, and national police records. Covers active theft reports, recovered vehicle status, and ongoing investigations across 25+ jurisdictions.",
+        "metric": "25+",
+        "metricLabel": "Countries covered"
+      },
+      {
+        "title": "Technical Inspection",
+        "headline": "Access the complete MOT and inspection history",
+        "desc": "Full vehicle inspection history including test results, reported defects, advisory notices, and compliance status from official technical control records. Track how the vehicle's condition has evolved over time.",
+        "metric": "100%",
+        "metricLabel": "Official records"
+      },
+      {
+        "title": "Emissions & Fuel Data",
+        "headline": "Know the true environmental profile of any vehicle",
+        "desc": "Comprehensive fuel consumption data across urban, extra-urban, and combined cycles. CO2 emission class ratings, Euro standard compliance, and environmental zone eligibility for major European cities.",
+        "metric": "A–G",
+        "metricLabel": "Emission rating"
+      },
+      {
+        "title": "Natural Disaster Exposure",
+        "headline": "Check if the vehicle survived floods, hail, or storms",
+        "desc": "Verification of the vehicle's exposure to natural disasters by cross-referencing its registration history with flood zone maps, severe weather event databases, and insurance catastrophe claims.",
+        "metric": "15+",
+        "metricLabel": "Years of data"
+      }
+    ],
+    "useCasesTitle": "Built for every stage of the buying journey",
+    "useCases": [
+      {
+        "title": "Pre-Purchase Check",
+        "desc": "Run a comprehensive check before committing to any used vehicle. Surface hidden issues the seller may not disclose and negotiate with confidence.",
+        "stat": "1 in 3",
+        "statLabel": "used vehicles has a hidden defect"
+      },
+      {
+        "title": "Price Negotiation",
+        "desc": "Use verified data about a vehicle's true condition to negotiate a fair price. Undisclosed damage history and mileage discrepancies directly impact market value.",
+        "stat": "$3,400",
+        "statLabel": "average savings per informed buyer"
+      },
+      {
+        "title": "Cross-Border Import",
+        "desc": "Buying a vehicle from another country? Verify its history across international databases before it crosses the border. Detect title washing and jurisdiction-hopping fraud.",
+        "stat": "25+",
+        "statLabel": "countries in our database"
+      },
+      {
+        "title": "Dealership Inventory Audit",
+        "desc": "Verify every vehicle in stock with a certified history report before listing. Build buyer trust with transparent, data-backed vehicle histories.",
+        "stat": "99.9%",
+        "statLabel": "platform uptime"
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "Everything you need to know about our vehicle history reports.",
+    "faq": [
+      {
+        "q": "What is a vehicle history report?",
+        "a": "A vehicle history report is a comprehensive document that compiles data from thousands of sources to reveal a vehicle's complete past — including mileage records, damage history, theft status, inspection results, emissions data, and natural disaster exposure."
+      },
+      {
+        "q": "How quickly is the report generated?",
+        "a": "Reports are typically generated in under 60 seconds. Our platform queries 8,000+ data sources in real time and compiles the results into a structured, easy-to-read report."
+      },
+      {
+        "q": "Which countries are covered?",
+        "a": "We currently cover 25+ countries across Europe, with data from government registries, insurance databases, auction platforms, and authorized service centers in each jurisdiction."
+      },
+      {
+        "q": "Can I check a vehicle using just the license plate?",
+        "a": "Yes. You can search using either the VIN (Vehicle Identification Number) or the license plate number. Both methods provide the same comprehensive report."
+      },
+      {
+        "q": "What is the Autocertif Score?",
+        "a": "The Autocertif Score is a proprietary rating from 1 to 10 that summarizes the overall condition and risk profile of a vehicle based on all data points in the report. A higher score indicates fewer issues detected."
+      },
+      {
+        "q": "How accurate is the mileage verification?",
+        "a": "Our mileage verification cross-references odometer readings from multiple independent sources including service records, inspection results, and insurance data. We flag any inconsistencies or suspicious patterns in the mileage progression."
+      },
+      {
+        "q": "Is my data secure?",
+        "a": "Absolutely. All data transmissions are encrypted with TLS 1.3, and we comply with GDPR regulations. We do not store personal search data beyond what is necessary to deliver your report."
+      }
+    ],
+    "ctaTitle": "Don't buy blind. Check the history first.",
+    "ctaSubtitle": "One report. 8,000+ sources. Complete clarity in under 60 seconds."
+  },
   "footer": {
     "tagline": "Automotive data intelligence platform. Trusted by over 100,000 users.",
     "contact": "Contact - 24/7",
