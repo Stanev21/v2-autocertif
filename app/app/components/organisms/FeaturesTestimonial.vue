@@ -17,7 +17,7 @@
             <div class="flex -space-x-2">
               <img v-for="(src, j) in avatarImages" :key="j" :src="src" class="w-7 h-7 rounded-full object-cover border-2 border-white" />
             </div>
-            <span class="text-gray-400 text-[12px] font-inter">+1,218 verified reviews</span>
+            <span class="text-gray-400 text-[12px] font-inter">{{ $t('features.verifiedReviews') }}</span>
           </div>
         </div>
       </div>

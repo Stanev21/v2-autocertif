@@ -442,7 +442,19 @@
       }
     ],
     "ctaTitle": "Don't buy blind. Check the history first.",
-    "ctaSubtitle": "One report. 8,000+ sources. Complete clarity in under 60 seconds."
+    "ctaSubtitle": "One report. 8,000+ sources. Complete clarity in under 60 seconds.",
+    "statDataSources": "Data Sources",
+    "statCheckpoints": "Checkpoints",
+    "statCountries": "Countries",
+    "statAvgGeneration": "Avg. Generation",
+    "ctaSources": "8,000+ sources",
+    "ctaCheckpoints": "2,500+ checkpoints",
+    "ctaCountries": "25+ countries",
+    "ctaReports": "~55s reports",
+    "metricLossLabel": "average loss per uninformed buyer",
+    "metricSourcesLabel": "verified data sources",
+    "metricTimeLabel": "average report time",
+    "verifiedReviews": "+1,218 verified reviews"
   },
   "footer": {
     "tagline": "Automotive data intelligence platform. Trusted by over 100,000 users.",

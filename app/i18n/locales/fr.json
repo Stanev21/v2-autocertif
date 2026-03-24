@@ -442,7 +442,19 @@
       }
     ],
     "ctaTitle": "N'achetez pas à l'aveugle. Vérifiez l'historique d'abord.",
-    "ctaSubtitle": "Un rapport. 8 000+ sources. Clarté totale en moins de 60 secondes."
+    "ctaSubtitle": "Un rapport. 8 000+ sources. Clarté totale en moins de 60 secondes.",
+    "statDataSources": "Sources de données",
+    "statCheckpoints": "Points de contrôle",
+    "statCountries": "Pays",
+    "statAvgGeneration": "Génération moy.",
+    "ctaSources": "8 000+ sources",
+    "ctaCheckpoints": "2 500+ points de contrôle",
+    "ctaCountries": "25+ pays",
+    "ctaReports": "~55s rapports",
+    "metricLossLabel": "perte moyenne par acheteur non informé",
+    "metricSourcesLabel": "sources de données vérifiées",
+    "metricTimeLabel": "temps de rapport moyen",
+    "verifiedReviews": "+1 218 avis vérifiés"
   },
   "footer": {
     "tagline": "Plateforme d'intelligence automobile. Plus de 100 000 utilisateurs nous font confiance.",

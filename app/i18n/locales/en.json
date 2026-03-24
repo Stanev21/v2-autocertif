@@ -199,90 +199,6 @@
     "button": "Run a Vehicle Check",
     "note": "Reports generated in ~55 seconds on average."
   },
-  "unsubscribe": {
-    "title": "Cancel Subscription",
-    "subtitle": "Enter the email linked to your account to cancel your subscription.",
-    "email": "Account Email",
-    "emailPlaceholder": "you{'@'}example.com",
-    "reason": "Reason for cancelling (optional)",
-    "reasonPlaceholder": "Select a reason...",
-    "reasons": ["Too expensive", "I don't use it enough", "Missing features I need", "Found a better alternative", "Only needed it temporarily", "Other"],
-    "cta": "Cancel my subscription",
-    "note": "You will keep access until the end of your current billing period. Your existing reports remain accessible.",
-    "faq": {
-      "title": "Common questions about cancellation",
-      "items": [
-        { "q": "Will I be charged again?", "a": "No. Once cancelled, no further charges will be made. Your subscription stays active until the end of the current billing period." },
-        { "q": "Can I still access my reports?", "a": "Yes. All previously generated reports remain accessible in your account." },
-        { "q": "Can I resubscribe later?", "a": "Yes, you can reactivate your subscription at any time from the pricing page." },
-        { "q": "Am I eligible for a refund?", "a": "Refund requests must be submitted within 14 days of purchase. See our Refund Policy or contact support." }
-      ]
-    },
-    "help": {
-      "title": "Need help?",
-      "desc": "Our team can help resolve any issues or find a plan that better fits your needs.",
-      "cta": "Contact Support"
-    }
-  },
-  "pricing": {
-    "badge": "Pricing",
-    "title": "Transparent Pricing",
-    "subtitle": "Select the plan that corresponds to your needs. All plans include full vehicle history analysis.",
-    "trial": {
-      "name": "Trial",
-      "tagline": "Test the service with no commitment",
-      "price": "€0.99",
-      "period": "for 2 days",
-      "cta": "Start trial",
-      "features": [
-        "Full access for 2 days",
-        "Up to 15 reports per month",
-        "Complete vehicle history",
-        "Mileage verification",
-        "Damage, theft, inspection",
-        "Emissions & natural disasters",
-        "PDF export included"
-      ]
-    },
-    "subscription": {
-      "name": "Subscription",
-      "tagline": "After the trial period",
-      "badge": "Recommended",
-      "price": "€39.99",
-      "period": "/month",
-      "cta": "Subscribe",
-      "features": [
-        "15 reports per month",
-        "Complete vehicle history",
-        "All verifications included",
-        "Unlimited PDF export",
-        "Priority support",
-        "Cancel anytime"
-      ]
-    },
-    "comparison": {
-      "title": "Compare plans & features",
-      "features": ["Full Vehicle History", "Mileage Verification", "Damage & Accident Records", "Theft Check", "Vehicle Inspection", "Fuel & CO2 Emissions", "Natural Disaster Check", "PDF Export", "Priority Support"]
-    },
-    "included": {
-      "title": "Included in every plan",
-      "items": [
-        { "title": "8,000+ Sources", "desc": "Data aggregated from over 8,000 verified sources across 25+ countries." },
-        { "title": "~55s Generation", "desc": "Reports are generated in approximately 55 seconds on average." },
-        { "title": "PDF Export", "desc": "Download your complete vehicle history report as a PDF document." },
-        { "title": "25+ Countries", "desc": "Coverage across Europe and beyond, with cross-border verification." }
-      ]
-    },
-    "faq": {
-      "title": "Frequently asked questions",
-      "items": [
-        { "q": "What is included in a vehicle history report?", "a": "Every Autocertif report includes mileage verification, accident and damage history, theft records, vehicle inspection history, fuel consumption and CO2 emissions data, and natural disaster checks. We pull data from over 8,000 sources across 25+ countries." },
-        { "q": "How quickly will I receive my report?", "a": "Reports are generated in ~55 seconds on average. Once purchased, you'll have instant access to your complete vehicle history report, which you can view online or download as a PDF." },
-        { "q": "What if no data is found for my vehicle?", "a": "If a license plate search returns no results, we recommend using the VIN number which guarantees a complete report. The VIN provides access to all available data for the vehicle." },
-        { "q": "Is there a money-back guarantee?", "a": "If you experience an issue with your report, please contact our support team. Refund eligibility is assessed on a case-by-case basis. Please review our Refund Policy for full details." }
-      ]
-    }
-  },
   "business": {
     "badge": "For Business",
     "title": "Vehicle data for your business",
@@ -393,76 +309,75 @@
     "title": "They talk about us"
   },
   "features": {
-    "badge": "Vehicle history analysis",
-    "title": "Everything We Check",
-    "subtitle": "8,000+ data sources and 2,500+ checkpoints for thorough vehicle history analysis.",
-    "cta": "Run a Vehicle Check",
-    "ctaSecondary": "Contact us",
+    "badge": "Platform Capabilities",
+    "title": "See everything hidden behind a VIN",
+    "subtitle": "Our platform cross-references 8,000+ data sources across 25+ countries to surface the complete truth about any vehicle — in under a minute.",
+    "cta": "Get Your Report",
+    "ctaSecondary": "View Sample Report",
     "navBenefits": "Benefits",
     "navCapabilities": "Capabilities",
     "navUseCases": "Use Cases",
     "navFaq": "FAQ",
-    "benefitsTitle": "Three critical checks",
-    "benefitsSubtitle": "Each report begins with three essential verification areas.",
+    "benefitsTitle": "Why 100,000+ buyers trust Autocertif",
     "benefits": [
       {
-        "title": "Mileage & Odometer",
-        "desc": "Easily verify a vehicle's actual mileage, backed by data from 8,000+ trusted sources across 25+ countries."
+        "title": "Uncover hidden risks instantly",
+        "desc": "Our AI scans millions of records to flag odometer rollbacks, undisclosed accidents, and outstanding finance — issues that cost buyers an average of $3,400."
       },
       {
-        "title": "Damage",
-        "desc": "We check over 300 million records to show you where and when damage occurred. And what repairs may have cost."
+        "title": "Data from 8,000+ verified sources",
+        "desc": "Government registries, insurance databases, auction platforms, manufacturer recalls, and authorized service center records — all cross-referenced in real time."
       },
       {
-        "title": "Theft",
-        "desc": "Cross-referencing with international stolen vehicle registries and official databases."
+        "title": "Reports in under 60 seconds",
+        "desc": "Enter a VIN or license plate and receive a comprehensive, structured report with visual diagrams, trend charts, and a proprietary Autocertif Score."
       }
     ],
     "testimonialQuote": "The report saved me from buying a car with a rolled-back odometer. The mileage history clearly showed discrepancies the seller couldn't explain.",
     "testimonialName": "James Mitchell",
     "testimonialRole": "Verified Buyer, London",
-    "capabilitiesTitle": "Every Detail, Verified",
-    "capabilitiesSubtitle": "We cross-reference 8,000+ sources across 25+ countries to build the full picture.",
+    "capabilitiesTitle": "Every detail of a vehicle's past, decoded",
+    "capabilitiesSubtitle": "Six deep-analysis modules powered by data intelligence",
     "capabilities": [
       {
-        "title": "Mileage & Odometer",
-        "headline": "We cross-reference 8,000+ sources across 25+ countries to detect odometer fraud before it costs you",
-        "desc": "Odometer rollback detection across multiple data points. Mileage prediction based on historical patterns. Driving habits analysis showing highway vs. city use. Cross-border mileage verification for imported vehicles.",
+        "title": "Mileage Verification",
+        "headline": "Detect odometer fraud before it costs you thousands",
+        "desc": "Cross-reference odometer readings from 8,000+ sources across 25+ countries. Our algorithms detect inconsistencies in mileage progression, flag suspicious patterns, and generate visual trend charts showing the vehicle's complete mileage history.",
         "metric": "8,000+",
         "metricLabel": "Data sources"
       },
       {
-        "title": "Accidents & Damage",
-        "headline": "Comprehensive damage history with repair records, location, and severity",
-        "desc": "Over 300 million accident records worldwide. Visual damage diagram showing impact zones. Repair cost estimates and damage severity ratings. Insurance claim history and total loss records.",
+        "title": "Damage History",
+        "headline": "See every scratch, collision, and write-off on record",
+        "desc": "Analysis of over 300 million records for damage history, repair records, and write-off status. Includes visual damage diagrams showing impact zones, severity classifications, and repair cost estimates from insurance claims.",
         "metric": "300M+",
         "metricLabel": "Records analyzed"
       },
       {
-        "title": "Theft Records",
-        "headline": "International stolen vehicle registries cross-referenced to confirm the vehicle's status",
-        "desc": "International registry cross-reference. Real-time stolen vehicle registry checks. Recovery status and history tracking. Cross-border theft verification.",
+        "title": "Theft Registry",
+        "headline": "Verify the vehicle isn't stolen or under investigation",
+        "desc": "Real-time cross-referencing with international stolen vehicle registries, Interpol databases, and national police records. Covers active theft reports, recovered vehicle status, and ongoing investigations across 25+ jurisdictions.",
         "metric": "25+",
         "metricLabel": "Countries covered"
       },
       {
-        "title": "Vehicle Inspection",
-        "headline": "Complete vehicle inspection history from official technical control records",
-        "desc": "Official inspection results and history. Reported defects and repair requirements. Pass/fail status for each inspection. Next inspection due date tracking.",
+        "title": "Technical Inspection",
+        "headline": "Access the complete MOT and inspection history",
+        "desc": "Full vehicle inspection history including test results, reported defects, advisory notices, and compliance status from official technical control records. Track how the vehicle's condition has evolved over time.",
         "metric": "100%",
         "metricLabel": "Official records"
       },
       {
-        "title": "Fuel Consumption & CO2",
-        "headline": "Detailed fuel consumption data and CO2 emission class for the vehicle",
-        "desc": "Urban, extra-urban, and combined fuel consumption. CO2 emission class rating (A to G scale). CO2 emissions in g/km. Energy label and environmental impact.",
+        "title": "Emissions & Fuel Data",
+        "headline": "Know the true environmental profile of any vehicle",
+        "desc": "Comprehensive fuel consumption data across urban, extra-urban, and combined cycles. CO2 emission class ratings, Euro standard compliance, and environmental zone eligibility for major European cities.",
         "metric": "A–G",
         "metricLabel": "Emission rating"
       },
       {
-        "title": "Natural Disasters",
-        "headline": "Check if the vehicle was exposed to natural disasters in its registration area",
-        "desc": "Flood exposure verification. Hail and storm damage checks. Regional natural disaster cross-reference. Historical disaster event mapping.",
+        "title": "Natural Disaster Exposure",
+        "headline": "Check if the vehicle survived floods, hail, or storms",
+        "desc": "Verification of the vehicle's exposure to natural disasters by cross-referencing its registration history with flood zone maps, severe weather event databases, and insurance catastrophe claims.",
         "metric": "15+",
         "metricLabel": "Years of data"
       }
@@ -526,8 +441,20 @@
         "a": "Absolutely. All data transmissions are encrypted with TLS 1.3, and we comply with GDPR regulations. We do not store personal search data beyond what is necessary to deliver your report."
       }
     ],
-    "ctaTitle": "Run a vehicle check",
-    "ctaSubtitle": "Complete vehicle history analysis from 8,000+ verified sources. Reports generated in ~55 seconds on average."
+    "ctaTitle": "Don't buy blind. Check the history first.",
+    "ctaSubtitle": "One report. 8,000+ sources. Complete clarity in under 60 seconds.",
+    "statDataSources": "Data Sources",
+    "statCheckpoints": "Checkpoints",
+    "statCountries": "Countries",
+    "statAvgGeneration": "Avg. Generation",
+    "ctaSources": "8,000+ sources",
+    "ctaCheckpoints": "2,500+ checkpoints",
+    "ctaCountries": "25+ countries",
+    "ctaReports": "~55s reports",
+    "metricLossLabel": "average loss per uninformed buyer",
+    "metricSourcesLabel": "verified data sources",
+    "metricTimeLabel": "average report time",
+    "verifiedReviews": "+1,218 verified reviews"
   },
   "footer": {
     "tagline": "Automotive data intelligence platform. Trusted by over 100,000 users.",

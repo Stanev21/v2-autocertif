@@ -65,12 +65,13 @@ const heroSub = ref<HTMLElement>()
 const heroCtas = ref<HTMLElement>()
 const heroStats = ref<HTMLElement>()
 
-const stats = [
-  { value: '8,000+', label: 'Data Sources' },
-  { value: '2,500+', label: 'Checkpoints' },
-  { value: '25+', label: 'Countries' },
-  { value: '~55s', label: 'Avg. Generation' },
-]
+const { t } = useI18n()
+const stats = computed(() => [
+  { value: '8,000+', label: t('features.statDataSources') },
+  { value: '2,500+', label: t('features.statCheckpoints') },
+  { value: '25+', label: t('features.statCountries') },
+  { value: '~55s', label: t('features.statAvgGeneration') },
+])
 
 onMounted(() => {
   if (!(window as any).gsap) return

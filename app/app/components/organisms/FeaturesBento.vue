@@ -86,7 +86,7 @@
 </template>
 
 <script setup lang="ts">
-const { tm, rt } = useI18n()
+const { t, tm, rt } = useI18n()
 const hoveredCard = ref(-1)
 
 const benefits = computed(() => {
@@ -145,9 +145,9 @@ const cardStyles = [
   },
 ]
 
-const metrics = [
-  { value: '$3,400', label: 'average loss per uninformed buyer' },
-  { value: '8,000+', label: 'verified data sources' },
-  { value: '~55s', label: 'average report time' },
-]
+const metrics = computed(() => [
+  { value: '$3,400', label: t('features.metricLossLabel') },
+  { value: '8,000+', label: t('features.metricSourcesLabel') },
+  { value: '~55s', label: t('features.metricTimeLabel') },
+])
 </script>

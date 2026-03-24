@@ -41,22 +41,22 @@
       <div class="flex items-center justify-center gap-6 mt-14">
         <div class="flex items-center gap-2">
           <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-white/40 text-[13px] font-inter">8,000+ sources</span>
+          <span class="text-white/40 text-[13px] font-inter">{{ $t('features.ctaSources') }}</span>
         </div>
         <div class="w-px h-3 bg-white/10"></div>
         <div class="flex items-center gap-2">
           <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-white/40 text-[13px] font-inter">2,500+ checkpoints</span>
+          <span class="text-white/40 text-[13px] font-inter">{{ $t('features.ctaCheckpoints') }}</span>
         </div>
         <div class="w-px h-3 bg-white/10"></div>
         <div class="flex items-center gap-2">
           <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-white/40 text-[13px] font-inter">25+ countries</span>
+          <span class="text-white/40 text-[13px] font-inter">{{ $t('features.ctaCountries') }}</span>
         </div>
         <div class="w-px h-3 bg-white/10"></div>
         <div class="flex items-center gap-2">
           <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-white/40 text-[13px] font-inter">~55s reports</span>
+          <span class="text-white/40 text-[13px] font-inter">{{ $t('features.ctaReports') }}</span>
         </div>
       </div>
     </div>
