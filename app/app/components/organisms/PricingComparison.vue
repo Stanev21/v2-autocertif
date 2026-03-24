@@ -114,14 +114,14 @@ const dataFeatures = computed(() => [
   t('pricing.comparison.features[6]'),
 ])
 
-const reportFeatures = [
-  { name: 'PDF Export', trialValue: 'Included', subValue: 'Unlimited' },
-  { name: 'Reports per month', trialValue: 'Up to 15', subValue: '15/month' },
-]
+const reportFeatures = computed(() => [
+  { name: t('pricing.pdfExport'), trialValue: t('pricing.included'), subValue: t('pricing.unlimited') },
+  { name: t('pricing.reportsPerMonth'), trialValue: t('pricing.upTo15'), subValue: t('pricing.fifteenPerMonth') },
+])
 
-const supportFeatures = [
-  { name: 'Priority Support', trial: false },
-  { name: 'Cancel anytime', trial: true },
-  { name: 'Email support', trial: true },
-]
+const supportFeatures = computed(() => [
+  { name: t('pricing.prioritySupport'), trial: false },
+  { name: t('pricing.cancelAnytime'), trial: true },
+  { name: t('pricing.emailSupport'), trial: true },
+])
 </script>

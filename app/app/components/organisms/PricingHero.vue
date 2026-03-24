@@ -15,15 +15,15 @@
       <div class="flex items-center justify-center gap-6 flex-wrap">
         <div class="flex items-center gap-1.5">
           <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-gray-400 text-[12px] font-inter">No hidden fees</span>
+          <span class="text-gray-400 text-[12px] font-inter">{{ $t('pricing.noHiddenFees') }}</span>
         </div>
         <div class="flex items-center gap-1.5">
           <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-gray-400 text-[12px] font-inter">Cancel anytime</span>
+          <span class="text-gray-400 text-[12px] font-inter">{{ $t('pricing.cancelAnytime') }}</span>
         </div>
         <div class="flex items-center gap-1.5">
           <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" /></svg>
-          <span class="text-gray-400 text-[12px] font-inter">100,000+ users</span>
+          <span class="text-gray-400 text-[12px] font-inter">{{ $t('pricing.usersCount') }}</span>
         </div>
       </div>
     </div>

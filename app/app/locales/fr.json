@@ -456,6 +456,109 @@
     "metricTimeLabel": "temps de rapport moyen",
     "verifiedReviews": "+1 218 avis vérifiés"
   },
+  "pricing": {
+    "title": "Tarification transparente",
+    "subtitle": "Sélectionnez le plan adapté à vos besoins. Tous les plans incluent l'analyse d'historique véhicule complète.",
+    "noHiddenFees": "Aucun frais caché",
+    "cancelAnytime": "Résiliation à tout moment",
+    "usersCount": "100 000+ utilisateurs",
+    "startingFrom": "À partir de",
+    "includes": "Inclus :",
+    "everythingInTrial": "Tout ce qui est dans l'Essai, et :",
+    "trial": {
+      "name": "Essai",
+      "tagline": "Testez le service sans engagement",
+      "price": "0,99 €",
+      "period": "pour 2 jours",
+      "cta": "Commencer l'essai",
+      "summaryTitle": "Avec l'essai vous obtenez :",
+      "summaryItems": [
+        "Accès complet à toutes les vérifications d'historique véhicule pendant 2 jours",
+        "Générez jusqu'à 15 rapports complets",
+        "Export des rapports en PDF"
+      ],
+      "features": [
+        "Accès complet pendant 2 jours",
+        "Jusqu'à 15 rapports par mois",
+        "Historique véhicule complet",
+        "Vérification du kilométrage",
+        "Dommages, vol, contrôle",
+        "Émissions & catastrophes naturelles",
+        "Export PDF inclus"
+      ]
+    },
+    "subscription": {
+      "name": "Abonnement",
+      "tagline": "Après la période d'essai",
+      "price": "39,99 €",
+      "period": "/mois",
+      "cta": "S'abonner",
+      "demoBtn": "Demander une démo",
+      "summaryTitle": "Avec l'abonnement vous pourrez :",
+      "summaryItems": [
+        "Export PDF illimité et support prioritaire",
+        "Jusqu'à 15 rapports d'historique véhicule par mois",
+        "Résiliation à tout moment sans engagement"
+      ],
+      "features": [
+        "15 rapports par mois",
+        "Historique véhicule complet",
+        "Toutes les vérifications incluses",
+        "Export PDF illimité",
+        "Support prioritaire",
+        "Résiliation à tout moment"
+      ]
+    },
+    "pdfExport": "Export PDF",
+    "reportsPerMonth": "Rapports par mois",
+    "included": "Inclus",
+    "unlimited": "Illimité",
+    "upTo15": "Jusqu'à 15",
+    "fifteenPerMonth": "15/mois",
+    "prioritySupport": "Support prioritaire",
+    "emailSupport": "Support par email",
+    "comparison": {
+      "title": "Comparer les plans et fonctionnalités",
+      "features": [
+        "Historique complet du véhicule",
+        "Vérification du kilométrage",
+        "Dossiers de dommages et accidents",
+        "Vérification de vol",
+        "Contrôle technique",
+        "Consommation & CO2",
+        "Catastrophes naturelles"
+      ]
+    },
+    "included": {
+      "title": "Tout est inclus dans votre rapport",
+      "items": [
+        { "title": "Export PDF", "desc": "Téléchargez votre rapport complet au format PDF professionnel" },
+        { "title": "Support prioritaire", "desc": "Accès prioritaire à notre équipe de support client" },
+        { "title": "Résiliation libre", "desc": "Aucun engagement — résiliez votre abonnement à tout moment" }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Que contient un rapport d'historique véhicule ?",
+          "a": "Chaque rapport Autocertif inclut la vérification du kilométrage, l'historique des accidents et dommages, les registres de vol, l'historique des contrôles techniques, les données de consommation et d'émissions CO2, et les vérifications de catastrophes naturelles. Nous tirons les données de plus de 8 000 sources dans plus de 25 pays."
+        },
+        {
+          "q": "Combien de temps faut-il pour recevoir mon rapport ?",
+          "a": "Les rapports sont générés en ~55 secondes en moyenne. Une fois acheté, vous avez un accès instantané à votre rapport complet, que vous pouvez consulter en ligne ou télécharger en PDF."
+        },
+        {
+          "q": "Que se passe-t-il si aucune donnée n'est trouvée pour mon véhicule ?",
+          "a": "Si la recherche par plaque d'immatriculation ne retourne pas de résultats, nous vous recommandons d'utiliser le numéro VIN qui garantit un rapport complet. Le VIN permet d'accéder à l'ensemble des données disponibles pour le véhicule."
+        },
+        {
+          "q": "Y a-t-il une garantie de remboursement ?",
+          "a": "Si vous rencontrez un problème avec votre rapport, veuillez contacter notre équipe d'assistance. L'éligibilité au remboursement est évaluée au cas par cas. Consultez notre Politique de remboursement pour tous les détails."
+        }
+      ]
+    }
+  },
   "footer": {
     "tagline": "Plateforme d'intelligence automobile. Plus de 100 000 utilisateurs nous font confiance.",
     "contact": "Nous contacter - 24/7",

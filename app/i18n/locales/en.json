@@ -456,6 +456,109 @@
     "metricTimeLabel": "average report time",
     "verifiedReviews": "+1,218 verified reviews"
   },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "Select the plan that corresponds to your needs. All plans include full vehicle history analysis.",
+    "noHiddenFees": "No hidden fees",
+    "cancelAnytime": "Cancel anytime",
+    "usersCount": "100,000+ users",
+    "startingFrom": "Starting from",
+    "includes": "Includes:",
+    "everythingInTrial": "Everything in Trial, and:",
+    "trial": {
+      "name": "Trial",
+      "tagline": "Try the service with no commitment",
+      "price": "€0.99",
+      "period": "for 2 days",
+      "cta": "Start trial",
+      "summaryTitle": "On Trial you'll get:",
+      "summaryItems": [
+        "Full access to all vehicle history checks for 2 days",
+        "Generate up to 15 complete reports",
+        "Export reports as PDF"
+      ],
+      "features": [
+        "Full access for 2 days",
+        "Up to 15 reports per month",
+        "Complete vehicle history",
+        "Mileage verification",
+        "Damage, theft, inspection",
+        "Emissions & natural disasters",
+        "PDF export included"
+      ]
+    },
+    "subscription": {
+      "name": "Subscription",
+      "tagline": "After the trial period",
+      "price": "€39.99",
+      "period": "/month",
+      "cta": "Subscribe",
+      "demoBtn": "Request a demo",
+      "summaryTitle": "On Subscription you'll:",
+      "summaryItems": [
+        "Get unlimited PDF exports and priority support",
+        "Run up to 15 vehicle history reports every month",
+        "Cancel anytime with no commitment"
+      ],
+      "features": [
+        "15 reports per month",
+        "Complete vehicle history",
+        "All verifications included",
+        "Unlimited PDF export",
+        "Priority support",
+        "Cancel anytime"
+      ]
+    },
+    "pdfExport": "PDF Export",
+    "reportsPerMonth": "Reports per month",
+    "included": "Included",
+    "unlimited": "Unlimited",
+    "upTo15": "Up to 15",
+    "fifteenPerMonth": "15/month",
+    "prioritySupport": "Priority Support",
+    "emailSupport": "Email support",
+    "comparison": {
+      "title": "Compare plans and features",
+      "features": [
+        "Full Vehicle History",
+        "Mileage Verification",
+        "Damage & Accident Records",
+        "Theft Check",
+        "Vehicle Inspection",
+        "Fuel & CO2 Emissions",
+        "Natural Disaster Check"
+      ]
+    },
+    "included": {
+      "title": "Everything included in your report",
+      "items": [
+        { "title": "PDF Export", "desc": "Download your full report as a professional PDF document" },
+        { "title": "Priority Support", "desc": "Get priority access to our customer support team" },
+        { "title": "Cancel Anytime", "desc": "No long-term commitment — cancel your subscription anytime" }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What does a vehicle history report include?",
+          "a": "Each Autocertif report includes mileage verification, accident and damage history, theft records, technical inspection history, fuel consumption and CO2 emission data, and natural disaster checks. We pull data from over 8,000 sources across 25+ countries."
+        },
+        {
+          "q": "How long does it take to receive my report?",
+          "a": "Reports are generated in ~55 seconds on average. Once purchased, you have instant access to your full report, which you can view online or download as PDF."
+        },
+        {
+          "q": "What happens if no data is found for my vehicle?",
+          "a": "If a license plate search returns no results, we recommend using the VIN number which guarantees a complete report. The VIN provides access to all available data for the vehicle."
+        },
+        {
+          "q": "Is there a money-back guarantee?",
+          "a": "If you experience an issue with your report, please contact our support team. Refund eligibility is assessed on a case-by-case basis. See our Refund Policy page for full details."
+        }
+      ]
+    }
+  },
   "footer": {
     "tagline": "Automotive data intelligence platform. Trusted by over 100,000 users.",
     "contact": "Contact - 24/7",

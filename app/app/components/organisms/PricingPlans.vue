@@ -19,15 +19,13 @@
             <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.trial.cta') }}</span>
           </button>
 
-          <p class="text-[12px] font-inter font-semibold text-gray-900 mb-3">On Trial you'll get:</p>
+          <p class="text-[12px] font-inter font-semibold text-gray-900 mb-3">{{ $t('pricing.trial.summaryTitle') }}</p>
           <ul class="space-y-2 mb-7 list-disc list-outside pl-4 marker:text-gray-300">
-            <li class="text-gray-500 text-[13px] font-inter leading-[1.6]">Full access to all vehicle history checks for 2 days</li>
-            <li class="text-gray-500 text-[13px] font-inter leading-[1.6]">Generate up to 15 complete reports</li>
-            <li class="text-gray-500 text-[13px] font-inter leading-[1.6]">Export reports as PDF</li>
+            <li v-for="(item, idx) in 3" :key="idx" class="text-gray-500 text-[13px] font-inter leading-[1.6]">{{ $t(`pricing.trial.summaryItems[${idx}]`) }}</li>
           </ul>
 
           <div class="pt-6 border-t border-gray-100">
-            <p class="text-[11px] font-inter font-semibold text-gray-300 uppercase tracking-wider mb-4">Includes:</p>
+            <p class="text-[11px] font-inter font-semibold text-gray-300 uppercase tracking-wider mb-4">{{ $t('pricing.includes') }}</p>
             <div class="space-y-2.5">
               <div v-for="i in 7" :key="i" class="flex items-center gap-2.5">
                 <svg class="w-3.5 h-3.5 text-gray-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -45,7 +43,7 @@
           <p class="text-coral text-[13px] font-inter font-medium mb-6">{{ $t('pricing.subscription.tagline') }}</p>
 
           <div class="mb-1">
-            <span class="text-gray-400 text-[11px] font-inter">Starting from</span>
+            <span class="text-gray-400 text-[11px] font-inter">{{ $t('pricing.startingFrom') }}</span>
           </div>
           <div class="flex items-baseline gap-1.5 mb-8">
             <span class="text-[2.75rem] font-heading font-normal text-gray-900 leading-none">{{ $t('pricing.subscription.price') }}</span>
@@ -58,20 +56,18 @@
               <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.subscription.cta') }}</span>
             </button>
             <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-5 py-3 border border-burgundy/20 text-burgundy text-[14px] font-medium font-inter hover:bg-burgundy/5 transition-all duration-300 cursor-pointer">
-              <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('business.cta') }}</span>
-              <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('business.cta') }}</span>
+              <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('pricing.subscription.demoBtn') }}</span>
+              <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.subscription.demoBtn') }}</span>
             </button>
           </div>
 
-          <p class="text-[12px] font-inter font-semibold text-burgundy mb-3">On Subscription you'll:</p>
+          <p class="text-[12px] font-inter font-semibold text-burgundy mb-3">{{ $t('pricing.subscription.summaryTitle') }}</p>
           <ul class="space-y-2 mb-7 list-disc list-outside pl-4 marker:text-coral/40">
-            <li class="text-gray-600 text-[13px] font-inter leading-[1.6]">Get unlimited PDF exports and priority support</li>
-            <li class="text-gray-600 text-[13px] font-inter leading-[1.6]">Run up to 15 vehicle history reports every month</li>
-            <li class="text-gray-600 text-[13px] font-inter leading-[1.6]">Cancel anytime with no commitment</li>
+            <li v-for="(item, idx) in 3" :key="idx" class="text-gray-600 text-[13px] font-inter leading-[1.6]">{{ $t(`pricing.subscription.summaryItems[${idx}]`) }}</li>
           </ul>
 
           <div class="pt-6 border-t border-[#fecdd3]/60">
-            <p class="text-[11px] font-inter font-semibold text-burgundy/30 uppercase tracking-wider mb-4">Everything in Trial, and:</p>
+            <p class="text-[11px] font-inter font-semibold text-burgundy/30 uppercase tracking-wider mb-4">{{ $t('pricing.everythingInTrial') }}</p>
             <div class="space-y-2.5">
               <div v-for="i in 6" :key="i" class="flex items-center gap-2.5">
                 <svg class="w-3.5 h-3.5 text-coral flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
