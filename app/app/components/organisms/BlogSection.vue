@@ -68,6 +68,6 @@ const blogImages = [
 const { tm, rt } = useI18n()
 const articles = computed(() => {
   const raw = tm('blog.articles')
-  return Array.isArray(raw) ? raw.map((a: any) => ({ tag: rt(a.tag), read: rt(a.read), title: rt(a.title), desc: rt(a.desc) })) : []
+  return Array.isArray(raw) ? raw.slice(0, 3).map((a: any) => ({ tag: rt(a.category), read: rt(a.readTime) + ' min', title: rt(a.title), desc: rt(a.desc) })) : []
 })
 </script>

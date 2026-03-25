@@ -758,6 +758,8 @@
   "blog": {
     "badge": "Insights, Guides & Industry News",
     "title": "Autocertif Blog",
+    "desc": "Expert advice on used car buying, fraud prevention, market trends, and vehicle history insights.",
+    "cta": "View all articles",
     "subtitle": "Expert advice on used car buying, fraud prevention, market trends, and vehicle history insights.",
     "filterAll": "All",
     "filterProduct": "Product",

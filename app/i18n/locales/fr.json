@@ -758,6 +758,8 @@
   "blog": {
     "badge": "Analyses, guides et actualités du secteur",
     "title": "Blog Autocertif",
+    "desc": "Conseils d'experts sur l'achat de voitures d'occasion, la prévention de la fraude, les tendances du marché et les analyses d'historique véhicule.",
+    "cta": "Voir tous les articles",
     "subtitle": "Conseils d'experts sur l'achat de voitures d'occasion, la prévention de la fraude, les tendances du marché et les analyses d'historique véhicule.",
     "filterAll": "Tous",
     "filterProduct": "Produit",
