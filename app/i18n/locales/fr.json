@@ -633,5 +633,337 @@
       "legalNotice": "Mentions légales",
       "refund": "Remboursement"
     }
+  },
+  "api": {
+    "badge": "API Développeur",
+    "title": "API RESTful d'historique véhicule",
+    "subtitle": "Un seul endpoint pour interroger l'historique complet d'un véhicule par VIN ou plaque d'immatriculation.",
+    "baseUrl": "https://api.autocertif.com/v1",
+    "auth": "Bearer token",
+    "cta": "Obtenir une clé API",
+    "ctaDocs": "Voir la documentation",
+    "statRequests": "req/min",
+    "statDaily": "req/jour",
+    "statConcurrent": "connexions",
+    "statUptime": "disponibilité",
+    "quickStartTitle": "Démarrage rapide",
+    "quickStartDesc": "Commencez en quelques minutes. Authentifiez-vous, envoyez un VIN et recevez un rapport complet en JSON structuré.",
+    "endpointsTitle": "Points d'accès API",
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/v1/reports",
+        "desc": "Générer un rapport complet d'historique véhicule à partir d'un VIN ou d'une plaque."
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/decode/{vin}",
+        "desc": "Décoder un VIN pour obtenir marque, modèle, année et spécifications techniques."
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/reports/{id}/status",
+        "desc": "Vérifier le statut de traitement d'un rapport précédemment demandé."
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/reports/batch",
+        "desc": "Soumettre jusqu'à 100 VIN pour un traitement par lot en une seule requête."
+      }
+    ],
+    "responseTitle": "Schéma de réponse",
+    "responseDesc": "Chaque rapport retourne un objet JSON structuré avec les champs clés suivants.",
+    "responseFields": [
+      { "field": "vin", "type": "string", "desc": "Numéro d'identification du véhicule" },
+      { "field": "make", "type": "string", "desc": "Nom du constructeur" },
+      { "field": "model", "type": "string", "desc": "Nom du modèle" },
+      { "field": "year", "type": "integer", "desc": "Année de fabrication" },
+      { "field": "mileage", "type": "object", "desc": "Historique kilométrique et statut de vérification" },
+      { "field": "accidents", "type": "array", "desc": "Enregistrements d'accidents avec gravité et dates" },
+      { "field": "theft_records", "type": "array", "desc": "Résultats des registres de véhicules volés" },
+      { "field": "title_status", "type": "string", "desc": "Titre propre, récupéré ou reconstruit" },
+      { "field": "owners_count", "type": "integer", "desc": "Nombre de propriétaires précédents" }
+    ],
+    "errorsTitle": "Codes d'erreur",
+    "errors": [
+      { "code": "400", "name": "Requête invalide", "desc": "Format VIN invalide ou champs requis manquants" },
+      { "code": "401", "name": "Non autorisé", "desc": "Clé API manquante ou invalide" },
+      { "code": "403", "name": "Interdit", "desc": "Permissions insuffisantes pour cet endpoint" },
+      { "code": "404", "name": "Non trouvé", "desc": "Aucune donnée trouvée pour le VIN fourni" },
+      { "code": "429", "name": "Trop de requêtes", "desc": "Limite de débit dépassée, réessayez après le délai" },
+      { "code": "500", "name": "Erreur serveur", "desc": "Erreur interne, contactez le support si persistant" }
+    ],
+    "rateLimitTitle": "Limites de débit",
+    "rateLimits": [
+      { "label": "Par minute", "value": "300 requêtes" },
+      { "label": "Par jour", "value": "10 000 requêtes" },
+      { "label": "Connexions", "value": "20 simultanées" }
+    ],
+    "ctaBannerTitle": "Prêt à intégrer ?",
+    "ctaBannerDesc": "Obtenez votre clé API et commencez à interroger les données d'historique véhicule en quelques minutes. Environnement sandbox inclus.",
+    "ctaBannerNote": "Sandbox gratuit. Aucun engagement requis."
+  },
+  "help": {
+    "title": "Centre d'aide",
+    "subtitle": "Comment pouvons-nous vous aider ? Trouvez des réponses à vos questions, explorez nos guides ou contactez notre équipe de support.",
+    "searchPlaceholder": "Rechercher des réponses...",
+    "topicsTitle": "Parcourir par sujet",
+    "topics": [
+      { "title": "Pour commencer", "desc": "Découvrez comment fonctionne Autocertif et obtenez votre premier rapport véhicule." },
+      { "title": "Rapports et données", "desc": "Comprenez le contenu de votre rapport et la provenance des données." },
+      { "title": "Informations véhicule", "desc": "Tout sur les numéros VIN, les plaques d'immatriculation et les vérifications." },
+      { "title": "Compte et facturation", "desc": "Gérez votre compte, vos paiements, factures et abonnements." },
+      { "title": "Solutions entreprise", "desc": "Rapports en volume, intégration API et solutions pour concessionnaires." },
+      { "title": "Confidentialité et sécurité", "desc": "Comment nous protégeons vos données et assurons des transactions sécurisées." }
+    ],
+    "guidesTitle": "Guides populaires",
+    "guides": [
+      {
+        "title": "Comment vérifier une voiture d'occasion avant l'achat",
+        "tag": "Guide d'achat",
+        "desc": "Un guide étape par étape pour vérifier l'historique d'un véhicule, repérer les signaux d'alerte et prendre une décision d'achat en toute confiance.",
+        "image": "/images/help-center/guide-used-car.jpg"
+      },
+      {
+        "title": "Comprendre votre rapport Autocertif",
+        "tag": "Rapports",
+        "desc": "Apprenez à lire chaque section de votre rapport d'historique véhicule et ce que signifient les différents indicateurs de statut.",
+        "image": "/images/help-center/guide-report.jpg"
+      },
+      {
+        "title": "Repérer la fraude au kilométrage",
+        "tag": "Sécurité",
+        "desc": "Découvrez les signes avant-coureurs de la manipulation du compteur et comment notre technologie détecte les retours de kilométrage.",
+        "image": "/images/help-center/guide-mileage.jpg"
+      }
+    ],
+    "faqTitle": "Questions fréquemment posées",
+    "faq": [
+      { "q": "Comment fonctionne Autocertif ?", "a": "Autocertif recoupe 2 500+ points de contrôle issus de 8 000+ sources dans 25+ pays. Entrez simplement un numéro VIN ou une plaque d'immatriculation, et nous générons un rapport complet d'historique véhicule en ~55 secondes en moyenne. Le rapport inclut la vérification du kilométrage, l'historique des accidents, les signalements de vol, le contrôle technique, les données d'émissions et bien plus encore." },
+      { "q": "Qu'est-ce qu'un VIN et où le trouver ?", "a": "Un VIN (Vehicle Identification Number) est un code unique de 17 caractères attribué à chaque véhicule. Vous pouvez le trouver sur le tableau de bord côté conducteur (visible à travers le pare-brise), sur l'étiquette du montant de la porte côté conducteur, sur le certificat d'immatriculation ou sur la carte d'assurance." },
+      { "q": "Combien de temps faut-il pour recevoir mon rapport ?", "a": "La plupart des rapports sont générés en ~55 secondes en moyenne. Dans de rares cas où les données de certaines sources prennent plus de temps à compiler, cela peut prendre jusqu'à quelques minutes. Vous recevrez une notification par e-mail dès que votre rapport sera prêt." },
+      { "q": "Quels moyens de paiement acceptez-vous ?", "a": "Nous acceptons toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express), PayPal, Apple Pay et Google Pay. Pour les clients professionnels achetant des forfaits en volume, nous proposons également le virement bancaire." },
+      { "q": "Puis-je obtenir un remboursement si je ne suis pas satisfait ?", "a": "Si votre rapport contient des données incomplètes ou inexactes, vous pouvez contacter notre équipe de support avec votre numéro de commande et une description du problème. L'éligibilité au remboursement est évaluée au cas par cas. Consultez notre Politique de remboursement pour tous les détails." },
+      { "q": "Quels pays Autocertif couvre-t-il ?", "a": "Autocertif couvre les véhicules immatriculés dans plus de 25 pays, avec une couverture particulièrement forte dans l'Union européenne et au Royaume-Uni. La disponibilité de certaines données peut varier selon le pays." },
+      { "q": "Quelle est la fiabilité de la vérification du kilométrage ?", "a": "Notre vérification du kilométrage croise les données des contrôles techniques officiels, des carnets d'entretien, des bases de données d'assurance et d'autres sources vérifiées. Nous signalons toute anomalie ou retour suspect du compteur. Notre approche multi-sources offre l'une des vérifications de kilométrage les plus fiables disponibles sur le marché." },
+      { "q": "Proposez-vous des solutions pour les entreprises ?", "a": "Oui ! Nous proposons des solutions sur mesure pour les concessionnaires automobiles, les compagnies d'assurance, les sociétés de leasing et d'autres entreprises du secteur automobile. Cela comprend des forfaits de rapports en volume, l'intégration API, une gestion de compte dédiée et des tarifs personnalisés." }
+    ],
+    "supportTitle": "Besoin d'aide supplémentaire ?",
+    "supportDesc": "Notre équipe de support est là pour vous aider. Contactez-nous et nous vous répondrons le plus rapidement possible.",
+    "supportCta": "Contacter le support",
+    "statSatisfaction": "Taux de satisfaction",
+    "statResponse": "Temps de réponse moyen",
+    "statAvailability": "Disponibilité"
+  },
+  "blog": {
+    "badge": "Analyses, guides et actualités du secteur",
+    "title": "Blog Autocertif",
+    "subtitle": "Conseils d'experts sur l'achat de voitures d'occasion, la prévention de la fraude, les tendances du marché et les analyses d'historique véhicule.",
+    "filterAll": "Tous",
+    "filterProduct": "Produit",
+    "filterResearch": "Recherche",
+    "filterGuides": "Guides",
+    "filterIndustry": "Industrie",
+    "readTime": "min de lecture",
+    "readMore": "Lire l'article",
+    "author": "Autocertif",
+    "articles": [
+      {
+        "title": "Fonctionnalités du rapport d'historique véhicule",
+        "category": "Produit",
+        "desc": "Un aperçu de toutes les fonctionnalités d'Autocertif — des analyses propulsées par l'IA au Score Autocertif et à l'analyse des habitudes de conduite.",
+        "readTime": "6",
+        "image": "/images/blog-posts/01-features.jpg"
+      },
+      {
+        "title": "Comprendre la fraude au compteur : statistiques et prévention",
+        "category": "Recherche",
+        "desc": "Nos données révèlent une relation inverse entre le coût du véhicule et la probabilité de falsification. Les véhicules à moins de 5 000 € ont un taux de fraude de 7,5 %.",
+        "readTime": "8",
+        "image": "/images/blog-posts/02-odometer.jpg"
+      },
+      {
+        "title": "Comment lire un rapport d'historique véhicule : le guide complet",
+        "category": "Guides",
+        "desc": "Tout ce que vous devez savoir pour interpréter votre rapport d'historique véhicule — des graphiques de kilométrage aux marques de titre et dossiers de dommages.",
+        "readTime": "7",
+        "image": "/images/blog-posts/03-report-guide.jpg"
+      },
+      {
+        "title": "Santé de la batterie d'un véhicule électrique : ce que les acheteurs d'occasion doivent savoir",
+        "category": "Guides",
+        "desc": "Avec des millions de VE atteignant la barre des 3 à 5 ans, comprendre la dégradation de la batterie est crucial. Voici ce que tout acheteur de VE d'occasion doit savoir.",
+        "readTime": "10",
+        "image": "/images/blog-posts/04-ev-battery.jpg"
+      },
+      {
+        "title": "Les 5 signes révélateurs d'un compteur manipulé",
+        "category": "Guides",
+        "desc": "Comment repérer une voiture au compteur falsifié avant qu'il ne soit trop tard. Ces cinq signes d'alerte pourraient vous faire économiser des milliers d'euros.",
+        "readTime": "5",
+        "image": "/images/blog-posts/05-clocked-car.jpg"
+      },
+      {
+        "title": "Rapports d'historique véhicule gratuits ou payants : quelle différence ?",
+        "category": "Industrie",
+        "desc": "Comprenez ce que vous obtenez avec les vérifications VIN gratuites par rapport aux rapports payants complets, et quand chaque option est pertinente.",
+        "readTime": "6",
+        "image": "/images/blog-posts/06-free-vs-paid.jpg"
+      },
+      {
+        "title": "Couverture Autocertif en Europe de l'Est et au Moyen-Orient",
+        "category": "Produit",
+        "desc": "Autocertif apporte des rapports d'historique véhicule complets dans les pays des Balkans et du Golfe — avec des partenariats de données locaux et un support multilingue.",
+        "readTime": "7",
+        "image": "/images/blog-posts/07-coverage.jpg"
+      },
+      {
+        "title": "Importation de véhicules transfrontaliers : les risques cachés révélés par les données",
+        "category": "Recherche",
+        "desc": "Notre analyse de 1,2 million de transactions transfrontalières révèle des taux alarmants de blanchiment de titre, de dommages non déclarés et de fraude au kilométrage.",
+        "readTime": "9",
+        "image": "/images/blog-posts/08-cross-border.jpg"
+      },
+      {
+        "title": "La checklist ultime pour inspecter un véhicule d'occasion avant l'achat",
+        "category": "Guides",
+        "desc": "Une liste de contrôle complète, étape par étape, couvrant tout, de la carrosserie aux pneus en passant par l'électronique et les documents.",
+        "readTime": "8",
+        "image": "/images/blog-posts/09-checklist.jpg"
+      },
+      {
+        "title": "Comment vérifier une voiture d'occasion avant l'achat : le guide définitif",
+        "category": "Guides",
+        "desc": "De la première annonce en ligne au paiement — chaque vérification, chaque question et chaque signal d'alerte à connaître avant d'acheter un véhicule d'occasion.",
+        "readTime": "14",
+        "image": "/images/blog-posts/10-definitive.jpg"
+      },
+      {
+        "title": "Comprendre votre rapport Autocertif : décryptage complet",
+        "category": "Guides",
+        "desc": "Chaque section, chaque score, chaque indicateur expliqué — apprenez exactement comment lire votre rapport Autocertif et prenez des décisions d'achat plus éclairées.",
+        "readTime": "12",
+        "image": "/images/blog-posts/11-report-breakdown.jpg"
+      },
+      {
+        "title": "Détecter la fraude au kilométrage : comment se protéger contre la falsification du compteur",
+        "category": "Guides",
+        "desc": "La fraude au compteur coûte 5,3 milliards d'euros par an aux acheteurs européens. Apprenez à détecter les compteurs falsifiés grâce aux signes physiques et aux outils d'historique.",
+        "readTime": "13",
+        "image": "/images/blog-posts/12-mileage-fraud.jpg"
+      },
+      {
+        "title": "Le marché automobile d'occasion en Europe",
+        "category": "Industrie",
+        "desc": "Des valeurs de revente des VE à l'impact des réglementations Euro 7, voici ce qui façonne le marché automobile d'occasion européen — et ce que cela signifie pour les acheteurs.",
+        "readTime": "8",
+        "image": "/images/blog-posts/13-market.jpg"
+      }
+    ]
+  },
+  "affiliate": {
+    "badge": "Programme Partenaire",
+    "title": "Monétisez votre audience automobile",
+    "subtitle": "Gagnez 30 % de commission sur chaque vente référée. Rejoignez notre programme d'affiliation et transformez votre audience en revenus récurrents.",
+    "cta": "Devenir partenaire",
+    "ctaTerms": "Voir les conditions",
+    "stats": [
+      { "value": "30%", "label": "Commission par vente" },
+      { "value": "60 jours", "label": "Fenêtre d'attribution" },
+      { "value": "0 €", "label": "Seuil de paiement min." },
+      { "value": "8,4%", "label": "Taux de conversion moy." }
+    ],
+    "termsTitle": "Conditions du programme",
+    "terms": [
+      { "title": "Taux fixe unique de 30 %", "desc": "Pas de paliers, pas de conditions cachées. Vous gagnez 30 % sur chaque vente dès le premier jour." },
+      { "title": "Fenêtre d'attribution de 60 jours", "desc": "Une longue période de suivi garantit que vous êtes crédité pour les conversions même des semaines après le clic initial." },
+      { "title": "Aucun seuil de paiement minimum", "desc": "Pas besoin d'accumuler un solde. Chaque commission gagnée est versée au cycle mensuel suivant." },
+      { "title": "Tableau de bord en temps réel", "desc": "Suivez les clics, conversions et commissions en temps réel depuis votre tableau de bord partenaire dédié." },
+      { "title": "Supports marketing fournis", "desc": "Accédez à des bannières, pages de destination et modèles de texte conçus pour convertir votre audience." },
+      { "title": "Support partenaire dédié", "desc": "Chaque partenaire bénéficie d'un interlocuteur dédié pour optimiser les performances et répondre à toute question." }
+    ],
+    "stepsTitle": "Démarrez en 3 étapes",
+    "steps": [
+      { "title": "Postuler", "desc": "Soumettez votre candidature. Nous examinons chaque demande sous 48 heures ouvrées." },
+      { "title": "Intégrer", "desc": "Recevez votre lien de suivi unique et accédez à votre tableau de bord partenaire." },
+      { "title": "Gagner", "desc": "Les commissions sont calculées en temps réel et distribuées mensuellement par virement SEPA ou PayPal." }
+    ],
+    "compensationTitle": "Structure de commission transparente",
+    "compensationDesc": "Un taux fixe unique de 30 % sur chaque vente. Pas de paliers, pas de plafonds, pas de petits caractères. Paiements mensuels par virement SEPA ou PayPal, sous 10 jours ouvrés.",
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      { "q": "Le programme est-il gratuit ?", "a": "Oui, rejoindre le programme d'affiliation Autocertif est entièrement gratuit. Aucun frais d'inscription, frais mensuels ou coûts cachés." },
+      { "q": "Quand suis-je payé ?", "a": "Les commissions sont versées mensuellement, dans les 10 jours ouvrés suivant la fin de chaque mois, par virement SEPA ou PayPal." },
+      { "q": "Quels canaux de promotion sont autorisés ?", "a": "Tous les canaux sont autorisés — blogs, YouTube, réseaux sociaux, newsletters, sites comparatifs — sauf les enchères sur la marque en recherche payante (Google Ads, Bing Ads)." },
+      { "q": "Quel taux de conversion puis-je espérer ?", "a": "Notre taux de conversion moyen est de 8,4 %, bien que cela varie en fonction de la qualité de votre audience et de l'adéquation du produit avec leurs besoins." },
+      { "q": "Puis-je promouvoir dans plusieurs pays ?", "a": "Oui. Autocertif opère dans plus de 25 pays et votre lien de suivi fonctionne à l'international. Les commissions s'appliquent quel que soit le pays de l'acheteur." },
+      { "q": "Fournissez-vous des supports marketing ?", "a": "Absolument. Une fois approuvé, vous aurez accès à des bannières, modèles d'e-mails, textes de page de destination et captures d'écran du produit optimisés pour la conversion." }
+    ],
+    "ctaBannerTitle": "Rejoignez le programme",
+    "ctaBannerDesc": "Commencez à gagner des commissions dès aujourd'hui. Gratuit, sans seuil minimum et avec un support dédié.",
+    "ctaBannerNote": "Inscription gratuite. Aucun engagement requis."
+  },
+  "about": {
+    "badge": "Notre vision",
+    "title": "Rendre le marché automobile plus transparent, partout",
+    "subtitle": "Autocertif s'est donné une mission claire : garantir à chaque acheteur de véhicule d'occasion un accès complet et fiable aux données d'historique. Nous construisons la plateforme de référence en matière de vérification automobile, au service de la confiance et de la sécurité des transactions.",
+    "statUsers": "Utilisateurs actifs",
+    "statVehicles": "Véhicules analysés",
+    "statSources": "Sources vérifiées",
+    "statCountries": "Pays couverts",
+    "statTime": "Délai moyen par rapport",
+    "commitmentsTitle": "Les principes qui guident chaque décision",
+    "commitments": [
+      { "title": "Transparence intégrale", "desc": "Chaque donnée disponible est restituée dans le rapport, sans filtre ni omission. Nous pensons que l'asymétrie d'information est le premier facteur de risque sur le marché de l'occasion — notre rôle est de l'éliminer.", "note": "Notre engagement fondateur" },
+      { "title": "Rigueur technologique", "desc": "Infrastructure certifiée, recoupement systématique entre sources indépendantes et algorithmes de détection d'anomalies entraînés sur des millions de profils véhicules." },
+      { "title": "Couverture internationale", "desc": "Un véhicule ne connaît pas les frontières. Nos rapports agrègent les données de milliers de sources réparties dans plus de 25 pays, offrant une vision complète quel que soit l'historique d'immatriculation." }
+    ],
+    "objectivesTitle": "Ce qui nous anime au quotidien",
+    "objectives": [
+      { "label": "Protection", "title": "Protéger chaque acheteur", "desc": "Éliminer l'asymétrie d'information sur le marché de l'occasion en garantissant à chaque acheteur un accès transparent et complet aux données d'historique du véhicule qu'il envisage." },
+      { "label": "Excellence", "title": "Repousser les standards de fiabilité", "desc": "Investir continuellement dans nos algorithmes de détection, nos processus de certification et notre infrastructure pour que chaque rapport reflète la réalité avec précision." },
+      { "label": "Accessibilité", "title": "Rendre la donnée accessible à tous", "desc": "Proposer un service simple, rapide et abordable — pour les particuliers comme pour les professionnels, quel que soit le pays ou le marché." }
+    ],
+    "roadmapTitle": "Les axes stratégiques de notre développement",
+    "roadmap": [
+      { "title": "Élargir notre couverture internationale", "desc": "Intégrer de nouvelles sources de données dans des marchés encore peu couverts, afin d'offrir une vision complète de l'historique d'un véhicule, où qu'il ait circulé." },
+      { "title": "Enrichir la profondeur des rapports", "desc": "Croiser davantage de points de données — contrôles techniques, données d'émissions, historiques d'entretien — pour fournir le rapport le plus complet du marché." },
+      { "title": "Accompagner les professionnels", "desc": "Développer des solutions dédiées — API, marque blanche, tableaux de bord — pour aider les concessionnaires, assureurs et places de marché à intégrer nos données dans leurs processus." },
+      { "title": "Innover par l'intelligence artificielle", "desc": "Exploiter l'IA et le machine learning pour améliorer la détection d'anomalies, anticiper les risques et offrir des analyses prédictives sur l'état futur des véhicules." },
+      { "title": "Démocratiser l'accès à la donnée", "desc": "Rendre l'information véhicule accessible au plus grand nombre grâce à des tarifs adaptés, une expérience utilisateur simplifiée et une présence dans tous les marchés clés." }
+    ],
+    "ctaTitle": "Prêt à vérifier un véhicule ?",
+    "ctaDesc": "Particulier, concessionnaire ou partenaire : accédez en quelques secondes à l'historique complet de n'importe quel véhicule.",
+    "ctaCta": "Lancer une vérification",
+    "ctaBusiness": "Découvrir l'offre entreprise"
+  },
+  "contact": {
+    "badge": "Contactez-nous",
+    "title": "Prenez contact",
+    "subtitle": "Vous avez une question sur un rapport, besoin d'aide avec votre compte ou envie d'explorer un partenariat ? Nous serions ravis d'échanger avec vous.",
+    "formTitle": "Envoyez-nous un message",
+    "fieldName": "Nom complet",
+    "fieldEmail": "Adresse email",
+    "fieldSubject": "Sujet",
+    "fieldMessage": "Message",
+    "subjects": ["Demande générale", "Problème avec un rapport", "Demande de remboursement", "Partenariat commercial", "Autre"],
+    "subjectPlaceholder": "Sélectionnez un sujet",
+    "send": "Envoyer le message",
+    "office": "LADEV LTD, ul. Cherkovna 57, étage 2, bureau 15, Sofia, Bulgarie",
+    "officeLabel": "Bureau",
+    "hoursLabel": "Horaires du support",
+    "hours": "Du lundi au vendredi, heures ouvrées",
+    "responseLabel": "Temps de réponse",
+    "response": "Généralement sous 7 jours ouvrés",
+    "faqTitle": "Avant de nous contacter",
+    "faqSubtitle": "Vous trouverez peut-être votre réponse ici.",
+    "faq": [
+      { "q": "Comment obtenir un remboursement ?", "a": "Si vous rencontrez un problème avec votre rapport, contactez-nous via cette page. Consultez notre Politique de remboursement pour les détails." },
+      { "q": "Mon rapport semble incomplet. Que faire ?", "a": "La disponibilité des données varie selon le pays et le véhicule. Si vous pensez qu'il manque quelque chose, contactez-nous avec votre numéro de commande." },
+      { "q": "Puis-je vérifier un véhicule d'un autre pays ?", "a": "Oui ! Autocertif couvre plus de 25 pays. Un seul rapport inclut toutes les données disponibles, sans frais supplémentaires." },
+      { "q": "Combien de temps faut-il pour recevoir mon rapport ?", "a": "Les rapports sont générés en ~55 secondes en moyenne. Une fois acheté, vous y accédez instantanément en ligne ou en PDF." },
+      { "q": "Proposez-vous des solutions pour les entreprises ?", "a": "Absolument. Nous proposons l'accès API, des solutions en marque blanche et des tarifs volume pour concessionnaires, assureurs et places de marché." },
+      { "q": "Quels moyens de paiement acceptez-vous ?", "a": "Nous acceptons toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express), PayPal, Apple Pay et Google Pay." }
+    ]
   }
 }

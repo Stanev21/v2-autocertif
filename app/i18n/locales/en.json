@@ -633,5 +633,337 @@
       "legalNotice": "Legal Notice",
       "refund": "Refund Policy"
     }
+  },
+  "api": {
+    "badge": "Developer API",
+    "title": "RESTful Vehicle History API",
+    "subtitle": "Single endpoint to query a vehicle's full history by VIN or license plate.",
+    "baseUrl": "https://api.autocertif.com/v1",
+    "auth": "Bearer token",
+    "cta": "Get API Key",
+    "ctaDocs": "View Documentation",
+    "statRequests": "req/min",
+    "statDaily": "req/day",
+    "statConcurrent": "concurrent",
+    "statUptime": "uptime",
+    "quickStartTitle": "Quick Start",
+    "quickStartDesc": "Get started in minutes. Authenticate, send a VIN, and receive a full vehicle history report as structured JSON.",
+    "endpointsTitle": "API Endpoints",
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/api/v1/reports",
+        "desc": "Generate a full vehicle history report from a VIN or license plate."
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/decode/{vin}",
+        "desc": "Decode a VIN to retrieve make, model, year, and technical specs."
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/reports/{id}/status",
+        "desc": "Check the processing status of a previously requested report."
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/reports/batch",
+        "desc": "Submit up to 100 VINs for batch processing in a single request."
+      }
+    ],
+    "responseTitle": "Response Schema",
+    "responseDesc": "Every report returns a structured JSON object with the following key fields.",
+    "responseFields": [
+      { "field": "vin", "type": "string", "desc": "Vehicle Identification Number" },
+      { "field": "make", "type": "string", "desc": "Manufacturer name" },
+      { "field": "model", "type": "string", "desc": "Model name" },
+      { "field": "year", "type": "integer", "desc": "Year of manufacture" },
+      { "field": "mileage", "type": "object", "desc": "Mileage history and verification status" },
+      { "field": "accidents", "type": "array", "desc": "Accident records with severity and dates" },
+      { "field": "theft_records", "type": "array", "desc": "Stolen vehicle registry results" },
+      { "field": "title_status", "type": "string", "desc": "Clean, salvage, or rebuilt title" },
+      { "field": "owners_count", "type": "integer", "desc": "Number of previous owners" }
+    ],
+    "errorsTitle": "Error Codes",
+    "errors": [
+      { "code": "400", "name": "Bad Request", "desc": "Invalid VIN format or missing required fields" },
+      { "code": "401", "name": "Unauthorized", "desc": "Missing or invalid API key" },
+      { "code": "403", "name": "Forbidden", "desc": "Insufficient permissions for this endpoint" },
+      { "code": "404", "name": "Not Found", "desc": "No data found for the provided VIN" },
+      { "code": "429", "name": "Too Many Requests", "desc": "Rate limit exceeded, retry after cooldown" },
+      { "code": "500", "name": "Server Error", "desc": "Internal error, contact support if persistent" }
+    ],
+    "rateLimitTitle": "Rate Limiting",
+    "rateLimits": [
+      { "label": "Per minute", "value": "300 requests" },
+      { "label": "Per day", "value": "10,000 requests" },
+      { "label": "Concurrent", "value": "20 connections" }
+    ],
+    "ctaBannerTitle": "Ready to integrate?",
+    "ctaBannerDesc": "Get your API key and start querying vehicle history data in minutes. Sandbox environment included.",
+    "ctaBannerNote": "Free sandbox. No commitment required."
+  },
+  "help": {
+    "title": "Help Center",
+    "subtitle": "How can we help you? Find answers to your questions, explore our guides, or get in touch with our support team.",
+    "searchPlaceholder": "Search for answers...",
+    "topicsTitle": "Browse by topic",
+    "topics": [
+      { "title": "Getting Started", "desc": "Learn how Autocertif works and get your first vehicle report." },
+      { "title": "Reports & Data", "desc": "Understand what's in your report and where the data comes from." },
+      { "title": "Vehicle Information", "desc": "Everything about VIN numbers, license plates, and vehicle checks." },
+      { "title": "Account & Billing", "desc": "Manage your account, payments, invoices, and subscriptions." },
+      { "title": "Business Solutions", "desc": "Bulk reports, API integration, and solutions for dealerships." },
+      { "title": "Privacy & Security", "desc": "How we protect your data and ensure secure transactions." }
+    ],
+    "guidesTitle": "Popular Guides",
+    "guides": [
+      {
+        "title": "How to Check a Used Car Before Buying",
+        "tag": "Buying Guide",
+        "desc": "A step-by-step guide to verifying a vehicle's history, spotting red flags, and making a confident purchase decision.",
+        "image": "/images/help-center/guide-used-car.jpg"
+      },
+      {
+        "title": "Understanding Your Autocertif Report",
+        "tag": "Reports",
+        "desc": "Learn how to read each section of your vehicle history report and what the different status indicators mean.",
+        "image": "/images/help-center/guide-report.jpg"
+      },
+      {
+        "title": "Spotting Mileage Fraud",
+        "tag": "Safety",
+        "desc": "Discover the warning signs of odometer tampering and how our technology detects mileage rollbacks.",
+        "image": "/images/help-center/guide-mileage.jpg"
+      }
+    ],
+    "faqTitle": "Frequently Asked Questions",
+    "faq": [
+      { "q": "How does Autocertif work?", "a": "Autocertif cross-references 2,500+ checkpoints from 8,000+ sources across 25+ countries. Simply enter a VIN number or license plate, and we generate a comprehensive vehicle history report in ~55 seconds on average. The report includes mileage verification, accident history, theft records, vehicle inspection, emissions data, and more." },
+      { "q": "What is a VIN and where can I find it?", "a": "A VIN (Vehicle Identification Number) is a unique 17-character code assigned to every vehicle. You can find it on the driver's side dashboard (visible through the windshield), on the driver's side door jamb sticker, on the vehicle registration document, or on the insurance card. It contains no letters I, O, or Q to avoid confusion with numbers." },
+      { "q": "How long does it take to receive my report?", "a": "Most reports are generated in ~55 seconds on average. In rare cases where data from certain sources takes longer to compile, it may take up to a few minutes. You'll receive an email notification as soon as your report is ready." },
+      { "q": "What payment methods do you accept?", "a": "We accept all major credit and debit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. For business clients purchasing bulk packages, we also offer bank transfer as a payment option." },
+      { "q": "Can I get a refund if I'm not satisfied?", "a": "If your report contains incomplete or inaccurate data, you can contact our support team with your order number and a description of the issue. Refund eligibility is assessed on a case-by-case basis. Please review our Refund Policy for full details." },
+      { "q": "What countries does Autocertif cover?", "a": "Autocertif covers vehicles registered in over 25 countries, with particularly strong coverage across the European Union and the United Kingdom. Data availability may vary by country depending on local registries and data sources." },
+      { "q": "How accurate is the mileage verification?", "a": "Our mileage verification cross-references data from official vehicle inspections, service records, insurance databases, and other verified sources. We flag any discrepancies or suspicious rollbacks. While no system is 100% infallible, our multi-source approach provides one of the most reliable mileage checks available on the market." },
+      { "q": "Do you offer solutions for businesses?", "a": "Yes! We offer tailored solutions for car dealerships, insurance companies, leasing firms, and other automotive businesses. This includes bulk report packages, API integration for your existing systems, dedicated account management, and custom pricing. Visit our Business page or contact our sales team for more information." }
+    ],
+    "supportTitle": "Still need help?",
+    "supportDesc": "Our support team is here to assist you. Reach out and we'll get back to you as quickly as possible.",
+    "supportCta": "Contact Support",
+    "statSatisfaction": "Satisfaction rate",
+    "statResponse": "Avg. response time",
+    "statAvailability": "Availability"
+  },
+  "blog": {
+    "badge": "Insights, Guides & Industry News",
+    "title": "Autocertif Blog",
+    "subtitle": "Expert advice on used car buying, fraud prevention, market trends, and vehicle history insights.",
+    "filterAll": "All",
+    "filterProduct": "Product",
+    "filterResearch": "Research",
+    "filterGuides": "Guides",
+    "filterIndustry": "Industry",
+    "readTime": "min read",
+    "readMore": "Read article",
+    "author": "Autocertif",
+    "articles": [
+      {
+        "title": "Vehicle History Report Features",
+        "category": "Product",
+        "desc": "A look at all the features Autocertif offers — from AI-powered insights to the Autocertif Score and driving habits analysis.",
+        "readTime": "6",
+        "image": "/images/blog-posts/01-features.jpg"
+      },
+      {
+        "title": "Understanding Odometer Fraud: Statistics & Prevention",
+        "category": "Research",
+        "desc": "Our data reveals an inverse relationship between vehicle cost and tampering likelihood. Budget vehicles under €5,000 have a 7.5% fraud rate.",
+        "readTime": "8",
+        "image": "/images/blog-posts/02-odometer.jpg"
+      },
+      {
+        "title": "How to Read a Vehicle History Report: A Complete Guide",
+        "category": "Guides",
+        "desc": "Everything you need to know about interpreting your vehicle history report — from mileage charts to title brands and damage records.",
+        "readTime": "7",
+        "image": "/images/blog-posts/03-report-guide.jpg"
+      },
+      {
+        "title": "EV Battery Health: What Used Car Buyers Need to Know",
+        "category": "Guides",
+        "desc": "With millions of EVs reaching the 3-5 year mark, understanding battery degradation is crucial. Here's what every used EV buyer needs to know.",
+        "readTime": "10",
+        "image": "/images/blog-posts/04-ev-battery.jpg"
+      },
+      {
+        "title": "Top 5 Signs of a Clocked Car",
+        "category": "Guides",
+        "desc": "How to spot a car with a tampered odometer before it's too late. These five warning signs could save you thousands.",
+        "readTime": "5",
+        "image": "/images/blog-posts/05-clocked-car.jpg"
+      },
+      {
+        "title": "Free vs Paid Vehicle History Reports: What's the Difference?",
+        "category": "Industry",
+        "desc": "Understand what you get with free VIN checks versus comprehensive paid reports, and when each option makes sense.",
+        "readTime": "6",
+        "image": "/images/blog-posts/06-free-vs-paid.jpg"
+      },
+      {
+        "title": "Autocertif Coverage in Eastern Europe and the Middle East",
+        "category": "Product",
+        "desc": "Autocertif brings comprehensive vehicle history reports to countries across the Balkans and Gulf states — with localized data partnerships and native language support.",
+        "readTime": "7",
+        "image": "/images/blog-posts/07-coverage.jpg"
+      },
+      {
+        "title": "Cross-Border Vehicle Imports: Hidden Risks Exposed by Data",
+        "category": "Research",
+        "desc": "Our analysis of 1.2 million cross-border transactions reveals alarming rates of title washing, undisclosed damage, and mileage fraud in imported used vehicles.",
+        "readTime": "9",
+        "image": "/images/blog-posts/08-cross-border.jpg"
+      },
+      {
+        "title": "The Ultimate Pre-Purchase Inspection Checklist for Used Cars",
+        "category": "Guides",
+        "desc": "A comprehensive, step-by-step checklist covering everything from bodywork and tyres to electronics and documents — so you never miss a red flag.",
+        "readTime": "8",
+        "image": "/images/blog-posts/09-checklist.jpg"
+      },
+      {
+        "title": "How to Check a Used Car Before Buying: The Definitive Guide",
+        "category": "Guides",
+        "desc": "From the first online listing to handing over the money — every check, every question, and every red flag you need to know before buying a used car.",
+        "readTime": "14",
+        "image": "/images/blog-posts/10-definitive.jpg"
+      },
+      {
+        "title": "Understanding Your Autocertif Report: A Complete Breakdown",
+        "category": "Guides",
+        "desc": "Every section, every score, every indicator explained — learn exactly how to read your Autocertif vehicle history report and make smarter buying decisions.",
+        "readTime": "12",
+        "image": "/images/blog-posts/11-report-breakdown.jpg"
+      },
+      {
+        "title": "Spotting Mileage Fraud: How to Protect Yourself from Odometer Tampering",
+        "category": "Guides",
+        "desc": "Odometer fraud costs European buyers €5.3 billion annually. Learn how to detect clocked cars using physical signs, data analysis, and vehicle history tools.",
+        "readTime": "13",
+        "image": "/images/blog-posts/12-mileage-fraud.jpg"
+      },
+      {
+        "title": "The Used Car Market in Europe",
+        "category": "Industry",
+        "desc": "From EV resale values to the impact of Euro 7 regulations, here's what shapes the European used car market — and what it means for buyers.",
+        "readTime": "8",
+        "image": "/images/blog-posts/13-market.jpg"
+      }
+    ]
+  },
+  "affiliate": {
+    "badge": "Partner Program",
+    "title": "Monetize your automotive audience",
+    "subtitle": "Earn 30% commission on every sale you refer. Join our affiliate program and turn your audience into recurring revenue.",
+    "cta": "Become a partner",
+    "ctaTerms": "View terms",
+    "stats": [
+      { "value": "30%", "label": "Commission per sale" },
+      { "value": "60 days", "label": "Attribution window" },
+      { "value": "0 €", "label": "Minimum payout" },
+      { "value": "8.4%", "label": "Avg. conversion rate" }
+    ],
+    "termsTitle": "Program terms",
+    "terms": [
+      { "title": "Single fixed 30% rate", "desc": "No tiered structure, no hidden conditions. You earn 30% on every sale from day one — whether it's your first or your thousandth." },
+      { "title": "60-day attribution window", "desc": "Long tracking period ensures you get credited for conversions even weeks after the initial click." },
+      { "title": "Zero minimum payout", "desc": "No need to accumulate a balance. Every commission earned is paid out on the next monthly cycle." },
+      { "title": "Real-time tracking dashboard", "desc": "Monitor clicks, conversions, and commissions in real time from your dedicated partner dashboard." },
+      { "title": "Marketing materials provided", "desc": "Access banners, landing pages, and copy templates designed to convert your audience." },
+      { "title": "Dedicated partner support", "desc": "Every partner gets a dedicated point of contact to help optimize performance and resolve any questions." }
+    ],
+    "stepsTitle": "Get started in 3 steps",
+    "steps": [
+      { "title": "Apply", "desc": "Submit your application. We review every request within 48 business hours." },
+      { "title": "Integrate", "desc": "Receive your unique tracking link and get access to your partner dashboard." },
+      { "title": "Earn", "desc": "Commissions are calculated in real time and distributed monthly via SEPA or PayPal." }
+    ],
+    "compensationTitle": "Transparent commission structure",
+    "compensationDesc": "A single fixed 30% rate on every sale. No tiers, no caps, no fine print. Monthly payments via SEPA transfer or PayPal, within 10 business days.",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      { "q": "Is the program free to join?", "a": "Yes, joining the Autocertif affiliate program is completely free. There are no setup fees, monthly fees, or hidden costs." },
+      { "q": "When do I get paid?", "a": "Commissions are paid monthly, within 10 business days of the end of each month, via SEPA bank transfer or PayPal." },
+      { "q": "What promotion channels are allowed?", "a": "All channels are permitted — blogs, YouTube, social media, email newsletters, comparison sites — except brand bidding on paid search (Google Ads, Bing Ads)." },
+      { "q": "What conversion rate can I expect?", "a": "Our average affiliate conversion rate is 8.4%, though this varies depending on your audience quality and how well the product fits their needs." },
+      { "q": "Can I promote in multiple countries?", "a": "Yes. Autocertif operates across 25+ countries, and your tracking link works globally. Commissions apply regardless of the buyer's location." },
+      { "q": "Do you provide marketing materials?", "a": "Absolutely. Once approved, you'll have access to banners, email templates, landing page copy, and product screenshots optimized for conversion." }
+    ],
+    "ctaBannerTitle": "Join the program",
+    "ctaBannerDesc": "Start earning commissions today. Free to join, no minimum payout, and dedicated support.",
+    "ctaBannerNote": "Free to join. No commitment required."
+  },
+  "about": {
+    "badge": "Our Vision",
+    "title": "Making the automotive market more transparent, everywhere",
+    "subtitle": "Autocertif was built on a simple conviction: every used car buyer deserves full, reliable access to a vehicle's history. We are building the reference platform for verified automotive data, in service of trust and transaction safety.",
+    "statUsers": "Active Users",
+    "statVehicles": "Vehicles Checked",
+    "statSources": "Verified Sources",
+    "statCountries": "Countries Covered",
+    "statTime": "Avg. Report Time",
+    "commitmentsTitle": "The Principles Behind Every Decision",
+    "commitments": [
+      { "title": "Full Transparency", "desc": "Every available data point is included in the report, with no filters or omissions. We believe information asymmetry is the primary risk factor in the used car market — our role is to eliminate it.", "note": "Our founding commitment" },
+      { "title": "Technological Rigor", "desc": "Certified infrastructure, systematic cross-referencing between independent sources, and anomaly detection algorithms trained on millions of vehicle profiles." },
+      { "title": "International Coverage", "desc": "Vehicles don't recognize borders. Our reports aggregate data from thousands of sources across 25+ countries, providing a complete picture regardless of registration history." }
+    ],
+    "objectivesTitle": "What Drives Us Every Day",
+    "objectives": [
+      { "label": "Protection", "title": "Protect Every Buyer", "desc": "Eliminate information asymmetry in the used car market by ensuring every buyer has transparent, complete access to a vehicle's history data." },
+      { "label": "Excellence", "title": "Push Reliability Standards Further", "desc": "Continuously invest in our detection algorithms, certification processes, and infrastructure so every report reflects reality with precision." },
+      { "label": "Accessibility", "title": "Make Data Accessible to All", "desc": "Provide a simple, fast, and affordable service — for individuals and professionals alike, regardless of country or market." }
+    ],
+    "roadmapTitle": "The Strategic Pillars of Our Growth",
+    "roadmap": [
+      { "title": "Expand International Coverage", "desc": "Integrate new data sources in underserved markets to provide a complete view of any vehicle's history, wherever it has been registered." },
+      { "title": "Deepen Report Insights", "desc": "Cross-reference more data points — technical inspections, emissions data, maintenance records — to deliver the most comprehensive report on the market." },
+      { "title": "Empower Professionals", "desc": "Develop dedicated solutions — API, white-label, dashboards — to help dealers, insurers, and marketplaces integrate our data into their workflows." },
+      { "title": "Innovate with Artificial Intelligence", "desc": "Leverage AI and machine learning to improve anomaly detection, anticipate risks, and offer predictive analytics on vehicle condition." },
+      { "title": "Democratize Access to Data", "desc": "Make vehicle information accessible to everyone through adapted pricing, a simplified user experience, and presence in all key markets." }
+    ],
+    "ctaTitle": "Ready to check a vehicle?",
+    "ctaDesc": "Whether you're a car buyer, dealer, or business partner — access the full history of any vehicle in seconds.",
+    "ctaCta": "Check a Vehicle",
+    "ctaBusiness": "Discover Business Solutions"
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Get in Touch",
+    "subtitle": "Have a question about a report, need help with your account, or want to explore a business partnership? We'd love to hear from you.",
+    "formTitle": "Send us a message",
+    "fieldName": "Full Name",
+    "fieldEmail": "Email Address",
+    "fieldSubject": "Subject",
+    "fieldMessage": "Message",
+    "subjects": ["General Inquiry", "Report Issue", "Refund Request", "Business Partnership", "Other"],
+    "subjectPlaceholder": "Select a subject",
+    "send": "Send Message",
+    "office": "LADEV LTD, ul. Cherkovna 57, floor 2, office 15, Sofia, Bulgaria",
+    "officeLabel": "Office",
+    "hoursLabel": "Support Hours",
+    "hours": "Monday to Friday, business hours",
+    "responseLabel": "Response Time",
+    "response": "Typically within 7 business days",
+    "faqTitle": "Before you reach out",
+    "faqSubtitle": "You might find your answer here.",
+    "faq": [
+      { "q": "How do I get a refund?", "a": "If you experience an issue with your report, reach out through our contact page. Please review our Refund Policy for details." },
+      { "q": "My report seems incomplete. What should I do?", "a": "Data availability varies by country and vehicle. If you believe something is missing, contact us with your order number and we'll investigate." },
+      { "q": "Can I check a vehicle from another country?", "a": "Yes! Autocertif covers 25+ countries. A single report includes all available data across borders. No extra fees." },
+      { "q": "How quickly will I receive my report?", "a": "Reports are generated in ~55 seconds on average. Once purchased, you'll have instant access to view online or download as a PDF." },
+      { "q": "Do you offer solutions for businesses?", "a": "Absolutely. We provide API access, white-label solutions, and volume pricing for dealerships, insurers, and marketplaces." },
+      { "q": "What payment methods do you accept?", "a": "We accept all major credit and debit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay." }
+    ]
   }
 }

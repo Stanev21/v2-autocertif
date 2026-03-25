@@ -1,61 +1,104 @@
 <template>
-  <!-- CS Accordion Pattern: white bg, left heading + right accordion with expandable items, progressive disclosure -->
-  <section class="py-24 lg:py-32 bg-white">
+  <section class="py-24 lg:py-36 bg-[#fafaf8] overflow-hidden">
     <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
       <!-- Header -->
-      <div class="max-w-xl mb-14">
-        <span class="inline-block px-3 py-1 rounded-md bg-[#d3ffb6] text-[11px] font-inter font-semibold text-gray-900 uppercase tracking-wider mb-5">Solutions</span>
-        <h2 class="text-[2rem] lg:text-[2.5rem] font-normal text-gray-900 leading-[1.08] font-heading mb-4">
+      <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-24">
+        <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">Solutions</span>
+        <h2 class="text-[2.25rem] lg:text-[3.25rem] font-normal text-gray-900 leading-[1.08] font-heading mb-5">
           {{ $t('business.solutions.title') }}
         </h2>
-        <p class="text-gray-500 text-[15px] leading-[1.7] font-inter">{{ $t('business.solutions.subtitle') }}</p>
+        <p class="text-gray-500 text-[16px] leading-[1.7] font-inter">{{ $t('business.solutions.subtitle') }}</p>
       </div>
 
-      <!-- Accordion list -->
-      <div class="space-y-3">
-        <div v-for="(s, i) in solutions" :key="i"
-          class="border rounded-2xl overflow-hidden transition-all duration-300"
-          :class="active === i ? 'border-gray-200 bg-[#f7f8f6]' : 'border-gray-100 bg-white hover:border-gray-200'">
-          <!-- Accordion header -->
-          <button class="w-full flex items-center justify-between px-7 py-5 cursor-pointer" @click="active = active === i ? -1 : i">
-            <div class="flex items-center gap-4">
-              <div class="w-10 h-10 rounded-xl flex items-center justify-center transition-colors duration-200"
-                :class="active === i ? 'bg-coral/10' : 'bg-gray-100'">
-                <svg class="w-5 h-5 transition-colors duration-200" :class="active === i ? 'text-coral' : 'text-gray-400'" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" :d="icons[i]" />
-                </svg>
-              </div>
-              <span class="text-[15px] font-inter font-medium" :class="active === i ? 'text-gray-900' : 'text-gray-600'">{{ s.title }}</span>
+      <!-- Split layout: tabs left + content right -->
+      <div class="grid lg:grid-cols-[320px,1fr] gap-6 lg:gap-10">
+        <!-- Left: vertical tab list -->
+        <div class="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 -mx-6 px-6 lg:mx-0 lg:px-0">
+          <button
+            v-for="(s, i) in solutions"
+            :key="i"
+            class="group relative flex items-center gap-4 px-5 py-4 rounded-2xl text-left transition-all duration-400 cursor-pointer shrink-0 lg:shrink"
+            :class="active === i
+              ? 'bg-[#0a0a0a] shadow-xl shadow-black/10'
+              : 'bg-white hover:bg-gray-50 border border-gray-100 hover:border-gray-200'"
+            @click="active = i"
+          >
+            <!-- Icon -->
+            <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-300"
+              :class="active === i ? 'bg-coral/15' : 'bg-gray-100 group-hover:bg-gray-200/60'">
+              <svg class="w-5 h-5 transition-colors duration-300"
+                :class="active === i ? 'text-coral' : 'text-gray-400 group-hover:text-gray-500'"
+                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" :d="icons[i]" />
+              </svg>
             </div>
-            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0" :class="active === i ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-            </svg>
+            <!-- Label -->
+            <div class="min-w-0">
+              <span class="block text-[14px] font-inter font-semibold truncate transition-colors duration-300"
+                :class="active === i ? 'text-white' : 'text-gray-900'">
+                {{ s.title }}
+              </span>
+              <span class="hidden lg:block text-[12px] font-inter truncate mt-0.5 transition-colors duration-300"
+                :class="active === i ? 'text-white/40' : 'text-gray-400'">
+                {{ s.features[0] }}
+              </span>
+            </div>
+            <!-- Active indicator -->
+            <div v-if="active === i" class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3 h-3 bg-[#0a0a0a] rotate-45 z-10"></div>
           </button>
+        </div>
 
-          <!-- Expanded content -->
-          <div v-if="active === i" class="px-7 pb-7">
-            <div class="grid lg:grid-cols-[1fr,auto] gap-8 pt-2">
-              <!-- Left: description + features + CTA -->
-              <div>
-                <p class="text-gray-500 text-[15px] leading-[1.7] font-inter mb-6">{{ s.desc }}</p>
-                <!-- Feature grid -->
-                <div class="grid grid-cols-2 gap-3 mb-6">
-                  <div v-for="(feat, j) in s.features" :key="j"
-                    class="flex items-start gap-2.5 bg-white rounded-xl px-4 py-3.5 border border-gray-100">
-                    <svg class="w-4 h-4 text-coral flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+        <!-- Right: feature card -->
+        <div class="relative">
+          <div
+            v-for="(s, i) in solutions"
+            :key="i"
+            class="transition-all duration-500"
+            :class="active === i ? 'opacity-100 visible relative' : 'opacity-0 invisible absolute inset-0'"
+          >
+            <div class="bg-white rounded-[1.75rem] border border-gray-200/60 overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500">
+              <!-- Image header -->
+              <div class="relative h-[240px] lg:h-[280px] overflow-hidden">
+                <img :src="images[i]" :alt="s.title"
+                  class="w-full h-full object-cover transition-transform duration-700"
+                  :class="active === i ? 'scale-100' : 'scale-105'" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+                <!-- Floating badge -->
+                <div class="absolute bottom-5 left-6 flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" :d="icons[i]" />
                     </svg>
-                    <span class="text-gray-600 text-[13px] font-inter leading-snug">{{ feat }}</span>
+                  </div>
+                  <div>
+                    <h3 class="text-white text-[1.25rem] font-heading font-normal leading-tight">{{ s.title }}</h3>
+                    <span class="text-white/50 text-[12px] font-inter">{{ $t('business.solutions.subtitle') }}</span>
                   </div>
                 </div>
-                <a href="#" class="inline-flex items-center gap-2 text-gray-900 text-[14px] font-medium font-inter group">
-                  <span class="underline underline-offset-4 decoration-1 group-hover:decoration-2 transition-all">{{ $t('business.cta') }}</span>
-                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
-                </a>
               </div>
-              <!-- Right: contextual image -->
-              <div class="hidden lg:block w-[280px] flex-shrink-0">
-                <img :src="images[i]" :alt="s.title" class="w-full h-[200px] object-cover rounded-xl" />
+
+              <!-- Content -->
+              <div class="p-7 lg:p-9">
+                <p class="text-gray-500 text-[15px] leading-[1.75] font-inter mb-8">{{ s.desc }}</p>
+
+                <!-- Features as horizontal pills -->
+                <div class="flex flex-wrap gap-2.5 mb-8">
+                  <div v-for="(feat, j) in s.features" :key="j"
+                    class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#fafaf8] border border-gray-100 transition-all duration-300 hover:border-coral/30 hover:bg-coral/[0.03]">
+                    <svg class="w-3.5 h-3.5 text-coral shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-600 text-[13px] font-inter font-medium">{{ feat }}</span>
+                  </div>
+                </div>
+
+                <!-- CTA -->
+                <a href="#" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gray-900 text-white text-[14px] font-medium font-inter hover:bg-gray-800 transition-all group">
+                  {{ $t('business.cta') }}
+                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
