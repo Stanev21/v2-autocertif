@@ -939,6 +939,184 @@
     "ctaCta": "Check a Vehicle",
     "ctaBusiness": "Discover Business Solutions"
   },
+  "privacy": {
+    "badge": "Privacy & Trust",
+    "title": "Privacy Policy",
+    "subtitle": "How we collect, use, and protect your personal data.",
+    "effective": "Effective as of January 2025",
+    "company": "LADEV LTD., registered under number 207154444, ul. Cherkovna 57, floor 2, office 15, Sofia, Bulgaria.",
+    "nav": ["Preamble & Definitions", "Personal Data", "Purpose of Processing", "Data Retention", "Third Parties & Protection", "Your Rights", "Cookies & Configuration", "Applicable Law"],
+    "sections": [
+      {
+        "id": "preamble",
+        "title": "Preamble & Definitions",
+        "content": "The website autocertif.com, as well as the Services sold, are operated by the Company LADEV LTD., registered under number 207154444, with its registered office located at ul. Cherkovna 57, floor 2, office 15, Sofia, Bulgaria. Access to the Site and its features requires the collection and processing of Users' personal data. This policy has been established in accordance with the recommendations of the National Commission on Informatics and Liberty (CNIL), the Data Protection Act of January 6, 1978, the European Regulation on Personal Data (GDPR) of May 23, 2018, and the Law transposing the GDPR of June 20, 2018. The version currently published on the Site is the effective version. The Company reserves the right to modify this policy to comply with privacy protection laws.\n\nKey definitions (GDPR Art. 4): \"Consent\" means any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she signifies agreement to the processing of personal data. \"Data Controller\" means the natural or legal person which determines the purposes and means of the processing. \"Processor\" means a natural or legal person which processes personal data on behalf of the controller. \"Processing\" means any operation performed on personal data, such as collection, recording, storage, retrieval, use, disclosure, or destruction. \"Personal data breach\" means a breach of security leading to the accidental or unlawful destruction, loss, alteration, or unauthorised disclosure of personal data.\n\nOther terms: \"Subscription\" refers to the Subscription taken out by the Client to access LADEV LTD. services. \"Client\" refers to the contracting party who has subscribed to the services. \"Services\" refers to the Services provided by the Data Controller. \"Website\" refers to autocertif.com. \"User\" refers to any individual using the Website."
+      },
+      {
+        "id": "personal-data",
+        "title": "Personal Data & Minors",
+        "content": "Personal data (\"Personal Data\") refers to any information that can directly or indirectly identify a natural person (surname, first name, email, telephone number, postal address, etc.). Under the GDPR, this means \"any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\"\n\nOnly minors aged 15 or over may consent to the processing of their personal data (Article 8 of European Regulation 2016/679). Users under 15 must obtain consent of a legal representative.\n\nUser consent is collected prior to any data processing. Data is processed strictly for the purposes detailed in this Policy."
+      },
+      {
+        "id": "purpose",
+        "title": "Purpose of Processing",
+        "content": "Contact form — Data collected: surname, first name, email address. Purpose: Managing contact requests, responding to and processing requests. Legal basis: User's consent.\n\nAccount creation — Data collected: surname, first name, email, telephone number, address, billing address. Purpose: Validating account creation, providing services, managing closures, maintenance and assistance. Legal basis: User's consent and performance of a Contract.\n\nSubscription payment — Data collected: surname, first name, email, telephone number, billing address. Purpose: Validating the Subscription order, providing services, managing disputes and after-sales service. Legal basis: Performance of a Contract.\n\nAnalysis of browsing information — Purpose: Statistical purposes (traffic analysis, user experience) and fraud prevention. Legal basis: Legitimate interests / compliance with legal obligation."
+      },
+      {
+        "id": "retention",
+        "title": "Data Retention",
+        "content": "User data is retained for a maximum of 3 years after last contact. Client data is kept for up to 5 years after Subscription order. Billing data is retained for up to 10 years in accordance with regulatory requirements. Connection data is stored for a maximum of 13 months."
+      },
+      {
+        "id": "third-parties",
+        "title": "Third Parties & Data Protection",
+        "content": "Our website is hosted by Heroku Inc on servers located in Europe. We work with the following third-party service providers: Google Ads (customer acquisition — users' connection data), Heroku Inc (website hosting — user data accessible on the website), Google Analytics (traffic and behaviour analysis — behavioural data, IP address, user ID, location), Snapchat Ads (customer acquisition — behavioural data, user ID, location), TikTok Ads (customer acquisition — behavioural data, user ID, interaction history), Taboola (customer acquisition — behavioural data, IP address, browsing history), Outbrain (customer acquisition — behavioural data, IP address, browsing history), and Cookitbot (consent management — IP address, consent preferences, user ID).\n\nNo data is transferred to any unauthorised third party or to any country outside the European Union without your consent. All useful precautions are taken to protect your data. We do not resell or outsource Users' data. In the event of a security breach, users will be notified."
+      },
+      {
+        "id": "rights",
+        "title": "Your Rights",
+        "content": "Under the GDPR, you have the following rights: Right of access, rectification and right to erasure (Articles 15, 16, 17, 19 GDPR). Right to data portability (Article 20 GDPR). Right to restriction and objection to data processing (Articles 18 and 21 GDPR). Right not to be subject to automated processing. Right to determine the fate of your data after death (Law No. 2016-1321).\n\nTo exercise your rights, contact us via our contact form or by post to: ul. Cherkovna 57, floor 2, office 15, Sofia, Bulgaria. Please include your surname, first name, address and proof of identity. Your request will be processed within one month."
+      },
+      {
+        "id": "cookies",
+        "title": "Cookies & Configuration",
+        "content": "A cookie is a small file placed on your device when visiting a website. User consent for cookies is valid for 13 months. We use cookies for audience statistics, service personalization, and storing user information. A consent banner is displayed upon first visit. No cookies are placed without your prior consent.\n\nYou may object to cookies at any time via private browsing mode, the cookie consent widget on our site, or your browser settings. Cookie configuration is available in Microsoft Edge, Safari, Chrome, Firefox, and Opera.\n\nThis policy may be modified at any time. In such case, user consent will be obtained again. By browsing the site, you accept this privacy policy."
+      },
+      {
+        "id": "applicable-law",
+        "title": "Applicable Law",
+        "content": "This privacy policy is governed by French law. Any dispute relating to the interpretation or execution of this policy shall fall within the jurisdiction of the courts of general jurisdiction."
+      }
+    ],
+    "cookieTable": [
+      { "name": "_ga", "purpose": "Website traffic statistics analysis", "category": "Required", "retention": "13 months" },
+      { "name": "_gid", "purpose": "User behaviour analysis (Google Analytics)", "category": "Required", "retention": "24 hours" },
+      { "name": "taboola_usg", "purpose": "Data collection for advertising targeting", "category": "Advertising", "retention": "1 year" },
+      { "name": "_fbp", "purpose": "User interaction tracking (Meta/Facebook Ads)", "category": "Advertising", "retention": "90 days" },
+      { "name": "fr", "purpose": "Conversion and advertising campaign tracking (Meta)", "category": "Advertising", "retention": "90 days" },
+      { "name": "_gads", "purpose": "Google Ads advertising performance tracking", "category": "Advertising", "retention": "13 months" },
+      { "name": "sc_at", "purpose": "Snapchat Ads advertising performance tracking", "category": "Advertising", "retention": "1 year" },
+      { "name": "ttclid", "purpose": "TikTok Ads click and conversion attribution", "category": "Advertising", "retention": "13 months" },
+      { "name": "obuid", "purpose": "User tracking for advertising targeting (Outbrain)", "category": "Advertising", "retention": "90 days" }
+    ],
+    "cookieHeaders": ["Cookie", "Purpose", "Category", "Retention"],
+    "trustTitle": "Committed to data privacy",
+    "trustItems": ["GDPR Compliant", "No PII Resale", "EU-Hosted Servers", "Encrypted Transfers"],
+    "ctaTitle": "Have questions about your data?",
+    "ctaDesc": "Our team is ready to help with any questions about how we handle your personal information.",
+    "ctaCta": "Contact Us"
+  },
+  "terms": {
+    "badge": "Legal",
+    "title": "Terms of Use",
+    "subtitle": "Rules and guidelines for using the Autocertif website.",
+    "effective": "Effective as of January 2025",
+    "nav": ["Definitions", "Legal Notice & Data", "Services & Access", "Intellectual Property", "Management & Liability", "General Provisions"],
+    "sections": [
+      {
+        "id": "definitions",
+        "title": "Definitions",
+        "content": "\"Content\" refers to all elements constituting the information present on the Website (texts, images, videos, algorithms, software, widgets, etc.). \"Intellectual Property Rights\" refers to all intellectual property rights and related rights (copyright, trademark rights, patent rights, trade names, databases, etc.). \"Publisher\" refers to LADEV LTD., registered under number 207154444, ul. Cherkovna 57, floor 2, office 15, Sofia, Bulgaria. \"Features\" refers to all features made available to Users via the Website. \"Website\" refers to autocertif.com operated by the Publisher. \"User\" refers to any individual using the Website and having access to its content."
+      },
+      {
+        "id": "legal-notice",
+        "title": "Legal Notice & Data Protection",
+        "content": "Owner: LADEV LTD., registered number 207154444, Sofia, Bulgaria. Editorial Director: LADEV LTD. Host: Heroku Inc on servers located in Europe.\n\nProcessing of personal data is carried out in compliance with loi n° 78-17 of January 6, 1978 (Loi Informatique et Libertés). The Data Protection Policy is accessible on the Website."
+      },
+      {
+        "id": "services",
+        "title": "Services & Access",
+        "content": "The Publisher endeavors to provide information that is as accurate as possible, but shall not be held liable for omissions, inaccuracies, or failures to update the information. All information provided on the Website is given for indicative purposes only and is not exhaustive.\n\nAccess to the Website is reserved for strictly personal use. Users agree not to use the Website for commercial, political, advertising purposes, commercial solicitation, or unsolicited emails. The Publisher shall not be liable for false personal information. The User is solely responsible for the accuracy of information provided."
+      },
+      {
+        "id": "intellectual-property",
+        "title": "Intellectual Property",
+        "content": "All elements of the Website (trademarks, photographs, texts, images, videos, software) are protected and are the full property of the Publisher or its commercial partners. Users are prohibited from: copying, reproducing, representing, distributing, publishing; creating derivative works; modifying, translating, adapting, arranging; disassembling, decompiling, or reverse engineering. Any unauthorised exploitation shall be considered as constituting infringement.\n\nThe verbal and visual trademarks (logos) of the Publisher are protected. Use without written authorization for commercial purposes is prohibited. Content is freely accessible but this does not imply any transfer of copyright or ownership rights."
+      },
+      {
+        "id": "management",
+        "title": "Management & Liability",
+        "content": "The Publisher may suspend, interrupt, or limit access to the Website at any time, remove any disruptive information, or suspend the Website for updates.\n\nBest effort is made to ensure 24/7 accessibility. No guarantee of permanent availability or error-free operation. The User is responsible for their equipment, which must be up-to-date, free of viruses, and have an updated browser. The Publisher is not liable for indirect damages.\n\nPhotographs on the Website are not contractual and do not bind the Publisher. Hyperlink creation requires prior written authorization."
+      },
+      {
+        "id": "general",
+        "title": "General Provisions",
+        "content": "Non-application of one clause does not waive the Publisher's right to invoke it later. Invalid provisions do not affect the remaining provisions of these Terms.\n\nThe French language prevails in case of contradiction in translation.\n\nThese Terms are governed by Bulgarian law. Any dispute shall fall within the exclusive jurisdiction of competent courts.\n\nSupport is available Monday through Friday, 8:00 AM to 7:00 PM, by email only, excluding public holidays."
+      }
+    ],
+    "ctaTitle": "Have questions?",
+    "ctaDesc": "Our team is ready to help with any questions about our terms and policies.",
+    "ctaCta": "Contact Us"
+  },
+  "termsSale": {
+    "badge": "Legal",
+    "title": "Terms of Sale",
+    "subtitle": "Conditions governing subscriptions and use of our services.",
+    "effective": "Effective as of January 2025",
+    "nav": ["Preamble & Definitions", "Subscription & Duration", "Services & Access", "Support & Pricing", "Liability & Use", "Licence & Ownership", "Termination & Law"],
+    "sections": [
+      {
+        "id": "preamble",
+        "title": "Preamble & Definitions",
+        "content": "LADEV LTD. (\"The Provider\") markets application features (\"Services\") accessible online via the \"Autocertif\" Solution. These Terms apply to the Contract and define the rights and obligations of the Parties for any subscription to Services.\n\nKey definitions: \"Subscription\" refers to the monthly subscription for access to Services. \"Anomaly\" refers to a design or production defect preventing proper functioning. \"Client\" refers to the legal entity or natural person co-contracting with LADEV LTD. \"Contract\" includes the Invoice, Specific Conditions, General Terms, and Annexes. \"Documentation\" describes the terms of use. \"Data\" refers to information from the Client's database. \"Client Area\" is the Client's personal space on the Solution. \"Provider\" is LADEV LTD., registered number 207154444, Sofia, Bulgaria. \"SaaS\" refers to remote provision of functionalities via Internet. \"Solution\" refers to \"Autocertif Pro\" accessible in SaaS mode. \"User\" is a natural person authorized by the Client to access the Service."
+      },
+      {
+        "id": "subscription",
+        "title": "Subscription & Duration",
+        "content": "Monthly subscription, renewable by tacit renewal. Without commitment. Any month started is due. Termination is available via the \"Cancel my Subscription\" button or the unsubscription form. No refund for unused time within a billing period.\n\nTrial period: Temporary access at a reduced rate. Duration is indicated on the Solution. No unsubscription during the trial period. No refund during the trial. After the trial period, automatic renewal at the full rate if not cancelled beforehand."
+      },
+      {
+        "id": "services",
+        "title": "Services & Access",
+        "content": "The Provider makes the Solution available in SaaS mode. Grants a non-exclusive right to use. Ensures hosting, maintenance, and security.\n\nThe Solution is accessible at autocertif.com, available 24/7 with maintenance exceptions. One Subscription equals one User. Access is provided via a generated link sent by email."
+      },
+      {
+        "id": "support",
+        "title": "Support & Pricing",
+        "content": "Support is available Monday to Friday, 8:00 AM to 7:00 PM, via the contact form. Response times: Blocking anomaly within 48 business hours; Semi-blocking anomaly within 7 business days; Minor anomaly as soon as possible.\n\nSubscription rates: Standard Plan at EUR 39.99/month (first month at EUR 29.99); Pro Plan at EUR 49.99/month. Monthly bank direct debit. No access without full payment. Promotional lifetime rates remain applicable as long as the subscription stays active. Rate changes are communicated at least 1 month before the renewal date."
+      },
+      {
+        "id": "liability",
+        "title": "Liability & Use",
+        "content": "Up to 15 reports per month. Information is provided for informational purposes only. LADEV LTD. makes no commitment regarding the accuracy of data. Data comes from original vehicle owners. LADEV LTD. provides a complementary analysis tool, not advisory services.\n\nLADEV LTD. has an obligation of means, not of results. Liability is limited to amounts paid in the preceding 6 months. LADEV LTD. is not liable for: loss of profits, business disruption, loss of data, or brand image damage.\n\nThe Client consents to immediate execution and waives the right of withdrawal (Article L.221-28 Consumer Code)."
+      },
+      {
+        "id": "licence",
+        "title": "Licence & Ownership",
+        "content": "Non-exclusive, non-transferable, worldwide right to use the Solution for the Contract duration. The Client may NOT: make the Solution available to unauthorized third parties, exceed User limits, adapt/modify/translate/decompile, sublicense/sell/rent/distribute, create derivative works, or reverse engineer.\n\nThe Provider retains all property rights. No assignment of intellectual property. All data and reports remain the property of LADEV LTD."
+      },
+      {
+        "id": "termination",
+        "title": "Termination & Applicable Law",
+        "content": "15-day formal notice period for breach. Past obligations remain in force.\n\nA 30-day period is provided after termination to export data in CSV or PDF format. Data is deleted within 31 days after the Contract end.\n\nGoverned by French law. Mandatory amicable settlement within 30 days before legal action. Commercial Court of the Provider's registered office.\n\nSLA: 99.9% minimum monthly server availability. 24/7 monitoring. Daily backups in duplicate on EU servers via Heroku Inc. Planned maintenance: max 6 consecutive hours with 7 business days' notice. Emergency maintenance: 24-48h notice."
+      }
+    ],
+    "ctaTitle": "Have questions about our terms?",
+    "ctaDesc": "Our team is ready to help with any questions about subscriptions, billing, or our services.",
+    "ctaCta": "Contact Us"
+  },
+  "legalNotice": {
+    "badge": "Legal",
+    "title": "Legal Notice",
+    "subtitle": "Important information about our website and its publisher.",
+    "effective": "Effective as of January 2025",
+    "nav": ["Terms of Use", "Publisher Information"],
+    "sections": [
+      {
+        "id": "terms",
+        "title": "Terms of Use",
+        "content": "Continued browsing of the autocertif.com website (hereinafter referred to as \"the Website\") constitutes, on the part of the Website's visitors (hereinafter referred to as \"Users\"), unconditional acceptance of the following terms and conditions of use (hereinafter referred to as \"Terms of Use\"). Before using any features of the Website, the User acknowledges having read and accepted these Terms of Use.\n\nThe version of our Terms of Use currently available online is the only enforceable version throughout the entire period of use of the Website and until it is replaced by a new version."
+      },
+      {
+        "id": "publisher",
+        "title": "Publisher Information",
+        "content": "The Website is managed by LADEV LTD. (hereinafter referred to as the \"Publisher\"), which reserves the right to modify these terms at any time. Any use of the Website after modification of the Terms of Use constitutes irrevocable acceptance by the User of the new version. In the event of disagreement with the Terms of Use, the User is advised to discontinue use of the Website.\n\nPublisher: LADEV LTD., registered under number 207154444, ul. Cherkovna 57, floor 2, office 15, Sofia, Bulgaria. Host: Heroku Inc on servers located in Europe."
+      }
+    ],
+    "ctaTitle": "Have questions?",
+    "ctaDesc": "Our team is ready to help with any questions about our legal documents or policies.",
+    "ctaCta": "Contact Us"
+  },
   "contact": {
     "badge": "Contact Us",
     "title": "Get in Touch",

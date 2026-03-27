@@ -939,6 +939,184 @@
     "ctaCta": "Lancer une vérification",
     "ctaBusiness": "Découvrir l'offre entreprise"
   },
+  "privacy": {
+    "badge": "Confidentialité & Confiance",
+    "title": "Politique de confidentialité",
+    "subtitle": "Comment nous collectons, utilisons et protégeons vos données personnelles.",
+    "effective": "En vigueur depuis janvier 2025",
+    "company": "LADEV LTD., immatriculée sous le numéro 207154444, ul. Cherkovna 57, étage 2, bureau 15, Sofia, Bulgarie.",
+    "nav": ["Préambule & Définitions", "Données personnelles", "Finalités du traitement", "Conservation", "Tiers & Protection", "Vos droits", "Cookies & Configuration", "Droit applicable"],
+    "sections": [
+      {
+        "id": "preamble",
+        "title": "Préambule & Définitions",
+        "content": "Le site autocertif.com, ainsi que les Services vendus, sont exploités par la Société LADEV LTD., immatriculée sous le numéro 207154444, dont le siège social est situé au ul. Cherkovna 57, étage 2, bureau 15, Sofia, Bulgarie. L'accès au Site nécessite la collecte et le traitement des données personnelles des Utilisateurs. Cette politique a été établie conformément aux recommandations de la CNIL, à la Loi Informatique et Libertés du 6 janvier 1978, au RGPD du 23 mai 2018 et à la Loi transposant le RGPD du 20 juin 2018. La version actuellement publiée est la version en vigueur. La Société se réserve le droit de modifier cette politique.\n\nDéfinitions clés (RGPD art. 4) : « Consentement » désigne toute manifestation de volonté, libre, spécifique, éclairée et univoque par laquelle la personne concernée accepte le traitement de ses données. « Responsable du traitement » désigne la personne qui détermine les finalités et les moyens du traitement. « Sous-traitant » désigne la personne qui traite des données pour le compte du responsable. « Traitement » désigne toute opération effectuée sur des données personnelles. « Violation de données » désigne une violation de la sécurité entraînant la destruction, perte, altération ou divulgation non autorisée de données.\n\nAutres termes : « Abonnement » désigne l'abonnement souscrit par le Client. « Client » désigne la personne co-contractante. « Services » désigne les services fournis. « Site » désigne autocertif.com. « Utilisateur » désigne tout individu utilisant le Site."
+      },
+      {
+        "id": "personal-data",
+        "title": "Données personnelles & Mineurs",
+        "content": "Les données à caractère personnel désignent toute information pouvant identifier directement ou indirectement une personne physique (nom, prénom, courriel, numéro de téléphone, adresse postale, etc.). Au sens du RGPD : « toute information se rapportant à une personne physique identifiée ou identifiable, notamment par référence à un identifiant tel qu'un nom, un numéro d'identification, des données de localisation, un identifiant en ligne ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale ».\n\nSeuls les mineurs âgés de 15 ans ou plus peuvent consentir au traitement de leurs données (article 8 du Règlement européen 2016/679). Les utilisateurs de moins de 15 ans doivent obtenir le consentement d'un représentant légal.\n\nLe consentement de l'Utilisateur est recueilli préalablement. Les données sont traitées strictement pour les finalités détaillées dans cette Politique."
+      },
+      {
+        "id": "purpose",
+        "title": "Finalités du traitement",
+        "content": "Formulaire de contact — Données collectées : nom, prénom, adresse électronique. Finalité : Gérer la demande de contact, répondre et traiter la demande. Base légale : Consentement de l'Utilisateur.\n\nCréation de compte — Données collectées : nom, prénom, mail, téléphone, adresse, adresse de facturation. Finalité : Valider la création du compte, fournir les services, gérer les fermetures, maintenance et assistance. Base légale : Consentement et exécution d'un Contrat.\n\nPaiement de l'abonnement — Données collectées : nom, prénom, mail, téléphone, adresse de facturation. Finalité : Valider la commande, fournir les services, gérer les litiges et le service après-vente. Base légale : Exécution d'un Contrat.\n\nAnalyse de navigation — Finalité : Études statistiques (analyse du trafic, expérience utilisateur) et prévention de la fraude informatique. Base légale : Intérêts légitimes / obligation légale."
+      },
+      {
+        "id": "retention",
+        "title": "Conservation",
+        "content": "Les données Utilisateurs sont conservées pendant 3 ans maximum après le dernier contact. Les données Clients sont conservées jusqu'à 5 ans après la commande d'Abonnement. Les données de facturation sont conservées jusqu'à 10 ans conformément aux exigences réglementaires. Les données de connexion sont stockées pendant 13 mois maximum."
+      },
+      {
+        "id": "third-parties",
+        "title": "Tiers & Protection des données",
+        "content": "Notre site est hébergé par Heroku Inc sur des serveurs situés en Europe. Nos prestataires tiers : Google Ads (acquisition client — données de connexion), Heroku Inc (hébergement — données Utilisateurs), Google Analytics (analyse trafic — données comportementales, IP, ID utilisateur, localisation), Snapchat Ads (acquisition — données comportementales, ID, localisation), TikTok Ads (acquisition — données comportementales, ID, historique), Taboola (acquisition — données comportementales, IP, historique navigation), Outbrain (acquisition — données comportementales, IP, historique navigation), Cookitbot (consentement — IP, préférences, ID utilisateur).\n\nAucune donnée n'est transférée à des tiers non autorisés ou hors UE sans votre consentement. Toutes les précautions utiles sont prises pour protéger vos données. Nous ne revendons ni n'externalisons les données. En cas de violation de sécurité, les utilisateurs seront notifiés."
+      },
+      {
+        "id": "rights",
+        "title": "Vos droits",
+        "content": "En vertu du RGPD : Droit d'accès, de rectification et d'effacement (articles 15, 16, 17, 19). Droit à la portabilité des données (article 20). Droit à la limitation et à l'opposition au traitement (articles 18 et 21). Droit de ne pas faire l'objet d'un traitement automatisé. Droit de déterminer le sort de vos données après votre décès (loi n°2016-1321).\n\nPour exercer vos droits, contactez-nous via notre formulaire de contact ou par voie postale : ul. Cherkovna 57, étage 2, bureau 15, Sofia, Bulgarie. Veuillez inclure vos nom, prénom, adresse et justificatif d'identité. Votre demande sera traitée sous un mois."
+      },
+      {
+        "id": "cookies",
+        "title": "Cookies & Configuration",
+        "content": "Un cookie est un petit fichier placé sur votre appareil lors de la visite d'un site. Le consentement est valable 13 mois. Nous utilisons des cookies pour les statistiques d'audience, la personnalisation des services et le stockage des informations utilisateur. Un bandeau de consentement est affiché dès la première visite. Aucun cookie n'est placé sans votre consentement préalable.\n\nVous pouvez vous opposer aux cookies à tout moment via la navigation privée, le widget de consentement sur notre site ou les paramètres de votre navigateur. La configuration est disponible sur Microsoft Edge, Safari, Chrome, Firefox et Opera.\n\nCette politique peut être modifiée à tout moment. Le consentement de l'utilisateur sera à nouveau recueilli. La navigation sur le site vaut acceptation de cette politique."
+      },
+      {
+        "id": "applicable-law",
+        "title": "Droit applicable",
+        "content": "Cette politique de confidentialité est régie par le droit français. Tout litige relatif à l'interprétation ou à l'exécution de cette politique relèvera de la compétence des tribunaux de droit commun."
+      }
+    ],
+    "cookieTable": [
+      { "name": "_ga", "purpose": "Statistiques de fréquentation du site", "category": "Obligatoire", "retention": "13 mois" },
+      { "name": "_gid", "purpose": "Analyse du comportement utilisateur (Google Analytics)", "category": "Obligatoire", "retention": "24 heures" },
+      { "name": "taboola_usg", "purpose": "Collecte de données pour le ciblage publicitaire", "category": "Publicité", "retention": "1 an" },
+      { "name": "_fbp", "purpose": "Suivi des interactions utilisateur (Meta/Facebook Ads)", "category": "Publicité", "retention": "90 jours" },
+      { "name": "fr", "purpose": "Suivi des conversions et campagnes publicitaires (Meta)", "category": "Publicité", "retention": "90 jours" },
+      { "name": "_gads", "purpose": "Suivi des performances publicitaires Google Ads", "category": "Publicité", "retention": "13 mois" },
+      { "name": "sc_at", "purpose": "Suivi des performances publicitaires Snapchat Ads", "category": "Publicité", "retention": "1 an" },
+      { "name": "ttclid", "purpose": "Attribution des clics et conversions TikTok Ads", "category": "Publicité", "retention": "13 mois" },
+      { "name": "obuid", "purpose": "Suivi utilisateur pour ciblage publicitaire (Outbrain)", "category": "Publicité", "retention": "90 jours" }
+    ],
+    "cookieHeaders": ["Cookie", "Utilité", "Catégorie", "Conservation"],
+    "trustTitle": "Engagés pour la protection des données",
+    "trustItems": ["Conforme RGPD", "Aucune revente de données", "Serveurs en UE", "Transferts chiffrés"],
+    "ctaTitle": "Des questions sur vos données ?",
+    "ctaDesc": "Notre équipe est prête à répondre à toutes vos questions sur la manière dont nous traitons vos informations personnelles.",
+    "ctaCta": "Contactez-nous"
+  },
+  "terms": {
+    "badge": "Légal",
+    "title": "Conditions Générales d'Utilisation",
+    "subtitle": "Règles et directives d'utilisation du site Autocertif.",
+    "effective": "En vigueur depuis janvier 2025",
+    "nav": ["Définitions", "Mentions légales & Données", "Services & Accès", "Propriété intellectuelle", "Gestion & Responsabilité", "Dispositions générales"],
+    "sections": [
+      {
+        "id": "definitions",
+        "title": "Définitions",
+        "content": "« Contenu » désigne l'ensemble des éléments constituant l'information présente sur le Site (textes, images, vidéos, algorithmes, logiciels, widgets, etc.). « Droits de propriété intellectuelle » désigne tous les droits de propriété intellectuelle et droits connexes protégés par le Code de la Propriété Intellectuelle (loi n° 92-587 du 1er juillet 1992). « Éditeur » désigne LADEV LTD., numéro 207154444, ul. Cherkovna 57, étage 2, bureau 15, Sofia, Bulgarie. « Fonctionnalités » désigne toutes les fonctionnalités mises à disposition des Utilisateurs. « Site » désigne autocertif.com. « Utilisateur » désigne tout individu utilisant le Site."
+      },
+      {
+        "id": "legal-notice",
+        "title": "Mentions légales & Protection des données",
+        "content": "Propriétaire : LADEV LTD., numéro 207154444, Sofia, Bulgarie. Responsable éditorial : LADEV LTD. Hébergeur : Heroku Inc (serveurs en Europe).\n\nLe traitement des données personnelles est effectué conformément à la loi n° 78-17 du 6 janvier 1978 (Loi Informatique et Libertés). La Politique de Protection des Données est accessible sur le Site."
+      },
+      {
+        "id": "services",
+        "title": "Services & Accès",
+        "content": "L'Éditeur fournit des informations aussi précises que possible, mais n'est pas responsable des oublis, inexactitudes ou carences dans la mise à jour. Tous les renseignements sont donnés à titre indicatif et ne sont pas exhaustifs.\n\nL'accès au Site est réservé à un usage strictement personnel. Les Utilisateurs s'engagent à ne pas utiliser le Site à des fins commerciales, politiques, publicitaires, de sollicitation commerciale ou d'envoi d'e-mails non sollicités. L'Utilisateur est seul responsable de l'exactitude des informations renseignées."
+      },
+      {
+        "id": "intellectual-property",
+        "title": "Propriété intellectuelle",
+        "content": "Tous les éléments du Site (marques, photographies, textes, images, vidéos, logiciels) sont protégés et sont la propriété pleine et entière de l'Éditeur ou de ses partenaires commerciaux. Il est interdit de : copier, reproduire, représenter, diffuser, distribuer, publier ; créer des œuvres dérivées ; modifier, traduire, adapter, arranger ; désassembler, décompiler ou effectuer de l'ingénierie inverse. Toute exploitation non autorisée sera considérée comme constitutive d'une contrefaçon.\n\nLes marques verbales et visuelles (logos) de l'Éditeur sont protégées. Le contenu est en libre accès sans transfert de droit d'auteur."
+      },
+      {
+        "id": "management",
+        "title": "Gestion & Responsabilité",
+        "content": "L'Éditeur peut suspendre, interrompre ou limiter l'accès au Site à tout moment, supprimer toute information perturbatrice ou suspendre le Site pour des mises à jour.\n\nMeilleurs efforts pour assurer l'accessibilité 24h/24, 7j/7. Aucune garantie de disponibilité permanente. L'Utilisateur est responsable de son matériel, qui doit être récent, sans virus et avec un navigateur à jour. L'Éditeur n'est pas responsable des dommages indirects.\n\nLes photographies ne sont pas contractuelles. La création d'hyperliens nécessite une autorisation écrite préalable."
+      },
+      {
+        "id": "general",
+        "title": "Dispositions générales",
+        "content": "La non-application d'une clause ne vaut pas renonciation. Les dispositions invalides n'affectent pas les dispositions restantes.\n\nLa langue française prévaut en cas de contradiction dans la traduction.\n\nCes conditions sont régies par le droit bulgare. Tout litige relèvera de la compétence exclusive des tribunaux compétents.\n\nAssistance disponible du lundi au vendredi, de 8h à 19h, par mail uniquement, hors jours fériés."
+      }
+    ],
+    "ctaTitle": "Des questions ?",
+    "ctaDesc": "Notre équipe est prête à répondre à toutes vos questions concernant nos conditions et politiques.",
+    "ctaCta": "Contactez-nous"
+  },
+  "termsSale": {
+    "badge": "Légal",
+    "title": "Conditions Générales de Vente",
+    "subtitle": "Conditions régissant les abonnements et l'utilisation de nos services.",
+    "effective": "En vigueur depuis janvier 2025",
+    "nav": ["Préambule & Définitions", "Abonnement & Durée", "Services & Accès", "Assistance & Tarifs", "Responsabilité & Usage", "Licence & Propriété", "Résiliation & Loi"],
+    "sections": [
+      {
+        "id": "preamble",
+        "title": "Préambule & Définitions",
+        "content": "LADEV LTD. (« Le Prestataire ») commercialise les fonctionnalités applicatives (« Services ») accessibles en ligne via la Solution « Autocertif ». Les présentes Conditions s'appliquent au Contrat et définissent les droits et obligations des Parties.\n\nDéfinitions clés : « Abonnement » désigne l'abonnement mensuel d'accès aux Services. « Anomalie » désigne un défaut de conception ou de réalisation. « Client » désigne la personne morale ou physique co-contractante. « Contrat » comprend la Facture, les Conditions Générales et les Annexes. « Données » désigne les informations consultables par les Utilisateurs. « Espace Client » désigne l'espace personnel de gestion. « Prestataire » désigne LADEV LTD., numéro 207154444, Sofia, Bulgarie. « SaaS » désigne la mise à disposition à distance via Internet. « Solution » désigne « Autocertif Pro » en mode SaaS. « Utilisateur » désigne toute personne physique habilitée."
+      },
+      {
+        "id": "subscription",
+        "title": "Abonnement & Durée",
+        "content": "Abonnement mensuel, renouvelable par tacite reconduction. Sans engagement. Tout mois débuté est dû. Résiliation via le bouton « Résilier mon Abonnement » ou le formulaire de désinscription. Aucun remboursement en cas de résiliation en cours de mois.\n\nPériode d'essai : Accès temporaire à tarif réduit. Durée indiquée sur la Solution. Aucun désabonnement pendant l'essai. Pas de remboursement. Reconduction automatique au tarif complet si non résilié."
+      },
+      {
+        "id": "services",
+        "title": "Services & Accès",
+        "content": "Le Prestataire met la Solution à disposition en mode SaaS. Accorde un droit d'utilisation non exclusif. Assure l'hébergement, la maintenance et la sécurité.\n\nLa Solution est accessible via autocertif.com, disponible 7j/7, 24h/24 (sauf maintenance). Un Abonnement = un Utilisateur. Accès via lien généré envoyé par e-mail."
+      },
+      {
+        "id": "support",
+        "title": "Assistance & Tarifs",
+        "content": "Assistance disponible du lundi au vendredi, 8h-19h, via formulaire de contact. Délais de prise en charge : Anomalie bloquante sous 48h ouvrées ; Anomalie semi-bloquante sous 7 jours ouvrables ; Anomalie mineure dans les meilleurs délais.\n\nTarifs : Plan Standard à 39,99 EUR/mois (29,99 EUR le premier mois) ; Plan Pro à 49,99 EUR/mois. Prélèvement bancaire mensuel. Tarif garanti à vie si souscrit dans le cadre d'une offre promotionnelle (tant que l'abonnement reste actif). Modifications de tarifs communiquées 1 mois avant le renouvellement."
+      },
+      {
+        "id": "liability",
+        "title": "Responsabilité & Usage",
+        "content": "Jusqu'à 15 rapports véhicules par mois. Informations à titre indicatif uniquement. LADEV LTD. ne s'engage pas sur la véracité des données. Les données proviennent des propriétaires originaux. Outil complémentaire d'analyses, non prestation de conseil.\n\nObligation de moyens, non de résultat. Responsabilité limitée aux sommes payées les 6 derniers mois. Non responsable : perte de bénéfices, troubles commerciaux, perte de données, perte d'image.\n\nLe Client consent à l'exécution immédiate et renonce au droit de rétractation (article L.221-28 Code de la consommation)."
+      },
+      {
+        "id": "licence",
+        "title": "Licence & Propriété",
+        "content": "Droit personnel, non exclusif, non cessible, non transférable, pour le monde entier, pendant la durée du Contrat. Interdictions : mise à disposition de tiers non autorisés, dépassement du nombre d'Utilisateurs, modification/décompilation, sous-licence/vente/location, œuvres dérivées, rétro-ingénierie.\n\nLe Prestataire conserve tous les droits de propriété. Aucune cession de propriété intellectuelle. Toutes les données et rapports restent la propriété de LADEV LTD."
+      },
+      {
+        "id": "termination",
+        "title": "Résiliation & Loi applicable",
+        "content": "Préavis de 15 jours par mise en demeure en cas de manquement. Les obligations passées restent en vigueur.\n\n30 jours après résiliation pour exporter les données (CSV/PDF). Suppression dans les 31 jours suivant la fin du Contrat.\n\nDroit français applicable. Conciliation amiable obligatoire (30 jours). Tribunal de Commerce du siège social du Prestataire.\n\nSLA : Disponibilité serveur 99,9% minimum. Surveillance 24/7. Sauvegardes quotidiennes en double (UE, Heroku Inc). Maintenance planifiée : max 6h consécutives, préavis 7 jours ouvrables. Maintenance d'urgence : préavis 24-48h."
+      }
+    ],
+    "ctaTitle": "Des questions sur nos conditions ?",
+    "ctaDesc": "Notre équipe est prête à répondre à toutes vos questions sur les abonnements, la facturation ou nos services.",
+    "ctaCta": "Contactez-nous"
+  },
+  "legalNotice": {
+    "badge": "Légal",
+    "title": "Mentions Légales",
+    "subtitle": "Informations importantes sur notre site web et son éditeur.",
+    "effective": "En vigueur depuis janvier 2025",
+    "nav": ["Conditions d'utilisation", "Informations éditeur"],
+    "sections": [
+      {
+        "id": "terms",
+        "title": "Conditions d'utilisation",
+        "content": "La poursuite de la navigation sur le site autocertif.com (ci-après « le Site ») vaut de la part des visiteurs du Site (ci-après les « Utilisateurs »), une acceptation sans réserve des dispositions et conditions d'utilisation qui suivent (ci-après dénommées « C.G.U. »). Avant toute utilisation des fonctionnalités du Site, l'Utilisateur reconnaît avoir pris connaissance des présentes C.G.U. et les avoir acceptées.\n\nLa version de nos C.G.U. actuellement disponible en ligne est la seule version opposable pendant toute la durée d'utilisation du Site et jusqu'à son remplacement par une nouvelle version."
+      },
+      {
+        "id": "publisher",
+        "title": "Informations éditeur",
+        "content": "Le Site est géré par la Société LADEV LTD. (ci-après l'« Éditeur »), qui se réserve le droit de modifier les présentes conditions à tout moment. Toute utilisation du Site après modification des C.G.U. constitue une acceptation irrévocable par l'Utilisateur de la nouvelle version. En cas de désaccord avec les C.G.U., l'Utilisateur est invité à cesser toute utilisation du Site.\n\nÉditeur : LADEV LTD., immatriculée sous le numéro 207154444, ul. Cherkovna 57, étage 2, bureau 15, Sofia, Bulgarie. Hébergeur : Heroku Inc sur des serveurs situés en Europe."
+      }
+    ],
+    "ctaTitle": "Des questions ?",
+    "ctaDesc": "Notre équipe est prête à répondre à toutes vos questions concernant nos documents juridiques ou nos politiques.",
+    "ctaCta": "Contactez-nous"
+  },
   "contact": {
     "badge": "Contactez-nous",
     "title": "Prenez contact",
