@@ -2,22 +2,29 @@
   <!-- Plan cards: continuous from hero bg, then transitions to white -->
   <section class="bg-[#f7f8f6] pt-8 pb-20 lg:pb-24">
     <div class="max-w-[960px] mx-auto px-6 lg:px-12">
-      <div class="grid md:grid-cols-2 gap-5">
+      <div class="grid md:grid-cols-2 gap-5 items-stretch">
 
         <!-- Trial -->
         <div class="rounded-2xl bg-white border border-gray-200 p-8 lg:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
           <p class="text-[18px] font-heading font-normal text-gray-900 mb-1">{{ $t('pricing.trial.name') }}</p>
           <p class="text-gray-400 text-[13px] font-inter mb-6">{{ $t('pricing.trial.tagline') }}</p>
 
+          <!-- Price row aligned -->
+          <div class="mb-1">
+            <span class="text-gray-400 text-[11px] font-inter">&nbsp;</span>
+          </div>
           <div class="flex items-baseline gap-1.5 mb-8">
             <span class="text-[2.75rem] font-heading font-normal text-gray-900 leading-none">{{ $t('pricing.trial.price') }}</span>
             <span class="text-gray-400 text-[14px] font-inter">{{ $t('pricing.trial.period') }}</span>
           </div>
 
-          <button class="w-full group relative inline-flex justify-center overflow-hidden rounded-pill py-3 border border-gray-900 text-gray-900 text-[14px] font-medium font-inter hover:bg-gray-900 hover:text-white transition-all duration-300 cursor-pointer mb-8">
-            <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('pricing.trial.cta') }}</span>
-            <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.trial.cta') }}</span>
-          </button>
+          <!-- CTA row aligned -->
+          <div class="flex items-center gap-3 mb-8">
+            <button class="flex-1 group relative inline-flex justify-center overflow-hidden rounded-pill py-3 border border-gray-900 text-gray-900 text-[14px] font-medium font-inter hover:bg-gray-900 hover:text-white transition-all duration-300 cursor-pointer">
+              <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('pricing.trial.cta') }}</span>
+              <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.trial.cta') }}</span>
+            </button>
+          </div>
 
           <p class="text-[12px] font-inter font-semibold text-gray-900 mb-3">{{ $t('pricing.trial.summaryTitle') }}</p>
           <ul class="space-y-2 mb-7 list-disc list-outside pl-4 marker:text-gray-300">
