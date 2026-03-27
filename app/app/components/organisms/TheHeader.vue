@@ -57,11 +57,11 @@
         </div>
 
         <!-- My Account — outline pill like ContentSquare "Book a demo" -->
-        <button class="group hidden md:inline-flex relative justify-center overflow-hidden rounded-pill px-5 py-[0.6875rem] border text-[13px] font-medium font-inter transition-[background-color,color,opacity,border] duration-300 cursor-pointer"
+        <NuxtLink to="/account" class="group hidden md:inline-flex relative justify-center overflow-hidden rounded-pill px-5 py-[0.6875rem] border text-[13px] font-medium font-inter transition-[background-color,color,opacity,border] duration-300 cursor-pointer"
           :class="scrolled ? 'border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white hover:border-gray-900' : 'border-white/30 text-white hover:bg-white/10'">
           <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('nav.myAccount') }}</span>
           <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('nav.myAccount') }}</span>
-        </button>
+        </NuxtLink>
 
         <!-- Primary CTA — red pill like ContentSquare "Start for free" -->
         <button class="group hidden sm:inline-flex relative justify-center overflow-hidden rounded-pill px-5 py-[0.6875rem] border border-transparent bg-coral text-white text-[13px] font-medium font-inter hover:bg-coral-dark transition-[background-color,color,opacity,border] duration-300 cursor-pointer">

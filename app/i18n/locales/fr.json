@@ -1146,5 +1146,30 @@
       { "q": "Proposez-vous des solutions pour les entreprises ?", "a": "Absolument. Nous proposons l'accès API, des solutions en marque blanche et des tarifs volume pour concessionnaires, assureurs et places de marché." },
       { "q": "Quels moyens de paiement acceptez-vous ?", "a": "Nous acceptons toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express), PayPal, Apple Pay et Google Pay." }
     ]
+  },
+  "auth": {
+    "loginTitle": "Bon retour",
+    "loginSubtitle": "Connectez-vous pour accéder à vos rapports et votre compte.",
+    "signupTitle": "Créez votre compte",
+    "signupSubtitle": "Commencez à vérifier l'historique des véhicules en quelques secondes.",
+    "email": "Adresse email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "fullName": "Nom complet",
+    "login": "Se connecter",
+    "signup": "Créer un compte",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "switchSignup": "Créez-en un",
+    "switchLogin": "Connectez-vous",
+    "orContinue": "ou continuer avec",
+    "google": "Google",
+    "apple": "Apple",
+    "terms": "En continuant, vous acceptez nos",
+    "termsLink": "CGU",
+    "and": "et",
+    "privacyLink": "Politique de confidentialité",
+    "stats": ["100K+ utilisateurs", "25+ pays", "8 000+ sources"]
   }
 }

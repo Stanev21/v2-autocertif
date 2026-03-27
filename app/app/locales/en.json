@@ -1146,5 +1146,30 @@
       { "q": "Do you offer solutions for businesses?", "a": "Absolutely. We provide API access, white-label solutions, and volume pricing for dealerships, insurers, and marketplaces." },
       { "q": "What payment methods do you accept?", "a": "We accept all major credit and debit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay." }
     ]
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to access your vehicle reports and account.",
+    "signupTitle": "Create your account",
+    "signupSubtitle": "Start checking vehicle histories in seconds.",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "fullName": "Full name",
+    "login": "Sign In",
+    "signup": "Create Account",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "switchSignup": "Create one",
+    "switchLogin": "Sign in",
+    "orContinue": "or continue with",
+    "google": "Google",
+    "apple": "Apple",
+    "terms": "By continuing, you agree to our",
+    "termsLink": "Terms of Use",
+    "and": "and",
+    "privacyLink": "Privacy Policy",
+    "stats": ["100K+ users", "25+ countries", "8,000+ sources"]
   }
 }
