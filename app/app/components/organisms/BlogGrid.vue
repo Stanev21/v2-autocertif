@@ -34,10 +34,11 @@
 
       <!-- Articles grid: 3 columns -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-12">
-        <article
+        <NuxtLink
           v-for="(article, i) in filteredArticles"
           :key="i"
-          class="group cursor-pointer"
+          :to="`/blog/${article.slug}`"
+          class="group cursor-pointer block"
         >
           <!-- Image -->
           <div class="rounded-xl overflow-hidden mb-5 aspect-[16/9]">
@@ -63,7 +64,7 @@
             <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 text-[11px] font-inter font-bold">A</div>
             <span class="text-gray-500 text-[13px] font-inter">{{ $t('blog.author') }}</span>
           </div>
-        </article>
+        </NuxtLink>
       </div>
 
       <!-- Empty state -->
@@ -75,7 +76,10 @@
 </template>
 
 <script setup lang="ts">
+import { blogArticles } from '~/composables/useBlogArticles'
+
 const { t, tm, rt } = useI18n()
+const slugs = blogArticles.map(a => a.slug)
 const activeFilter = ref('all')
 const showDropdown = ref(false)
 
@@ -96,12 +100,13 @@ const articles = computed(() => {
   const raw = tm('blog.articles')
   if (!Array.isArray(raw)) return []
   // Skip the first 4 (shown in hero)
-  return raw.slice(4).map((a: any) => ({
+  return raw.slice(4).map((a: any, idx: number) => ({
     title: rt(a.title),
     category: rt(a.category),
     desc: rt(a.desc),
     readTime: rt(a.readTime),
     image: typeof a.image === 'string' ? a.image : rt(a.image),
+    slug: slugs[idx + 4],
   }))
 })
 

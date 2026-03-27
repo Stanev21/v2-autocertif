@@ -14,7 +14,7 @@
       <!-- Featured articles: 1 large + 3 small -->
       <div class="grid lg:grid-cols-[1.3fr,1fr] gap-5">
         <!-- Primary featured -->
-        <article v-if="featured.length > 0" class="group relative rounded-[1.25rem] overflow-hidden cursor-pointer h-[420px] lg:h-full">
+        <NuxtLink v-if="featured.length > 0" :to="`/blog/${slugs[0]}`" class="group relative rounded-[1.25rem] overflow-hidden cursor-pointer h-[420px] lg:h-full block">
           <img :src="featured[0].image" :alt="featured[0].title" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 p-7 lg:p-9">
@@ -32,13 +32,14 @@
               <span class="text-white/50 text-[12px] font-inter">{{ featured[0].readTime }} {{ $t('blog.readTime') }}</span>
             </div>
           </div>
-        </article>
+        </NuxtLink>
 
         <!-- 3 stacked cards -->
         <div class="flex flex-col gap-5">
-          <article
+          <NuxtLink
             v-for="(article, i) in featured.slice(1, 4)"
             :key="i"
+            :to="`/blog/${slugs[i + 1]}`"
             class="group flex gap-5 rounded-[1.25rem] bg-[#f7f8f6] p-4 cursor-pointer hover:bg-[#f0f1ee] transition-colors duration-300"
           >
             <div class="w-[140px] h-[110px] rounded-xl overflow-hidden shrink-0">
@@ -53,7 +54,7 @@
                 {{ article.title }}
               </h3>
             </div>
-          </article>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -61,7 +62,10 @@
 </template>
 
 <script setup lang="ts">
+import { blogArticles } from '~/composables/useBlogArticles'
+
 const { t, tm, rt } = useI18n()
+const slugs = blogArticles.map(a => a.slug)
 
 const featured = computed(() => {
   const raw = tm('blog.articles')

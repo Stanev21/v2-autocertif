@@ -2,7 +2,7 @@
   <!-- Like ContentSquare Footer: BURGUNDY bg, multi-column links, social icons -->
   <footer class="bg-burgundy-deep">
     <div class="max-w-[1280px] mx-auto px-8 lg:px-12 py-16">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr,1fr,1fr,1fr,1fr] gap-8 lg:gap-12 mb-16">
         <!-- Brand column -->
         <div class="col-span-2 md:col-span-3 lg:col-span-1">
           <p class="text-xl font-extrabold text-white tracking-tight mb-4">AUTOCERTIF</p>

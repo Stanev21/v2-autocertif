@@ -66,7 +66,19 @@
       "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/Stivan/Desktop/v2-autocertif-app/app/app/locales/en.json'',''utf8''\\)\\); console.log\\(''en.json OK''\\)\")",
       "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/Stivan/Desktop/v2-autocertif-app/app/app/locales/fr.json'',''utf8''\\)\\); console.log\\(''fr.json OK''\\)\")",
       "Bash(curl -s http://localhost:3000/__nuxt_error)",
-      "Bash(curl -s http://localhost:3000/_payload.json)"
+      "Bash(curl -s http://localhost:3000/_payload.json)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/understanding-odometer-fraud)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/how-to-read-vehicle-history-report)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/ev-battery-health)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/signs-of-clocked-car)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/free-vs-paid-reports)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/coverage-eastern-europe-middle-east)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/cross-border-vehicle-imports)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/cross-border-vehicle-imports-hidden-risks)",
+      "Bash(grep -v '^\\\\s*$')",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/ultimate-pre-purchase-inspection-checklist)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/how-to-check-used-car-before-buying)",
+      "Bash(curl -s https://autocertif-theme.vercel.app/blog/understanding-your-autocertif-report)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Stivan\\.claude"
