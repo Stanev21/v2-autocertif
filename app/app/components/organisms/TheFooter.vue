@@ -19,7 +19,7 @@
             <li><NuxtLink :to="localePath('/features')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.features') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('/pricing')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.pricing') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('/business')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.business') }}</NuxtLink></li>
-            <li><a href="#" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.api') }}</a></li>
+            <li><NuxtLink :to="localePath('/api')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.api') }}</NuxtLink></li>
           </ul>
         </div>
 
@@ -29,7 +29,7 @@
           <ul class="space-y-3">
             <li><NuxtLink :to="localePath('/blog')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.blog') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('/help-center')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.helpCenter') }}</NuxtLink></li>
-            <li><a href="#" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.affiliate') }}</a></li>
+            <li><NuxtLink :to="localePath('/affiliate-program')" class="text-white/40 hover:text-white text-sm transition-colors">{{ $t('footer.links.affiliate') }}</NuxtLink></li>
           </ul>
         </div>
 
