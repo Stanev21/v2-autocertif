@@ -89,7 +89,7 @@
             </div>
 
             <!-- Help CTA card -->
-            <div class="relative bg-[#fff1f2] rounded-2xl p-7 overflow-hidden">
+            <div class="relative bg-[#eff6ff] rounded-2xl p-7 overflow-hidden">
               <!-- CS notched corner -->
               <div class="absolute z-10 pointer-events-none bottom-0 right-0 bg-[#f7f8f6]" style="border-radius: 12px 0 0 0; height: 2rem; min-width: 20%;">
                 <div class="absolute" style="height: 12px; width: 12px; transform: rotate(-90deg); right: 0; bottom: 100%; color: #f7f8f6;">
