@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 lg:py-28 bg-[#fafaf8]">
     <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
-      <div class="rounded-[1.75rem] overflow-hidden bg-[#0a0a0a] relative">
+      <div class="rounded-[1.75rem] overflow-hidden bg-[#0A1020] relative">
         <!-- Gradient orb -->
         <div class="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
 
@@ -45,7 +45,7 @@
           <!-- Image -->
           <div class="hidden lg:block w-[320px] relative">
             <img src="/images/help-center/support.jpg" alt="Support team" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0A1020] via-transparent to-transparent"></div>
           </div>
         </div>
       </div>

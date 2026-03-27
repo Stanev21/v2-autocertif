@@ -7,7 +7,7 @@
         </h2>
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-0 rounded-[1.75rem] overflow-hidden bg-[#1a1a1f]">
+      <div class="grid lg:grid-cols-3 gap-0 rounded-[1.75rem] overflow-hidden bg-[#111827]">
         <div
           v-for="(step, i) in steps"
           :key="i"
@@ -18,7 +18,7 @@
           <!-- Coral glow on hover -->
           <div class="absolute -top-20 -right-20 w-[250px] h-[250px] rounded-full blur-[80px] transition-opacity duration-700"
             :class="hoveredStep === i ? 'opacity-25' : 'opacity-0'"
-            style="background: radial-gradient(circle, #CD3246, transparent 70%);"></div>
+            style="background: radial-gradient(circle, #3B82F6, transparent 70%);"></div>
 
           <!-- Divider -->
           <div v-if="i < 2" class="hidden lg:block absolute right-0 top-[12%] bottom-[12%] w-px bg-white/[0.06] z-10"></div>

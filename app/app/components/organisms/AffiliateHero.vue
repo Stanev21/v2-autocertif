@@ -1,8 +1,8 @@
 <template>
   <!-- Contentsquare-inspired deep burgundy hero -->
-  <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#1a0a14]">
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0B1426]">
     <!-- Gradient orbs -->
-    <div class="absolute top-1/4 left-1/3 w-[600px] h-[600px] rounded-full opacity-[0.2] blur-[120px]" style="background: radial-gradient(circle, #CD3246 0%, transparent 70%);"></div>
+    <div class="absolute top-1/4 left-1/3 w-[600px] h-[600px] rounded-full opacity-[0.2] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
     <div class="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full opacity-[0.1] blur-[100px]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
 
     <!-- Grid overlay -->
@@ -26,7 +26,7 @@
           </p>
 
           <div class="flex items-center gap-4 flex-wrap">
-            <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(205,50,70,0.3)]">
+            <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)]">
               <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('affiliate.cta') }}</span>
               <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('affiliate.cta') }}</span>
             </button>

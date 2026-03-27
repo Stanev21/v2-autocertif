@@ -102,8 +102,8 @@ const icons = [
 
 const cardStyles = [
   {
-    bg: 'bg-[#0a0a0a]',
-    glow: 'radial-gradient(circle, #CD3246, transparent 70%)',
+    bg: 'bg-[#0A1020]',
+    glow: 'radial-gradient(circle, #3B82F6, transparent 70%)',
     muted: 'text-white/25',
     title: 'text-white',
     desc: 'text-white/45',
@@ -117,7 +117,7 @@ const cardStyles = [
   },
   {
     bg: 'bg-white border border-gray-200/60',
-    glow: 'radial-gradient(circle, #CD3246, transparent 70%)',
+    glow: 'radial-gradient(circle, #3B82F6, transparent 70%)',
     muted: 'text-gray-300',
     title: 'text-gray-900',
     desc: 'text-gray-500',
@@ -131,7 +131,7 @@ const cardStyles = [
   },
   {
     bg: 'bg-white border border-gray-200/60',
-    glow: 'radial-gradient(circle, #CD3246, transparent 70%)',
+    glow: 'radial-gradient(circle, #3B82F6, transparent 70%)',
     muted: 'text-gray-300',
     title: 'text-gray-900',
     desc: 'text-gray-500',

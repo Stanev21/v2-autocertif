@@ -534,7 +534,8 @@
       "items": [
         { "title": "PDF Export", "desc": "Download your full report as a professional PDF document" },
         { "title": "Priority Support", "desc": "Get priority access to our customer support team" },
-        { "title": "Cancel Anytime", "desc": "No long-term commitment — cancel your subscription anytime" }
+        { "title": "Cancel Anytime", "desc": "No long-term commitment — cancel your subscription anytime" },
+        { "title": "25+ Countries", "desc": "Cross-border vehicle history data from over 25 countries worldwide" }
       ]
     },
     "faq": {

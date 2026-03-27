@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
-      <div class="rounded-[1.75rem] bg-[#0a0a0a] overflow-hidden relative">
+      <div class="rounded-[1.75rem] bg-[#0A1020] overflow-hidden relative">
         <!-- Orb -->
         <div class="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
 

@@ -19,7 +19,7 @@
             :key="i"
             class="group relative flex items-center gap-4 px-5 py-4 rounded-2xl text-left transition-all duration-400 cursor-pointer shrink-0 lg:shrink"
             :class="active === i
-              ? 'bg-[#0a0a0a] shadow-xl shadow-black/10'
+              ? 'bg-[#0A1020] shadow-xl shadow-black/10'
               : 'bg-white hover:bg-gray-50 border border-gray-100 hover:border-gray-200'"
             @click="active = i"
           >
@@ -44,7 +44,7 @@
               </span>
             </div>
             <!-- Active indicator -->
-            <div v-if="active === i" class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3 h-3 bg-[#0a0a0a] rotate-45 z-10"></div>
+            <div v-if="active === i" class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3 h-3 bg-[#0A1020] rotate-45 z-10"></div>
           </button>
         </div>
 

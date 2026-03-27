@@ -26,7 +26,7 @@
 
         <!-- Right: JSON preview -->
         <div class="lg:sticky lg:top-28">
-          <div class="rounded-2xl bg-[#0a0a0a] border border-white/[0.06] overflow-hidden shadow-xl">
+          <div class="rounded-2xl bg-[#0A1020] border border-white/[0.06] overflow-hidden shadow-xl">
             <div class="flex items-center gap-2 px-5 py-3.5 border-b border-white/[0.06]">
               <div class="w-3 h-3 rounded-full bg-red-500/60"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500/60"></div>

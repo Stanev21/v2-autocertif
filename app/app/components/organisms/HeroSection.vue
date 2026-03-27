@@ -1,7 +1,7 @@
 <template>
   <!-- ContentSquare hero: burgundy bg, font-heading for H1, pill buttons -->
   <section class="relative min-h-0 lg:min-h-[92vh] flex items-center overflow-hidden bg-burgundy">
-    <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-20 blur-[150px]" style="background: radial-gradient(circle, #ef4444 0%, transparent 70%);"></div>
+    <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-20 blur-[150px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
 
     <div class="relative max-w-[1280px] mx-auto px-6 lg:px-12 pt-10 pb-8 lg:py-32 w-full">
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 lg:py-28 bg-[#440220]">
+  <section class="py-20 lg:py-28 bg-[#0B1426]">
     <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
       <!-- Section header -->
       <div class="text-center mb-14">
@@ -12,16 +12,16 @@
       <!-- Avon-style layout -->
       <div class="flex flex-col gap-6 md:flex-row md:gap-5 lg:gap-6 max-w-5xl mx-auto">
         <!-- LEFT: Report card (flex-1 = large like Avon image) -->
-        <div class="flex-1 rounded-lg p-3 sm:p-4 bg-[#9b1d3a]">
+        <div class="flex-1 rounded-lg p-3 sm:p-4 bg-[#132040]">
           <div class="relative overflow-hidden rounded-xl rounded-tl-none bg-white">
             <!-- Top-left corner cutout -->
-            <div class="absolute z-10 top-0 left-0" style="border-radius: 0px 0px 12px 0px; background: #9b1d3a;">
-              <div class="absolute" style="height: 12px; width: 12px; transform: rotate(90deg); left: 0px; top: 100%; color: #9b1d3a;">
+            <div class="absolute z-10 top-0 left-0" style="border-radius: 0px 0px 12px 0px; background: #132040;">
+              <div class="absolute" style="height: 12px; width: 12px; transform: rotate(90deg); left: 0px; top: 100%; color: #132040;">
                 <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0V100H100C44.8 100 0 55.2 0 0Z" fill="currentColor" />
                 </svg>
               </div>
-              <div class="absolute" style="height: 12px; width: 12px; transform: rotate(90deg); left: 100%; top: 0px; color: #9b1d3a;">
+              <div class="absolute" style="height: 12px; width: 12px; transform: rotate(90deg); left: 100%; top: 0px; color: #132040;">
                 <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0V100H100C44.8 100 0 55.2 0 0Z" fill="currentColor" />
                 </svg>
@@ -55,7 +55,7 @@
               <div class="grid grid-cols-2 gap-x-6">
                 <!-- Verifications -->
                 <div>
-                  <span class="text-[10px] font-inter font-medium text-[#CD3246] uppercase tracking-wider">Verifications</span>
+                  <span class="text-[10px] font-inter font-medium text-[#3B82F6] uppercase tracking-wider">Verifications</span>
                   <div class="mt-2">
                     <div v-for="(row, j) in checkRows" :key="j"
                       class="flex items-center justify-between py-[5px] border-b border-gray-100 last:border-0">
@@ -74,7 +74,7 @@
                 </div>
                 <!-- Maintenance + Technical -->
                 <div>
-                  <span class="text-[10px] font-inter font-medium text-[#CD3246] uppercase tracking-wider">Maintenance</span>
+                  <span class="text-[10px] font-inter font-medium text-[#3B82F6] uppercase tracking-wider">Maintenance</span>
                   <div class="mt-2">
                     <div v-for="(row, j) in maintenanceRows" :key="j"
                       class="flex items-center justify-between py-[5px] border-b border-gray-100 last:border-0">
@@ -82,7 +82,7 @@
                       <span class="text-gray-900 font-medium text-[11px] font-inter">{{ row.value }}</span>
                     </div>
                   </div>
-                  <span class="text-[10px] font-inter font-medium text-[#CD3246] uppercase tracking-wider mt-3 block">Technical</span>
+                  <span class="text-[10px] font-inter font-medium text-[#3B82F6] uppercase tracking-wider mt-3 block">Technical</span>
                   <div class="mt-2">
                     <div v-for="(row, j) in techRows" :key="j"
                       class="flex items-center justify-between py-[5px] border-b border-gray-100 last:border-0">
@@ -103,7 +103,7 @@
         </div>
 
         <!-- RIGHT: Small image card with colored border (like Avon white card) -->
-        <div class="w-full shrink-0 rounded-3xl border p-2 md:w-1/3 md:max-w-[22.75rem] lg:p-3 border-[#CD3246]">
+        <div class="w-full shrink-0 rounded-3xl border p-2 md:w-1/3 md:max-w-[22.75rem] lg:p-3 border-[#3B82F6]">
           <div class="flex h-full flex-col rounded-2xl overflow-hidden bg-white">
             <!-- Image -->
             <div class="relative flex-1">
@@ -138,7 +138,7 @@
       <div class="flex items-center justify-center gap-2 mt-8">
         <button v-for="(v, i) in vehicles" :key="i" @click="selectTab(i)"
           class="h-2 rounded-full transition-all duration-300 cursor-pointer"
-          :class="activeTab === i ? 'w-8 bg-[#CD3246]' : 'w-2 bg-white/20 hover:bg-white/30'">
+          :class="activeTab === i ? 'w-8 bg-[#3B82F6]' : 'w-2 bg-white/20 hover:bg-white/30'">
         </button>
       </div>
     </div>

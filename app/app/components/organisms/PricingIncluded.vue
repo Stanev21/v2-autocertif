@@ -10,7 +10,7 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <div v-for="(item, i) in items" :key="i"
-          class="relative bg-[#fff1f2] rounded-2xl p-7 pb-12 overflow-hidden">
+          class="relative bg-[#eff6ff] rounded-2xl p-7 pb-12 overflow-hidden">
           <div class="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center mb-5">
             <svg class="w-5 h-5 text-coral" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" :d="icons[i]" />

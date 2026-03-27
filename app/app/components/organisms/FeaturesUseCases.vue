@@ -1,5 +1,5 @@
 <template>
-  <section id="use-cases" class="py-24 lg:py-32 bg-[#0a0a0a] overflow-hidden">
+  <section id="use-cases" class="py-24 lg:py-32 bg-[#0A1020] overflow-hidden">
     <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
       <!-- Section header -->
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 lg:mb-20 gap-6">
@@ -65,7 +65,7 @@
         <p class="text-white/20 text-[13px] font-inter text-center mb-8">{{ $t('hero.trust') }}</p>
         <div class="flex items-center justify-center gap-14 flex-wrap">
           <span v-for="name in ['iCarros', 'Webmotors', 'OLX Autos', 'Kavak', 'Localiza']" :key="name"
-            class="text-white/15 text-[16px] font-bold font-heading tracking-wider hover:text-white/30 transition-colors">{{ name }}</span>
+            class="text-white/40 text-[16px] font-bold font-heading tracking-wider hover:text-white/60 transition-colors">{{ name }}</span>
         </div>
       </div>
     </div>

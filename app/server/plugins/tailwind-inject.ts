@@ -21,15 +21,15 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        burgundy: '#440220',
-        'burgundy-deep': '#2d0116',
-        'burgundy-light': '#5a0a30',
+        burgundy: '#0B1426',
+        'burgundy-deep': '#060D1A',
+        'burgundy-light': '#132040',
         forest: '#002827',
         'forest-deep': '#001a19',
         lime: '#a3e635',
-        coral: '#CD3246',
-        'coral-dark': '#b82b3d',
-        'coral-light': '#f87171',
+        coral: '#3B82F6',
+        'coral-dark': '#2563EB',
+        'coral-light': '#60A5FA',
         'grey-light': '#f5f5f0',
       },
       fontFamily: {

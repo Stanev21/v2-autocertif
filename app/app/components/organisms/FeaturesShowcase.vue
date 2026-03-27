@@ -83,13 +83,13 @@
                   <!-- Visual card with image -->
                   <div class="lg:w-[340px] shrink-0">
                     <div class="rounded-2xl overflow-hidden h-full flex flex-col"
-                      :class="i % 2 === 0 ? 'bg-[#0a0a0a]' : 'bg-white border border-gray-200/60'">
+                      :class="i % 2 === 0 ? 'bg-[#0A1020]' : 'bg-white border border-gray-200/60'">
                       <!-- Image -->
                       <div class="relative h-[160px] overflow-hidden">
                         <img :src="capImages[i]" :alt="cap.title" class="w-full h-full object-cover" />
                         <div class="absolute inset-0"
                           :class="i % 2 === 0
-                            ? 'bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent'
+                            ? 'bg-gradient-to-t from-[#0A1020] via-[#0A1020]/30 to-transparent'
                             : 'bg-gradient-to-t from-white via-white/30 to-transparent'"></div>
                       </div>
                       <!-- Metric display -->

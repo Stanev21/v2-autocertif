@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-[#0a0a0a]">
+  <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-[#0A1020]">
     <!-- Grid pattern -->
     <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
 

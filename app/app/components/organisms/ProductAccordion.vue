@@ -31,7 +31,7 @@
       <p class="text-gray-300 text-[13px] font-inter text-center mb-8">{{ $t('hero.trust') }}</p>
       <div class="flex items-center justify-center gap-14 flex-wrap">
         <span v-for="name in ['iCarros', 'Webmotors', 'OLX Autos', 'Kavak', 'Localiza']" :key="name"
-          class="text-gray-200 text-[15px] font-bold font-heading tracking-wider hover:text-gray-400 transition-colors">{{ name }}</span>
+          class="text-gray-400 text-[15px] font-bold font-heading tracking-wider hover:text-gray-600 transition-colors">{{ name }}</span>
       </div>
     </div>
   </section>

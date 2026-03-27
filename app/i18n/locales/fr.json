@@ -534,7 +534,8 @@
       "items": [
         { "title": "Export PDF", "desc": "Téléchargez votre rapport complet au format PDF professionnel" },
         { "title": "Support prioritaire", "desc": "Accès prioritaire à notre équipe de support client" },
-        { "title": "Résiliation libre", "desc": "Aucun engagement — résiliez votre abonnement à tout moment" }
+        { "title": "Résiliation libre", "desc": "Aucun engagement — résiliez votre abonnement à tout moment" },
+        { "title": "25+ Pays", "desc": "Données d'historique véhicule transfrontalières dans plus de 25 pays" }
       ]
     },
     "faq": {

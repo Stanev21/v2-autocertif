@@ -38,7 +38,7 @@
             <div
               v-for="(limit, i) in rateLimits"
               :key="i"
-              class="relative p-7 rounded-2xl bg-[#0a0a0a] overflow-hidden"
+              class="relative p-7 rounded-2xl bg-[#0A1020] overflow-hidden"
             >
               <div class="absolute top-0 right-0 w-[150px] h-[150px] rounded-full opacity-10 blur-[60px]"
                 style="background: radial-gradient(circle, #3b82f6, transparent 70%);"></div>

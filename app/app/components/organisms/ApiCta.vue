@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 lg:py-32 bg-[#0a0a0a] relative overflow-hidden">
+  <section class="py-24 lg:py-32 bg-[#0A1020] relative overflow-hidden">
     <!-- Gradient orbs -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.08] blur-[120px]" style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
 

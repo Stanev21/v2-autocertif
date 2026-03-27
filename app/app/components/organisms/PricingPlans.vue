@@ -38,7 +38,7 @@
         </div>
 
         <!-- Subscription (Recommended) -->
-        <div class="relative rounded-2xl bg-[#fff1f2] border border-[#fecdd3] p-8 lg:p-10 shadow-[0_1px_3px_rgba(205,50,70,0.06)]">
+        <div class="relative rounded-2xl bg-[#eff6ff] border border-[#bfdbfe] p-8 lg:p-10 shadow-[0_1px_3px_rgba(59,130,246,0.08)]">
           <p class="text-[18px] font-heading font-normal text-burgundy mb-1">{{ $t('pricing.subscription.name') }}</p>
           <p class="text-coral text-[13px] font-inter font-medium mb-6">{{ $t('pricing.subscription.tagline') }}</p>
 
@@ -66,7 +66,7 @@
             <li v-for="(item, idx) in 3" :key="idx" class="text-gray-600 text-[13px] font-inter leading-[1.6]">{{ $t(`pricing.subscription.summaryItems[${idx}]`) }}</li>
           </ul>
 
-          <div class="pt-6 border-t border-[#fecdd3]/60">
+          <div class="pt-6 border-t border-[#bfdbfe]/60">
             <p class="text-[11px] font-inter font-semibold text-burgundy/30 uppercase tracking-wider mb-4">{{ $t('pricing.everythingInTrial') }}</p>
             <div class="space-y-2.5">
               <div v-for="i in 6" :key="i" class="flex items-center gap-2.5">

@@ -65,7 +65,7 @@
           <p class="text-gray-300 text-[12px] font-inter mr-8 flex-shrink-0 hidden md:block">{{ $t('business.partners') }}</p>
           <div class="flex items-center justify-center gap-8 md:gap-12 flex-wrap flex-1">
             <span v-for="name in ['iCarros', 'Webmotors', 'OLX Autos', 'Kavak', 'Localiza', 'Mobianto', 'Karvi']" :key="name"
-              class="text-gray-200 text-[14px] font-bold font-heading tracking-wider">{{ name }}</span>
+              class="text-gray-400 text-[14px] font-bold font-heading tracking-wider">{{ name }}</span>
           </div>
         </div>
       </div>

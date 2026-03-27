@@ -1,7 +1,7 @@
 <template>
-  <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0a0a0a]">
+  <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0A1020]">
     <!-- Orbs -->
-    <div class="absolute top-1/4 left-1/3 w-[600px] h-[600px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #CD3246 0%, transparent 70%);"></div>
+    <div class="absolute top-1/4 left-1/3 w-[600px] h-[600px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
     <div class="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.06] blur-[100px]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
     <!-- Grid -->
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 80px 80px;"></div>

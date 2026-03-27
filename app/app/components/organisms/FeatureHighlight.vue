@@ -4,7 +4,7 @@
       <!-- Section header -->
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-14 lg:mb-20 gap-6">
         <div class="max-w-xl">
-          <span class="text-[13px] font-medium font-inter text-[#CD3246] uppercase tracking-wider mb-4 block">{{ $t('checks.title') }}</span>
+          <span class="text-[13px] font-medium font-inter text-[#3B82F6] uppercase tracking-wider mb-4 block">{{ $t('checks.title') }}</span>
           <h2 class="text-[2rem] lg:text-[2.75rem] font-normal text-gray-900 leading-[1.1] font-heading">
             {{ $t('reports.title') }}
           </h2>
@@ -25,9 +25,9 @@
 
           <!-- Icon -->
           <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-6 transition-colors duration-300"
-            :class="active === i ? 'bg-[#CD3246]/10' : 'bg-black/[0.04]'">
+            :class="active === i ? 'bg-[#3B82F6]/10' : 'bg-black/[0.04]'">
             <div class="w-5 h-5 transition-colors duration-300"
-              :class="active === i ? 'text-[#CD3246]' : 'text-gray-400'"
+              :class="active === i ? 'text-[#3B82F6]' : 'text-gray-400'"
               v-html="feature.icon"></div>
           </div>
 
@@ -44,7 +44,7 @@
           <!-- Metric bar -->
           <div class="flex items-center gap-3 pt-4 border-t border-black/[0.06] relative z-10">
             <span class="text-[1.5rem] font-heading font-normal leading-none transition-colors duration-300"
-              :class="active === i ? 'text-[#CD3246]' : 'text-gray-900'">
+              :class="active === i ? 'text-[#3B82F6]' : 'text-gray-900'">
               {{ feature.metric }}
             </span>
             <span class="text-[12px] font-inter text-gray-400 leading-tight">{{ feature.metricLabel }}</span>
@@ -52,7 +52,7 @@
 
           <!-- Active indicator line at bottom -->
           <div class="absolute bottom-0 left-0 right-0 h-[3px] transition-all duration-500"
-            :class="active === i ? 'bg-[#CD3246]' : 'bg-transparent'"></div>
+            :class="active === i ? 'bg-[#3B82F6]' : 'bg-transparent'"></div>
         </div>
       </div>
     </div>

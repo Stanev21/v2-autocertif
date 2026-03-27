@@ -45,7 +45,7 @@
             <div class="pt-5">
               <p class="text-gray-500 text-[14px] font-inter leading-[1.7] mb-5">{{ ep.desc }}</p>
               <!-- Example code -->
-              <div class="rounded-xl bg-[#0a0a0a] p-5 font-mono text-[12px] leading-[1.8] overflow-x-auto">
+              <div class="rounded-xl bg-[#0A1020] p-5 font-mono text-[12px] leading-[1.8] overflow-x-auto">
                 <p class="text-white/30"># Example request</p>
                 <p>
                   <span class="text-green-400">curl</span>

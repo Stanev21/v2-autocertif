@@ -2,8 +2,8 @@
   <div>
     <OrganismsTheHeader />
     <OrganismsBusinessHero />
-    <OrganismsBusinessSolutions />
     <OrganismsBusinessInfrastructure />
+    <OrganismsBusinessSolutions />
     <OrganismsBusinessSteps />
     <OrganismsBusinessCTA />
     <OrganismsTheFooter />

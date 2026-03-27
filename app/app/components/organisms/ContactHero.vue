@@ -2,9 +2,9 @@
   <section class="min-h-screen pt-20 lg:pt-0">
     <div class="grid lg:grid-cols-2 min-h-screen">
       <!-- Left: dark info panel -->
-      <div class="relative bg-[#0a0a0a] overflow-hidden flex items-center">
+      <div class="relative bg-[#0A1020] overflow-hidden flex items-center">
         <!-- Orbs -->
-        <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #CD3246 0%, transparent 70%);"></div>
+        <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
         <div class="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full opacity-[0.06] blur-[80px]" style="background: radial-gradient(circle, #6d28d9 0%, transparent 70%);"></div>
         <!-- Grid -->
         <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>

@@ -77,7 +77,7 @@
     <!-- CTA -->
     <section class="py-20 lg:py-28 bg-white">
       <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
-        <div class="rounded-[1.75rem] bg-[#0a0a0a] overflow-hidden relative">
+        <div class="rounded-[1.75rem] bg-[#0A1020] overflow-hidden relative">
           <div class="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
           <div class="relative z-10 p-10 lg:p-16 text-center max-w-2xl mx-auto">
             <div class="w-14 h-14 rounded-2xl bg-white/[0.06] border border-white/[0.06] flex items-center justify-center mx-auto mb-6">

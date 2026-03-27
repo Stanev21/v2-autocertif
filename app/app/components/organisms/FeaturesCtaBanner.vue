@@ -1,11 +1,11 @@
 <template>
   <section class="relative py-32 lg:py-40 overflow-hidden">
     <!-- Gradient background -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#440220] via-[#2d0116] to-[#0a0a0a]"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-[#0B1426] via-[#060D1A] to-[#0A1020]"></div>
 
     <!-- Animated orbs -->
     <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-20 blur-[120px]"
-      style="background: radial-gradient(circle, #CD3246, transparent 70%);"></div>
+      style="background: radial-gradient(circle, #3B82F6, transparent 70%);"></div>
     <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full opacity-10 blur-[100px]"
       style="background: radial-gradient(circle, #6d28d9, transparent 70%);"></div>
 
@@ -27,7 +27,7 @@
       </p>
 
       <div class="flex items-center justify-center gap-4 flex-wrap">
-        <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(205,50,70,0.3)] hover:shadow-[0_0_60px_rgba(205,50,70,0.4)]">
+        <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:shadow-[0_0_60px_rgba(59,130,246,0.4)]">
           <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('features.cta') }}</span>
           <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('features.cta') }}</span>
         </button>

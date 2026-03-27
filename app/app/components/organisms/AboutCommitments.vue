@@ -13,10 +13,10 @@
           v-for="(c, i) in commitments"
           :key="i"
           class="group relative rounded-[1.5rem] overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
-          :class="i === 0 ? 'bg-[#1a1a1f] lg:col-span-1' : 'bg-[#fafaf8] border border-gray-200/60'"
+          :class="i === 0 ? 'bg-[#111827] lg:col-span-1' : 'bg-[#fafaf8] border border-gray-200/60'"
         >
           <!-- Glow for first card -->
-          <div v-if="i === 0" class="absolute -top-20 -right-20 w-[250px] h-[250px] rounded-full opacity-20 blur-[80px]" style="background: radial-gradient(circle, #CD3246, transparent 70%);"></div>
+          <div v-if="i === 0" class="absolute -top-20 -right-20 w-[250px] h-[250px] rounded-full opacity-20 blur-[80px]" style="background: radial-gradient(circle, #3B82F6, transparent 70%);"></div>
 
           <div class="relative z-10 p-8 lg:p-10 min-h-[360px] flex flex-col">
             <!-- Icon -->
