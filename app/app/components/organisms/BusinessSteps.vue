@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { tm, rt } = useI18n()
 
 const stepIcons = [
   'M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z',
@@ -63,8 +63,8 @@ const stepIcons = [
   'M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5',
 ]
 
-const steps = computed(() => [0, 1, 2].map(i => ({
-  title: t(`business.steps.items[${i}].title`),
-  desc: t(`business.steps.items[${i}].desc`),
-})))
+const steps = computed(() => {
+  const raw = tm('business.steps.items')
+  return Array.isArray(raw) ? raw.map((s: any) => ({ title: rt(s.title), desc: rt(s.desc) })) : []
+})
 </script>

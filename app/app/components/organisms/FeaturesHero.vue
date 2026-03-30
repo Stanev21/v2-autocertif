@@ -37,10 +37,6 @@
             <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('features.cta') }}</span>
             <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('features.cta') }}</span>
           </NuxtLink>
-          <NuxtLink :to="localePath('/pricing')" class="group relative inline-flex justify-center overflow-hidden rounded-full px-6 sm:px-8 py-3 sm:py-4 border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] hover:border-white/30 transition-all duration-300 cursor-pointer">
-            <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('features.ctaSecondary') }}</span>
-            <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('features.ctaSecondary') }}</span>
-          </NuxtLink>
         </div>
 
         <!-- Stats row -->
