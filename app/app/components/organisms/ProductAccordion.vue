@@ -23,9 +23,6 @@
         <p class="text-gray-500 text-[16px] leading-[1.7] mb-8 font-inter">
           {{ items[activeIndex]?.desc }}
         </p>
-        <a href="#" class="inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">
-          ↳ {{ $t('checks.cta') }}
-        </a>
       </div>
     </div>
     <!-- Logo trust bar -->

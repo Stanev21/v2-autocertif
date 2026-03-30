@@ -27,14 +27,14 @@
       </p>
 
       <div class="flex items-center justify-center gap-4 flex-wrap">
-        <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:shadow-[0_0_60px_rgba(59,130,246,0.4)]">
+        <NuxtLink :to="localePath('/')" class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:shadow-[0_0_60px_rgba(59,130,246,0.4)]">
           <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('features.cta') }}</span>
           <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('features.cta') }}</span>
-        </button>
-        <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] hover:border-white/30 transition-all duration-300 cursor-pointer">
+        </NuxtLink>
+        <NuxtLink :to="localePath('/pricing')" class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] hover:border-white/30 transition-all duration-300 cursor-pointer">
           <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('nav.pricing') }}</span>
           <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('nav.pricing') }}</span>
-        </button>
+        </NuxtLink>
       </div>
 
       <!-- Bottom stats -->
@@ -62,3 +62,7 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>

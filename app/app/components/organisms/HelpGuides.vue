@@ -6,10 +6,11 @@
       </h2>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <article
+        <NuxtLink
           v-for="(guide, i) in guides"
           :key="i"
-          class="group relative rounded-[1.5rem] overflow-hidden cursor-pointer h-auto sm:h-[420px]"
+          :to="localePath(`/blog/${guideSlugs[i]}`)"
+          class="group relative rounded-[1.5rem] overflow-hidden cursor-pointer h-auto sm:h-[420px] block"
         >
           <!-- Background image -->
           <img :src="guide.image" :alt="guide.title" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -38,15 +39,22 @@
               </svg>
             </span>
           </div>
-        </article>
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
 const { tm, rt } = useI18n()
 const hoveredGuide = ref(-1)
+
+const guideSlugs = [
+  'how-to-check-used-car',
+  'understanding-autocertif-report',
+  'spotting-mileage-fraud',
+]
 
 const guides = computed(() => {
   const raw = tm('help.guides')

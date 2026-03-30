@@ -9,15 +9,15 @@
           </h2>
           <p class="text-gray-500 text-[15px] leading-[1.7] font-inter max-w-lg">{{ $t('blog.desc') }}</p>
         </div>
-        <a href="#" class="hidden md:inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all flex-shrink-0">
-          ↳ {{ $t('blog.cta') }}
-        </a>
+        <NuxtLink :to="localePath('/blog')" class="hidden md:inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all flex-shrink-0">
+          {{ $t('blog.cta') }}
+        </NuxtLink>
       </div>
 
       <!-- 3-col cards -->
       <div class="grid md:grid-cols-3 gap-5">
-        <a v-for="(article, i) in articles" :key="i"
-          href="#"
+        <NuxtLink v-for="(article, i) in articles" :key="i"
+          :to="localePath(`/blog/${article.slug}`)"
           class="group flex flex-col rounded-lg p-3"
           style="background: #f5f5f0;">
           <div>
@@ -46,28 +46,34 @@
               {{ article.title }}
             </h3>
           </div>
-        </a>
+        </NuxtLink>
       </div>
 
       <!-- Mobile CTA -->
       <div class="mt-8 md:hidden">
-        <a href="#" class="inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">
-          ↳ {{ $t('blog.cta') }}
-        </a>
+        <NuxtLink :to="localePath('/blog')" class="inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">
+          {{ $t('blog.cta') }}
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+const blogSlugs = [
+  'vehicle-history-report-features',
+  'understanding-odometer-fraud',
+  'how-to-read-vehicle-history-report',
+]
 const blogImages = [
   '/images/blog/vehicle-history.jpg',
   '/images/blog/odometer-fraud.jpg',
   '/images/blog/ev-battery.jpg',
 ]
+const localePath = useLocalePath()
 const { tm, rt } = useI18n()
 const articles = computed(() => {
   const raw = tm('blog.articles')
-  return Array.isArray(raw) ? raw.slice(0, 3).map((a: any) => ({ tag: rt(a.category), read: rt(a.readTime) + ' min', title: rt(a.title), desc: rt(a.desc) })) : []
+  return Array.isArray(raw) ? raw.slice(0, 3).map((a: any, i: number) => ({ slug: blogSlugs[i], tag: rt(a.category), read: rt(a.readTime) + ' min', title: rt(a.title), desc: rt(a.desc) })) : []
 })
 </script>

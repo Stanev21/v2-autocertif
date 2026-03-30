@@ -8,14 +8,18 @@
         {{ $t('cta.title') }}
       </h2>
       <div class="flex items-center gap-4 flex-wrap">
-        <button class="px-7 py-3 rounded-pill border-2 border-white text-white text-[14px] font-semibold font-heading hover:bg-white hover:text-burgundy transition-all duration-300 cursor-pointer">
-          {{ $t('cta.button') }}
-        </button>
-        <button class="px-7 py-3 rounded-pill border-2 border-white/30 text-white text-[14px] font-semibold font-heading hover:bg-white/10 transition-all duration-300 cursor-pointer">
+        <NuxtLink :to="localePath('/')" class="px-7 py-3 rounded-pill border-2 border-white text-white text-[14px] font-semibold font-heading hover:bg-white hover:text-burgundy transition-all duration-300 cursor-pointer">
+          Run a Vehicle Check
+        </NuxtLink>
+        <NuxtLink :to="localePath('/pricing')" class="px-7 py-3 rounded-pill border-2 border-white/30 text-white text-[14px] font-semibold font-heading hover:bg-white/10 transition-all duration-300 cursor-pointer">
           {{ $t('nav.pricing') }}
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </section>
 
 </template>
+
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>

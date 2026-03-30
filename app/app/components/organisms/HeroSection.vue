@@ -82,17 +82,6 @@
               {{ $t('hero.subtitle') }}
             </p>
 
-            <!-- CTA buttons -->
-            <div class="flex items-center gap-4 flex-wrap mb-16">
-              <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] border border-transparent bg-coral text-white text-[14px] font-medium font-inter hover:bg-coral-dark transition-[background-color,color,opacity,border] duration-300 cursor-pointer">
-                <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('hero.cta') }}</span>
-                <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('hero.cta') }}</span>
-              </button>
-              <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] border border-white/30 text-white text-[14px] font-medium font-inter hover:bg-white/10 transition-[background-color,color,opacity,border] duration-300 cursor-pointer">
-                <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('nav.pricing') }}</span>
-                <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('nav.pricing') }}</span>
-              </button>
-            </div>
           </div>
 
           <!-- RIGHT: Glassmorphism search card -->

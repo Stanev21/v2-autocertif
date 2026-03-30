@@ -6,11 +6,12 @@
       </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <a
+        <div
           v-for="(topic, i) in topics"
           :key="i"
-          href="#"
           class="group relative rounded-2xl border border-gray-100 p-7 hover:border-teal-200 hover:bg-teal-50/30 transition-all duration-300"
+          @mouseenter="hoveredTopic = i"
+          @mouseleave="hoveredTopic = -1"
         >
           <!-- Icon -->
           <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300"
@@ -26,11 +27,7 @@
           </h3>
           <p class="text-gray-400 text-[13px] leading-[1.65] font-inter">{{ topic.desc }}</p>
 
-          <!-- Arrow -->
-          <svg class="absolute top-7 right-7 w-4 h-4 text-gray-200 group-hover:text-teal-500 group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-        </a>
+        </div>
       </div>
     </div>
   </section>

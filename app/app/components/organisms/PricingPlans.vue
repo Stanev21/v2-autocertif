@@ -20,10 +20,10 @@
 
           <!-- CTA row aligned -->
           <div class="flex items-center gap-3 mb-8">
-            <button class="flex-1 group relative inline-flex justify-center overflow-hidden rounded-pill py-3 border border-gray-900 text-gray-900 text-[14px] font-medium font-inter hover:bg-gray-900 hover:text-white transition-all duration-300 cursor-pointer">
+            <NuxtLink :to="localePath('/account')" class="flex-1 group relative inline-flex justify-center overflow-hidden rounded-pill py-3 border border-gray-900 text-gray-900 text-[14px] font-medium font-inter hover:bg-gray-900 hover:text-white transition-all duration-300 cursor-pointer">
               <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('pricing.trial.cta') }}</span>
               <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.trial.cta') }}</span>
-            </button>
+            </NuxtLink>
           </div>
 
           <p class="text-[12px] font-inter font-semibold text-gray-900 mb-3">{{ $t('pricing.trial.summaryTitle') }}</p>
@@ -58,14 +58,10 @@
           </div>
 
           <div class="flex items-center gap-3 mb-8">
-            <button class="flex-1 group relative inline-flex justify-center overflow-hidden rounded-pill py-3 bg-burgundy text-white text-[14px] font-medium font-inter hover:bg-burgundy-deep transition-colors duration-300 cursor-pointer">
+            <NuxtLink :to="localePath('/account')" class="flex-1 group relative inline-flex justify-center overflow-hidden rounded-pill py-3 bg-burgundy text-white text-[14px] font-medium font-inter hover:bg-burgundy-deep transition-colors duration-300 cursor-pointer">
               <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('pricing.subscription.cta') }}</span>
               <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.subscription.cta') }}</span>
-            </button>
-            <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-5 py-3 border border-burgundy/20 text-burgundy text-[14px] font-medium font-inter hover:bg-burgundy/5 transition-all duration-300 cursor-pointer">
-              <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('pricing.subscription.demoBtn') }}</span>
-              <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('pricing.subscription.demoBtn') }}</span>
-            </button>
+            </NuxtLink>
           </div>
 
           <p class="text-[12px] font-inter font-semibold text-burgundy mb-3">{{ $t('pricing.subscription.summaryTitle') }}</p>
@@ -90,3 +86,7 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>

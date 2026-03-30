@@ -16,14 +16,14 @@
 
         <!-- Dual CTAs -->
         <div class="flex items-center justify-center gap-3 flex-wrap mb-12">
-          <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] bg-coral text-white text-[14px] font-medium font-inter hover:bg-coral-dark transition-colors duration-300 cursor-pointer">
-            <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('business.cta') }}</span>
-            <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('business.cta') }}</span>
-          </button>
-          <button class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] border border-gray-900 text-gray-900 text-[14px] font-medium font-inter hover:bg-gray-900 hover:text-white transition-all duration-300 cursor-pointer">
+          <NuxtLink :to="localePath('/contact')" class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] bg-coral text-white text-[14px] font-medium font-inter hover:bg-coral-dark transition-colors duration-300 cursor-pointer">
+            <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('nav.contact') }}</span>
+            <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('nav.contact') }}</span>
+          </NuxtLink>
+          <NuxtLink :to="localePath('/api')" class="group relative inline-flex justify-center overflow-hidden rounded-pill px-7 py-[0.8125rem] border border-gray-900 text-gray-900 text-[14px] font-medium font-inter hover:bg-gray-900 hover:text-white transition-all duration-300 cursor-pointer">
             <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('business.ctaSecondary') }}</span>
             <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('business.ctaSecondary') }}</span>
-          </button>
+          </NuxtLink>
         </div>
 
         <!-- Inline metrics -->
@@ -74,6 +74,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
 const { t } = useI18n()
 const heroText = ref<HTMLElement>()
 const heroImage = ref<HTMLElement>()

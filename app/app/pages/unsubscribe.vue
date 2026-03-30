@@ -107,10 +107,10 @@
               </div>
               <h3 class="text-[16px] font-medium font-inter text-gray-900 mb-2">{{ $t('unsubscribe.help.title') }}</h3>
               <p class="text-gray-500 text-[13px] font-inter leading-[1.6] mb-5">{{ $t('unsubscribe.help.desc') }}</p>
-              <a href="#" class="inline-flex items-center gap-2 text-gray-900 text-[13px] font-medium font-inter group">
+              <NuxtLink :to="localePath('/contact')" class="inline-flex items-center gap-2 text-gray-900 text-[13px] font-medium font-inter group">
                 <span class="underline underline-offset-4 decoration-1 group-hover:decoration-2 transition-all">{{ $t('unsubscribe.help.cta') }}</span>
                 <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
-              </a>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -124,6 +124,7 @@
 
 <script setup lang="ts">
 useHead({ title: 'Autocertif - Cancel Subscription' })
+const localePath = useLocalePath()
 const { t } = useI18n()
 const faqOpen = ref(0)
 

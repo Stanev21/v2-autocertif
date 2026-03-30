@@ -623,7 +623,7 @@
       "business": "For Business",
       "api": "API Documentation",
       "blog": "Blog",
-      "helpCenter": "Help Center",
+      "helpCenter": "Contact Support",
       "affiliate": "Affiliate Program",
       "about": "About Us",
       "contact": "Contact",
@@ -705,7 +705,7 @@
     "ctaBannerNote": "Free sandbox. No commitment required."
   },
   "help": {
-    "title": "Help Center",
+    "title": "Contact Support",
     "subtitle": "How can we help you? Find answers to your questions, explore our guides, or get in touch with our support team.",
     "searchPlaceholder": "Search for answers...",
     "topicsTitle": "Browse by topic",
