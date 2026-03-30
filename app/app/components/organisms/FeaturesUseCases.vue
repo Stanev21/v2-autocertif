@@ -1,6 +1,8 @@
 <template>
-  <section id="use-cases" class="py-24 lg:py-32 bg-[#0A1020] overflow-hidden">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section id="use-cases" class="py-24 lg:py-32 bg-[#0A1020] overflow-hidden relative">
+    <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.1] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.06] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
+    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12">
       <!-- Section header -->
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 lg:mb-20 gap-6">
         <div class="max-w-xl">
@@ -23,13 +25,9 @@
           @mouseenter="activeCase = i"
         >
           <div class="p-7 lg:p-8 h-full flex flex-col min-h-[360px]">
-            <!-- Number + status -->
-            <div class="flex items-center justify-between mb-8">
-              <span class="text-[13px] font-inter font-medium px-3 py-1 rounded-full transition-colors duration-300"
-                :class="activeCase === i ? 'text-coral bg-coral/10' : 'text-white/30 bg-white/[0.04]'">
-                {{ String(i + 1).padStart(2, '0') }}
-              </span>
-              <div class="w-2 h-2 rounded-full transition-colors duration-300"
+            <!-- Status dot -->
+            <div class="flex items-center justify-end mb-8">
+              <div class="w-2.5 h-2.5 rounded-full transition-colors duration-300"
                 :class="activeCase === i ? 'bg-coral' : 'bg-white/10'"></div>
             </div>
 

@@ -12,7 +12,8 @@
       <!-- Main content: metric left + quote right -->
       <div class="grid lg:grid-cols-5 gap-0 rounded-[1.5rem] overflow-hidden min-h-[400px]">
         <!-- Left: burgundy panel with big stat -->
-        <div class="lg:col-span-2 bg-burgundy p-10 lg:p-14 flex flex-col justify-between">
+        <div class="lg:col-span-2 bg-burgundy p-10 lg:p-14 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-[300px] h-[300px] rounded-full opacity-[0.15] blur-[80px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
           <div>
             <p class="text-[4.5rem] lg:text-[5.5rem] font-normal font-heading text-white leading-none mb-2">4.8</p>
             <div class="flex items-center gap-1 mb-6">

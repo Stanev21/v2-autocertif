@@ -1,7 +1,9 @@
 <template>
   <!-- ContentSquare Product Accordion: white bg, pill tab buttons, centered content -->
-  <section id="checks" class="py-28 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section id="checks" class="py-28 bg-white relative overflow-hidden">
+    <div class="absolute top-1/3 right-[10%] w-[500px] h-[500px] rounded-full opacity-[0.04] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+    <div class="absolute bottom-1/4 left-[10%] w-[400px] h-[400px] rounded-full opacity-[0.03] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
+    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12">
       <!-- Pill buttons row -->
       <div class="flex items-center justify-center gap-2.5 flex-wrap mb-12">
         <button v-for="(item, i) in items" :key="i"

@@ -28,13 +28,11 @@
             :style="{ background: cardStyles[i].glow }"></div>
 
           <div class="relative z-10 p-8 lg:p-10 h-full flex flex-col min-h-[420px]">
-            <!-- Number tag -->
-            <div class="flex items-center justify-between mb-10">
-              <span class="text-[11px] font-inter font-semibold uppercase tracking-[0.2em]"
-                :class="cardStyles[i].muted">0{{ i + 1 }}</span>
-              <div class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            <!-- Icon -->
+            <div class="mb-8">
+              <div class="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
                 :class="hoveredCard === i ? cardStyles[i].iconActiveBg : cardStyles[i].iconBg">
-                <svg class="w-[18px] h-[18px] transition-colors duration-300"
+                <svg class="w-5 h-5 transition-colors duration-300"
                   :class="hoveredCard === i ? cardStyles[i].iconActiveColor : cardStyles[i].iconColor"
                   fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" :d="icons[i]" />

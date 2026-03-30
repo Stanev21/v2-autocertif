@@ -1,6 +1,8 @@
 <template>
-  <section class="py-20 lg:py-28 bg-[#0B1426]">
-    <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+  <section class="py-20 lg:py-28 bg-[#0B1426] relative overflow-hidden">
+    <div class="absolute top-1/3 right-1/5 w-[500px] h-[500px] rounded-full opacity-[0.1] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+    <div class="absolute bottom-1/4 left-1/4 w-[350px] h-[350px] rounded-full opacity-[0.06] blur-[100px]" style="background: radial-gradient(circle, #6366f1 0%, transparent 70%);"></div>
+    <div class="relative max-w-[1280px] mx-auto px-6 lg:px-12">
       <!-- Section header -->
       <div class="text-center mb-14">
         <h2 class="text-[2rem] lg:text-[2.75rem] font-normal text-white leading-[1.1] mb-4 font-heading">
