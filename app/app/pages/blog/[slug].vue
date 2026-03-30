@@ -49,7 +49,7 @@
 
               <!-- Sections -->
               <div v-for="(section, i) in articleData.sections.slice(articleData.sections[0]?.heading ? 0 : 1)" :key="i" class="mb-10 last:mb-0">
-                <h2 v-if="section.heading" class="text-[1.35rem] lg:text-[1.5rem] font-heading font-normal text-gray-900 leading-[1.2] mb-4 pt-2">
+                <h2 v-if="section.heading" :id="slugify(section.heading)" class="text-[1.35rem] lg:text-[1.5rem] font-heading font-normal text-gray-900 leading-[1.2] mb-4 pt-2 scroll-mt-32">
                   {{ section.heading }}
                 </h2>
                 <p class="text-gray-500 text-[15px] leading-[1.85] font-inter whitespace-pre-line">{{ section.body }}</p>
@@ -87,7 +87,7 @@
                 <div class="rounded-2xl border border-gray-200/60 p-6">
                   <p class="text-[11px] font-inter font-semibold text-gray-400 uppercase tracking-wider mb-4">In this article</p>
                   <div class="space-y-1">
-                    <a v-for="(section, i) in tocSections" :key="i" href="#"
+                    <a v-for="(section, i) in tocSections" :key="i" :href="'#' + slugify(section)"
                       class="block px-3 py-2 rounded-lg text-[13px] font-inter text-gray-500 hover:text-gray-900 hover:bg-[#fafaf8] transition-all">
                       {{ section }}
                     </a>
@@ -171,6 +171,7 @@ import { blogArticles } from '~/composables/useBlogArticles'
 
 const localePath = useLocalePath()
 const route = useRoute()
+const slugify = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 const { t, tm, rt } = useI18n()
 
 const slug = computed(() => route.params.slug as string)
