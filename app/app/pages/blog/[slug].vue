@@ -217,5 +217,5 @@ const nextArticles = computed(() => {
   })
 })
 
-useHead({ title: computed(() => article.value ? `${article.value.title} — Autocertif Blog` : 'Article Not Found') })
+useHead({ title: computed(() => article.value ? `${article.value.title} - Autocertif Blog` : 'Article Not Found') })
 </script>

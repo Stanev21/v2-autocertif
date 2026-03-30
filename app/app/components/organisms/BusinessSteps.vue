@@ -4,7 +4,7 @@
     <div class="absolute top-1/4 left-1/5 w-[225px] sm:w-[450px] h-[225px] sm:h-[450px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
     <div class="absolute bottom-1/3 right-1/5 w-[175px] sm:w-[350px] h-[175px] sm:h-[350px] rounded-full opacity-[0.06] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
     <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
-      <!-- Header — centered, white on dark -->
+      <!-- Header - centered, white on dark -->
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="inline-block px-3 py-1 rounded-md bg-coral/20 text-[11px] font-inter font-semibold text-coral uppercase tracking-wider mb-5">Setup</span>
         <h2 class="text-[2rem] lg:text-[2.5rem] font-normal text-white leading-[1.08] font-heading">
@@ -12,7 +12,7 @@
         </h2>
       </div>
 
-      <!-- 3 step cards — CS arrow border grid inspired -->
+      <!-- 3 step cards - CS arrow border grid inspired -->
       <div class="grid md:grid-cols-3 gap-5 lg:gap-6">
         <div v-for="(step, i) in steps" :key="i"
           class="group relative rounded-2xl p-5 sm:p-8 lg:p-10 transition-all duration-300 overflow-hidden"

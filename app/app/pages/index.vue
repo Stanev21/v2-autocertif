@@ -16,5 +16,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Autocertif — Vehicle History Reports' })
+useHead({ title: 'Autocertif - Vehicle History Reports' })
 </script>

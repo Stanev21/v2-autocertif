@@ -177,7 +177,7 @@
         "tag": "Produit",
         "read": "6 min de lecture",
         "title": "Fonctionnalités du rapport d'historique véhicule",
-        "desc": "Découvrez toutes les fonctionnalités du rapport Autocertif — des analyses propulsées par l'IA au Score Autocertif."
+        "desc": "Découvrez toutes les fonctionnalités du rapport Autocertif - des analyses propulsées par l'IA au Score Autocertif."
       },
       {
         "tag": "Recherche",
@@ -322,11 +322,11 @@
     "benefits": [
       {
         "title": "Détectez les risques cachés instantanément",
-        "desc": "Notre IA analyse des millions d'enregistrements pour signaler les retours compteur, les accidents non déclarés et les financements en cours — des problèmes qui coûtent en moyenne 3 400 € aux acheteurs."
+        "desc": "Notre IA analyse des millions d'enregistrements pour signaler les retours compteur, les accidents non déclarés et les financements en cours, des problèmes qui coûtent en moyenne 3 400 € aux acheteurs."
       },
       {
         "title": "Données de 8 000+ sources vérifiées",
-        "desc": "Registres gouvernementaux, bases de données d'assurance, plateformes d'enchères, rappels constructeurs et centres de service agréés — tout est recoupé en temps réel."
+        "desc": "Registres gouvernementaux, bases de données d'assurance, plateformes d'enchères, rappels constructeurs et centres de service agréés, tout est recoupé en temps réel."
       },
       {
         "title": "Rapports en moins de 60 secondes",
@@ -414,7 +414,7 @@
     "faq": [
       {
         "q": "Qu'est-ce qu'un rapport d'historique véhicule ?",
-        "a": "Un rapport d'historique véhicule est un document complet qui compile les données de milliers de sources pour révéler le passé complet d'un véhicule — incluant les relevés kilométriques, l'historique des dommages, le statut de vol, les résultats d'inspection, les données d'émissions et l'exposition aux catastrophes naturelles."
+        "a": "Un rapport d'historique véhicule est un document complet qui compile les données de milliers de sources pour révéler le passé complet d'un véhicule, incluant les relevés kilométriques, l'historique des dommages, le statut de vol, les résultats d'inspection, les données d'émissions et l'exposition aux catastrophes naturelles."
       },
       {
         "q": "En combien de temps le rapport est-il généré ?",
@@ -534,7 +534,7 @@
       "items": [
         { "title": "Export PDF", "desc": "Téléchargez votre rapport complet au format PDF professionnel" },
         { "title": "Support prioritaire", "desc": "Accès prioritaire à notre équipe de support client" },
-        { "title": "Résiliation libre", "desc": "Aucun engagement — résiliez votre abonnement à tout moment" },
+        { "title": "Résiliation libre", "desc": "Aucun engagement, résiliez votre abonnement à tout moment" },
         { "title": "25+ Pays", "desc": "Données d'historique véhicule transfrontalières dans plus de 25 pays" }
       ]
     },
@@ -774,7 +774,7 @@
       {
         "title": "Fonctionnalités du rapport d'historique véhicule",
         "category": "Produit",
-        "desc": "Un aperçu de toutes les fonctionnalités d'Autocertif — des analyses propulsées par l'IA au Score Autocertif et à l'analyse des habitudes de conduite.",
+        "desc": "Un aperçu de toutes les fonctionnalités d'Autocertif - des analyses propulsées par l'IA au Score Autocertif et à l'analyse des habitudes de conduite.",
         "readTime": "6",
         "image": "/images/blog-posts/01-features.jpg"
       },
@@ -788,7 +788,7 @@
       {
         "title": "Comment lire un rapport d'historique véhicule : le guide complet",
         "category": "Guides",
-        "desc": "Tout ce que vous devez savoir pour interpréter votre rapport d'historique véhicule — des graphiques de kilométrage aux marques de titre et dossiers de dommages.",
+        "desc": "Tout ce que vous devez savoir pour interpréter votre rapport d'historique véhicule - des graphiques de kilométrage aux marques de titre et dossiers de dommages.",
         "readTime": "7",
         "image": "/images/blog-posts/03-report-guide.jpg"
       },
@@ -816,7 +816,7 @@
       {
         "title": "Couverture Autocertif en Europe de l'Est et au Moyen-Orient",
         "category": "Produit",
-        "desc": "Autocertif apporte des rapports d'historique véhicule complets dans les pays des Balkans et du Golfe — avec des partenariats de données locaux et un support multilingue.",
+        "desc": "Autocertif apporte des rapports d'historique véhicule complets dans les pays des Balkans et du Golfe, avec des partenariats de données locaux et un support multilingue.",
         "readTime": "7",
         "image": "/images/blog-posts/07-coverage.jpg"
       },
@@ -837,14 +837,14 @@
       {
         "title": "Comment vérifier une voiture d'occasion avant l'achat : le guide définitif",
         "category": "Guides",
-        "desc": "De la première annonce en ligne au paiement — chaque vérification, chaque question et chaque signal d'alerte à connaître avant d'acheter un véhicule d'occasion.",
+        "desc": "De la première annonce en ligne au paiement, chaque vérification, chaque question et chaque signal d'alerte à connaître avant d'acheter un véhicule d'occasion.",
         "readTime": "14",
         "image": "/images/blog-posts/10-definitive.jpg"
       },
       {
         "title": "Comprendre votre rapport Autocertif : décryptage complet",
         "category": "Guides",
-        "desc": "Chaque section, chaque score, chaque indicateur expliqué — apprenez exactement comment lire votre rapport Autocertif et prenez des décisions d'achat plus éclairées.",
+        "desc": "Chaque section, chaque score, chaque indicateur expliqué, apprenez exactement comment lire votre rapport Autocertif et prenez des décisions d'achat plus éclairées.",
         "readTime": "12",
         "image": "/images/blog-posts/11-report-breakdown.jpg"
       },
@@ -858,7 +858,7 @@
       {
         "title": "Le marché automobile d'occasion en Europe",
         "category": "Industrie",
-        "desc": "Des valeurs de revente des VE à l'impact des réglementations Euro 7, voici ce qui façonne le marché automobile d'occasion européen — et ce que cela signifie pour les acheteurs.",
+        "desc": "Des valeurs de revente des VE à l'impact des réglementations Euro 7, voici ce qui façonne le marché automobile d'occasion européen, et ce que cela signifie pour les acheteurs.",
         "readTime": "8",
         "image": "/images/blog-posts/13-market.jpg"
       }
@@ -897,7 +897,7 @@
     "faq": [
       { "q": "Le programme est-il gratuit ?", "a": "Oui, rejoindre le programme d'affiliation Autocertif est entièrement gratuit. Aucun frais d'inscription, frais mensuels ou coûts cachés." },
       { "q": "Quand suis-je payé ?", "a": "Les commissions sont versées mensuellement, dans les 10 jours ouvrés suivant la fin de chaque mois, par virement SEPA ou PayPal." },
-      { "q": "Quels canaux de promotion sont autorisés ?", "a": "Tous les canaux sont autorisés — blogs, YouTube, réseaux sociaux, newsletters, sites comparatifs — sauf les enchères sur la marque en recherche payante (Google Ads, Bing Ads)." },
+      { "q": "Quels canaux de promotion sont autorisés ?", "a": "Tous les canaux sont autorisés : blogs, YouTube, réseaux sociaux, newsletters, sites comparatifs, sauf les enchères sur la marque en recherche payante (Google Ads, Bing Ads)." },
       { "q": "Quel taux de conversion puis-je espérer ?", "a": "Notre taux de conversion moyen est de 8,4 %, bien que cela varie en fonction de la qualité de votre audience et de l'adéquation du produit avec leurs besoins." },
       { "q": "Puis-je promouvoir dans plusieurs pays ?", "a": "Oui. Autocertif opère dans plus de 25 pays et votre lien de suivi fonctionne à l'international. Les commissions s'appliquent quel que soit le pays de l'acheteur." },
       { "q": "Fournissez-vous des supports marketing ?", "a": "Absolument. Une fois approuvé, vous aurez accès à des bannières, modèles d'e-mails, textes de page de destination et captures d'écran du produit optimisés pour la conversion." }
@@ -917,7 +917,7 @@
     "statTime": "Délai moyen par rapport",
     "commitmentsTitle": "Les principes qui guident chaque décision",
     "commitments": [
-      { "title": "Transparence intégrale", "desc": "Chaque donnée disponible est restituée dans le rapport, sans filtre ni omission. Nous pensons que l'asymétrie d'information est le premier facteur de risque sur le marché de l'occasion — notre rôle est de l'éliminer.", "note": "Notre engagement fondateur" },
+      { "title": "Transparence intégrale", "desc": "Chaque donnée disponible est restituée dans le rapport, sans filtre ni omission. Nous pensons que l'asymétrie d'information est le premier facteur de risque sur le marché de l'occasion, notre rôle est de l'éliminer.", "note": "Notre engagement fondateur" },
       { "title": "Rigueur technologique", "desc": "Infrastructure certifiée, recoupement systématique entre sources indépendantes et algorithmes de détection d'anomalies entraînés sur des millions de profils véhicules." },
       { "title": "Couverture internationale", "desc": "Un véhicule ne connaît pas les frontières. Nos rapports agrègent les données de milliers de sources réparties dans plus de 25 pays, offrant une vision complète quel que soit l'historique d'immatriculation." }
     ],
@@ -925,13 +925,13 @@
     "objectives": [
       { "label": "Protection", "title": "Protéger chaque acheteur", "desc": "Éliminer l'asymétrie d'information sur le marché de l'occasion en garantissant à chaque acheteur un accès transparent et complet aux données d'historique du véhicule qu'il envisage." },
       { "label": "Excellence", "title": "Repousser les standards de fiabilité", "desc": "Investir continuellement dans nos algorithmes de détection, nos processus de certification et notre infrastructure pour que chaque rapport reflète la réalité avec précision." },
-      { "label": "Accessibilité", "title": "Rendre la donnée accessible à tous", "desc": "Proposer un service simple, rapide et abordable — pour les particuliers comme pour les professionnels, quel que soit le pays ou le marché." }
+      { "label": "Accessibilité", "title": "Rendre la donnée accessible à tous", "desc": "Proposer un service simple, rapide et abordable, pour les particuliers comme pour les professionnels, quel que soit le pays ou le marché." }
     ],
     "roadmapTitle": "Les axes stratégiques de notre développement",
     "roadmap": [
       { "title": "Élargir notre couverture internationale", "desc": "Intégrer de nouvelles sources de données dans des marchés encore peu couverts, afin d'offrir une vision complète de l'historique d'un véhicule, où qu'il ait circulé." },
-      { "title": "Enrichir la profondeur des rapports", "desc": "Croiser davantage de points de données — contrôles techniques, données d'émissions, historiques d'entretien — pour fournir le rapport le plus complet du marché." },
-      { "title": "Accompagner les professionnels", "desc": "Développer des solutions dédiées — API, marque blanche, tableaux de bord — pour aider les concessionnaires, assureurs et places de marché à intégrer nos données dans leurs processus." },
+      { "title": "Enrichir la profondeur des rapports", "desc": "Croiser davantage de points de données : contrôles techniques, données d'émissions, historiques d'entretien, pour fournir le rapport le plus complet du marché." },
+      { "title": "Accompagner les professionnels", "desc": "Développer des solutions dédiées : API, marque blanche, tableaux de bord, pour aider les concessionnaires, assureurs et places de marché à intégrer nos données dans leurs processus." },
       { "title": "Innover par l'intelligence artificielle", "desc": "Exploiter l'IA et le machine learning pour améliorer la détection d'anomalies, anticiper les risques et offrir des analyses prédictives sur l'état futur des véhicules." },
       { "title": "Démocratiser l'accès à la donnée", "desc": "Rendre l'information véhicule accessible au plus grand nombre grâce à des tarifs adaptés, une expérience utilisateur simplifiée et une présence dans tous les marchés clés." }
     ],
@@ -961,7 +961,7 @@
       {
         "id": "purpose",
         "title": "Finalités du traitement",
-        "content": "Formulaire de contact — Données collectées : nom, prénom, adresse électronique. Finalité : Gérer la demande de contact, répondre et traiter la demande. Base légale : Consentement de l'Utilisateur.\n\nCréation de compte — Données collectées : nom, prénom, mail, téléphone, adresse, adresse de facturation. Finalité : Valider la création du compte, fournir les services, gérer les fermetures, maintenance et assistance. Base légale : Consentement et exécution d'un Contrat.\n\nPaiement de l'abonnement — Données collectées : nom, prénom, mail, téléphone, adresse de facturation. Finalité : Valider la commande, fournir les services, gérer les litiges et le service après-vente. Base légale : Exécution d'un Contrat.\n\nAnalyse de navigation — Finalité : Études statistiques (analyse du trafic, expérience utilisateur) et prévention de la fraude informatique. Base légale : Intérêts légitimes / obligation légale."
+        "content": "Formulaire de contact : Données collectées : nom, prénom, adresse électronique. Finalité : Gérer la demande de contact, répondre et traiter la demande. Base légale : Consentement de l'Utilisateur.\n\nCréation de compte : Données collectées : nom, prénom, mail, téléphone, adresse, adresse de facturation. Finalité : Valider la création du compte, fournir les services, gérer les fermetures, maintenance et assistance. Base légale : Consentement et exécution d'un Contrat.\n\nPaiement de l'abonnement : Données collectées : nom, prénom, mail, téléphone, adresse de facturation. Finalité : Valider la commande, fournir les services, gérer les litiges et le service après-vente. Base légale : Exécution d'un Contrat.\n\nAnalyse de navigation : Finalité : Études statistiques (analyse du trafic, expérience utilisateur) et prévention de la fraude informatique. Base légale : Intérêts légitimes / obligation légale."
       },
       {
         "id": "retention",
@@ -971,7 +971,7 @@
       {
         "id": "third-parties",
         "title": "Tiers & Protection des données",
-        "content": "Notre site est hébergé par Heroku Inc sur des serveurs situés en Europe. Nos prestataires tiers : Google Ads (acquisition client — données de connexion), Heroku Inc (hébergement — données Utilisateurs), Google Analytics (analyse trafic — données comportementales, IP, ID utilisateur, localisation), Snapchat Ads (acquisition — données comportementales, ID, localisation), TikTok Ads (acquisition — données comportementales, ID, historique), Taboola (acquisition — données comportementales, IP, historique navigation), Outbrain (acquisition — données comportementales, IP, historique navigation), Cookitbot (consentement — IP, préférences, ID utilisateur).\n\nAucune donnée n'est transférée à des tiers non autorisés ou hors UE sans votre consentement. Toutes les précautions utiles sont prises pour protéger vos données. Nous ne revendons ni n'externalisons les données. En cas de violation de sécurité, les utilisateurs seront notifiés."
+        "content": "Notre site est hébergé par Heroku Inc sur des serveurs situés en Europe. Nos prestataires tiers : Google Ads (acquisition client, données de connexion), Heroku Inc (hébergement, données Utilisateurs), Google Analytics (analyse trafic, données comportementales, IP, ID utilisateur, localisation), Snapchat Ads (acquisition, données comportementales, ID, localisation), TikTok Ads (acquisition, données comportementales, ID, historique), Taboola (acquisition, données comportementales, IP, historique navigation), Outbrain (acquisition, données comportementales, IP, historique navigation), Cookitbot (consentement, IP, préférences, ID utilisateur).\n\nAucune donnée n'est transférée à des tiers non autorisés ou hors UE sans votre consentement. Toutes les précautions utiles sont prises pour protéger vos données. Nous ne revendons ni n'externalisons les données. En cas de violation de sécurité, les utilisateurs seront notifiés."
       },
       {
         "id": "rights",

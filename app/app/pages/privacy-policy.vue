@@ -9,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Privacy Policy — Autocertif' })
+useHead({ title: 'Privacy Policy - Autocertif' })
 </script>

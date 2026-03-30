@@ -11,5 +11,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'API Documentation — Autocertif' })
+useHead({ title: 'API Documentation - Autocertif' })
 </script>

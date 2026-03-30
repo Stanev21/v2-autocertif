@@ -61,7 +61,7 @@
 const cards = [
   {
     metric: '1 in 3',
-    desc: 'used vehicles has a hidden defect — rolled-back odometers, undisclosed accidents, or outstanding finance.',
+    desc: 'used vehicles has a hidden defect, rolled-back odometers, undisclosed accidents, or outstanding finance.',
     link: 'See what we check',
   },
   {

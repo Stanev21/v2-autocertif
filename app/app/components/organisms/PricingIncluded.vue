@@ -1,5 +1,5 @@
 <template>
-  <!-- Included in every plan — CS rose cards with notched corner -->
+  <!-- Included in every plan - CS rose cards with notched corner -->
   <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-[1080px] mx-auto px-6 lg:px-12">
       <div class="text-center mb-12">

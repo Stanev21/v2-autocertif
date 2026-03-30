@@ -123,7 +123,7 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Autocertif — Cancel Subscription' })
+useHead({ title: 'Autocertif - Cancel Subscription' })
 const { t } = useI18n()
 const faqOpen = ref(0)
 

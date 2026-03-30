@@ -11,5 +11,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Affiliate Program — Autocertif' })
+useHead({ title: 'Affiliate Program - Autocertif' })
 </script>

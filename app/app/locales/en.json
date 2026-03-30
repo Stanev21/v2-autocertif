@@ -177,7 +177,7 @@
         "tag": "Product",
         "read": "6 min read",
         "title": "Vehicle History Report Features",
-        "desc": "A look at all the features Autocertif offers — from AI-powered insights to the Autocertif Score and driving habits analysis."
+        "desc": "A look at all the features Autocertif offers, from AI-powered insights to the Autocertif Score and driving habits analysis."
       },
       {
         "tag": "Research",
@@ -311,7 +311,7 @@
   "features": {
     "badge": "Platform Capabilities",
     "title": "See everything hidden behind a VIN",
-    "subtitle": "Our platform cross-references 8,000+ data sources across 25+ countries to surface the complete truth about any vehicle — in under a minute.",
+    "subtitle": "Our platform cross-references 8,000+ data sources across 25+ countries to surface the complete truth about any vehicle, in under a minute.",
     "cta": "Get Your Report",
     "ctaSecondary": "View Sample Report",
     "navBenefits": "Benefits",
@@ -322,11 +322,11 @@
     "benefits": [
       {
         "title": "Uncover hidden risks instantly",
-        "desc": "Our AI scans millions of records to flag odometer rollbacks, undisclosed accidents, and outstanding finance — issues that cost buyers an average of $3,400."
+        "desc": "Our AI scans millions of records to flag odometer rollbacks, undisclosed accidents, and outstanding finance, issues that cost buyers an average of $3,400."
       },
       {
         "title": "Data from 8,000+ verified sources",
-        "desc": "Government registries, insurance databases, auction platforms, manufacturer recalls, and authorized service center records — all cross-referenced in real time."
+        "desc": "Government registries, insurance databases, auction platforms, manufacturer recalls, and authorized service center records, all cross-referenced in real time."
       },
       {
         "title": "Reports in under 60 seconds",
@@ -414,7 +414,7 @@
     "faq": [
       {
         "q": "What is a vehicle history report?",
-        "a": "A vehicle history report is a comprehensive document that compiles data from thousands of sources to reveal a vehicle's complete past — including mileage records, damage history, theft status, inspection results, emissions data, and natural disaster exposure."
+        "a": "A vehicle history report is a comprehensive document that compiles data from thousands of sources to reveal a vehicle's complete past: including mileage records, damage history, theft status, inspection results, emissions data, and natural disaster exposure."
       },
       {
         "q": "How quickly is the report generated?",
@@ -534,7 +534,7 @@
       "items": [
         { "title": "PDF Export", "desc": "Download your full report as a professional PDF document" },
         { "title": "Priority Support", "desc": "Get priority access to our customer support team" },
-        { "title": "Cancel Anytime", "desc": "No long-term commitment — cancel your subscription anytime" },
+        { "title": "Cancel Anytime", "desc": "No long-term commitment - cancel your subscription anytime" },
         { "title": "25+ Countries", "desc": "Cross-border vehicle history data from over 25 countries worldwide" }
       ]
     },
@@ -774,7 +774,7 @@
       {
         "title": "Vehicle History Report Features",
         "category": "Product",
-        "desc": "A look at all the features Autocertif offers — from AI-powered insights to the Autocertif Score and driving habits analysis.",
+        "desc": "A look at all the features Autocertif offers, from AI-powered insights to the Autocertif Score and driving habits analysis.",
         "readTime": "6",
         "image": "/images/blog-posts/01-features.jpg"
       },
@@ -788,7 +788,7 @@
       {
         "title": "How to Read a Vehicle History Report: A Complete Guide",
         "category": "Guides",
-        "desc": "Everything you need to know about interpreting your vehicle history report — from mileage charts to title brands and damage records.",
+        "desc": "Everything you need to know about interpreting your vehicle history report, from mileage charts to title brands and damage records.",
         "readTime": "7",
         "image": "/images/blog-posts/03-report-guide.jpg"
       },
@@ -816,7 +816,7 @@
       {
         "title": "Autocertif Coverage in Eastern Europe and the Middle East",
         "category": "Product",
-        "desc": "Autocertif brings comprehensive vehicle history reports to countries across the Balkans and Gulf states — with localized data partnerships and native language support.",
+        "desc": "Autocertif brings comprehensive vehicle history reports to countries across the Balkans and Gulf states, with localized data partnerships and native language support.",
         "readTime": "7",
         "image": "/images/blog-posts/07-coverage.jpg"
       },
@@ -830,21 +830,21 @@
       {
         "title": "The Ultimate Pre-Purchase Inspection Checklist for Used Cars",
         "category": "Guides",
-        "desc": "A comprehensive, step-by-step checklist covering everything from bodywork and tyres to electronics and documents — so you never miss a red flag.",
+        "desc": "A comprehensive, step-by-step checklist covering everything from bodywork and tyres to electronics and documents, so you never miss a red flag.",
         "readTime": "8",
         "image": "/images/blog-posts/09-checklist.jpg"
       },
       {
         "title": "How to Check a Used Car Before Buying: The Definitive Guide",
         "category": "Guides",
-        "desc": "From the first online listing to handing over the money — every check, every question, and every red flag you need to know before buying a used car.",
+        "desc": "From the first online listing to handing over the money, every check, every question, and every red flag you need to know before buying a used car.",
         "readTime": "14",
         "image": "/images/blog-posts/10-definitive.jpg"
       },
       {
         "title": "Understanding Your Autocertif Report: A Complete Breakdown",
         "category": "Guides",
-        "desc": "Every section, every score, every indicator explained — learn exactly how to read your Autocertif vehicle history report and make smarter buying decisions.",
+        "desc": "Every section, every score, every indicator explained, learn exactly how to read your Autocertif vehicle history report and make smarter buying decisions.",
         "readTime": "12",
         "image": "/images/blog-posts/11-report-breakdown.jpg"
       },
@@ -858,7 +858,7 @@
       {
         "title": "The Used Car Market in Europe",
         "category": "Industry",
-        "desc": "From EV resale values to the impact of Euro 7 regulations, here's what shapes the European used car market — and what it means for buyers.",
+        "desc": "From EV resale values to the impact of Euro 7 regulations, here's what shapes the European used car market, and what it means for buyers.",
         "readTime": "8",
         "image": "/images/blog-posts/13-market.jpg"
       }
@@ -878,7 +878,7 @@
     ],
     "termsTitle": "Program terms",
     "terms": [
-      { "title": "Single fixed 30% rate", "desc": "No tiered structure, no hidden conditions. You earn 30% on every sale from day one — whether it's your first or your thousandth." },
+      { "title": "Single fixed 30% rate", "desc": "No tiered structure, no hidden conditions. You earn 30% on every sale from day one, whether it's your first or your thousandth." },
       { "title": "60-day attribution window", "desc": "Long tracking period ensures you get credited for conversions even weeks after the initial click." },
       { "title": "Zero minimum payout", "desc": "No need to accumulate a balance. Every commission earned is paid out on the next monthly cycle." },
       { "title": "Real-time tracking dashboard", "desc": "Monitor clicks, conversions, and commissions in real time from your dedicated partner dashboard." },
@@ -897,7 +897,7 @@
     "faq": [
       { "q": "Is the program free to join?", "a": "Yes, joining the Autocertif affiliate program is completely free. There are no setup fees, monthly fees, or hidden costs." },
       { "q": "When do I get paid?", "a": "Commissions are paid monthly, within 10 business days of the end of each month, via SEPA bank transfer or PayPal." },
-      { "q": "What promotion channels are allowed?", "a": "All channels are permitted — blogs, YouTube, social media, email newsletters, comparison sites — except brand bidding on paid search (Google Ads, Bing Ads)." },
+      { "q": "What promotion channels are allowed?", "a": "All channels are permitted: blogs, YouTube, social media, email newsletters, comparison sites, except brand bidding on paid search (Google Ads, Bing Ads)." },
       { "q": "What conversion rate can I expect?", "a": "Our average affiliate conversion rate is 8.4%, though this varies depending on your audience quality and how well the product fits their needs." },
       { "q": "Can I promote in multiple countries?", "a": "Yes. Autocertif operates across 25+ countries, and your tracking link works globally. Commissions apply regardless of the buyer's location." },
       { "q": "Do you provide marketing materials?", "a": "Absolutely. Once approved, you'll have access to banners, email templates, landing page copy, and product screenshots optimized for conversion." }
@@ -917,7 +917,7 @@
     "statTime": "Avg. Report Time",
     "commitmentsTitle": "The Principles Behind Every Decision",
     "commitments": [
-      { "title": "Full Transparency", "desc": "Every available data point is included in the report, with no filters or omissions. We believe information asymmetry is the primary risk factor in the used car market — our role is to eliminate it.", "note": "Our founding commitment" },
+      { "title": "Full Transparency", "desc": "Every available data point is included in the report, with no filters or omissions. We believe information asymmetry is the primary risk factor in the used car market, our role is to eliminate it.", "note": "Our founding commitment" },
       { "title": "Technological Rigor", "desc": "Certified infrastructure, systematic cross-referencing between independent sources, and anomaly detection algorithms trained on millions of vehicle profiles." },
       { "title": "International Coverage", "desc": "Vehicles don't recognize borders. Our reports aggregate data from thousands of sources across 25+ countries, providing a complete picture regardless of registration history." }
     ],
@@ -925,18 +925,18 @@
     "objectives": [
       { "label": "Protection", "title": "Protect Every Buyer", "desc": "Eliminate information asymmetry in the used car market by ensuring every buyer has transparent, complete access to a vehicle's history data." },
       { "label": "Excellence", "title": "Push Reliability Standards Further", "desc": "Continuously invest in our detection algorithms, certification processes, and infrastructure so every report reflects reality with precision." },
-      { "label": "Accessibility", "title": "Make Data Accessible to All", "desc": "Provide a simple, fast, and affordable service — for individuals and professionals alike, regardless of country or market." }
+      { "label": "Accessibility", "title": "Make Data Accessible to All", "desc": "Provide a simple, fast, and affordable service, for individuals and professionals alike, regardless of country or market." }
     ],
     "roadmapTitle": "The Strategic Pillars of Our Growth",
     "roadmap": [
       { "title": "Expand International Coverage", "desc": "Integrate new data sources in underserved markets to provide a complete view of any vehicle's history, wherever it has been registered." },
-      { "title": "Deepen Report Insights", "desc": "Cross-reference more data points — technical inspections, emissions data, maintenance records — to deliver the most comprehensive report on the market." },
-      { "title": "Empower Professionals", "desc": "Develop dedicated solutions — API, white-label, dashboards — to help dealers, insurers, and marketplaces integrate our data into their workflows." },
+      { "title": "Deepen Report Insights", "desc": "Cross-reference more data points: technical inspections, emissions data, maintenance records, to deliver the most comprehensive report on the market." },
+      { "title": "Empower Professionals", "desc": "Develop dedicated solutions: API, white-label, dashboards, to help dealers, insurers, and marketplaces integrate our data into their workflows." },
       { "title": "Innovate with Artificial Intelligence", "desc": "Leverage AI and machine learning to improve anomaly detection, anticipate risks, and offer predictive analytics on vehicle condition." },
       { "title": "Democratize Access to Data", "desc": "Make vehicle information accessible to everyone through adapted pricing, a simplified user experience, and presence in all key markets." }
     ],
     "ctaTitle": "Ready to check a vehicle?",
-    "ctaDesc": "Whether you're a car buyer, dealer, or business partner — access the full history of any vehicle in seconds.",
+    "ctaDesc": "Whether you're a car buyer, dealer, or business partner, access the full history of any vehicle in seconds.",
     "ctaCta": "Check a Vehicle",
     "ctaBusiness": "Discover Business Solutions"
   },
@@ -961,7 +961,7 @@
       {
         "id": "purpose",
         "title": "Purpose of Processing",
-        "content": "Contact form — Data collected: surname, first name, email address. Purpose: Managing contact requests, responding to and processing requests. Legal basis: User's consent.\n\nAccount creation — Data collected: surname, first name, email, telephone number, address, billing address. Purpose: Validating account creation, providing services, managing closures, maintenance and assistance. Legal basis: User's consent and performance of a Contract.\n\nSubscription payment — Data collected: surname, first name, email, telephone number, billing address. Purpose: Validating the Subscription order, providing services, managing disputes and after-sales service. Legal basis: Performance of a Contract.\n\nAnalysis of browsing information — Purpose: Statistical purposes (traffic analysis, user experience) and fraud prevention. Legal basis: Legitimate interests / compliance with legal obligation."
+        "content": "Contact form - Data collected: surname, first name, email address. Purpose: Managing contact requests, responding to and processing requests. Legal basis: User's consent.\n\nAccount creation - Data collected: surname, first name, email, telephone number, address, billing address. Purpose: Validating account creation, providing services, managing closures, maintenance and assistance. Legal basis: User's consent and performance of a Contract.\n\nSubscription payment - Data collected: surname, first name, email, telephone number, billing address. Purpose: Validating the Subscription order, providing services, managing disputes and after-sales service. Legal basis: Performance of a Contract.\n\nAnalysis of browsing information - Purpose: Statistical purposes (traffic analysis, user experience) and fraud prevention. Legal basis: Legitimate interests / compliance with legal obligation."
       },
       {
         "id": "retention",
@@ -971,7 +971,7 @@
       {
         "id": "third-parties",
         "title": "Third Parties & Data Protection",
-        "content": "Our website is hosted by Heroku Inc on servers located in Europe. We work with the following third-party service providers: Google Ads (customer acquisition — users' connection data), Heroku Inc (website hosting — user data accessible on the website), Google Analytics (traffic and behaviour analysis — behavioural data, IP address, user ID, location), Snapchat Ads (customer acquisition — behavioural data, user ID, location), TikTok Ads (customer acquisition — behavioural data, user ID, interaction history), Taboola (customer acquisition — behavioural data, IP address, browsing history), Outbrain (customer acquisition — behavioural data, IP address, browsing history), and Cookitbot (consent management — IP address, consent preferences, user ID).\n\nNo data is transferred to any unauthorised third party or to any country outside the European Union without your consent. All useful precautions are taken to protect your data. We do not resell or outsource Users' data. In the event of a security breach, users will be notified."
+        "content": "Our website is hosted by Heroku Inc on servers located in Europe. We work with the following third-party service providers: Google Ads (customer acquisition - users' connection data), Heroku Inc (website hosting - user data accessible on the website), Google Analytics (traffic and behaviour analysis - behavioural data, IP address, user ID, location), Snapchat Ads (customer acquisition - behavioural data, user ID, location), TikTok Ads (customer acquisition - behavioural data, user ID, interaction history), Taboola (customer acquisition - behavioural data, IP address, browsing history), Outbrain (customer acquisition - behavioural data, IP address, browsing history), and Cookitbot (consent management - IP address, consent preferences, user ID).\n\nNo data is transferred to any unauthorised third party or to any country outside the European Union without your consent. All useful precautions are taken to protect your data. We do not resell or outsource Users' data. In the event of a security breach, users will be notified."
       },
       {
         "id": "rights",

@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Legal Notice — Autocertif' })
+useHead({ title: 'Legal Notice - Autocertif' })
 const { tm, rt } = useI18n()
 const navItems = computed(() => {
   const raw = tm('legalNotice.nav')

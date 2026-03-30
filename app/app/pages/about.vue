@@ -11,5 +11,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'About — Autocertif' })
+useHead({ title: 'About - Autocertif' })
 </script>

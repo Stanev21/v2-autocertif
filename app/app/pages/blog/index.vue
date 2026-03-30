@@ -8,5 +8,5 @@
 </template>
 
 <script setup lang="ts">
-useHead({ title: 'Blog — Autocertif' })
+useHead({ title: 'Blog - Autocertif' })
 </script>
