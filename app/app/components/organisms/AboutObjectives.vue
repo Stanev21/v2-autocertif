@@ -1,8 +1,8 @@
 <template>
-  <section class="py-24 lg:py-32 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-[#fafaf8]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
-        <h2 class="text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
+        <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
           {{ $t('about.objectivesTitle') }}
         </h2>
       </div>
@@ -23,7 +23,7 @@
           <!-- Divider -->
           <div v-if="i < 2" class="hidden lg:block absolute right-0 top-[12%] bottom-[12%] w-px bg-white/[0.06] z-10"></div>
 
-          <div class="relative z-10 p-8 lg:p-10 min-h-[340px] flex flex-col">
+          <div class="relative z-10 p-5 sm:p-8 lg:p-10 min-h-[340px] flex flex-col">
             <!-- Label tag -->
             <span class="inline-block self-start px-3 py-1 rounded-full text-[11px] font-inter font-semibold uppercase tracking-wider mb-8 transition-colors duration-300"
               :class="hovered === i ? 'bg-coral/15 text-coral' : 'bg-white/[0.06] text-white/30'">

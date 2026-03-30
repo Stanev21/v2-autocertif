@@ -1,12 +1,12 @@
 <template>
   <!-- CS Hero Pattern C: centered text, large image below -->
   <section class="bg-[#f7f8f6]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12 pt-32 lg:pt-40 pb-16">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 pt-32 lg:pt-40 pb-16">
       <!-- Centered text block -->
       <div ref="heroText" class="text-center max-w-[720px] mx-auto mb-14">
         <span class="inline-block text-[13px] font-inter font-semibold text-coral uppercase tracking-widest mb-5">{{ $t('business.badge') }}</span>
 
-        <h1 class="text-[2.5rem] lg:text-[3.5rem] font-normal text-gray-900 leading-[1.08] mb-6 font-heading">
+        <h1 class="text-[2rem] sm:text-[2.5rem] lg:text-[3.5rem] font-normal text-gray-900 leading-[1.08] mb-6 font-heading">
           {{ $t('business.title') }}
         </h1>
 
@@ -27,7 +27,7 @@
         </div>
 
         <!-- Inline metrics -->
-        <div class="flex items-center justify-center gap-8 flex-wrap">
+        <div class="flex items-center justify-center gap-4 sm:gap-8 flex-wrap">
           <div v-for="(m, i) in metrics" :key="i" class="flex items-baseline gap-1.5">
             <span class="text-gray-900 text-[1.25rem] font-heading font-normal">{{ m.value }}</span>
             <span class="text-gray-400 text-[11px] font-inter">{{ m.label }}</span>
@@ -60,7 +60,7 @@
 
     <!-- Logo strip -->
     <div class="border-t border-gray-200/60 mt-10">
-      <div class="max-w-[1280px] mx-auto px-8 lg:px-12 py-8">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 py-8">
         <div class="flex items-center justify-between">
           <p class="text-gray-300 text-[12px] font-inter mr-8 flex-shrink-0 hidden md:block">{{ $t('business.partners') }}</p>
           <div class="flex items-center justify-center gap-8 md:gap-12 flex-wrap flex-1">

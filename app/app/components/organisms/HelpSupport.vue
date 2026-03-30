@@ -1,13 +1,13 @@
 <template>
-  <section class="py-20 lg:py-28 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-20 lg:py-28 bg-[#fafaf8]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="rounded-[1.75rem] overflow-hidden bg-[#0A1020] relative">
         <!-- Gradient orb -->
-        <div class="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
+        <div class="absolute top-0 right-0 w-[200px] sm:w-[400px] h-[200px] sm:h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
 
         <div class="grid lg:grid-cols-[1fr,auto] gap-0">
           <!-- Content -->
-          <div class="relative z-10 p-10 lg:p-14 flex flex-col justify-center">
+          <div class="relative z-10 p-5 sm:p-10 lg:p-14 flex flex-col justify-center">
             <h2 class="text-[2rem] lg:text-[2.5rem] font-heading font-normal text-white leading-[1.1] mb-4">
               {{ $t('help.supportTitle') }}
             </h2>
@@ -16,7 +16,7 @@
             </p>
 
             <!-- Stats -->
-            <div class="flex items-center gap-8 mb-10">
+            <div class="flex items-center flex-wrap gap-4 sm:gap-8 mb-10">
               <div>
                 <p class="text-[1.75rem] font-heading font-normal text-teal-400 leading-none mb-1">97%</p>
                 <p class="text-white/30 text-[11px] font-inter uppercase tracking-wider">{{ $t('help.statSatisfaction') }}</p>

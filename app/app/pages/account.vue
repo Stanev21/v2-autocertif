@@ -3,8 +3,8 @@
     <!-- Left: branding panel -->
     <div class="hidden lg:flex lg:w-[45%] relative bg-[#0B1426] overflow-hidden flex-col justify-between p-14">
       <!-- Orbs -->
-      <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.15] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.08] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
+      <div class="absolute top-1/4 left-1/3 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full opacity-[0.15] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[200px] sm:w-[400px] h-[200px] sm:h-[400px] rounded-full opacity-[0.08] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
       <!-- Grid -->
       <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
 
@@ -15,7 +15,7 @@
 
       <!-- Center content -->
       <div class="relative z-10">
-        <h2 class="text-[2.5rem] xl:text-[3rem] font-heading font-normal text-white leading-[1.08] tracking-[-0.02em] mb-6">
+        <h2 class="text-[1.75rem] sm:text-[2.5rem] xl:text-[3rem] font-heading font-normal text-white leading-[1.08] tracking-[-0.02em] mb-6">
           Vehicle history<br/>you can <span class="text-coral">trust</span>
         </h2>
         <p class="text-white/40 text-[15px] leading-[1.7] font-inter max-w-sm mb-10">

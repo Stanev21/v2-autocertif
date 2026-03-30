@@ -1,6 +1,6 @@
 <template>
-  <section class="py-20 lg:py-24 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-20 lg:py-24 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <h2 class="text-[1.75rem] lg:text-[2rem] font-heading font-normal text-gray-900 mb-12 lg:mb-14">
         {{ $t('help.topicsTitle') }}
       </h2>

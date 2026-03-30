@@ -1,6 +1,6 @@
 <template>
-  <section class="py-24 lg:py-28 bg-white">
-    <div class="max-w-[800px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-28 bg-white">
+    <div class="max-w-[800px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="text-center mb-14">
         <h2 class="text-[2rem] lg:text-[2.5rem] font-heading font-normal text-gray-900 leading-[1.08] mb-3">
           {{ $t('contact.faqTitle') }}

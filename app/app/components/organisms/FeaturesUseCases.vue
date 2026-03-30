@@ -1,8 +1,8 @@
 <template>
   <section id="use-cases" class="py-24 lg:py-32 bg-[#0A1020] overflow-hidden relative">
-    <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.1] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-    <div class="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.06] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
-    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12">
+    <div class="absolute top-1/4 left-1/3 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full opacity-[0.1] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-[200px] sm:w-[400px] h-[200px] sm:h-[400px] rounded-full opacity-[0.06] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Section header -->
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 lg:mb-20 gap-6">
         <div class="max-w-xl">
@@ -14,11 +14,11 @@
       </div>
 
       <!-- Horizontal scrolling cards -->
-      <div class="flex gap-5 overflow-x-auto pb-4 -mx-8 px-8 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-4 snap-x snap-mandatory scrollbar-hide">
+      <div class="flex gap-5 overflow-x-auto pb-4 -mx-4 px-4 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-4 snap-x snap-mandatory scrollbar-hide">
         <div
           v-for="(uc, i) in useCases"
           :key="i"
-          class="group relative flex-shrink-0 w-[300px] lg:w-auto snap-start rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer"
+          class="group relative flex-shrink-0 w-[260px] sm:w-[300px] lg:w-auto snap-start rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer"
           :class="activeCase === i
             ? 'bg-gradient-to-br from-coral/20 via-coral/5 to-transparent border border-coral/20'
             : 'bg-white/[0.03] border border-white/[0.06] hover:border-white/10 hover:bg-white/[0.05]'"
@@ -61,7 +61,7 @@
       <!-- Trust logos -->
       <div class="mt-20 pt-12 border-t border-white/[0.06]">
         <p class="text-white/20 text-[13px] font-inter text-center mb-8">{{ $t('hero.trust') }}</p>
-        <div class="flex items-center justify-center gap-14 flex-wrap">
+        <div class="flex items-center justify-center gap-6 sm:gap-14 flex-wrap">
           <span v-for="name in ['iCarros', 'Webmotors', 'OLX Autos', 'Kavak', 'Localiza']" :key="name"
             class="text-white/40 text-[16px] font-bold font-heading tracking-wider hover:text-white/60 transition-colors">{{ name }}</span>
         </div>

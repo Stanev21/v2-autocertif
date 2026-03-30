@@ -2,13 +2,13 @@
   <!-- Contentsquare-inspired deep burgundy hero -->
   <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0B1426]">
     <!-- Gradient orbs -->
-    <div class="absolute top-1/4 left-1/3 w-[600px] h-[600px] rounded-full opacity-[0.2] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-    <div class="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full opacity-[0.1] blur-[100px]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
+    <div class="absolute top-1/4 left-1/3 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] rounded-full opacity-[0.2] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full opacity-[0.1] blur-[100px]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
 
     <!-- Grid overlay -->
     <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 80px 80px;"></div>
 
-    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12 py-32 w-full">
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 py-16 sm:py-32 w-full">
       <div class="grid lg:grid-cols-[1fr,auto] gap-16 items-center">
         <!-- Left: text -->
         <div class="max-w-2xl">
@@ -17,7 +17,7 @@
             <span class="text-white/60 text-[13px] font-inter font-medium tracking-wide">{{ $t('affiliate.badge') }}</span>
           </div>
 
-          <h1 class="text-[3rem] md:text-[3.75rem] lg:text-[4.5rem] font-normal text-white leading-[1.04] mb-7 font-heading tracking-[-0.02em]">
+          <h1 class="text-[2rem] sm:text-[3rem] md:text-[3.75rem] lg:text-[4.5rem] font-normal text-white leading-[1.04] mb-7 font-heading tracking-[-0.02em]">
             {{ $t('affiliate.title') }}
           </h1>
 

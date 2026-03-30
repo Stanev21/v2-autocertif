@@ -1,9 +1,9 @@
 <template>
-  <section class="py-24 lg:py-32 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
         <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">Commitments</span>
-        <h2 class="text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
+        <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
           {{ $t('about.commitmentsTitle') }}
         </h2>
       </div>
@@ -18,7 +18,7 @@
           <!-- Glow for first card -->
           <div v-if="i === 0" class="absolute -top-20 -right-20 w-[250px] h-[250px] rounded-full opacity-20 blur-[80px]" style="background: radial-gradient(circle, #3B82F6, transparent 70%);"></div>
 
-          <div class="relative z-10 p-8 lg:p-10 min-h-[360px] flex flex-col">
+          <div class="relative z-10 p-5 sm:p-8 lg:p-10 min-h-[360px] flex flex-col">
             <!-- Icon -->
             <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-8 transition-colors duration-300"
               :class="i === 0 ? 'bg-coral/15' : 'bg-gray-100 group-hover:bg-coral/10'">

@@ -1,7 +1,7 @@
 <template>
   <header class="sticky inset-x-0 top-0 z-50 w-full border-b transition-all duration-200 will-change-transform"
     :class="scrolled ? 'border-gray-200/20 bg-white shadow-[0_1px_0_rgba(0,0,0,0.06)]' : 'border-transparent bg-burgundy text-white'">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12 h-[3.75rem] md:h-16 lg:h-20 flex items-center justify-between">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 h-[3.75rem] md:h-16 lg:h-20 flex items-center justify-between">
       <!-- Logo -->
       <NuxtLink :to="localePath('/')" class="flex items-center flex-[0_0_110px]">
         <span class="text-[22px] font-normal tracking-[0.01em] font-heading transition-colors duration-200"
@@ -80,15 +80,30 @@
     </div>
 
     <!-- Mobile menu -->
-    <div v-if="mobileOpen" class="lg:hidden bg-white border-t px-6 py-6 space-y-4">
+    <div v-if="mobileOpen" class="lg:hidden bg-white border-t px-4 sm:px-6 py-5 space-y-4">
       <NuxtLink v-for="item in navItems" :key="item.key"
         :to="localePath(item.to)" class="block text-gray-700 hover:text-gray-900 font-medium font-inter text-[15px]" @click="mobileOpen = false">
         {{ $t(item.key) }}
       </NuxtLink>
-      <NuxtLink :to="switchLocalePath(locale === 'en' ? 'fr' : 'en')"
-        class="block text-gray-400 text-[14px] font-inter" @click="mobileOpen = false">
-        {{ locale === 'en' ? 'Français' : 'English' }}
-      </NuxtLink>
+
+      <div class="pt-4 border-t border-gray-100 space-y-3">
+        <button class="w-full rounded-pill py-3 bg-coral text-white text-[14px] font-medium font-inter cursor-pointer" @click="mobileOpen = false">
+          {{ $t('nav.checkVehicle') }}
+        </button>
+        <NuxtLink to="/account" class="block w-full text-center rounded-pill py-3 border border-gray-300 text-gray-700 text-[14px] font-medium font-inter" @click="mobileOpen = false">
+          {{ $t('nav.myAccount') }}
+        </NuxtLink>
+      </div>
+
+      <div class="pt-3 border-t border-gray-100">
+        <NuxtLink :to="switchLocalePath(locale === 'en' ? 'fr' : 'en')"
+          class="inline-flex items-center gap-2 text-gray-400 text-[14px] font-inter" @click="mobileOpen = false">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+          </svg>
+          {{ locale === 'en' ? 'Français' : 'English' }}
+        </NuxtLink>
+      </div>
     </div>
   </header>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <section class="py-24 lg:py-32 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
         <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">Endpoints</span>

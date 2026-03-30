@@ -4,10 +4,10 @@
     <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
 
     <!-- Gradient orbs -->
-    <div class="absolute top-1/3 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.08] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
+    <div class="absolute top-1/3 left-1/3 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3b82f6 0%, transparent 70%);"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] rounded-full opacity-[0.08] blur-[100px]" style="background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);"></div>
 
-    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12 py-32 w-full">
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 py-20 sm:py-32 w-full">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
         <!-- Left: text -->
         <div>
@@ -16,7 +16,7 @@
             <span class="text-white/60 text-[13px] font-inter font-medium tracking-wide">{{ $t('api.badge') }}</span>
           </div>
 
-          <h1 class="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-normal text-white leading-[1.05] mb-6 font-heading tracking-[-0.02em]">
+          <h1 class="text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-normal text-white leading-[1.05] mb-6 font-heading tracking-[-0.02em]">
             {{ $t('api.title') }}
           </h1>
 
@@ -35,9 +35,9 @@
           </div>
 
           <!-- Stats row -->
-          <div class="flex items-center gap-6 lg:gap-8">
+          <div class="flex items-center gap-4 sm:gap-6 lg:gap-8 flex-wrap">
             <div v-for="stat in stats" :key="stat.value" class="text-center">
-              <p class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-white leading-none mb-1">{{ stat.value }}</p>
+              <p class="text-[1.25rem] sm:text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-white leading-none mb-1">{{ stat.value }}</p>
               <p class="text-white/30 text-[11px] font-inter tracking-wide uppercase">{{ stat.label }}</p>
             </div>
           </div>

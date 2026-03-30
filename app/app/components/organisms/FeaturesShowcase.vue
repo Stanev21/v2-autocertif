@@ -1,11 +1,11 @@
 <template>
-  <section id="capabilities" class="py-24 lg:py-32 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section id="capabilities" class="py-16 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Section header -->
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 lg:mb-24 gap-6">
         <div class="max-w-xl">
           <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">{{ $t('features.navCapabilities') }}</span>
-          <h2 class="text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
+          <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
             {{ $t('features.capabilitiesTitle') }}
           </h2>
         </div>
@@ -63,7 +63,7 @@
           >
             <div v-if="expanded === i" class="overflow-hidden">
               <div class="px-6 lg:px-10 pb-8 lg:pb-10">
-                <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 pl-0 lg:pl-[60px]">
+                <div class="flex flex-col lg:flex-row gap-6 sm:gap-10 lg:gap-16 pl-0 lg:pl-[60px]">
                   <!-- Text content -->
                   <div class="flex-1">
                     <h4 class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-gray-900 leading-[1.15] mb-5">

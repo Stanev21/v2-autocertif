@@ -1,7 +1,7 @@
 <template>
   <!-- CS Icon Grid + Card Pattern: pale grey bg, 3-col icon grid header, then 2x2 detail cards -->
-  <section class="py-24 lg:py-32 bg-[#f7f8f6]">
-    <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-[#f7f8f6]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="inline-block px-3 py-1 rounded-md bg-[#d3ffb6] text-[11px] font-inter font-semibold text-gray-900 uppercase tracking-wider mb-5">Platform</span>
@@ -18,7 +18,7 @@
           <div class="h-[180px] overflow-hidden">
             <img :src="infraImages[i]" :alt="item.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
-          <div class="p-8 lg:p-9">
+          <div class="p-5 sm:p-8 lg:p-9">
           <!-- Icon -->
           <div class="w-10 h-10 rounded-xl bg-coral/[0.08] flex items-center justify-center mb-6 group-hover:bg-coral/[0.12] transition-colors duration-200">
             <svg class="w-5 h-5 text-coral" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

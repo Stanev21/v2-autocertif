@@ -7,7 +7,7 @@
       <div class="grid lg:grid-cols-[1fr,1fr] min-h-[calc(100vh-80px)]">
 
         <!-- LEFT: dark panel with form -->
-        <div class="bg-burgundy px-8 lg:px-16 py-32 lg:py-40 flex items-start justify-center">
+        <div class="bg-burgundy px-4 sm:px-8 lg:px-16 py-16 sm:py-32 lg:py-40 flex items-start justify-center">
           <div class="w-full max-w-[420px]">
             <!-- Icon -->
             <div class="w-14 h-14 rounded-2xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center mb-8">
@@ -16,7 +16,7 @@
               </svg>
             </div>
 
-            <h1 class="text-[2rem] lg:text-[2.5rem] font-normal text-white leading-[1.08] mb-3 font-heading">
+            <h1 class="text-[1.5rem] sm:text-[2rem] lg:text-[2.5rem] font-normal text-white leading-[1.08] mb-3 font-heading">
               {{ $t('unsubscribe.title') }}
             </h1>
             <p class="text-white/40 text-[15px] leading-[1.6] font-inter mb-10">
@@ -65,7 +65,7 @@
         </div>
 
         <!-- RIGHT: light panel with FAQ + help -->
-        <div class="px-8 lg:px-16 py-20 lg:py-40 flex items-start justify-center bg-[#f7f8f6]">
+        <div class="px-4 sm:px-8 lg:px-16 py-12 sm:py-20 lg:py-40 flex items-start justify-center bg-[#f7f8f6]">
           <div class="w-full max-w-[420px]">
             <h2 class="text-[1.5rem] font-normal text-gray-900 leading-[1.08] mb-8 font-heading">
               {{ $t('unsubscribe.faq.title') }}
@@ -89,7 +89,7 @@
             </div>
 
             <!-- Help CTA card -->
-            <div class="relative bg-[#eff6ff] rounded-2xl p-7 overflow-hidden">
+            <div class="relative bg-[#eff6ff] rounded-2xl p-5 sm:p-7 overflow-hidden">
               <!-- CS notched corner -->
               <div class="absolute z-10 pointer-events-none bottom-0 right-0 bg-[#f7f8f6]" style="border-radius: 12px 0 0 0; height: 2rem; min-width: 20%;">
                 <div class="absolute" style="height: 12px; width: 12px; transform: rotate(-90deg); right: 0; bottom: 100%; color: #f7f8f6;">

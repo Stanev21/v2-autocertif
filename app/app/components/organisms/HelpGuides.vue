@@ -1,6 +1,6 @@
 <template>
-  <section class="py-20 lg:py-24 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-20 lg:py-24 bg-[#fafaf8]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <h2 class="text-[1.75rem] lg:text-[2rem] font-heading font-normal text-gray-900 mb-12 lg:mb-14">
         {{ $t('help.guidesTitle') }}
       </h2>
@@ -9,7 +9,7 @@
         <article
           v-for="(guide, i) in guides"
           :key="i"
-          class="group relative rounded-[1.5rem] overflow-hidden cursor-pointer h-[420px]"
+          class="group relative rounded-[1.5rem] overflow-hidden cursor-pointer h-auto sm:h-[420px]"
         >
           <!-- Background image -->
           <img :src="guide.image" :alt="guide.title" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />

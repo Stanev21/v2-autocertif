@@ -1,6 +1,6 @@
 <template>
-  <section id="benefits" class="py-24 lg:py-32 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section id="benefits" class="py-16 sm:py-24 lg:py-32 bg-[#fafaf8]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Section header -->
       <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-24">
         <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">{{ $t('features.navBenefits') }}</span>
@@ -27,7 +27,7 @@
             :class="hoveredCard === i ? 'opacity-40' : 'opacity-0'"
             :style="{ background: cardStyles[i].glow }"></div>
 
-          <div class="relative z-10 p-8 lg:p-10 h-full flex flex-col min-h-[420px]">
+          <div class="relative z-10 p-5 sm:p-8 lg:p-10 h-full flex flex-col min-h-[320px] sm:min-h-[420px]">
             <!-- Icon -->
             <div class="mb-8">
               <div class="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -55,7 +55,7 @@
             <!-- Metric -->
             <div class="mt-8 pt-6 border-t flex items-end gap-3"
               :class="cardStyles[i].border">
-              <span class="text-[2.75rem] lg:text-[3rem] font-heading font-normal leading-none tracking-tight transition-colors duration-300"
+              <span class="text-[2rem] sm:text-[2.75rem] lg:text-[3rem] font-heading font-normal leading-none tracking-tight transition-colors duration-300"
                 :class="hoveredCard === i ? 'text-coral' : cardStyles[i].metric">
                 {{ metrics[i].value }}
               </span>

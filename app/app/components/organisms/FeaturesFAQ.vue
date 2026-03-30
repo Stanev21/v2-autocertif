@@ -1,7 +1,7 @@
 <template>
   <section id="faq" class="py-24 lg:py-32 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
-      <div class="grid lg:grid-cols-5 gap-12 lg:gap-20">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div class="grid lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-20">
         <!-- Left: sticky header -->
         <div class="lg:col-span-2">
           <div class="lg:sticky lg:top-40">

@@ -1,6 +1,6 @@
 <template>
-  <section class="py-24 lg:py-32 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="grid lg:grid-cols-[1fr,1fr] gap-16">
         <!-- Left: error codes -->
         <div>

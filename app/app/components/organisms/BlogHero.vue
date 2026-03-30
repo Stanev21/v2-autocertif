@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-white pt-32 lg:pt-40 pb-12 lg:pb-16">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="bg-white pt-24 sm:pt-32 lg:pt-40 pb-12 lg:pb-16">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Simple editorial heading -->
       <div class="max-w-3xl mb-14 lg:mb-20">
-        <h1 class="text-[3rem] md:text-[4rem] lg:text-[5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-6">
+        <h1 class="text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-6">
           {{ $t('blog.title') }}
         </h1>
         <p class="text-gray-400 text-[1.1rem] lg:text-[1.25rem] leading-[1.6] font-inter max-w-xl">
@@ -14,7 +14,7 @@
       <!-- Featured articles: 1 large + 3 small -->
       <div class="grid lg:grid-cols-[1.3fr,1fr] gap-5">
         <!-- Primary featured -->
-        <NuxtLink v-if="featured.length > 0" :to="`/blog/${slugs[0]}`" class="group relative rounded-[1.25rem] overflow-hidden cursor-pointer h-[420px] lg:h-full block">
+        <NuxtLink v-if="featured.length > 0" :to="`/blog/${slugs[0]}`" class="group relative rounded-[1.25rem] overflow-hidden cursor-pointer h-[280px] sm:h-[420px] lg:h-full block">
           <img :src="featured[0].image" :alt="featured[0].title" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 p-7 lg:p-9">
@@ -42,7 +42,7 @@
             :to="`/blog/${slugs[i + 1]}`"
             class="group flex gap-5 rounded-[1.25rem] bg-[#f7f8f6] p-4 cursor-pointer hover:bg-[#f0f1ee] transition-colors duration-300"
           >
-            <div class="w-[140px] h-[110px] rounded-xl overflow-hidden shrink-0">
+            <div class="w-[100px] sm:w-[140px] h-[80px] sm:h-[110px] rounded-xl overflow-hidden shrink-0">
               <img :src="article.image" :alt="article.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             </div>
             <div class="flex flex-col justify-center min-w-0 py-1">

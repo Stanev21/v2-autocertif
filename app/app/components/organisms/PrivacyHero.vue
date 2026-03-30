@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-white pt-32 lg:pt-40 pb-12 lg:pb-16 border-b border-gray-100">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="bg-white pt-24 sm:pt-32 lg:pt-40 pb-12 lg:pb-16 border-b border-gray-100">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="max-w-3xl">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-10 rounded-xl bg-coral/10 flex items-center justify-center">
@@ -11,7 +11,7 @@
           <span class="text-coral text-[13px] font-inter font-semibold uppercase tracking-wider">{{ $t('privacy.badge') }}</span>
         </div>
 
-        <h1 class="text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-5">
+        <h1 class="text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-5">
           {{ $t('privacy.title') }}
         </h1>
         <p class="text-gray-400 text-[1.1rem] lg:text-[1.2rem] leading-[1.6] font-inter mb-6">

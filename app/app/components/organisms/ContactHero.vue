@@ -1,21 +1,21 @@
 <template>
-  <section class="min-h-screen pt-20 lg:pt-0">
-    <div class="grid lg:grid-cols-2 min-h-screen">
+  <section class="min-h-0 lg:min-h-screen pt-20 lg:pt-0">
+    <div class="grid lg:grid-cols-2 min-h-0 lg:min-h-screen">
       <!-- Left: dark info panel -->
       <div class="relative bg-[#0A1020] overflow-hidden flex items-center">
         <!-- Orbs -->
-        <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] rounded-full opacity-[0.06] blur-[80px]" style="background: radial-gradient(circle, #6d28d9 0%, transparent 70%);"></div>
+        <div class="absolute top-1/4 left-1/3 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-[150px] sm:w-[300px] h-[150px] sm:h-[300px] rounded-full opacity-[0.06] blur-[80px]" style="background: radial-gradient(circle, #6d28d9 0%, transparent 70%);"></div>
         <!-- Grid -->
         <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
 
-        <div class="relative z-10 p-10 lg:p-16 xl:p-20 w-full">
+        <div class="relative z-10 p-5 sm:p-10 lg:p-16 xl:p-20 w-full">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] mb-8">
             <div class="w-2 h-2 rounded-full bg-coral animate-pulse"></div>
             <span class="text-white/60 text-[13px] font-inter font-medium tracking-wide">{{ $t('contact.badge') }}</span>
           </div>
 
-          <h1 class="text-[2.75rem] lg:text-[3.5rem] xl:text-[4rem] font-normal text-white leading-[1.05] mb-6 font-heading tracking-[-0.02em]">
+          <h1 class="text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] xl:text-[4rem] font-normal text-white leading-[1.05] mb-6 font-heading tracking-[-0.02em]">
             {{ $t('contact.title') }}
           </h1>
 
@@ -43,7 +43,7 @@
 
       <!-- Right: form panel -->
       <div class="bg-[#fafaf8] flex items-center">
-        <div class="w-full p-10 lg:p-16 xl:p-20 max-w-xl mx-auto lg:mx-0">
+        <div class="w-full p-5 sm:p-10 lg:p-16 xl:p-20 max-w-xl mx-auto lg:mx-0">
           <h2 class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-gray-900 mb-8">
             {{ $t('contact.formTitle') }}
           </h2>

@@ -1,9 +1,9 @@
 <template>
   <!-- Like ContentSquare Footer: BURGUNDY bg, multi-column links, social icons -->
   <footer class="bg-burgundy-deep relative overflow-hidden">
-    <div class="absolute top-0 right-1/4 w-[500px] h-[500px] rounded-full opacity-[0.06] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12 py-16">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr,1fr,1fr,1fr,1fr] gap-8 lg:gap-12 mb-16">
+    <div class="absolute top-0 right-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full opacity-[0.06] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 py-12 sm:py-16">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr,1fr,1fr,1fr,1fr] gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
         <!-- Brand column -->
         <div class="col-span-2 md:col-span-3 lg:col-span-1">
           <p class="text-xl font-extrabold text-white tracking-tight mb-4">AUTOCERTIF</p>

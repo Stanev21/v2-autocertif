@@ -1,11 +1,11 @@
 <template>
   <!-- Contentsquare-inspired product accordion section -->
-  <section class="py-24 lg:py-32 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Header -->
       <div class="max-w-2xl mb-16">
         <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">{{ $t('affiliate.termsTitle') }}</span>
-        <h2 class="text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
+        <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
           {{ $t('affiliate.compensationTitle') }}
         </h2>
         <p class="text-gray-400 text-[15px] leading-[1.7] font-inter mt-4">{{ $t('affiliate.compensationDesc') }}</p>

@@ -12,14 +12,14 @@
 
           <!-- Article meta overlay -->
           <div class="absolute bottom-0 left-0 right-0">
-            <div class="max-w-[800px] mx-auto px-8 lg:px-12 pb-10 lg:pb-14">
+            <div class="max-w-[800px] mx-auto px-4 sm:px-8 lg:px-12 pb-10 lg:pb-14">
               <div class="flex items-center gap-3 mb-4">
                 <span class="px-3 py-1 rounded-full text-[11px] font-inter font-semibold uppercase tracking-wider bg-white/15 backdrop-blur-sm text-white">
                   {{ article.category }}
                 </span>
                 <span class="text-white/50 text-[12px] font-inter">{{ article.readTime }} {{ $t('blog.readTime') }}</span>
               </div>
-              <h1 class="text-[2rem] md:text-[2.75rem] lg:text-[3.25rem] font-normal text-white leading-[1.08] font-heading tracking-[-0.02em]">
+              <h1 class="text-[1.5rem] sm:text-[2rem] md:text-[2.75rem] lg:text-[3.25rem] font-normal text-white leading-[1.08] font-heading tracking-[-0.02em]">
                 {{ article.title }}
               </h1>
             </div>
@@ -29,7 +29,7 @@
 
       <!-- Article body with sidebar -->
       <section class="py-14 lg:py-20 bg-white">
-        <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
           <div class="grid lg:grid-cols-[1fr,320px] gap-12 lg:gap-16">
             <!-- Main content -->
             <div>
@@ -124,7 +124,7 @@
 
       <!-- Next / Prev articles -->
       <section class="py-16 lg:py-20 bg-[#fafaf8] border-t border-gray-100">
-        <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
           <h3 class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-gray-900 mb-10">Continue reading</h3>
           <div class="grid md:grid-cols-3 gap-6">
             <NuxtLink
@@ -152,7 +152,7 @@
     <!-- 404 -->
     <template v-else>
       <section class="pt-40 pb-20 bg-white text-center">
-        <div class="max-w-[600px] mx-auto px-8">
+        <div class="max-w-[600px] mx-auto px-4 sm:px-8">
           <h1 class="text-[2rem] font-heading text-gray-900 mb-4">Article not found</h1>
           <p class="text-gray-400 text-[15px] font-inter mb-8">The article you're looking for doesn't exist.</p>
           <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-coral text-white text-[14px] font-semibold font-inter">

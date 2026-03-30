@@ -1,13 +1,13 @@
 <template>
   <nav class="sticky top-[3.75rem] md:top-16 lg:top-20 z-40 border-b border-gray-200/50 bg-white/80 backdrop-blur-xl transition-all duration-300"
     :class="{ 'shadow-sm': scrolled }">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="flex items-center justify-between h-14">
-        <div class="flex items-center gap-1">
+        <div class="flex items-center gap-1 overflow-x-auto scrollbar-hide">
           <button
             v-for="item in navItems"
             :key="item.id"
-            class="relative px-4 py-2 text-[13px] font-inter font-medium rounded-full transition-all duration-300 cursor-pointer"
+            class="relative px-3 sm:px-4 py-2 text-[12px] sm:text-[13px] font-inter font-medium rounded-full transition-all duration-300 cursor-pointer whitespace-nowrap"
             :class="activeSection === item.id
               ? 'text-gray-900 bg-gray-100'
               : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'"
@@ -65,3 +65,8 @@ onMounted(() => {
   window.addEventListener('scroll', () => { scrolled.value = window.scrollY > 100 })
 })
 </script>
+
+<style scoped>
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

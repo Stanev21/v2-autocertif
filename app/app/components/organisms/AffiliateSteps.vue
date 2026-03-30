@@ -1,8 +1,8 @@
 <template>
-  <section class="py-24 lg:py-32 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-[#fafaf8]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
-        <h2 class="text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
+        <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] font-normal text-gray-900 leading-[1.08] font-heading">
           {{ $t('affiliate.stepsTitle') }}
         </h2>
       </div>
@@ -23,10 +23,10 @@
           <!-- Divider -->
           <div v-if="i < 2" class="hidden lg:block absolute right-0 top-[12%] bottom-[12%] w-px bg-white/[0.06] z-10"></div>
 
-          <div class="relative z-10 p-8 lg:p-10 min-h-[360px] flex flex-col">
+          <div class="relative z-10 p-5 sm:p-8 lg:p-10 min-h-[360px] flex flex-col">
             <!-- Top: number + icon -->
             <div class="flex items-start justify-between mb-auto">
-              <span class="text-[5rem] lg:text-[6rem] font-heading font-normal leading-none transition-all duration-500"
+              <span class="text-[3rem] sm:text-[5rem] lg:text-[6rem] font-heading font-normal leading-none transition-all duration-500"
                 :class="hoveredStep === i ? 'text-coral' : 'text-white/25'">
                 0{{ i + 1 }}
               </span>

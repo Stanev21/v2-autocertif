@@ -1,6 +1,6 @@
 <template>
   <section class="py-16 lg:py-20 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="grid lg:grid-cols-[240px,1fr] gap-10 lg:gap-16">
 
         <!-- Sticky sidebar nav -->
@@ -34,7 +34,7 @@
             v-for="(section, i) in sections"
             :key="i"
             :id="section.id"
-            class="bg-white rounded-2xl border border-gray-200/60 p-7 lg:p-10 scroll-mt-24"
+            class="bg-white rounded-2xl border border-gray-200/60 p-5 sm:p-7 lg:p-10 scroll-mt-24"
           >
             <!-- Section header -->
             <div class="flex items-center gap-3 mb-5">

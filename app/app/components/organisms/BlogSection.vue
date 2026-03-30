@@ -1,6 +1,6 @@
 <template>
-  <section class="py-28 bg-white">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-28 bg-white">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Heading row -->
       <div class="flex items-end justify-between mb-12">
         <div>

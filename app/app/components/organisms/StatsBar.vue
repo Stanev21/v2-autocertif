@@ -12,7 +12,7 @@
         <span class="text-gray-200">|</span>
         <div class="flex items-center gap-2">
           <div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center">
-            <svg class="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3" /></svg>
+            <svg class="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><circle cx="12" cy="12" r="9" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.485 0 4.5 4.03 4.5 9s-2.015 9-4.5 9-4.5-4.03-4.5-9S9.515 3 12 3ZM3 12h18" /></svg>
           </div>
           <span class="text-gray-600 text-[13px] font-medium font-inter">{{ $t('stats.coverage') }}</span>
         </div>

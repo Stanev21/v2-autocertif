@@ -1,6 +1,6 @@
 <template>
-  <section class="py-24 lg:py-32 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-32 bg-[#fafaf8]">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         <!-- Left: schema table -->
         <div>

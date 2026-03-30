@@ -4,8 +4,8 @@
     <div class="absolute top-20 right-[15%] w-[300px] h-[300px] rounded-full opacity-[0.15] blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
     <div class="absolute bottom-10 left-[10%] w-[200px] h-[200px] rounded-full opacity-[0.1] blur-[80px]" style="background: radial-gradient(circle, #3b82f6, transparent 70%);"></div>
 
-    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12 text-center">
-      <h1 class="text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-6">
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 text-center">
+      <h1 class="text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-6">
         {{ $t('help.title') }}
       </h1>
       <p class="text-gray-400 text-[1.1rem] lg:text-[1.2rem] leading-[1.6] font-inter max-w-2xl mx-auto mb-10">

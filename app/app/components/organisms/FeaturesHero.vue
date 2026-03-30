@@ -2,9 +2,9 @@
   <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0A1020]">
     <!-- Animated gradient orbs -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full opacity-[0.15] blur-[120px] animate-orb-1" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full opacity-[0.1] blur-[100px] animate-orb-2" style="background: radial-gradient(circle, #6d28d9 0%, transparent 70%);"></div>
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-[0.05] blur-[150px]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
+      <div class="absolute top-1/4 left-1/4 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] rounded-full opacity-[0.15] blur-[120px] animate-orb-1" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full opacity-[0.1] blur-[100px] animate-orb-2" style="background: radial-gradient(circle, #6d28d9 0%, transparent 70%);"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[800px] h-[400px] sm:h-[800px] rounded-full opacity-[0.05] blur-[150px]" style="background: radial-gradient(circle, #f59e0b 0%, transparent 70%);"></div>
     </div>
 
     <!-- Grain overlay -->
@@ -13,7 +13,7 @@
     <!-- Grid lines -->
     <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 80px 80px;"></div>
 
-    <div class="relative max-w-[1280px] mx-auto px-8 lg:px-12 py-32 w-full">
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 py-20 sm:py-32 w-full">
       <div class="max-w-3xl mx-auto text-center">
         <!-- Badge -->
         <div ref="heroBadge" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-sm mb-8">
@@ -22,7 +22,7 @@
         </div>
 
         <!-- H1 -->
-        <h1 ref="heroTitle" class="text-[3rem] md:text-[4rem] lg:text-[4.75rem] font-normal text-white leading-[1.05] mb-7 font-heading tracking-[-0.02em]">
+        <h1 ref="heroTitle" class="text-[2.25rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.75rem] font-normal text-white leading-[1.05] mb-7 font-heading tracking-[-0.02em]">
           {{ $t('features.title') }}
         </h1>
 
@@ -33,20 +33,20 @@
 
         <!-- CTAs -->
         <div ref="heroCtas" class="flex items-center justify-center gap-4 flex-wrap">
-          <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:shadow-[0_0_60px_rgba(59,130,246,0.4)]">
+          <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-6 sm:px-8 py-3 sm:py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:shadow-[0_0_60px_rgba(59,130,246,0.4)]">
             <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('features.cta') }}</span>
             <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('features.cta') }}</span>
           </button>
-          <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] hover:border-white/30 transition-all duration-300 cursor-pointer">
+          <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-6 sm:px-8 py-3 sm:py-4 border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] hover:border-white/30 transition-all duration-300 cursor-pointer">
             <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('features.ctaSecondary') }}</span>
             <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('features.ctaSecondary') }}</span>
           </button>
         </div>
 
         <!-- Stats row -->
-        <div ref="heroStats" class="flex items-center justify-center gap-8 lg:gap-12 mt-16 pt-10 border-t border-white/[0.06]">
+        <div ref="heroStats" class="grid grid-cols-2 sm:flex sm:items-center sm:justify-center gap-6 sm:gap-8 lg:gap-12 mt-12 sm:mt-16 pt-8 sm:pt-10 border-t border-white/[0.06]">
           <div v-for="stat in stats" :key="stat.value" class="text-center">
-            <p class="text-[1.75rem] lg:text-[2rem] font-heading font-normal text-white leading-none mb-1">{{ stat.value }}</p>
+            <p class="text-[1.5rem] sm:text-[1.75rem] lg:text-[2rem] font-heading font-normal text-white leading-none mb-1">{{ stat.value }}</p>
             <p class="text-white/30 text-[12px] font-inter tracking-wide uppercase">{{ stat.label }}</p>
           </div>
         </div>

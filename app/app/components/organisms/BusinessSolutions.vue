@@ -1,10 +1,10 @@
 <template>
-  <section class="py-24 lg:py-36 bg-[#fafaf8] overflow-hidden">
-    <div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+  <section class="py-16 sm:py-24 lg:py-36 bg-[#fafaf8] overflow-hidden">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Header -->
       <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-24">
         <span class="text-[13px] font-medium font-inter text-coral uppercase tracking-wider mb-4 block">Solutions</span>
-        <h2 class="text-[2.25rem] lg:text-[3.25rem] font-normal text-gray-900 leading-[1.08] font-heading mb-5">
+        <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3.25rem] font-normal text-gray-900 leading-[1.08] font-heading mb-5">
           {{ $t('business.solutions.title') }}
         </h2>
         <p class="text-gray-500 text-[16px] leading-[1.7] font-inter">{{ $t('business.solutions.subtitle') }}</p>
@@ -13,7 +13,7 @@
       <!-- Split layout: tabs left + content right -->
       <div class="grid lg:grid-cols-[320px,1fr] gap-6 lg:gap-10">
         <!-- Left: vertical tab list -->
-        <div class="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 -mx-6 px-6 lg:mx-0 lg:px-0">
+        <div class="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 -mx-4 px-4 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0">
           <button
             v-for="(s, i) in solutions"
             :key="i"

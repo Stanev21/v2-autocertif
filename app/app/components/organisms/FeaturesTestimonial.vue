@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 lg:py-24 bg-[#fafaf8]">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
-      <div class="rounded-2xl bg-white border border-gray-200/60 p-8 lg:p-10 flex flex-col lg:flex-row lg:items-center gap-8">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div class="rounded-2xl bg-white border border-gray-200/60 p-5 sm:p-8 lg:p-10 flex flex-col lg:flex-row lg:items-center gap-5 sm:gap-8">
         <div class="flex items-center gap-4 shrink-0">
           <img src="/images/testimonials/james.jpg" alt="James Mitchell" class="w-14 h-14 rounded-full object-cover" />
           <div>

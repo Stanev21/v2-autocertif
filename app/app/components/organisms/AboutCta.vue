@@ -1,9 +1,9 @@
 <template>
-  <section class="py-24 lg:py-32 bg-[#0A1020] relative overflow-hidden">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.1] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
+  <section class="py-16 sm:py-24 lg:py-32 bg-[#0A1020] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] rounded-full opacity-[0.1] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
 
-    <div class="relative max-w-3xl mx-auto px-8 lg:px-12 text-center">
-      <h2 class="text-[2.25rem] lg:text-[3rem] font-normal text-white leading-[1.08] font-heading mb-5">
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-8 lg:px-12 text-center">
+      <h2 class="text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] font-normal text-white leading-[1.08] font-heading mb-5">
         {{ $t('about.ctaTitle') }}
       </h2>
       <p class="text-white/45 text-[16px] leading-[1.7] font-inter mb-10 max-w-xl mx-auto">

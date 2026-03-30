@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- Hero -->
-    <section class="bg-white pt-32 lg:pt-40 pb-12 lg:pb-16 border-b border-gray-100">
-      <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+    <section class="bg-white pt-24 sm:pt-32 lg:pt-40 pb-12 lg:pb-16 border-b border-gray-100">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
         <div class="max-w-3xl">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-xl bg-coral/10 flex items-center justify-center">
@@ -12,7 +12,7 @@
             </div>
             <span class="text-coral text-[13px] font-inter font-semibold uppercase tracking-wider">{{ badge }}</span>
           </div>
-          <h1 class="text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-5">
+          <h1 class="text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-normal text-gray-900 leading-[1.02] font-heading tracking-[-0.03em] mb-5">
             {{ title }}
           </h1>
           <p class="text-gray-400 text-[1.1rem] lg:text-[1.2rem] leading-[1.6] font-inter mb-6">{{ subtitle }}</p>
@@ -25,8 +25,8 @@
     </section>
 
     <!-- Content with sidebar -->
-    <section class="py-16 lg:py-20 bg-[#fafaf8]">
-      <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+    <section class="py-12 sm:py-16 lg:py-20 bg-[#fafaf8]">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
         <div class="grid lg:grid-cols-[240px,1fr] gap-10 lg:gap-16">
           <!-- Sticky sidebar -->
           <div class="hidden lg:block">
@@ -59,7 +59,7 @@
               v-for="(section, i) in sections"
               :key="i"
               :id="section.id"
-              class="bg-white rounded-2xl border border-gray-200/60 p-7 lg:p-10 scroll-mt-24"
+              class="bg-white rounded-2xl border border-gray-200/60 p-5 sm:p-7 lg:p-10 scroll-mt-24"
             >
               <div class="flex items-center gap-3 mb-5">
                 <span class="w-8 h-8 rounded-lg bg-coral/10 flex items-center justify-center text-coral text-[12px] font-inter font-bold">
@@ -75,11 +75,11 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-20 lg:py-28 bg-white">
-      <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+    <section class="py-12 sm:py-20 lg:py-28 bg-white">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
         <div class="rounded-[1.75rem] bg-[#0A1020] overflow-hidden relative">
           <div class="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
-          <div class="relative z-10 p-10 lg:p-16 text-center max-w-2xl mx-auto">
+          <div class="relative z-10 p-6 sm:p-10 lg:p-16 text-center max-w-2xl mx-auto">
             <div class="w-14 h-14 rounded-2xl bg-white/[0.06] border border-white/[0.06] flex items-center justify-center mx-auto mb-6">
               <svg class="w-7 h-7 text-teal-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />

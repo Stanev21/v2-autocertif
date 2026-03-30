@@ -14,7 +14,7 @@
             <span class="text-gray-400 text-[11px] font-inter">&nbsp;</span>
           </div>
           <div class="flex items-baseline gap-1.5 mb-8">
-            <span class="text-[2.75rem] font-heading font-normal text-gray-900 leading-none">{{ $t('pricing.trial.price') }}</span>
+            <span class="text-[2.25rem] sm:text-[2.75rem] font-heading font-normal text-gray-900 leading-none">{{ $t('pricing.trial.price') }}</span>
             <span class="text-gray-400 text-[14px] font-inter">{{ $t('pricing.trial.period') }}</span>
           </div>
 
@@ -53,7 +53,7 @@
             <span class="text-gray-400 text-[11px] font-inter">{{ $t('pricing.startingFrom') }}</span>
           </div>
           <div class="flex items-baseline gap-1.5 mb-8">
-            <span class="text-[2.75rem] font-heading font-normal text-gray-900 leading-none">{{ $t('pricing.subscription.price') }}</span>
+            <span class="text-[2.25rem] sm:text-[2.75rem] font-heading font-normal text-gray-900 leading-none">{{ $t('pricing.subscription.price') }}</span>
             <span class="text-gray-400 text-[14px] font-inter">{{ $t('pricing.subscription.period') }}</span>
           </div>
 

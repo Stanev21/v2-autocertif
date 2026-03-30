@@ -1,6 +1,6 @@
 <template>
   <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
-    <div class="max-w-[1280px] mx-auto px-8 lg:px-12">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <!-- Filter bar -->
       <div class="flex items-center justify-between mb-12 lg:mb-14">
         <h2 class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-gray-900">Latest articles</h2>
