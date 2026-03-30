@@ -4,9 +4,9 @@
 
     <template v-if="article && articleData">
       <!-- Hero with full-bleed image -->
-      <section class="relative pt-24 lg:pt-32">
+      <section class="relative">
         <!-- Full-width hero image -->
-        <div class="relative h-[300px] lg:h-[480px] overflow-hidden">
+        <div class="relative h-[380px] lg:h-[540px] overflow-hidden">
           <img :src="articleData.image" :alt="article.title" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#0A1020] via-[#0A1020]/40 to-transparent"></div>
 
