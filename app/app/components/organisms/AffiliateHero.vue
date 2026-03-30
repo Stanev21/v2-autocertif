@@ -26,13 +26,13 @@
           </p>
 
           <div class="flex items-center gap-4 flex-wrap">
-            <button class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)]">
+            <NuxtLink :to="localePath('/contact')" class="group relative inline-flex justify-center overflow-hidden rounded-full px-8 py-4 bg-coral text-white text-[15px] font-semibold font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer shadow-[0_0_40px_rgba(59,130,246,0.3)]">
               <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('affiliate.cta') }}</span>
               <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('affiliate.cta') }}</span>
-            </button>
-            <button class="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] transition-all cursor-pointer">
+            </NuxtLink>
+            <NuxtLink :to="localePath('/terms-of-use')" class="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] transition-all cursor-pointer">
               {{ $t('affiliate.ctaTerms') }}
-            </button>
+            </NuxtLink>
           </div>
         </div>
 
@@ -56,6 +56,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
 const { tm, rt } = useI18n()
 
 const stats = computed(() => {
