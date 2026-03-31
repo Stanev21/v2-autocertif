@@ -30,9 +30,6 @@
               <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('affiliate.cta') }}</span>
               <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('affiliate.cta') }}</span>
             </NuxtLink>
-            <NuxtLink :to="localePath('/terms-of-use')" class="inline-flex items-center gap-2 px-7 py-4 rounded-full border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] transition-all cursor-pointer">
-              {{ $t('affiliate.ctaTerms') }}
-            </NuxtLink>
           </div>
         </div>
 

@@ -16,9 +16,6 @@
           {{ $t('affiliate.cta') }}
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
         </NuxtLink>
-        <NuxtLink :to="localePath('/terms-of-use')" class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/20 text-white text-[15px] font-medium font-inter hover:bg-white/[0.06] transition-all cursor-pointer">
-          {{ $t('affiliate.ctaTerms') }}
-        </NuxtLink>
       </div>
 
       <p class="text-white/25 text-[13px] font-inter">{{ $t('affiliate.ctaBannerNote') }}</p>
