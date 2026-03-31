@@ -20,7 +20,7 @@
         <input
           type="text"
           :placeholder="$t('help.searchPlaceholder')"
-          class="w-full pl-13 pr-6 py-4 rounded-xl border border-blue-200 bg-blue-50/50 text-[15px] font-inter text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-400/20 transition-all"
+          class="w-full pl-12 pr-6 py-4 rounded-xl border border-blue-200 bg-blue-50/50 text-[15px] font-inter text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-400/20 transition-all"
         />
       </div>
     </div>
