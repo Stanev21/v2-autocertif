@@ -53,9 +53,31 @@
             <span class="text-gray-400 text-[13px] font-inter">{{ article.readTime }} {{ $t('blog.readTime') }}</span>
           </div>
 
-          <!-- Article image -->
-          <div class="w-full rounded-2xl overflow-hidden aspect-[16/9]">
+        </div>
+
+        <!-- Article image (wider - breaks out of 800px) -->
+        <div class="max-w-[1080px] mx-auto px-4 sm:px-8 lg:px-12 mt-10">
+          <div class="w-full rounded-2xl overflow-hidden aspect-[21/9]">
             <img :src="articleData.image" :alt="article.title" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div v-if="tocSections.length > 0" class="max-w-[800px] mx-auto px-4 sm:px-8 lg:px-12 mt-10 mb-4">
+          <div class="rounded-2xl bg-[#f7f8f6] border border-gray-100 p-6 sm:p-8">
+            <p class="text-[12px] font-inter font-semibold text-gray-400 uppercase tracking-wider mb-5">In this article</p>
+            <div class="grid sm:grid-cols-2 gap-x-6 gap-y-1">
+              <a
+                v-for="(section, i) in tocSections"
+                :key="i"
+                :href="'#' + slugify(section)"
+                class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-inter text-gray-600 hover:text-coral hover:bg-white transition-all"
+                @click.prevent="scrollToSection(slugify(section))"
+              >
+                <span class="text-coral text-[12px] font-semibold font-inter">{{ String(i + 1).padStart(2, '0') }}</span>
+                {{ section }}
+              </a>
+            </div>
           </div>
         </div>
       </section>
