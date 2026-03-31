@@ -624,7 +624,7 @@
       "business": "Entreprises",
       "api": "API",
       "blog": "Blog",
-      "helpCenter": "Contacter le support",
+      "helpCenter": "Centre d'aide",
       "affiliate": "Affiliation",
       "about": "À propos",
       "contact": "Contact",
@@ -706,7 +706,7 @@
     "ctaBannerNote": "Sandbox gratuit. Aucun engagement requis."
   },
   "help": {
-    "title": "Contacter le support",
+    "title": "Centre d'aide",
     "subtitle": "Comment pouvons-nous vous aider ? Trouvez des réponses à vos questions, explorez nos guides ou contactez notre équipe de support.",
     "searchPlaceholder": "Rechercher des réponses...",
     "topicsTitle": "Parcourir par sujet",
