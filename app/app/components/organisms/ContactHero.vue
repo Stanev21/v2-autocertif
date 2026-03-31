@@ -1,50 +1,69 @@
 <template>
-  <section class="min-h-0 lg:min-h-screen pt-20 lg:pt-0">
-    <div class="grid lg:grid-cols-2 min-h-0 lg:min-h-screen">
-      <!-- Left: dark info panel -->
-      <div class="relative bg-[#0A1020] overflow-hidden flex items-center">
-        <!-- Orbs -->
-        <div class="absolute top-1/4 left-1/3 w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full opacity-[0.12] blur-[120px]" style="background: radial-gradient(circle, #3B82F6 0%, transparent 70%);"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-[150px] sm:w-[300px] h-[150px] sm:h-[300px] rounded-full opacity-[0.06] blur-[80px]" style="background: radial-gradient(circle, #6d28d9 0%, transparent 70%);"></div>
-        <!-- Grid -->
-        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <section class="bg-white pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
+      <!-- Centered header -->
+      <div class="text-center mb-14 sm:mb-18 lg:mb-20">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-gray-50 mb-6">
+          <div class="w-2 h-2 rounded-full bg-coral animate-pulse"></div>
+          <span class="text-gray-500 text-[13px] font-inter font-medium tracking-wide">{{ $t('contact.badge') }}</span>
+        </div>
 
-        <div class="relative z-10 p-5 sm:p-10 lg:p-16 xl:p-20 w-full">
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] mb-8">
-            <div class="w-2 h-2 rounded-full bg-coral animate-pulse"></div>
-            <span class="text-white/60 text-[13px] font-inter font-medium tracking-wide">{{ $t('contact.badge') }}</span>
+        <h1 class="font-heading text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] font-normal text-gray-900 leading-[1.08] tracking-[-0.02em] mb-4">
+          {{ $t('contact.title') }}
+        </h1>
+
+        <p class="text-gray-400 text-[1rem] lg:text-[1.1rem] leading-[1.7] font-inter max-w-xl mx-auto">
+          {{ $t('contact.subtitle') }}
+        </p>
+      </div>
+
+      <!-- Two-column grid -->
+      <div class="grid lg:grid-cols-[1fr,1.2fr] gap-10 lg:gap-16 items-start">
+        <!-- LEFT: Info cards -->
+        <div>
+          <div class="space-y-4 mb-8">
+            <div
+              v-for="(info, i) in infoCards"
+              :key="i"
+              class="rounded-2xl bg-[#f7f8f6] p-6 sm:p-8"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-coral/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5 text-coral" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" :d="info.icon" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-gray-400 text-[11px] font-inter uppercase tracking-wider mb-1.5">{{ info.label }}</p>
+                  <p class="text-gray-900 text-[15px] font-inter font-medium leading-snug">{{ info.value }}</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h1 class="text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] xl:text-[4rem] font-normal text-white leading-[1.05] mb-6 font-heading tracking-[-0.02em]">
-            {{ $t('contact.title') }}
-          </h1>
-
-          <p class="text-white/40 text-[1rem] lg:text-[1.1rem] leading-[1.7] font-inter max-w-md mb-14">
-            {{ $t('contact.subtitle') }}
-          </p>
-
-          <!-- Info cards -->
-          <div class="space-y-4">
-            <div v-for="(info, i) in infoCards" :key="i"
-              class="flex items-start gap-4 p-5 rounded-xl bg-white/[0.03] border border-white/[0.06]">
-              <div class="w-10 h-10 rounded-xl bg-white/[0.06] flex items-center justify-center shrink-0">
-                <svg class="w-4.5 h-4.5 text-coral" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" :d="info.icon" />
-                </svg>
+          <!-- Trust row -->
+          <div class="rounded-2xl bg-[#f7f8f6] p-6 sm:p-8">
+            <p class="text-gray-400 text-[11px] font-inter uppercase tracking-wider mb-4">{{ $t('contact.trustedLabel') || 'Trusted by businesses worldwide' }}</p>
+            <div class="flex flex-wrap gap-3">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100">
+                <span class="text-coral font-heading font-semibold text-[15px]">100K+</span>
+                <span class="text-gray-400 text-[13px] font-inter">{{ $t('contact.statUsers') || 'Users' }}</span>
               </div>
-              <div>
-                <p class="text-white/30 text-[11px] font-inter uppercase tracking-wider mb-1">{{ info.label }}</p>
-                <p class="text-white/70 text-[13px] font-inter leading-snug">{{ info.value }}</p>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100">
+                <span class="text-coral font-heading font-semibold text-[15px]">24h</span>
+                <span class="text-gray-400 text-[13px] font-inter">{{ $t('contact.statResponse') || 'Avg response' }}</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100">
+                <span class="text-coral font-heading font-semibold text-[15px]">4.9/5</span>
+                <span class="text-gray-400 text-[13px] font-inter">{{ $t('contact.statRating') || 'Rating' }}</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right: form panel -->
-      <div class="bg-[#fafaf8] flex items-center">
-        <div class="w-full p-5 sm:p-10 lg:p-16 xl:p-20 max-w-xl mx-auto lg:mx-0">
-          <h2 class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-gray-900 mb-8">
+        <!-- RIGHT: Contact form -->
+        <div class="rounded-2xl bg-white border border-gray-200 p-6 sm:p-8 lg:p-10 shadow-sm">
+          <h2 class="font-heading text-[1.25rem] text-gray-900 font-normal mb-6">
             {{ $t('contact.formTitle') }}
           </h2>
 
@@ -77,7 +96,7 @@
             </div>
 
             <!-- Submit -->
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-gray-900 text-white text-[14px] font-semibold font-inter hover:bg-gray-800 transition-all cursor-pointer">
+            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-coral text-white text-[14px] font-semibold font-inter hover:bg-coral/90 transition-all cursor-pointer">
               {{ $t('contact.send') }}
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" /></svg>
             </button>
