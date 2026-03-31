@@ -13,14 +13,14 @@
       </p>
 
       <!-- Search bar -->
-      <div class="max-w-xl mx-auto relative">
-        <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <div class="max-w-2xl mx-auto relative">
+        <svg class="absolute left-6 top-1/2 -translate-y-1/2 w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg>
         <input
           type="text"
           :placeholder="$t('help.searchPlaceholder')"
-          class="w-full pl-14 pr-6 py-5 rounded-2xl border border-gray-200 bg-white text-[16px] font-inter text-gray-900 placeholder:text-gray-300 shadow-sm focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all"
+          class="w-full pl-16 pr-8 py-6 rounded-2xl border-2 border-gray-200 bg-white text-[17px] font-inter text-gray-900 placeholder:text-gray-400 shadow-lg shadow-blue-500/5 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 focus:shadow-blue-500/10 transition-all"
         />
       </div>
     </div>
