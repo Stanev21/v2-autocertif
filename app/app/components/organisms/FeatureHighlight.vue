@@ -17,7 +17,7 @@
         <div
           v-for="(feature, i) in features"
           :key="i"
-          class="group relative bg-white rounded-2xl p-7 lg:p-8 transition-all duration-300 hover:shadow-lg cursor-pointer overflow-hidden"
+          class="group relative bg-white rounded-2xl p-7 lg:p-8 transition-all duration-300 hover:shadow-lg overflow-hidden"
           @mouseenter="active = i"
         >
           <!-- Large faded number -->

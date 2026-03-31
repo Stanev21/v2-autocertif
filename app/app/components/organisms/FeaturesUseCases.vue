@@ -18,7 +18,7 @@
         <div
           v-for="(uc, i) in useCases"
           :key="i"
-          class="group relative flex-shrink-0 w-[260px] sm:w-[300px] lg:w-auto snap-start rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer"
+          class="group relative flex-shrink-0 w-[260px] sm:w-[300px] lg:w-auto snap-start rounded-2xl overflow-hidden transition-all duration-500"
           :class="activeCase === i
             ? 'bg-gradient-to-br from-coral/20 via-coral/5 to-transparent border border-coral/20'
             : 'bg-white/[0.03] border border-white/[0.06] hover:border-white/10 hover:bg-white/[0.05]'"

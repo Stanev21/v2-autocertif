@@ -14,7 +14,7 @@
         <div
           v-for="(benefit, i) in benefits"
           :key="i"
-          class="group relative rounded-[1.5rem] overflow-hidden transition-all duration-500 cursor-pointer"
+          class="group relative rounded-[1.5rem] overflow-hidden transition-all duration-500"
           :class="[
             hoveredCard === i ? 'shadow-2xl -translate-y-1' : 'shadow-sm',
             cardStyles[i].bg
