@@ -64,10 +64,10 @@
         </NuxtLink>
 
         <!-- Primary CTA - red pill like ContentSquare "Start for free" -->
-        <NuxtLink :to="localePath('/')" class="group hidden sm:inline-flex relative justify-center overflow-hidden rounded-pill px-5 py-[0.6875rem] border border-transparent bg-coral text-white text-[13px] font-medium font-inter hover:bg-coral-dark transition-[background-color,color,opacity,border] duration-300 cursor-pointer">
+        <a :href="localePath('/')" class="group hidden sm:inline-flex relative justify-center overflow-hidden rounded-pill px-5 py-[0.6875rem] border border-transparent bg-coral text-white text-[13px] font-medium font-inter hover:bg-coral-dark transition-[background-color,color,opacity,border] duration-300 cursor-pointer">
           <span class="transition-transform duration-200 group-hover:-translate-y-10">{{ $t('nav.checkVehicle') }}</span>
           <span class="absolute inset-0 flex translate-y-full items-center justify-center transition-transform duration-200 group-hover:translate-y-0" aria-hidden="true">{{ $t('nav.checkVehicle') }}</span>
-        </NuxtLink>
+        </a>
 
         <!-- Mobile toggle -->
         <button class="lg:hidden" :class="scrolled ? 'text-gray-900' : 'text-white'" @click="mobileOpen = !mobileOpen">
@@ -87,9 +87,9 @@
       </NuxtLink>
 
       <div class="pt-4 border-t border-gray-100 space-y-3">
-        <NuxtLink :to="localePath('/')" class="block w-full text-center rounded-pill py-3 bg-coral text-white text-[14px] font-medium font-inter cursor-pointer" @click="mobileOpen = false">
+        <a :href="localePath('/')" class="block w-full text-center rounded-pill py-3 bg-coral text-white text-[14px] font-medium font-inter cursor-pointer">
           {{ $t('nav.checkVehicle') }}
-        </NuxtLink>
+        </a>
         <NuxtLink to="/account" class="block w-full text-center rounded-pill py-3 border border-gray-300 text-gray-700 text-[14px] font-medium font-inter" @click="mobileOpen = false">
           {{ $t('nav.myAccount') }}
         </NuxtLink>
