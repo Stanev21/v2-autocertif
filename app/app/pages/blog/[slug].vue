@@ -3,146 +3,144 @@
     <OrganismsTheHeader />
 
     <template v-if="article && articleData">
-      <!-- Hero with full-bleed image -->
-      <section class="relative">
-        <!-- Full-width hero image -->
-        <div class="relative h-[380px] lg:h-[540px] overflow-hidden">
-          <img :src="articleData.image" :alt="article.title" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0A1020] via-[#0A1020]/40 to-transparent"></div>
+      <!-- Floating TOC (desktop only) -->
+      <nav class="hidden lg:block fixed left-8 top-1/2 -translate-y-1/2 z-40">
+        <div class="flex flex-col items-center gap-0">
+          <template v-for="(section, i) in tocSections" :key="i">
+            <a
+              :href="'#' + slugify(section)"
+              class="group relative flex items-center py-2"
+              @click.prevent="scrollToSection(slugify(section))"
+            >
+              <span
+                class="block w-2 h-2 rounded-full transition-colors duration-300"
+                :class="activeSection === slugify(section) ? 'bg-coral' : 'bg-gray-300'"
+              ></span>
+              <span
+                class="absolute left-6 whitespace-nowrap text-[11px] font-inter text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+              >{{ section }}</span>
+            </a>
+            <div v-if="i < tocSections.length - 1" class="w-px h-4 bg-gray-200"></div>
+          </template>
+        </div>
+      </nav>
 
-          <!-- Article meta overlay -->
-          <div class="absolute bottom-0 left-0 right-0">
-            <div class="max-w-[800px] mx-auto px-4 sm:px-8 lg:px-12 pb-10 lg:pb-14">
-              <div class="flex items-center gap-3 mb-4">
-                <span class="px-3 py-1 rounded-full text-[11px] font-inter font-semibold uppercase tracking-wider bg-white/15 backdrop-blur-sm text-white">
-                  {{ article.category }}
-                </span>
-                <span class="text-white/50 text-[12px] font-inter">{{ article.readTime }} {{ $t('blog.readTime') }}</span>
-              </div>
-              <h1 class="text-[1.5rem] sm:text-[2rem] md:text-[2.75rem] lg:text-[3.25rem] font-normal text-white leading-[1.08] font-heading tracking-[-0.02em]">
-                {{ article.title }}
-              </h1>
-            </div>
+      <!-- Section 1 — Article Header -->
+      <section class="bg-white pt-28 sm:pt-36 lg:pt-40 pb-10">
+        <div class="max-w-[800px] mx-auto px-4 sm:px-8 lg:px-12">
+          <!-- Breadcrumb -->
+          <div class="text-[13px] font-inter">
+            <NuxtLink :to="localePath('/blog')" class="text-coral hover:text-coral-dark transition-colors">{{ $t('blog.title') || 'Blog' }}</NuxtLink>
+            <span class="text-gray-300 mx-1.5">/</span>
+            <span class="text-gray-400">{{ article.category }}</span>
+          </div>
+
+          <!-- Category pill -->
+          <span class="inline-block px-3 py-1.5 rounded-full bg-coral/10 text-coral text-[12px] font-inter font-semibold uppercase tracking-wider mt-4 mb-6">
+            {{ article.category }}
+          </span>
+
+          <!-- Title -->
+          <h1 class="font-heading text-[1.75rem] sm:text-[2.25rem] lg:text-[3rem] text-gray-900 leading-[1.1] mb-6">
+            {{ article.title }}
+          </h1>
+
+          <!-- Meta row -->
+          <div class="flex items-center gap-3 mb-10">
+            <div class="w-10 h-10 rounded-full bg-coral/10 flex items-center justify-center text-coral text-[13px] font-inter font-bold shrink-0">A</div>
+            <span class="text-gray-500 text-[13px] font-inter font-medium">{{ $t('blog.author') }}</span>
+            <span class="text-gray-300 text-[13px]">&middot;</span>
+            <span class="text-gray-400 text-[13px] font-inter">{{ article.readTime }} {{ $t('blog.readTime') }}</span>
+          </div>
+
+          <!-- Article image -->
+          <div class="w-full rounded-2xl overflow-hidden aspect-[16/9]">
+            <img :src="articleData.image" :alt="article.title" class="w-full h-full object-cover" />
           </div>
         </div>
       </section>
 
-      <!-- Article body with sidebar -->
-      <section class="py-14 lg:py-20 bg-white">
-        <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
-          <div class="grid lg:grid-cols-[1fr,320px] gap-12 lg:gap-16">
-            <!-- Main content -->
-            <div>
-              <!-- Author + description bar -->
-              <div class="flex items-center gap-4 mb-10 pb-8 border-b border-gray-100">
-                <div class="w-11 h-11 rounded-full bg-coral/10 flex items-center justify-center text-coral text-[13px] font-inter font-bold">A</div>
-                <div>
-                  <p class="text-gray-900 text-[14px] font-inter font-medium">{{ $t('blog.author') }}</p>
-                  <p class="text-gray-400 text-[12px] font-inter">{{ article.readTime }} {{ $t('blog.readTime') }}</p>
-                </div>
-              </div>
+      <!-- Section 2 — Article Body -->
+      <section class="bg-white py-12 lg:py-16">
+        <div class="max-w-[720px] mx-auto px-4 sm:px-8 lg:px-12">
+          <!-- Intro paragraph (first section without heading) -->
+          <p
+            v-if="articleData.sections[0] && !articleData.sections[0].heading"
+            class="text-gray-600 text-[1.1rem] leading-[1.9] font-inter mb-12 border-l-4 border-coral pl-6 italic"
+          >
+            {{ articleData.sections[0].body }}
+          </p>
 
-              <!-- Intro -->
-              <p v-if="articleData.sections[0] && !articleData.sections[0].heading" class="text-gray-600 text-[1.1rem] leading-[1.85] font-inter mb-10 font-medium">
-                {{ articleData.sections[0].body }}
-              </p>
+          <!-- Sections -->
+          <template v-for="(section, i) in contentSections" :key="i">
+            <div class="mb-12 last:mb-0">
+              <h2
+                v-if="section.heading"
+                :id="slugify(section.heading)"
+                class="font-heading text-[1.35rem] lg:text-[1.5rem] text-gray-900 mb-4 scroll-mt-32"
+              >
+                {{ section.heading }}
+              </h2>
+              <p class="text-gray-500 text-[15px] leading-[1.9] font-inter whitespace-pre-line">{{ section.body }}</p>
+            </div>
 
-              <!-- Sections -->
-              <div v-for="(section, i) in articleData.sections.slice(articleData.sections[0]?.heading ? 0 : 1)" :key="i" class="mb-10 last:mb-0">
-                <h2 v-if="section.heading" :id="slugify(section.heading)" class="text-[1.35rem] lg:text-[1.5rem] font-heading font-normal text-gray-900 leading-[1.2] mb-4 pt-2 scroll-mt-32">
-                  {{ section.heading }}
-                </h2>
-                <p class="text-gray-500 text-[15px] leading-[1.85] font-inter whitespace-pre-line">{{ section.body }}</p>
-              </div>
-
-              <!-- Share / tags -->
-              <div class="mt-14 pt-8 border-t border-gray-100 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="px-3 py-1.5 rounded-full bg-[#fafaf8] border border-gray-200/60 text-gray-500 text-[12px] font-inter font-medium">{{ article.category }}</span>
-                </div>
-                <NuxtLink to="/blog" class="inline-flex items-center gap-2 text-gray-400 text-[13px] font-inter font-medium hover:text-coral transition-colors">
-                  <svg class="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
-                  {{ $t('blog.filterAll') }} articles
+            <!-- Inline CTA after 3rd section -->
+            <div v-if="i === 2" class="rounded-2xl bg-[#0A1020] p-8 sm:p-10 text-center mb-12 relative overflow-hidden">
+              <!-- Orb decoration -->
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150px] sm:w-[300px] h-[150px] sm:h-[300px] rounded-full opacity-15 blur-[80px] pointer-events-none" style="background: radial-gradient(circle, #3B82F6, transparent 70%);"></div>
+              <div class="relative z-10">
+                <h3 class="text-[1.25rem] sm:text-[1.5rem] font-heading text-white mb-3">Check Your Vehicle</h3>
+                <p class="text-white/40 text-[13px] font-inter mb-6 max-w-sm mx-auto">Get a comprehensive vehicle history report in seconds.</p>
+                <NuxtLink
+                  :to="localePath('/')"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-coral text-white text-[13px] font-semibold font-inter hover:bg-coral-dark transition-all cursor-pointer"
+                >
+                  Get Your Report
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
                 </NuxtLink>
               </div>
             </div>
+          </template>
+        </div>
+      </section>
 
-            <!-- Sidebar -->
-            <div class="hidden lg:block">
-              <div class="sticky top-28 space-y-6">
-                <!-- CTA card -->
-                <div class="rounded-2xl bg-[#0A1020] p-7 relative overflow-hidden">
-                  <div class="absolute -top-10 -right-10 w-[150px] h-[150px] rounded-full opacity-20 blur-[60px]" style="background: radial-gradient(circle, #3B82F6, transparent 70%);"></div>
-                  <div class="relative z-10">
-                    <h3 class="text-[1.1rem] font-heading font-normal text-white mb-2">Check Your Vehicle</h3>
-                    <p class="text-white/40 text-[12px] font-inter leading-snug mb-5">Get a comprehensive history report in ~55 seconds.</p>
-                    <NuxtLink :to="localePath('/')" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-coral text-white text-[13px] font-semibold font-inter hover:bg-coral-dark transition-all cursor-pointer">
-                      Get Your Report
-                      <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
-                    </NuxtLink>
-                  </div>
-                </div>
-
-                <!-- Table of contents -->
-                <div class="rounded-2xl border border-gray-200/60 p-6">
-                  <p class="text-[11px] font-inter font-semibold text-gray-400 uppercase tracking-wider mb-4">In this article</p>
-                  <div class="space-y-1">
-                    <a v-for="(section, i) in tocSections" :key="i" :href="'#' + slugify(section)"
-                      class="block px-3 py-2 rounded-lg text-[13px] font-inter text-gray-500 hover:text-gray-900 hover:bg-[#fafaf8] transition-all">
-                      {{ section }}
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Related articles -->
-                <div class="rounded-2xl border border-gray-200/60 p-6">
-                  <p class="text-[11px] font-inter font-semibold text-gray-400 uppercase tracking-wider mb-4">Related articles</p>
-                  <div class="space-y-4">
-                    <NuxtLink
-                      v-for="(rel, i) in relatedArticles"
-                      :key="i"
-                      :to="`/blog/${rel.slug}`"
-                      class="group flex gap-3 cursor-pointer"
-                    >
-                      <div class="w-16 h-12 rounded-lg overflow-hidden shrink-0">
-                        <img :src="rel.image" :alt="rel.title" class="w-full h-full object-cover" />
-                      </div>
-                      <div class="min-w-0">
-                        <h4 class="text-[13px] font-inter font-medium text-gray-900 leading-snug line-clamp-2 group-hover:text-coral transition-colors">
-                          {{ rel.title }}
-                        </h4>
-                        <span class="text-[11px] text-gray-400 font-inter">{{ rel.readTime }} {{ $t('blog.readTime') }}</span>
-                      </div>
-                    </NuxtLink>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- Section 4 — Tags + Back link -->
+      <section class="bg-white">
+        <div class="max-w-[720px] mx-auto px-4 sm:px-8 lg:px-12 border-t border-gray-100 pt-8 mt-8 pb-12">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1.5 rounded-full bg-coral/10 text-coral text-[12px] font-inter font-semibold uppercase tracking-wider">
+              {{ article.category }}
+            </span>
+            <NuxtLink
+              :to="localePath('/blog')"
+              class="inline-flex items-center gap-2 text-gray-400 text-[13px] font-inter font-medium hover:text-coral transition-colors"
+            >
+              <svg class="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+              Back to all articles
+            </NuxtLink>
           </div>
         </div>
       </section>
 
-      <!-- Next / Prev articles -->
-      <section class="py-16 lg:py-20 bg-[#fafaf8] border-t border-gray-100">
+      <!-- Section 5 — Continue Reading (DARK) -->
+      <section class="bg-[#0A1020] py-16 sm:py-24">
         <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
-          <h3 class="text-[1.5rem] lg:text-[1.75rem] font-heading font-normal text-gray-900 mb-10">Continue reading</h3>
+          <h3 class="text-white font-heading text-[1.5rem] lg:text-[1.75rem] mb-10">Continue reading</h3>
           <div class="grid md:grid-cols-3 gap-6">
             <NuxtLink
               v-for="(next, i) in nextArticles"
               :key="i"
-              :to="`/blog/${next.slug}`"
+              :to="localePath(`/blog/${next.slug}`)"
               class="group block"
             >
-              <div class="rounded-xl overflow-hidden mb-4 aspect-[16/9]">
+              <div class="rounded-2xl overflow-hidden mb-4 aspect-[16/9]">
                 <img :src="next.image" :alt="next.title" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
-              <div class="flex items-center gap-3 mb-2">
-                <span class="text-coral text-[11px] font-inter font-semibold uppercase tracking-wider">{{ next.category }}</span>
-                <span class="text-gray-300 text-[11px] font-inter">{{ next.readTime }} {{ $t('blog.readTime') }}</span>
-              </div>
-              <h4 class="text-[1rem] font-heading font-normal text-gray-900 leading-[1.3] group-hover:text-coral transition-colors">
+              <span class="text-coral text-[11px] font-inter font-semibold uppercase tracking-wider">{{ next.category }}</span>
+              <h4 class="text-white font-heading text-[1rem] leading-[1.3] mt-2 mb-1 group-hover:text-coral transition-colors">
                 {{ next.title }}
               </h4>
+              <span class="text-white/40 text-[11px] font-inter">{{ next.readTime }} {{ $t('blog.readTime') }}</span>
             </NuxtLink>
           </div>
         </div>
@@ -155,7 +153,7 @@
         <div class="max-w-[600px] mx-auto px-4 sm:px-8">
           <h1 class="text-[2rem] font-heading text-gray-900 mb-4">Article not found</h1>
           <p class="text-gray-400 text-[15px] font-inter mb-8">The article you're looking for doesn't exist.</p>
-          <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-coral text-white text-[14px] font-semibold font-inter">
+          <NuxtLink :to="localePath('/blog')" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-coral text-white text-[14px] font-semibold font-inter">
             Back to Blog
           </NuxtLink>
         </div>
@@ -194,6 +192,13 @@ const allArticles = computed(() => {
 
 const article = computed(() => articleIndex.value >= 0 ? allArticles.value[articleIndex.value] : null)
 
+// Content sections (skip first if it has no heading — that's the intro)
+const contentSections = computed(() => {
+  if (!articleData.value) return []
+  const sections = articleData.value.sections
+  return sections[0]?.heading ? sections : sections.slice(1)
+})
+
 // Table of contents from section headings
 const tocSections = computed(() => {
   if (!articleData.value) return []
@@ -216,6 +221,50 @@ const nextArticles = computed(() => {
   return [1, 2, 3].map(offset => {
     const idx = (articleIndex.value + offset) % total
     return allArticles.value[idx]
+  })
+})
+
+// Floating TOC — active section tracking
+const activeSection = ref('')
+
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
+
+onMounted(() => {
+  const headings = tocSections.value.map(s => slugify(s))
+  if (!headings.length) return
+
+  // Set initial active section
+  activeSection.value = headings[0] || ''
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          activeSection.value = entry.target.id
+        }
+      }
+    },
+    {
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0,
+    }
+  )
+
+  // Observe all section headings
+  nextTick(() => {
+    for (const id of headings) {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    }
+  })
+
+  onBeforeUnmount(() => {
+    observer.disconnect()
   })
 })
 

@@ -1,57 +1,68 @@
 <template>
-  <section class="py-16 sm:py-28 bg-white">
-    <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
-      <!-- Heading row -->
-      <div class="flex items-end justify-between mb-12">
-        <div>
-          <h2 class="text-[2rem] lg:text-[2.5rem] font-normal text-gray-900 leading-[1.1] mb-3 font-heading">
-            {{ $t('blog.title') }}
-          </h2>
-          <p class="text-gray-500 text-[15px] leading-[1.7] font-inter max-w-lg">{{ $t('blog.desc') }}</p>
-        </div>
-        <NuxtLink :to="localePath('/blog')" class="hidden md:inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all flex-shrink-0">
+  <section class="relative py-20 sm:py-28 lg:py-32 bg-[#0A1020] overflow-hidden">
+    <!-- Decorative orb -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] sm:w-[500px] aspect-square rounded-full bg-coral/5 blur-[120px] pointer-events-none" />
+
+    <div class="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
+      <!-- Header area (left-aligned) -->
+      <div>
+        <span class="text-coral text-[12px] uppercase tracking-widest font-inter font-semibold mb-4 block">
+          {{ $t('blog.subtitle') }}
+        </span>
+        <h2 class="text-white font-heading text-[2rem] lg:text-[2.5rem] leading-[1.1] mb-4">
+          {{ $t('blog.title') }}
+        </h2>
+        <p class="text-white/40 text-[15px] font-inter max-w-lg mb-4">
+          {{ $t('blog.desc') }}
+        </p>
+        <NuxtLink
+          :to="localePath('/blog')"
+          class="hidden md:inline-block text-white/60 text-[14px] font-inter font-medium underline underline-offset-4 hover:text-white transition-colors mb-14 block"
+        >
           {{ $t('blog.cta') }}
         </NuxtLink>
       </div>
 
       <!-- 3-col cards -->
-      <div class="grid md:grid-cols-3 gap-5">
-        <NuxtLink v-for="(article, i) in articles" :key="i"
+      <div class="grid md:grid-cols-3 gap-6">
+        <NuxtLink
+          v-for="(article, i) in articles"
+          :key="i"
           :to="localePath(`/blog/${article.slug}`)"
-          class="group flex flex-col rounded-lg p-3"
-          style="background: #f5f5f0;">
-          <div>
-            <div class="relative flex aspect-[340/168] items-center justify-center rounded-md bg-white overflow-hidden">
-              <!-- Tag with corner cutout -->
-              <div class="absolute z-10" style="border-radius: 0px 0px 12px 0px; background: #f5f5f0; top: -1px; left: -1px;">
-                <div class="absolute" style="height: 12px; width: 12px; transform: rotate(90deg); left: 0px; top: 100%; color: #f5f5f0;">
-                  <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V100H100C44.8 100 0 55.2 0 0Z" fill="currentColor" /></svg>
-                </div>
-                <div class="absolute" style="height: 12px; width: 12px; transform: rotate(90deg); left: 100%; top: 0px; color: #f5f5f0;">
-                  <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V100H100C44.8 100 0 55.2 0 0Z" fill="currentColor" /></svg>
-                </div>
-                <div class="pb-1.5 pr-1.5 md:pb-2">
-                  <div class="text-[13px] rounded-pill bg-white px-3 py-1.5 font-medium leading-none text-gray-900 font-inter">
-                    {{ article.tag }}
-                  </div>
-                </div>
-              </div>
-              <!-- Article image -->
-              <img :src="blogImages[i]" :alt="article.title" class="w-full h-full object-cover" />
+          class="group block bg-white/[0.04] border border-white/[0.08] rounded-2xl overflow-hidden transition-all duration-300 hover:border-coral/30 hover:-translate-y-1"
+        >
+          <!-- Image wrapper -->
+          <div class="p-3 pb-0">
+            <div class="rounded-xl overflow-hidden aspect-[16/10]">
+              <img
+                :src="blogImages[i]"
+                :alt="article.title"
+                class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
           </div>
-          <!-- Title -->
-          <div class="mt-6 flex flex-auto flex-col px-2 pb-3 md:mt-10 md:px-5 md:pb-7">
-            <h3 class="text-[16px] lg:text-[18px] font-medium text-gray-900 font-inter leading-snug max-w-[18.25rem] transition-colors duration-200 group-hover:text-coral">
+
+          <!-- Content area -->
+          <div class="p-5 pt-4">
+            <span class="text-coral text-[11px] font-inter font-semibold uppercase tracking-wider mb-2 block">
+              {{ article.tag }}
+            </span>
+            <h3 class="text-white font-heading text-[1rem] lg:text-[1.1rem] leading-[1.3] line-clamp-2 group-hover:text-coral transition-colors duration-300 mb-2">
               {{ article.title }}
             </h3>
+            <span class="text-white/30 text-[12px] font-inter">
+              {{ article.read }}
+            </span>
           </div>
         </NuxtLink>
       </div>
 
       <!-- Mobile CTA -->
       <div class="mt-8 md:hidden">
-        <NuxtLink :to="localePath('/blog')" class="inline-flex items-center gap-1.5 text-gray-900 text-[14px] font-medium font-inter underline underline-offset-4 decoration-1 hover:decoration-2 transition-all">
+        <NuxtLink
+          :to="localePath('/blog')"
+          class="text-white/60 text-[14px] font-inter font-medium underline underline-offset-4 hover:text-white transition-colors"
+        >
           {{ $t('blog.cta') }}
         </NuxtLink>
       </div>
@@ -74,6 +85,14 @@ const localePath = useLocalePath()
 const { tm, rt } = useI18n()
 const articles = computed(() => {
   const raw = tm('blog.articles')
-  return Array.isArray(raw) ? raw.slice(0, 3).map((a: any, i: number) => ({ slug: blogSlugs[i], tag: rt(a.category), read: rt(a.readTime) + ' min', title: rt(a.title), desc: rt(a.desc) })) : []
+  return Array.isArray(raw)
+    ? raw.slice(0, 3).map((a: any, i: number) => ({
+        slug: blogSlugs[i],
+        tag: rt(a.category),
+        title: rt(a.title),
+        desc: rt(a.desc),
+        read: rt(a.readTime) + ' min',
+      }))
+    : []
 })
 </script>
