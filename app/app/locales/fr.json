@@ -814,7 +814,7 @@
         }
       ]
     },
-    "vehicle-information": {
+    "vehicle-info": {
       "title": "Informations véhicule",
       "subtitle": "Tout sur les numéros VIN, les plaques d'immatriculation et les vérifications de véhicules.",
       "sections": [

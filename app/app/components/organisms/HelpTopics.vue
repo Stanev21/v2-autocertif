@@ -54,7 +54,7 @@ const topics = computed(() => {
 const topicSlugs = [
   'getting-started',
   'reports-data',
-  'vehicle-information',
+  'vehicle-info',
   'account-billing',
   'business-solutions',
   'privacy-security',
