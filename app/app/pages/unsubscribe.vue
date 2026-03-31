@@ -3,7 +3,7 @@
     <OrganismsTheHeader />
 
     <!-- Section 1 — Hero + Form -->
-    <section class="bg-white pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20">
+    <section class="bg-white pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20">
       <div class="max-w-[640px] mx-auto px-4 sm:px-6">
         <!-- Icon -->
         <div class="w-16 h-16 rounded-2xl bg-coral/10 flex items-center justify-center mx-auto mb-6">
