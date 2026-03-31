@@ -27,9 +27,9 @@
           </div>
 
           <div class="flex items-center gap-4 flex-wrap">
-            <NuxtLink :to="localePath('/')" class="px-7 py-3 rounded-pill bg-coral text-white text-[14px] font-medium font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer">
+            <a :href="localePath('/')" class="px-7 py-3 rounded-pill bg-coral text-white text-[14px] font-medium font-inter hover:bg-coral-dark transition-all duration-300 cursor-pointer">
               Run a Vehicle Check
-            </NuxtLink>
+            </a>
             <NuxtLink :to="localePath('/pricing')" class="px-7 py-3 rounded-pill border border-white/30 text-white text-[14px] font-medium font-inter hover:bg-white/10 transition-all duration-300 cursor-pointer">
               {{ $t('nav.pricing') }}
             </NuxtLink>
