@@ -8,9 +8,9 @@
         {{ $t('cta.title') }}
       </h2>
       <div class="flex items-center gap-4 flex-wrap">
-        <a :href="localePath('/')" class="px-7 py-3 rounded-pill border-2 border-white text-white text-[14px] font-semibold font-heading hover:bg-white hover:text-burgundy transition-all duration-300 cursor-pointer">
+        <button @click="scrollToTop" class="px-7 py-3 rounded-pill border-2 border-white text-white text-[14px] font-semibold font-heading hover:bg-white hover:text-burgundy transition-all duration-300 cursor-pointer">
           Run a Vehicle Check
-        </a>
+        </button>
         <NuxtLink :to="localePath('/contact')" class="px-7 py-3 rounded-pill border-2 border-white/30 text-white text-[14px] font-semibold font-heading hover:bg-white/10 transition-all duration-300 cursor-pointer">
           {{ $t('nav.contact') }}
         </NuxtLink>
@@ -22,4 +22,5 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 </script>
