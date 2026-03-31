@@ -757,6 +757,180 @@
     "statResponse": "Temps de réponse moyen",
     "statAvailability": "Disponibilité"
   },
+  "helpTopics": {
+    "getting-started": {
+      "title": "Pour commencer",
+      "subtitle": "Apprenez à utiliser Autocertif et obtenez votre premier rapport d'historique véhicule.",
+      "sections": [
+        {
+          "title": "Qu'est-ce qu'Autocertif ?",
+          "content": "Autocertif est une plateforme de rapports d'historique véhicule qui agrège des données provenant de plus de 8 000 sources vérifiées dans plus de 25 pays. Nous fournissons des rapports complets incluant la vérification du kilométrage, l'historique des dommages, les signalements de vol, les résultats de contrôle technique et les données d'émissions. Notre mission est d'apporter de la transparence au marché des véhicules d'occasion en offrant aux acheteurs, vendeurs et professionnels un accès à des historiques véhicules fiables et faciles à comprendre."
+        },
+        {
+          "title": "Comment obtenir votre premier rapport",
+          "content": "Obtenir un rapport est simple : entrez un numéro VIN ou une plaque d'immatriculation sur notre page d'accueil, cliquez sur « Obtenir le rapport » et recevez votre historique véhicule complet en environ 55 secondes. Les rapports sont disponibles instantanément en ligne et peuvent être téléchargés en PDF. Aucun compte n'est nécessaire pour votre premier rapport — entrez simplement l'identifiant du véhicule, effectuez le paiement, et votre rapport est généré automatiquement."
+        },
+        {
+          "title": "Comprendre le Score Autocertif",
+          "content": "Chaque rapport inclut un Score Autocertif — une note propriétaire de 0 à 100 qui résume l'état général et la fiabilité de l'historique d'un véhicule. Le score prend en compte la cohérence du kilométrage, l'historique des accidents, le nombre de propriétaires précédents, la régularité de l'entretien et la détection éventuelle d'indicateurs de fraude. Un score plus élevé indique un historique plus propre avec moins de facteurs de risque."
+        },
+        {
+          "title": "Types de véhicules pris en charge",
+          "content": "Autocertif prend en charge les voitures, les motos, les véhicules utilitaires légers et les véhicules électriques. Notre base de données couvre les véhicules fabriqués à partir de 1981 (date d'introduction du VIN standardisé à 17 caractères). La profondeur de la couverture varie selon le pays et l'âge du véhicule, mais notre système interroge automatiquement toutes les sources disponibles pour maximiser la complétude de votre rapport."
+        },
+        {
+          "title": "Conseils pour de meilleurs résultats",
+          "content": "Pour les résultats les plus précis, utilisez le VIN complet à 17 caractères plutôt qu'une plaque d'immatriculation, car le VIN fournit un lien direct et universel vers les dossiers du véhicule. Vérifiez que le VIN que vous entrez correspond bien à celui figurant sur le véhicule — comparez-le avec la plaque du tableau de bord, l'étiquette du montant de porte et les documents d'immatriculation. Si l'un de ces VIN ne correspond pas, cela pourrait indiquer un problème grave comme le clonage de véhicule."
+        }
+      ]
+    },
+    "reports-data": {
+      "title": "Rapports et données",
+      "subtitle": "Comprenez le contenu de votre rapport et la provenance des données.",
+      "sections": [
+        {
+          "title": "Que contient un rapport",
+          "content": "Un rapport Autocertif couvre plus de 2 500 points de contrôle regroupés en catégories clés : historique du kilométrage avec une frise chronologique visuelle, registres d'accidents et de dommages, statut de vol et de récupération, résultats du contrôle technique, données environnementales et d'émissions, historique de propriété, avis de rappel et charges financières telles que les gages en cours. Chaque section inclut un indicateur de statut — vert (aucun problème), orange (attention recommandée) ou rouge (problème détecté)."
+        },
+        {
+          "title": "D'où proviennent nos données",
+          "content": "Nous agrégeons des données de plus de 8 000 sources vérifiées, notamment les registres gouvernementaux de véhicules, les autorités nationales de contrôle technique, les bases de données de sinistres d'assurance, les registres de vol des forces de l'ordre, les bases de données de rappels constructeurs et les réseaux de service agréés. Nos partenariats de données couvrent plus de 25 pays avec une couverture particulièrement approfondie dans l'Union européenne et au Royaume-Uni. Chaque source est continuellement validée en termes de précision et de fraîcheur."
+        },
+        {
+          "title": "La vérification du kilométrage expliquée",
+          "content": "Notre système de vérification du kilométrage croise les relevés de compteur enregistrés lors des contrôles techniques officiels (MOT, TÜV, contrôle technique), des visites d'entretien, des évaluations d'assurance et d'autres points de contact documentés tout au long de la vie du véhicule. Ces relevés sont tracés sur un graphique chronologique afin que vous puissiez vérifier si la progression du kilométrage est cohérente. Toute anomalie — comme un relevé inférieur au précédent — est signalée comme indicateur potentiel de retour de compteur."
+        },
+        {
+          "title": "Précision des données et limites",
+          "content": "Bien qu'Autocertif fournisse l'une des vérifications d'historique véhicule les plus complètes disponibles, aucun rapport ne peut garantir une exhaustivité à 100 %. La disponibilité des données dépend des pratiques de déclaration de chaque pays, de l'âge du véhicule et du fait que les événements aient été officiellement enregistrés. Les réparations privées non déclarées, les transactions en espèces ou les événements dans des pays à registres numériques limités peuvent ne pas apparaître. Nous indiquons clairement le niveau de confiance pour chaque section du rapport."
+        },
+        {
+          "title": "Lire la section dommages et accidents",
+          "content": "La section dommages répertorie tous les accidents, sinistres d'assurance ou événements de dommages structurels enregistrés. Chaque entrée inclut la date (lorsqu'elle est disponible), la classification de gravité (mineur, modéré ou grave), les zones du véhicule concernées et la source du dossier. Les dommages structurels — tels que les dommages au châssis ou à la structure — sont mis en évidence séparément car ils peuvent affecter la sécurité à long terme et la valeur de revente. Nous recommandons une inspection professionnelle si des dommages structurels sont signalés."
+        },
+        {
+          "title": "Validité du rapport et mises à jour",
+          "content": "Chaque rapport reflète les données disponibles au moment de sa génération et inclut un horodatage. L'historique d'un véhicule peut évoluer — de nouveaux résultats de contrôle technique, transferts de propriété ou signalements d'incidents peuvent être ajoutés après la création de votre rapport. Pour les transactions de grande valeur, nous recommandons de générer un nouveau rapport si plus de 30 jours se sont écoulés. Les clients professionnels avec accès API peuvent configurer des re-vérifications automatiques à intervalles personnalisés."
+        }
+      ]
+    },
+    "vehicle-information": {
+      "title": "Informations véhicule",
+      "subtitle": "Tout sur les numéros VIN, les plaques d'immatriculation et les vérifications de véhicules.",
+      "sections": [
+        {
+          "title": "Qu'est-ce qu'un VIN ?",
+          "content": "Un VIN (Vehicle Identification Number) est un code alphanumérique unique de 17 caractères attribué à chaque véhicule motorisé lors de sa fabrication. Il sert d'empreinte digitale du véhicule — aucun véhicule en circulation ne partage le même VIN. Le code contient des informations sur le constructeur, les caractéristiques du véhicule (modèle, type de moteur, carrosserie) et un numéro de production séquentiel. Les VIN ne contiennent jamais les lettres I, O ou Q pour éviter la confusion avec les chiffres 1 et 0."
+        },
+        {
+          "title": "Où trouver le VIN",
+          "content": "Le VIN peut être trouvé à plusieurs endroits sur un véhicule : sur une plaque métallique à la base du pare-brise côté conducteur (visible de l'extérieur), sur un autocollant ou une plaque sur le montant de la porte côté conducteur, sur le certificat d'immatriculation ou le titre de propriété, sur la carte ou les documents d'assurance, et souvent gravé sur le châssis ou le bloc moteur. Vérifiez toujours que le VIN correspond à tous ces emplacements — une divergence est un signal d'alerte grave."
+        },
+        {
+          "title": "Recherche par plaque d'immatriculation",
+          "content": "Si vous n'avez pas le VIN, vous pouvez effectuer une recherche avec le numéro de plaque d'immatriculation du véhicule. Autocertif consultera le registre national correspondant pour identifier le VIN associé, puis générera le rapport complet. Les recherches par plaque sont disponibles pour la plupart des pays européens. Notez que les plaques peuvent être transférées entre véhicules dans certaines juridictions, c'est pourquoi le rapport est toujours lié au VIN (et non à la plaque) pour garantir la précision."
+        },
+        {
+          "title": "Décodage du VIN",
+          "content": "Chaque rapport Autocertif inclut une section de décodage du VIN qui détaille la signification de chaque segment. Les positions 1 à 3 identifient le constructeur et le pays d'origine (World Manufacturer Identifier). Les positions 4 à 8 décrivent les caractéristiques du véhicule telles que le modèle, le type de carrosserie et le moteur. La position 9 est un chiffre de contrôle pour valider le VIN. La position 10 indique l'année-modèle, la position 11 l'usine d'assemblage, et les positions 12 à 17 forment le numéro de série unique."
+        },
+        {
+          "title": "Bonnes pratiques pour la vérification d'un véhicule",
+          "content": "Lors de l'inspection d'un véhicule que vous envisagez d'acheter, effectuez toujours un rapport d'historique véhicule avant de vous déplacer. Comparez les détails du rapport (couleur, cylindrée, date d'immatriculation) avec ce que vous observez sur le véhicule et ses documents. Recherchez les signes de falsification physique du VIN tels que des plaques mal alignées, des caractères re-gravés ou des rivets qui semblent avoir été retirés et replacés. En cas de doute, renoncez ou faites inspecter le véhicule par un professionnel indépendant."
+        }
+      ]
+    },
+    "account-billing": {
+      "title": "Compte et facturation",
+      "subtitle": "Gérez votre compte, vos paiements, factures et abonnements.",
+      "sections": [
+        {
+          "title": "Créer un compte",
+          "content": "Vous pouvez acheter un rapport unique sans créer de compte. Cependant, l'inscription vous donne accès à votre historique de rapports, vos véhicules sauvegardés et un paiement plus rapide pour vos achats futurs. Pour créer un compte, cliquez sur « S'inscrire » et fournissez votre adresse e-mail et un mot de passe. Vous pouvez également vous inscrire avec votre compte Google ou Apple pour un démarrage plus rapide. La création de compte est gratuite et ne nécessite aucun moyen de paiement."
+        },
+        {
+          "title": "Moyens de paiement",
+          "content": "Autocertif accepte toutes les principales cartes de crédit et de débit (Visa, Mastercard, American Express), PayPal, Apple Pay et Google Pay. Toutes les transactions sont traitées par des prestataires de paiement certifiés PCI DSS Niveau 1, garantissant le plus haut niveau de sécurité des paiements. Pour les clients professionnels achetant des forfaits en volume, nous proposons également le virement bancaire (SEPA et international) et la facturation avec paiement à 30 jours."
+        },
+        {
+          "title": "Tarifs et forfaits",
+          "content": "Nous proposons des achats de rapports unitaires ainsi que des forfaits multi-rapports à tarifs dégressifs. Les crédits de forfait n'expirent pas et peuvent être utilisés à tout moment. Les clients professionnels peuvent accéder à des paliers de tarification en volume, des abonnements mensuels et des contrats entreprise sur mesure. Consultez notre page de tarifs pour les prix actuels, ou contactez notre équipe commerciale pour une solution adaptée à votre organisation."
+        },
+        {
+          "title": "Factures et reçus",
+          "content": "Un reçu est envoyé à votre adresse e-mail immédiatement après chaque achat. Si vous avez un compte, toutes les factures sont également accessibles depuis votre tableau de bord dans la section « Historique de facturation ». Les clients professionnels peuvent configurer leurs informations de facturation (raison sociale, numéro de TVA, adresse de facturation) dans les paramètres du compte, et ces informations apparaîtront sur toutes les factures suivantes. Pour un duplicata ou une facture corrigée, contactez notre support."
+        },
+        {
+          "title": "Politique de remboursement",
+          "content": "Si votre rapport contient des données matériellement incomplètes ou inexactes qui étaient disponibles dans nos sources au moment de la génération, vous pouvez être éligible à un remboursement ou un rapport de remplacement gratuit. Pour demander un remboursement, contactez notre équipe de support avec votre numéro de commande et une description du problème. Les demandes de remboursement sont examinées sous 3 jours ouvrés. Veuillez noter qu'un rapport reflétant fidèlement une disponibilité limitée des données ne constitue pas un motif de remboursement."
+        },
+        {
+          "title": "Gérer votre abonnement",
+          "content": "Si vous êtes sur un abonnement mensuel ou annuel, vous pouvez le gérer depuis votre tableau de bord. Vous pouvez passer à un forfait supérieur, inférieur ou annuler votre abonnement à tout moment. Les modifications prennent effet au début de votre prochain cycle de facturation. Les crédits non utilisés des abonnements sont reportés jusqu'à 3 mois. En cas d'annulation, vous conservez l'accès à vos crédits restants jusqu'à leur expiration. Le renouvellement automatique peut être désactivé dans vos paramètres de facturation."
+        }
+      ]
+    },
+    "business-solutions": {
+      "title": "Solutions entreprise",
+      "subtitle": "Rapports en volume, intégration API et solutions pour concessionnaires.",
+      "sections": [
+        {
+          "title": "À qui s'adressent les solutions entreprise ?",
+          "content": "Les solutions entreprise Autocertif sont conçues pour les concessionnaires automobiles, les vendeurs indépendants de véhicules d'occasion, les compagnies d'assurance, les sociétés de leasing et de gestion de flotte, les places de marché automobiles et les institutions financières nécessitant des données d'historique véhicule à grande échelle. Que vous traitiez 50 ou 50 000 vérifications de véhicules par mois, nous avons un plan adapté à votre flux de travail et votre budget."
+        },
+        {
+          "title": "Forfaits de rapports en volume",
+          "content": "Nos forfaits en volume vous permettent d'acheter des crédits de rapport en quantité à des tarifs unitaires considérablement réduits. Les crédits sont partagés au sein de votre équipe — vous pouvez inviter plusieurs utilisateurs à votre compte professionnel et attribuer des crédits selon vos besoins. Les crédits en volume n'expirent pas et peuvent être utilisés pour tout véhicule dans nos pays couverts. Nous proposons des paliers standards (10, 50, 100, 500, 1 000 rapports) ainsi que des volumes personnalisés pour les opérations plus importantes."
+        },
+        {
+          "title": "Intégration API",
+          "content": "L'API Autocertif vous permet d'intégrer les vérifications d'historique véhicule directement dans votre logiciel existant — qu'il s'agisse d'un système de gestion de concession, d'une place de marché en ligne, d'une plateforme de souscription d'assurance ou d'une application personnalisée. L'API RESTful prend en charge les recherches par VIN et par plaque, renvoie des données JSON structurées et inclut des endpoints pour la génération de rapports, le suivi de statut et la récupération de PDF. L'accès au sandbox est inclus gratuitement pour développer et tester avant la mise en production."
+        },
+        {
+          "title": "Widgets pour concessionnaires et places de marché",
+          "content": "Nous proposons des widgets intégrables permettant aux concessionnaires et places de marché automobiles d'afficher des badges d'historique véhicule Autocertif et des données synthétiques directement sur leurs pages d'annonces. Ces widgets renforcent la confiance des acheteurs et peuvent être personnalisés pour correspondre à votre charte graphique. L'installation ne nécessite que l'ajout d'une seule balise script à votre site web — aucun développement backend requis. Les statistiques des widgets sont disponibles dans votre tableau de bord professionnel."
+        },
+        {
+          "title": "Gestion de compte dédiée",
+          "content": "Les clients professionnels sur les plans professionnel et entreprise bénéficient d'un gestionnaire de compte dédié qui les accompagne dans l'intégration, la configuration technique, la formation de leur équipe et l'optimisation continue. Votre gestionnaire de compte peut également fournir des rapports personnalisés sur vos habitudes d'utilisation, aider à configurer des flux de travail automatisés et escalader directement toute préoccupation de qualité des données à notre équipe data."
+        },
+        {
+          "title": "Tarification personnalisée et contrats entreprise",
+          "content": "Pour les organisations ayant des besoins en volume élevé ou des exigences spécifiques, nous proposons une tarification personnalisée, des contrats de service avec SLA garantis et des packages de données sur mesure. Les contrats entreprise peuvent inclure des limites de débit API prioritaires, une infrastructure dédiée, des champs de données personnalisés, des rapports en marque blanche et un support multi-régions. Contactez notre équipe commerciale pour discuter de vos besoins et recevoir une proposition personnalisée."
+        }
+      ]
+    },
+    "privacy-security": {
+      "title": "Confidentialité et sécurité",
+      "subtitle": "Comment nous protégeons vos données et assurons des transactions sécurisées.",
+      "sections": [
+        {
+          "title": "Notre engagement en matière de protection des données",
+          "content": "Autocertif s'engage pleinement à protéger vos données personnelles. Nous respectons le Règlement Général sur la Protection des Données (RGPD) et les lois nationales applicables en matière de protection des données. Nous ne collectons que les données nécessaires à la fourniture de nos services et ne vendons jamais d'informations personnelles à des tiers. Nos pratiques de confidentialité sont régulièrement auditées par des cabinets de sécurité indépendants. Vous pouvez consulter notre Politique de confidentialité complète pour des informations détaillées sur le traitement de vos données."
+        },
+        {
+          "title": "Comment nous sécurisons vos transactions",
+          "content": "Toutes les connexions à Autocertif sont chiffrées en TLS 1.3 (Transport Layer Security). Le traitement des paiements est assuré par des prestataires certifiés PCI DSS Niveau 1 — Autocertif ne stocke jamais votre numéro complet de carte de crédit ni votre CVV sur nos serveurs. Nous utilisons des références de paiement tokenisées pour les transactions récurrentes. Notre infrastructure est hébergée sur des plateformes cloud certifiées ISO 27001 avec redondance sur plusieurs centres de données dans l'Union européenne."
+        },
+        {
+          "title": "Sécurité du compte",
+          "content": "Nous recommandons vivement d'utiliser un mot de passe unique et robuste pour votre compte Autocertif. Nous prenons en charge l'authentification à deux facteurs (2FA) via des applications d'authentification et par SMS, et nous recommandons de l'activer pour tous les comptes — en particulier les comptes professionnels avec plusieurs utilisateurs. Toutes les tentatives de connexion sont surveillées, et nous vous notifierons par e-mail si une connexion survient depuis un nouvel appareil ou emplacement. Les sessions actives peuvent être consultées et révoquées depuis vos paramètres de sécurité."
+        },
+        {
+          "title": "Données véhicule et vie privée",
+          "content": "Les rapports Autocertif contiennent des données d'historique véhicule — et non des données personnelles sur les propriétaires précédents. Nous ne divulguons ni les noms, ni les adresses, ni les coordonnées des propriétaires actuels ou anciens. Les informations de nos rapports (relevés de kilométrage, résultats de contrôle technique, registres de dommages) proviennent de registres officiels et de bases de données sectorielles qui publient des données au niveau du véhicule à des fins de protection des consommateurs, conformément aux lois applicables."
+        },
+        {
+          "title": "Vos droits en vertu du RGPD",
+          "content": "En tant qu'utilisateur d'Autocertif, vous avez le droit d'accéder aux données personnelles que nous détenons sur vous, de demander la correction de données inexactes, de demander la suppression de vos données (droit à l'oubli), de limiter ou de vous opposer au traitement de vos données, et de recevoir vos données dans un format portable. Pour exercer l'un de ces droits, contactez notre Délégué à la Protection des Données à l'adresse e-mail indiquée dans notre Politique de confidentialité. Nous répondons à toutes les demandes dans le délai légal de 30 jours."
+        },
+        {
+          "title": "Divulgation responsable et programme de bug bounty",
+          "content": "Nous prenons les vulnérabilités de sécurité très au sérieux. Si vous découvrez un problème de sécurité potentiel sur notre plateforme, nous vous encourageons à le signaler via notre programme de divulgation responsable. Veuillez envoyer un e-mail à notre équipe de sécurité avec une description détaillée de la vulnérabilité, et nous accuserons réception dans les 24 heures. Nous n'engageons pas de poursuites contre les chercheurs qui signalent de bonne foi. Les vulnérabilités confirmées sont traitées rapidement et nous reconnaissons les contributeurs dans notre hall of fame sécurité."
+        }
+      ]
+    }
+  },
   "blog": {
     "badge": "Analyses, guides et actualités du secteur",
     "title": "Blog Autocertif",

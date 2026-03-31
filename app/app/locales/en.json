@@ -757,6 +757,180 @@
     "statResponse": "Avg. response time",
     "statAvailability": "Availability"
   },
+  "helpTopics": {
+    "getting-started": {
+      "title": "Getting Started",
+      "subtitle": "Learn how to use Autocertif and get your first vehicle history report.",
+      "sections": [
+        {
+          "title": "What is Autocertif?",
+          "content": "Autocertif is a vehicle history reporting platform that aggregates data from over 8,000 verified sources across 25+ countries. We provide comprehensive vehicle history reports including mileage verification, damage history, theft records, inspection results, and emissions data. Our mission is to bring transparency to the used vehicle market by giving buyers, sellers, and professionals access to reliable, easy-to-understand vehicle backgrounds."
+        },
+        {
+          "title": "How to Get Your First Report",
+          "content": "Getting a report is simple: enter a VIN number or license plate on our homepage, click 'Get Report', and receive your comprehensive vehicle history within approximately 55 seconds. Reports are available instantly online and can be downloaded as PDF. No account is required for your first report — simply enter the vehicle identifier, complete payment, and your report is generated automatically."
+        },
+        {
+          "title": "Understanding the Autocertif Score",
+          "content": "Every report includes an Autocertif Score — a proprietary rating from 0 to 100 that summarizes the overall condition and trustworthiness of a vehicle's history. The score takes into account mileage consistency, accident history, number of previous owners, service regularity, and whether any fraud indicators were detected. A higher score indicates a cleaner history with fewer risk factors."
+        },
+        {
+          "title": "Supported Vehicle Types",
+          "content": "Autocertif supports cars, motorcycles, light commercial vehicles, and electric vehicles. Our database covers vehicles manufactured from 1981 onward (when the standardized 17-character VIN was introduced). Coverage depth varies by country and vehicle age, but our system automatically queries all available sources for any given vehicle to maximize the completeness of your report."
+        },
+        {
+          "title": "Tips for Best Results",
+          "content": "For the most accurate results, use the full 17-character VIN rather than a license plate, as the VIN provides a direct and universal link to the vehicle's records. Double-check that the VIN you enter matches the one on the vehicle itself — compare it with the dashboard plate, door jamb sticker, and registration documents. If any of these VINs do not match, this could indicate a serious issue such as vehicle cloning."
+        }
+      ]
+    },
+    "reports-data": {
+      "title": "Reports & Data",
+      "subtitle": "Understand what's in your report and where the data comes from.",
+      "sections": [
+        {
+          "title": "What's Included in a Report",
+          "content": "An Autocertif report covers over 2,500 checkpoints grouped into key categories: mileage history with a visual timeline, accident and damage records, theft and recovery status, technical inspection results, emissions and environmental data, ownership history, recall notices, and financial encumbrances such as outstanding liens. Each section includes a status indicator — green (clear), amber (attention recommended), or red (issue detected)."
+        },
+        {
+          "title": "Where Our Data Comes From",
+          "content": "We aggregate data from over 8,000 verified sources including government vehicle registries, national inspection authorities, insurance claim databases, law enforcement theft registries, manufacturer recall databases, and authorized service networks. Our data partnerships span 25+ countries with particularly deep coverage across the European Union and the United Kingdom. Each source is continuously validated for accuracy and freshness."
+        },
+        {
+          "title": "Mileage Verification Explained",
+          "content": "Our mileage verification system cross-references odometer readings recorded at official inspections (MOT, TUV, controle technique), service visits, insurance assessments, and other documented touchpoints throughout the vehicle's life. These readings are plotted on a timeline chart so you can see whether the mileage progression is consistent. Any discrepancies — such as a reading lower than a previous one — are flagged as potential rollback indicators."
+        },
+        {
+          "title": "Data Accuracy and Limitations",
+          "content": "While Autocertif provides one of the most comprehensive vehicle history checks available, no report can guarantee 100% completeness. Data availability depends on the reporting practices in each country, the age of the vehicle, and whether events were officially recorded. Unreported private repairs, cash transactions, or events in countries with limited digital registries may not appear. We clearly indicate the confidence level for each section of the report so you know where data is strong and where gaps may exist."
+        },
+        {
+          "title": "Reading the Damage and Accident Section",
+          "content": "The damage section lists any recorded accidents, insurance claims, or structural damage events. Each entry includes the date (when available), severity classification (minor, moderate, or severe), affected areas of the vehicle, and the source of the record. Structural damage — such as frame or chassis damage — is highlighted separately because it can affect long-term safety and resale value. We recommend having a professional inspection if structural damage is reported."
+        },
+        {
+          "title": "Report Validity and Updates",
+          "content": "Each report reflects the data available at the time of generation and includes a timestamp. Vehicle histories can change — new inspection results, ownership transfers, or incident reports may be added after your report was created. For high-value transactions, we recommend generating a fresh report if more than 30 days have passed since the original. Business customers with API access can configure automatic re-checks at custom intervals."
+        }
+      ]
+    },
+    "vehicle-information": {
+      "title": "Vehicle Information",
+      "subtitle": "Everything about VIN numbers, license plates, and vehicle checks.",
+      "sections": [
+        {
+          "title": "What is a VIN?",
+          "content": "A VIN (Vehicle Identification Number) is a unique 17-character alphanumeric code assigned to every motor vehicle at the time of manufacture. It serves as the vehicle's fingerprint — no two vehicles in operation share the same VIN. The code contains information about the manufacturer, vehicle attributes (model, engine type, body style), and a sequential production number. VINs never include the letters I, O, or Q to avoid confusion with the numbers 1 and 0."
+        },
+        {
+          "title": "Where to Find the VIN",
+          "content": "The VIN can be found in several locations on a vehicle: on a metal plate at the base of the windshield on the driver's side (visible from outside), on a sticker or plate on the driver's side door jamb, on the vehicle registration certificate or title document, on the insurance card or policy documents, and often stamped into the chassis or engine block. Always verify that the VIN matches across all these locations — a mismatch is a serious red flag."
+        },
+        {
+          "title": "Searching by License Plate",
+          "content": "If you don't have the VIN, you can search using the vehicle's license plate number. Autocertif will look up the plate in the relevant national registry to identify the associated VIN, then generate the full report. License plate searches are available for most European countries. Note that plates can be transferred between vehicles in some jurisdictions, so the report is always linked to the VIN (not the plate) to ensure accuracy."
+        },
+        {
+          "title": "VIN Decoding",
+          "content": "Every Autocertif report includes a decoded VIN section that breaks down what each segment of the VIN means. Positions 1–3 identify the manufacturer and country of origin (World Manufacturer Identifier). Positions 4–8 describe vehicle attributes such as model, body type, and engine. Position 9 is a check digit used to validate the VIN. Position 10 indicates the model year, position 11 the assembly plant, and positions 12–17 form the unique serial number."
+        },
+        {
+          "title": "Vehicle Check Best Practices",
+          "content": "When inspecting a vehicle you intend to buy, always run a vehicle history report before visiting in person. Compare the report details (colour, engine size, registration date) with what you see on the vehicle and its documents. Check for signs of physical VIN tampering such as misaligned plates, re-stamped characters, or rivets that appear to have been removed and replaced. If anything looks suspicious, walk away or have the vehicle inspected by an independent professional."
+        }
+      ]
+    },
+    "account-billing": {
+      "title": "Account & Billing",
+      "subtitle": "Manage your account, payments, invoices, and subscriptions.",
+      "sections": [
+        {
+          "title": "Creating an Account",
+          "content": "You can purchase a single report without creating an account. However, registering gives you access to your report history, saved vehicles, and faster checkout for future purchases. To create an account, click 'Sign Up' and provide your email address and a password. You can also sign up using your Google or Apple account for faster onboarding. Account creation is free and does not require a payment method."
+        },
+        {
+          "title": "Payment Methods",
+          "content": "Autocertif accepts all major credit and debit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. All transactions are processed through PCI DSS Level 1 compliant payment providers, ensuring the highest level of payment security. For business clients purchasing bulk packages, we also offer bank transfer (SEPA and international wire) and invoicing with net-30 payment terms."
+        },
+        {
+          "title": "Pricing and Packages",
+          "content": "We offer single report purchases as well as multi-report packages at discounted rates. Package credits do not expire and can be used at any time. Business customers can access volume pricing tiers, monthly subscription plans, and custom enterprise agreements. Visit our pricing page for current rates, or contact our sales team if you need a tailored solution for your organization."
+        },
+        {
+          "title": "Invoices and Receipts",
+          "content": "A receipt is sent to your email address immediately after each purchase. If you have an account, all invoices are also accessible from your dashboard under 'Billing History'. Business customers can configure their billing details (company name, VAT number, billing address) in account settings, and these details will appear on all subsequent invoices. If you need a duplicate or corrected invoice, contact our support team."
+        },
+        {
+          "title": "Refund Policy",
+          "content": "If your report contains materially incomplete or inaccurate data that was available in our sources at the time of generation, you may be eligible for a refund or a complimentary replacement report. To request a refund, contact our support team with your order number and a description of the issue. Refund requests are reviewed within 3 business days. Please note that a report accurately reflecting limited data availability is not grounds for a refund, as data coverage varies by country and vehicle."
+        },
+        {
+          "title": "Managing Your Subscription",
+          "content": "If you are on a monthly or annual subscription plan, you can manage it from your account dashboard. You can upgrade, downgrade, or cancel your plan at any time. Changes take effect at the start of your next billing cycle. Unused credits from subscription plans roll over for up to 3 months. If you cancel, you retain access to any remaining credits until they expire. Auto-renewal can be toggled off in your billing settings."
+        }
+      ]
+    },
+    "business-solutions": {
+      "title": "Business Solutions",
+      "subtitle": "Bulk reports, API integration, and solutions for dealerships.",
+      "sections": [
+        {
+          "title": "Who Are Business Solutions For?",
+          "content": "Autocertif business solutions are designed for car dealerships, independent used car sellers, insurance companies, leasing and fleet management firms, automotive marketplaces, and financial institutions that need vehicle history data at scale. Whether you process 50 or 50,000 vehicle checks per month, we have a plan that fits your workflow and budget."
+        },
+        {
+          "title": "Bulk Report Packages",
+          "content": "Our bulk packages allow you to purchase report credits in volume at significantly reduced per-report rates. Credits are shared across your team — you can invite multiple users to your business account and allocate credits as needed. Bulk credits do not expire and can be used for any vehicle in our supported countries. We offer standard tiers (10, 50, 100, 500, 1000 reports) as well as custom volumes for larger operations."
+        },
+        {
+          "title": "API Integration",
+          "content": "The Autocertif API lets you integrate vehicle history checks directly into your existing software — whether that's a dealer management system, an online marketplace, an insurance underwriting platform, or a custom application. The RESTful API supports VIN and license plate lookups, returns structured JSON data, and includes endpoints for report generation, status polling, and PDF retrieval. Sandbox access is included free so you can develop and test before going live."
+        },
+        {
+          "title": "Dealer and Marketplace Widgets",
+          "content": "We offer embeddable widgets that let car dealerships and online marketplaces display Autocertif vehicle history badges and summary data directly on their vehicle listing pages. These widgets increase buyer confidence and can be customized to match your branding. Installation requires adding a single script tag to your website — no backend development needed. Widget analytics are available in your business dashboard."
+        },
+        {
+          "title": "Dedicated Account Management",
+          "content": "Business customers on professional and enterprise plans receive a dedicated account manager who assists with onboarding, technical integration, training for your team, and ongoing optimization. Your account manager can also provide custom reporting on your usage patterns, help configure automated workflows, and escalate any data quality concerns directly to our data operations team."
+        },
+        {
+          "title": "Custom Pricing and Enterprise Agreements",
+          "content": "For organizations with high-volume needs or specific requirements, we offer custom pricing, SLA-backed service agreements, and tailored data packages. Enterprise agreements can include priority API rate limits, dedicated infrastructure, custom data fields, white-label reporting, and multi-region support. Contact our sales team to discuss your requirements and receive a personalized proposal."
+        }
+      ]
+    },
+    "privacy-security": {
+      "title": "Privacy & Security",
+      "subtitle": "How we protect your data and ensure secure transactions.",
+      "sections": [
+        {
+          "title": "Our Commitment to Data Protection",
+          "content": "Autocertif is fully committed to protecting your personal data. We comply with the General Data Protection Regulation (GDPR) and applicable national data protection laws. We only collect the data necessary to provide our services, and we never sell personal information to third parties. Our privacy practices are regularly audited by independent security firms. You can review our full Privacy Policy for detailed information on how we handle your data."
+        },
+        {
+          "title": "How We Secure Your Transactions",
+          "content": "All connections to Autocertif are encrypted using TLS 1.3 (Transport Layer Security). Payment processing is handled by PCI DSS Level 1 certified providers — Autocertif never stores your full credit card number or CVV on our servers. We use tokenized payment references for recurring transactions. Our infrastructure is hosted on ISO 27001 certified cloud platforms with redundancy across multiple data centers in the European Union."
+        },
+        {
+          "title": "Account Security",
+          "content": "We strongly recommend using a unique, strong password for your Autocertif account. We support two-factor authentication (2FA) via authenticator apps and SMS, and we recommend enabling it for all accounts — especially business accounts with multiple users. All login attempts are monitored, and we will notify you by email if a login occurs from a new device or location. Active sessions can be reviewed and revoked from your account security settings."
+        },
+        {
+          "title": "Vehicle Data and Personal Privacy",
+          "content": "Autocertif reports contain vehicle history data — not personal data about previous owners. We do not disclose names, addresses, or contact details of current or former vehicle owners. The information in our reports (mileage readings, inspection results, damage records) is sourced from official registries and industry databases that publish vehicle-level data for consumer protection purposes, in accordance with applicable laws."
+        },
+        {
+          "title": "Your Rights Under GDPR",
+          "content": "As a user of Autocertif, you have the right to access the personal data we hold about you, request correction of inaccurate data, request deletion of your data (right to be forgotten), restrict or object to processing of your data, and receive your data in a portable format. To exercise any of these rights, contact our Data Protection Officer at the email address listed in our Privacy Policy. We respond to all requests within the legally required timeframe of 30 days."
+        },
+        {
+          "title": "Responsible Disclosure and Bug Bounty",
+          "content": "We take security vulnerabilities seriously. If you discover a potential security issue in our platform, we encourage you to report it through our responsible disclosure program. Please email our security team with a detailed description of the vulnerability, and we will acknowledge receipt within 24 hours. We do not pursue legal action against researchers who report in good faith. Confirmed vulnerabilities are addressed promptly, and we recognize contributors in our security hall of fame."
+        }
+      ]
+    }
+  },
   "blog": {
     "badge": "Insights, Guides & Industry News",
     "title": "Autocertif Blog",

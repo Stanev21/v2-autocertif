@@ -3,7 +3,7 @@
     <div class="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12">
       <div class="rounded-[1.75rem] overflow-hidden bg-[#0A1020] relative">
         <!-- Gradient orb -->
-        <div class="absolute top-0 right-0 w-[200px] sm:w-[400px] h-[200px] sm:h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #14b8a6, transparent 70%);"></div>
+        <div class="absolute top-0 right-0 w-[200px] sm:w-[400px] h-[200px] sm:h-[400px] rounded-full opacity-15 blur-[100px]" style="background: radial-gradient(circle, #3b82f6, transparent 70%);"></div>
 
         <div class="grid lg:grid-cols-[1fr,auto] gap-0">
           <!-- Content -->
@@ -18,17 +18,17 @@
             <!-- Stats -->
             <div class="flex items-center flex-wrap gap-4 sm:gap-8 mb-10">
               <div>
-                <p class="text-[1.75rem] font-heading font-normal text-teal-400 leading-none mb-1">97%</p>
+                <p class="text-[1.75rem] font-heading font-normal text-blue-400 leading-none mb-1">97%</p>
                 <p class="text-white/30 text-[11px] font-inter uppercase tracking-wider">{{ $t('help.statSatisfaction') }}</p>
               </div>
               <div class="w-px h-10 bg-white/10"></div>
               <div>
-                <p class="text-[1.75rem] font-heading font-normal text-teal-400 leading-none mb-1">~7 days</p>
+                <p class="text-[1.75rem] font-heading font-normal text-blue-400 leading-none mb-1">~7 days</p>
                 <p class="text-white/30 text-[11px] font-inter uppercase tracking-wider">{{ $t('help.statResponse') }}</p>
               </div>
               <div class="w-px h-10 bg-white/10"></div>
               <div>
-                <p class="text-[1.75rem] font-heading font-normal text-teal-400 leading-none mb-1">24/7</p>
+                <p class="text-[1.75rem] font-heading font-normal text-blue-400 leading-none mb-1">24/7</p>
                 <p class="text-white/30 text-[11px] font-inter uppercase tracking-wider">{{ $t('help.statAvailability') }}</p>
               </div>
             </div>
